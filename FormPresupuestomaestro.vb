@@ -12,4 +12,8 @@
         LblFecha.Text = DateTime.Now.ToShortDateString()
 
     End Sub
+
+    Private Sub BtnPresupuestoProduccion_Click(sender As Object, e As EventArgs) Handles BtnPresupuestoProduccion.Click
+        FormPresupuestoDeProduccion.ShowDialog()
+    End Sub
 End Class

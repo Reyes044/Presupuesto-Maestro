@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormPresupuestoDeProduccion.Designer.vb">
+      <DependentUpon>FormPresupuestoDeProduccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPresupuestoDeProduccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormPresupuestomaestro.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormPresupuestoDeProduccion.resx">
+      <DependentUpon>FormPresupuestoDeProduccion.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPresupuestomaestro.resx">
       <DependentUpon>FormPresupuestomaestro.vb</DependentUpon>
     </EmbeddedResource>

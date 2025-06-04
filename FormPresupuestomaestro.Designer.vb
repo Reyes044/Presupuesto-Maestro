@@ -54,10 +54,9 @@ Partial Class FormPresupuestomaestro
         '
         'BtnPresupuestoVentas
         '
-        Me.BtnPresupuestoVentas.Location = New System.Drawing.Point(139, 43)
-        Me.BtnPresupuestoVentas.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnPresupuestoVentas.Location = New System.Drawing.Point(104, 35)
         Me.BtnPresupuestoVentas.Name = "BtnPresupuestoVentas"
-        Me.BtnPresupuestoVentas.Size = New System.Drawing.Size(232, 128)
+        Me.BtnPresupuestoVentas.Size = New System.Drawing.Size(174, 104)
         Me.BtnPresupuestoVentas.TabIndex = 1
         Me.BtnPresupuestoVentas.UseVisualStyleBackColor = True
         '
@@ -65,80 +64,73 @@ Partial Class FormPresupuestomaestro
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(700, 448)
+        Me.Label1.Location = New System.Drawing.Point(525, 364)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(0, 25)
+        Me.Label1.Size = New System.Drawing.Size(0, 20)
         Me.Label1.TabIndex = 2
         '
         'BtnPresupuestoProduccion
         '
-        Me.BtnPresupuestoProduccion.Location = New System.Drawing.Point(421, 43)
-        Me.BtnPresupuestoProduccion.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnPresupuestoProduccion.Location = New System.Drawing.Point(316, 35)
         Me.BtnPresupuestoProduccion.Name = "BtnPresupuestoProduccion"
-        Me.BtnPresupuestoProduccion.Size = New System.Drawing.Size(232, 128)
+        Me.BtnPresupuestoProduccion.Size = New System.Drawing.Size(174, 104)
         Me.BtnPresupuestoProduccion.TabIndex = 3
         Me.BtnPresupuestoProduccion.UseVisualStyleBackColor = True
         '
         'BtnCostoTotalProducción
         '
-        Me.BtnCostoTotalProducción.Location = New System.Drawing.Point(707, 43)
-        Me.BtnCostoTotalProducción.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnCostoTotalProducción.Location = New System.Drawing.Point(530, 35)
         Me.BtnCostoTotalProducción.Name = "BtnCostoTotalProducción"
-        Me.BtnCostoTotalProducción.Size = New System.Drawing.Size(232, 128)
+        Me.BtnCostoTotalProducción.Size = New System.Drawing.Size(174, 104)
         Me.BtnCostoTotalProducción.TabIndex = 4
         Me.BtnCostoTotalProducción.UseVisualStyleBackColor = True
         '
         'BtnPresupuestoCompras
         '
-        Me.BtnPresupuestoCompras.Location = New System.Drawing.Point(989, 43)
-        Me.BtnPresupuestoCompras.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnPresupuestoCompras.Location = New System.Drawing.Point(742, 35)
         Me.BtnPresupuestoCompras.Name = "BtnPresupuestoCompras"
-        Me.BtnPresupuestoCompras.Size = New System.Drawing.Size(232, 128)
+        Me.BtnPresupuestoCompras.Size = New System.Drawing.Size(174, 104)
         Me.BtnPresupuestoCompras.TabIndex = 5
         Me.BtnPresupuestoCompras.UseVisualStyleBackColor = True
         '
         'BtnPresupuestoMod
         '
-        Me.BtnPresupuestoMod.Location = New System.Drawing.Point(139, 229)
-        Me.BtnPresupuestoMod.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnPresupuestoMod.Location = New System.Drawing.Point(104, 186)
         Me.BtnPresupuestoMod.Name = "BtnPresupuestoMod"
-        Me.BtnPresupuestoMod.Size = New System.Drawing.Size(232, 128)
+        Me.BtnPresupuestoMod.Size = New System.Drawing.Size(174, 104)
         Me.BtnPresupuestoMod.TabIndex = 6
         Me.BtnPresupuestoMod.UseVisualStyleBackColor = True
         '
         'BtnGastosindirectos
         '
-        Me.BtnGastosindirectos.Location = New System.Drawing.Point(421, 229)
-        Me.BtnGastosindirectos.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnGastosindirectos.Location = New System.Drawing.Point(316, 186)
         Me.BtnGastosindirectos.Name = "BtnGastosindirectos"
-        Me.BtnGastosindirectos.Size = New System.Drawing.Size(232, 128)
+        Me.BtnGastosindirectos.Size = New System.Drawing.Size(174, 104)
         Me.BtnGastosindirectos.TabIndex = 7
         Me.BtnGastosindirectos.UseVisualStyleBackColor = True
         '
         'BtnGastoAdmyVentas
         '
-        Me.BtnGastoAdmyVentas.Location = New System.Drawing.Point(707, 229)
-        Me.BtnGastoAdmyVentas.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnGastoAdmyVentas.Location = New System.Drawing.Point(530, 186)
         Me.BtnGastoAdmyVentas.Name = "BtnGastoAdmyVentas"
-        Me.BtnGastoAdmyVentas.Size = New System.Drawing.Size(232, 128)
+        Me.BtnGastoAdmyVentas.Size = New System.Drawing.Size(174, 104)
         Me.BtnGastoAdmyVentas.TabIndex = 8
         Me.BtnGastoAdmyVentas.UseVisualStyleBackColor = True
         '
         'BtnPresupuestoCaja
         '
-        Me.BtnPresupuestoCaja.Location = New System.Drawing.Point(989, 229)
-        Me.BtnPresupuestoCaja.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnPresupuestoCaja.Location = New System.Drawing.Point(742, 186)
         Me.BtnPresupuestoCaja.Name = "BtnPresupuestoCaja"
-        Me.BtnPresupuestoCaja.Size = New System.Drawing.Size(232, 128)
+        Me.BtnPresupuestoCaja.Size = New System.Drawing.Size(174, 104)
         Me.BtnPresupuestoCaja.TabIndex = 9
         Me.BtnPresupuestoCaja.UseVisualStyleBackColor = True
         '
         'BtnResumen
         '
-        Me.BtnResumen.Location = New System.Drawing.Point(139, 412)
-        Me.BtnResumen.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnResumen.Location = New System.Drawing.Point(104, 335)
         Me.BtnResumen.Name = "BtnResumen"
-        Me.BtnResumen.Size = New System.Drawing.Size(232, 128)
+        Me.BtnResumen.Size = New System.Drawing.Size(174, 104)
         Me.BtnResumen.TabIndex = 10
         Me.BtnResumen.UseVisualStyleBackColor = True
         '
@@ -146,10 +138,9 @@ Partial Class FormPresupuestomaestro
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Bodoni MT Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(171, 12)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(128, 10)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(161, 28)
+        Me.Label2.Size = New System.Drawing.Size(130, 22)
         Me.Label2.TabIndex = 11
         Me.Label2.Text = "Presupuesto de ventas"
         '
@@ -157,10 +148,9 @@ Partial Class FormPresupuestomaestro
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Bodoni MT Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(431, 11)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(323, 9)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(196, 28)
+        Me.Label3.Size = New System.Drawing.Size(157, 22)
         Me.Label3.TabIndex = 12
         Me.Label3.Text = "Presupuesto de producción" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -168,10 +158,9 @@ Partial Class FormPresupuestomaestro
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Bodoni MT Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(1024, 198)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(768, 161)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(145, 28)
+        Me.Label4.Size = New System.Drawing.Size(118, 22)
         Me.Label4.TabIndex = 13
         Me.Label4.Text = "Presupuesto de caja" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -179,10 +168,9 @@ Partial Class FormPresupuestomaestro
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Bodoni MT Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(743, 198)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Location = New System.Drawing.Point(557, 161)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(153, 28)
+        Me.Label5.Size = New System.Drawing.Size(123, 22)
         Me.Label5.TabIndex = 14
         Me.Label5.Text = "Gastos Adm. y ventas"
         '
@@ -190,10 +178,9 @@ Partial Class FormPresupuestomaestro
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Bodoni MT Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(476, 198)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Location = New System.Drawing.Point(357, 161)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(125, 28)
+        Me.Label6.Size = New System.Drawing.Size(101, 22)
         Me.Label6.TabIndex = 15
         Me.Label6.Text = "Gastos indirectos"
         '
@@ -201,10 +188,9 @@ Partial Class FormPresupuestomaestro
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Bodoni MT Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(185, 198)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Location = New System.Drawing.Point(139, 161)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(127, 28)
+        Me.Label7.Size = New System.Drawing.Size(102, 22)
         Me.Label7.TabIndex = 16
         Me.Label7.Text = "Presupuesto MOD"
         '
@@ -212,10 +198,9 @@ Partial Class FormPresupuestomaestro
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Bodoni MT Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(1008, 11)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Location = New System.Drawing.Point(756, 9)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(175, 28)
+        Me.Label8.Size = New System.Drawing.Size(141, 22)
         Me.Label8.TabIndex = 17
         Me.Label8.Text = "Presupuesto de compras" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -223,10 +208,9 @@ Partial Class FormPresupuestomaestro
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Bodoni MT Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(725, 11)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Location = New System.Drawing.Point(544, 9)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(184, 28)
+        Me.Label9.Size = New System.Drawing.Size(147, 22)
         Me.Label9.TabIndex = 18
         Me.Label9.Text = "Costo total de producción"
         '
@@ -234,20 +218,18 @@ Partial Class FormPresupuestomaestro
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Bodoni MT Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(213, 382)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Location = New System.Drawing.Point(160, 310)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(72, 28)
+        Me.Label10.Size = New System.Drawing.Size(58, 22)
         Me.Label10.TabIndex = 19
         Me.Label10.Text = "Resumen"
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(1293, 43)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Location = New System.Drawing.Point(970, 35)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(248, 146)
+        Me.PictureBox1.Size = New System.Drawing.Size(186, 119)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 20
         Me.PictureBox1.TabStop = False
@@ -258,10 +240,9 @@ Partial Class FormPresupuestomaestro
         Me.LblHora.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.LblHora.Font = New System.Drawing.Font("Bodoni MT Condensed", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblHora.ForeColor = System.Drawing.SystemColors.Highlight
-        Me.LblHora.Location = New System.Drawing.Point(1412, 197)
-        Me.LblHora.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblHora.Location = New System.Drawing.Point(1059, 160)
         Me.LblHora.Name = "LblHora"
-        Me.LblHora.Size = New System.Drawing.Size(54, 36)
+        Me.LblHora.Size = New System.Drawing.Size(43, 28)
         Me.LblHora.TabIndex = 21
         Me.LblHora.Text = "Hora"
         '
@@ -269,10 +250,9 @@ Partial Class FormPresupuestomaestro
         '
         Me.LblFecha.AutoSize = True
         Me.LblFecha.Font = New System.Drawing.Font("Bodoni MT Condensed", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblFecha.Location = New System.Drawing.Point(1412, 233)
-        Me.LblFecha.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblFecha.Location = New System.Drawing.Point(1059, 189)
         Me.LblFecha.Name = "LblFecha"
-        Me.LblFecha.Size = New System.Drawing.Size(57, 32)
+        Me.LblFecha.Size = New System.Drawing.Size(43, 24)
         Me.LblFecha.TabIndex = 22
         Me.LblFecha.Text = "Fecha"
         '
@@ -284,10 +264,9 @@ Partial Class FormPresupuestomaestro
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Bodoni MT", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(1300, 207)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label11.Location = New System.Drawing.Point(975, 168)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(58, 23)
+        Me.Label11.Size = New System.Drawing.Size(47, 20)
         Me.Label11.TabIndex = 23
         Me.Label11.Text = "Hora:"
         '
@@ -295,18 +274,17 @@ Partial Class FormPresupuestomaestro
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Bodoni MT", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(1300, 238)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label12.Location = New System.Drawing.Point(975, 193)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(66, 23)
+        Me.Label12.Size = New System.Drawing.Size(54, 20)
         Me.Label12.TabIndex = 24
         Me.Label12.Text = "Fecha:"
         '
         'FormPresupuestomaestro
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1584, 593)
+        Me.ClientSize = New System.Drawing.Size(963, 482)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.LblFecha)
@@ -332,7 +310,6 @@ Partial Class FormPresupuestomaestro
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BtnPresupuestoVentas)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "FormPresupuestomaestro"
         Me.Text = "Presupuesto maestro"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
