@@ -49,7 +49,9 @@ Partial Class FormPresupuestomaestro
         Me.Tiempo = New System.Windows.Forms.Timer(Me.components)
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BtnPresupuestoVentas
@@ -280,11 +282,22 @@ Partial Class FormPresupuestomaestro
         Me.Label12.TabIndex = 24
         Me.Label12.Text = "Fecha:"
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.Presupuesto_Maestro.My.Resources.Resources.images
+        Me.PictureBox2.Location = New System.Drawing.Point(327, 304)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(205, 166)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 25
+        Me.PictureBox2.TabStop = False
+        '
         'FormPresupuestomaestro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(963, 482)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.LblFecha)
@@ -313,6 +326,7 @@ Partial Class FormPresupuestomaestro
         Me.Name = "FormPresupuestomaestro"
         Me.Text = "Presupuesto maestro"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -342,4 +356,5 @@ Partial Class FormPresupuestomaestro
     Friend WithEvents Tiempo As Timer
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
+    Friend WithEvents PictureBox2 As PictureBox
 End Class
