@@ -53,6 +53,7 @@ Partial Class FormPresupuestomaestro
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -301,15 +302,16 @@ Partial Class FormPresupuestomaestro
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(96, 20)
         Me.TextBox1.TabIndex = 26
+        Me.TextBox1.Text = "Trans o mujer?"
         '
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(778, 402)
+        Me.CheckBox1.Location = New System.Drawing.Point(789, 380)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(81, 17)
+        Me.CheckBox1.Size = New System.Drawing.Size(53, 17)
         Me.CheckBox1.TabIndex = 27
-        Me.CheckBox1.Text = "CheckBox1"
+        Me.CheckBox1.Text = "Trans"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'Button1
@@ -321,11 +323,22 @@ Partial Class FormPresupuestomaestro
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'CheckBox2
+        '
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Location = New System.Drawing.Point(789, 403)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(52, 17)
+        Me.CheckBox2.TabIndex = 29
+        Me.CheckBox2.Text = "Mujer"
+        Me.CheckBox2.UseVisualStyleBackColor = True
+        '
         'FormPresupuestomaestro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(963, 482)
+        Me.Controls.Add(Me.CheckBox2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.TextBox1)
@@ -392,4 +405,5 @@ Partial Class FormPresupuestomaestro
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents CheckBox2 As CheckBox
 End Class
