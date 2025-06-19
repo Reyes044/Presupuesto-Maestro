@@ -59,10 +59,9 @@ Partial Class FrmPresupuestoVentas
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Rockwell", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(656, 10)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(492, 8)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(327, 35)
+        Me.Label1.Size = New System.Drawing.Size(263, 27)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Presupuesto de ventas"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -71,8 +70,7 @@ Partial Class FrmPresupuestoVentas
         '
         Me.DtgPresupuestodeventas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DtgPresupuestodeventas.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ColProducto, Me.ColUnidadesProyectadas, Me.ColPrecioUnitario, Me.ColIngresosBrutos, Me.ColDevoluciones, Me.ColIngresosnetos, Me.ColCostoVentas, Me.ColGastoVentas, Me.ColPublicidad, Me.ColGastopublicidad, Me.ColUtilidadBruta})
-        Me.DtgPresupuestodeventas.Location = New System.Drawing.Point(3, 241)
-        Me.DtgPresupuestodeventas.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DtgPresupuestodeventas.Location = New System.Drawing.Point(2, 196)
         Me.DtgPresupuestodeventas.Name = "DtgPresupuestodeventas"
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ButtonFace
@@ -83,7 +81,7 @@ Partial Class FrmPresupuestoVentas
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DtgPresupuestodeventas.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DtgPresupuestodeventas.RowHeadersWidth = 51
-        Me.DtgPresupuestodeventas.Size = New System.Drawing.Size(1505, 268)
+        Me.DtgPresupuestodeventas.Size = New System.Drawing.Size(1129, 218)
         Me.DtgPresupuestodeventas.TabIndex = 1
         '
         'ColProducto
@@ -182,67 +180,59 @@ Partial Class FrmPresupuestoVentas
         Me.GrpPresupuestodeventas.Controls.Add(Me.LblGastoventas)
         Me.GrpPresupuestodeventas.Controls.Add(Me.LblPrecioUnitario)
         Me.GrpPresupuestodeventas.Controls.Add(Me.Label1)
-        Me.GrpPresupuestodeventas.Location = New System.Drawing.Point(3, 1)
-        Me.GrpPresupuestodeventas.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GrpPresupuestodeventas.Location = New System.Drawing.Point(2, 1)
         Me.GrpPresupuestodeventas.Name = "GrpPresupuestodeventas"
-        Me.GrpPresupuestodeventas.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.GrpPresupuestodeventas.Size = New System.Drawing.Size(1505, 233)
+        Me.GrpPresupuestodeventas.Size = New System.Drawing.Size(1129, 189)
         Me.GrpPresupuestodeventas.TabIndex = 2
         Me.GrpPresupuestodeventas.TabStop = False
         '
         'txtunidaesproyectadas
         '
-        Me.txtunidaesproyectadas.Location = New System.Drawing.Point(1363, 100)
-        Me.txtunidaesproyectadas.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtunidaesproyectadas.Location = New System.Drawing.Point(1022, 81)
         Me.txtunidaesproyectadas.Name = "txtunidaesproyectadas"
-        Me.txtunidaesproyectadas.Size = New System.Drawing.Size(133, 22)
+        Me.txtunidaesproyectadas.Size = New System.Drawing.Size(101, 20)
         Me.txtunidaesproyectadas.TabIndex = 13
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(1123, 97)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(842, 79)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(207, 25)
+        Me.Label2.Size = New System.Drawing.Size(168, 20)
         Me.Label2.TabIndex = 12
         Me.Label2.Text = "Unidades proyectadas"
         '
         'BtnAgregar
         '
-        Me.BtnAgregar.Location = New System.Drawing.Point(1332, 150)
-        Me.BtnAgregar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnAgregar.Location = New System.Drawing.Point(999, 122)
         Me.BtnAgregar.Name = "BtnAgregar"
-        Me.BtnAgregar.Size = New System.Drawing.Size(165, 52)
+        Me.BtnAgregar.Size = New System.Drawing.Size(124, 42)
         Me.BtnAgregar.TabIndex = 11
         Me.BtnAgregar.Text = "Agregar"
         Me.BtnAgregar.UseVisualStyleBackColor = True
         '
         'txtPublicidadCsUnidad
         '
-        Me.txtPublicidadCsUnidad.Location = New System.Drawing.Point(885, 158)
-        Me.txtPublicidadCsUnidad.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtPublicidadCsUnidad.Location = New System.Drawing.Point(664, 128)
         Me.txtPublicidadCsUnidad.Name = "txtPublicidadCsUnidad"
-        Me.txtPublicidadCsUnidad.Size = New System.Drawing.Size(197, 22)
+        Me.txtPublicidadCsUnidad.Size = New System.Drawing.Size(149, 20)
         Me.txtPublicidadCsUnidad.TabIndex = 10
         '
         'TxtGastoVentas
         '
-        Me.TxtGastoVentas.Location = New System.Drawing.Point(885, 100)
-        Me.TxtGastoVentas.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtGastoVentas.Location = New System.Drawing.Point(664, 81)
         Me.TxtGastoVentas.Name = "TxtGastoVentas"
-        Me.TxtGastoVentas.Size = New System.Drawing.Size(197, 22)
+        Me.TxtGastoVentas.Size = New System.Drawing.Size(149, 20)
         Me.TxtGastoVentas.TabIndex = 9
         '
         'LblCordoba
         '
         Me.LblCordoba.AutoSize = True
         Me.LblCordoba.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblCordoba.Location = New System.Drawing.Point(303, 150)
-        Me.LblCordoba.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblCordoba.Location = New System.Drawing.Point(227, 122)
         Me.LblCordoba.Name = "LblCordoba"
-        Me.LblCordoba.Size = New System.Drawing.Size(38, 25)
+        Me.LblCordoba.Size = New System.Drawing.Size(29, 20)
         Me.LblCordoba.TabIndex = 8
         Me.LblCordoba.Text = "C$"
         '
@@ -251,10 +241,9 @@ Partial Class FrmPresupuestoVentas
         Me.txtPreciounitario.Enabled = False
         Me.txtPreciounitario.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPreciounitario.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        Me.txtPreciounitario.Location = New System.Drawing.Point(172, 153)
-        Me.txtPreciounitario.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtPreciounitario.Location = New System.Drawing.Point(129, 124)
         Me.txtPreciounitario.Name = "txtPreciounitario"
-        Me.txtPreciounitario.Size = New System.Drawing.Size(121, 23)
+        Me.txtPreciounitario.Size = New System.Drawing.Size(92, 20)
         Me.txtPreciounitario.TabIndex = 7
         Me.txtPreciounitario.Text = "Ingrese el precio"
         '
@@ -262,10 +251,9 @@ Partial Class FrmPresupuestoVentas
         '
         Me.TxtNombreProducto.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtNombreProducto.ForeColor = System.Drawing.SystemColors.ActiveBorder
-        Me.TxtNombreProducto.Location = New System.Drawing.Point(236, 100)
-        Me.TxtNombreProducto.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtNombreProducto.Location = New System.Drawing.Point(177, 81)
         Me.TxtNombreProducto.Name = "TxtNombreProducto"
-        Me.TxtNombreProducto.Size = New System.Drawing.Size(388, 23)
+        Me.TxtNombreProducto.Size = New System.Drawing.Size(292, 20)
         Me.TxtNombreProducto.TabIndex = 6
         Me.TxtNombreProducto.Text = "Ingrese el nombre del producto"
         '
@@ -273,10 +261,9 @@ Partial Class FrmPresupuestoVentas
         '
         Me.LblProducto.AutoSize = True
         Me.LblProducto.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblProducto.Location = New System.Drawing.Point(13, 97)
-        Me.LblProducto.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblProducto.Location = New System.Drawing.Point(10, 79)
         Me.LblProducto.Name = "LblProducto"
-        Me.LblProducto.Size = New System.Drawing.Size(199, 25)
+        Me.LblProducto.Size = New System.Drawing.Size(161, 20)
         Me.LblProducto.TabIndex = 5
         Me.LblProducto.Text = "Nombre del producto:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -284,10 +271,9 @@ Partial Class FrmPresupuestoVentas
         '
         Me.LblIngresarDatos.AutoSize = True
         Me.LblIngresarDatos.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblIngresarDatos.Location = New System.Drawing.Point(231, 18)
-        Me.LblIngresarDatos.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblIngresarDatos.Location = New System.Drawing.Point(173, 15)
         Me.LblIngresarDatos.Name = "LblIngresarDatos"
-        Me.LblIngresarDatos.Size = New System.Drawing.Size(281, 25)
+        Me.LblIngresarDatos.Size = New System.Drawing.Size(235, 20)
         Me.LblIngresarDatos.TabIndex = 4
         Me.LblIngresarDatos.Text = "Ingrese los siguientes datos"
         '
@@ -295,10 +281,9 @@ Partial Class FrmPresupuestoVentas
         '
         Me.LblPublicidad.AutoSize = True
         Me.LblPublicidad.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblPublicidad.Location = New System.Drawing.Point(649, 155)
-        Me.LblPublicidad.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblPublicidad.Location = New System.Drawing.Point(487, 126)
         Me.LblPublicidad.Name = "LblPublicidad"
-        Me.LblPublicidad.Size = New System.Drawing.Size(218, 25)
+        Me.LblPublicidad.Size = New System.Drawing.Size(171, 20)
         Me.LblPublicidad.TabIndex = 3
         Me.LblPublicidad.Text = "Publicidad (C$/unidad):" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -306,10 +291,9 @@ Partial Class FrmPresupuestoVentas
         '
         Me.LblGastoventas.AutoSize = True
         Me.LblGastoventas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblGastoventas.Location = New System.Drawing.Point(659, 97)
-        Me.LblGastoventas.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblGastoventas.Location = New System.Drawing.Point(494, 79)
         Me.LblGastoventas.Name = "LblGastoventas"
-        Me.LblGastoventas.Size = New System.Drawing.Size(205, 25)
+        Me.LblGastoventas.Size = New System.Drawing.Size(164, 20)
         Me.LblGastoventas.TabIndex = 2
         Me.LblGastoventas.Text = "Gasto de ventas (C$):" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -317,21 +301,19 @@ Partial Class FrmPresupuestoVentas
         '
         Me.LblPrecioUnitario.AutoSize = True
         Me.LblPrecioUnitario.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblPrecioUnitario.Location = New System.Drawing.Point(13, 155)
-        Me.LblPrecioUnitario.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblPrecioUnitario.Location = New System.Drawing.Point(10, 126)
         Me.LblPrecioUnitario.Name = "LblPrecioUnitario"
-        Me.LblPrecioUnitario.Size = New System.Drawing.Size(141, 25)
+        Me.LblPrecioUnitario.Size = New System.Drawing.Size(113, 20)
         Me.LblPrecioUnitario.TabIndex = 1
         Me.LblPrecioUnitario.Text = "Precio unitario:"
         '
         'FrmPresupuestoVentas
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1537, 554)
+        Me.ClientSize = New System.Drawing.Size(1318, 450)
         Me.Controls.Add(Me.GrpPresupuestodeventas)
         Me.Controls.Add(Me.DtgPresupuestodeventas)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "FrmPresupuestoVentas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Presupuesto de ventas"
