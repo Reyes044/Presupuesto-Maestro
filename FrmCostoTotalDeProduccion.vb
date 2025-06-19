@@ -1,5 +1,5 @@
 ﻿Public Class FrmCostoTotalDeProduccion
-    Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnAgregar.Click
+    Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnAgregar.Click, Button1.Click
         Dim producto As String = TxtProducto.Text
         Dim Materia_Prima_Directa As Integer = TxtMPD.Text
         Dim Mano_de_Obra_Directa As Integer = TxtMOD.Text
@@ -15,7 +15,23 @@
 
     End Sub
 
-    Private Sub LblMOD_Click(sender As Object, e As EventArgs) Handles LblMOD.Click
+    Private Sub LblMOD_Click(sender As Object, e As EventArgs) Handles LblMOD.Click, Label1.Click
+
+    End Sub
+
+    Private Sub FrmCostoTotalDeProduccion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub TxtGifAsignado_TextChanged(sender As Object, e As EventArgs) Handles TxtGifAsignado.TextChanged, TextBox1.TextChanged
+
+    End Sub
+
+    Private Sub LblGIFAsignados_Click(sender As Object, e As EventArgs) Handles LblGIFAsignados.Click, Label2.Click
+
+    End Sub
+
+    Private Sub DtgCostoTotalDeProduccion_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DtgCostoTotalDeProduccion.CellContentClick
 
     End Sub
 End Class

@@ -98,6 +98,12 @@
     <Compile Include="FrmCostoTotalDeProduccion.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmGastos Indirectos.Designer.vb">
+      <DependentUpon>FrmGastos Indirectos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGastos Indirectos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCostoTotalDeProduccion.resx">
       <DependentUpon>FrmCostoTotalDeProduccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGastos Indirectos.resx">
+      <DependentUpon>FrmGastos Indirectos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

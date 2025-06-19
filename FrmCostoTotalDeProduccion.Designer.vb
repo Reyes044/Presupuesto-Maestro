@@ -22,11 +22,11 @@ Partial Class FrmCostoTotalDeProduccion
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle28 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle29 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle30 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.LblProducto = New System.Windows.Forms.Label()
         Me.LblMPD = New System.Windows.Forms.Label()
         Me.LblMOD = New System.Windows.Forms.Label()
@@ -43,6 +43,10 @@ Partial Class FrmCostoTotalDeProduccion
         Me.BtnAgregar = New System.Windows.Forms.Button()
         Me.TxtGifAsignado = New System.Windows.Forms.TextBox()
         Me.LblGIFAsignados = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         CType(Me.DtgCostoTotalDeProduccion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -114,9 +118,9 @@ Partial Class FrmCostoTotalDeProduccion
         '
         'ColMPD
         '
-        DataGridViewCellStyle1.Format = "C2"
-        DataGridViewCellStyle1.NullValue = "C$"
-        Me.ColMPD.DefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle26.Format = "C2"
+        DataGridViewCellStyle26.NullValue = "C$"
+        Me.ColMPD.DefaultCellStyle = DataGridViewCellStyle26
         Me.ColMPD.HeaderText = "MPD (C$)"
         Me.ColMPD.MinimumWidth = 6
         Me.ColMPD.Name = "ColMPD"
@@ -124,9 +128,9 @@ Partial Class FrmCostoTotalDeProduccion
         '
         'ColMOD
         '
-        DataGridViewCellStyle2.Format = "C2"
-        DataGridViewCellStyle2.NullValue = "C$"
-        Me.ColMOD.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle27.Format = "C2"
+        DataGridViewCellStyle27.NullValue = "C$"
+        Me.ColMOD.DefaultCellStyle = DataGridViewCellStyle27
         Me.ColMOD.HeaderText = "MOD(C$)"
         Me.ColMOD.MinimumWidth = 6
         Me.ColMOD.Name = "ColMOD"
@@ -134,9 +138,9 @@ Partial Class FrmCostoTotalDeProduccion
         '
         'Col_GIF_Asignado
         '
-        DataGridViewCellStyle3.Format = "C2"
-        DataGridViewCellStyle3.NullValue = "C$"
-        Me.Col_GIF_Asignado.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle28.Format = "C2"
+        DataGridViewCellStyle28.NullValue = "C$"
+        Me.Col_GIF_Asignado.DefaultCellStyle = DataGridViewCellStyle28
         Me.Col_GIF_Asignado.HeaderText = "GIF Asignado (C$)"
         Me.Col_GIF_Asignado.MinimumWidth = 6
         Me.Col_GIF_Asignado.Name = "Col_GIF_Asignado"
@@ -144,9 +148,9 @@ Partial Class FrmCostoTotalDeProduccion
         '
         'ColCostoTotalDeProduccion
         '
-        DataGridViewCellStyle4.Format = "C2"
-        DataGridViewCellStyle4.NullValue = "C$"
-        Me.ColCostoTotalDeProduccion.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle29.Format = "C2"
+        DataGridViewCellStyle29.NullValue = "C$"
+        Me.ColCostoTotalDeProduccion.DefaultCellStyle = DataGridViewCellStyle29
         Me.ColCostoTotalDeProduccion.HeaderText = "Costo Total De Produccion (C$)"
         Me.ColCostoTotalDeProduccion.MinimumWidth = 6
         Me.ColCostoTotalDeProduccion.Name = "ColCostoTotalDeProduccion"
@@ -154,9 +158,9 @@ Partial Class FrmCostoTotalDeProduccion
         '
         'ColCostoUnitario
         '
-        DataGridViewCellStyle5.Format = "C2"
-        DataGridViewCellStyle5.NullValue = "C$"
-        Me.ColCostoUnitario.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle30.Format = "C2"
+        DataGridViewCellStyle30.NullValue = "C$"
+        Me.ColCostoUnitario.DefaultCellStyle = DataGridViewCellStyle30
         Me.ColCostoUnitario.HeaderText = "Costo Unitario"
         Me.ColCostoUnitario.MinimumWidth = 6
         Me.ColCostoUnitario.Name = "ColCostoUnitario"
@@ -187,17 +191,55 @@ Partial Class FrmCostoTotalDeProduccion
         Me.LblGIFAsignados.TabIndex = 8
         Me.LblGIFAsignados.Text = "GIF Asignado " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(12, 143)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(139, 16)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "Mano de Obra Directa"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(157, 249)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(107, 45)
+        Me.Button1.TabIndex = 7
+        Me.Button1.Text = "Agregar"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(12, 196)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(92, 16)
+        Me.Label2.TabIndex = 8
+        Me.Label2.Text = "GIF Asignado " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(157, 196)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(107, 22)
+        Me.TextBox1.TabIndex = 9
+        '
         'FrmCostoTotalDeProduccion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1191, 341)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.TxtGifAsignado)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.LblGIFAsignados)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.BtnAgregar)
         Me.Controls.Add(Me.DtgCostoTotalDeProduccion)
         Me.Controls.Add(Me.TxtMOD)
         Me.Controls.Add(Me.TxtMPD)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TxtProducto)
         Me.Controls.Add(Me.LblMOD)
         Me.Controls.Add(Me.LblMPD)
@@ -226,4 +268,8 @@ Partial Class FrmCostoTotalDeProduccion
     Friend WithEvents BtnAgregar As Button
     Friend WithEvents TxtGifAsignado As TextBox
     Friend WithEvents LblGIFAsignados As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents TextBox1 As TextBox
 End Class

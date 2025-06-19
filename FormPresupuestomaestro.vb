@@ -20,4 +20,8 @@
     Private Sub BtnCostoTotalProducción_Click(sender As Object, e As EventArgs) Handles BtnCostoTotalProducción.Click
         FrmCostoTotalDeProduccion.ShowDialog()
     End Sub
+
+    Private Sub BtnGastosindirectos_Click(sender As Object, e As EventArgs) Handles BtnGastosindirectos.Click
+        FrmGastos_Indirectos.ShowDialog()
+    End Sub
 End Class
