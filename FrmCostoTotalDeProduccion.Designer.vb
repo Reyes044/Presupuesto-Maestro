@@ -22,11 +22,11 @@ Partial Class FrmCostoTotalDeProduccion
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.LblProducto = New System.Windows.Forms.Label()
         Me.LblMPD = New System.Windows.Forms.Label()
         Me.LblMOD = New System.Windows.Forms.Label()
@@ -34,18 +34,19 @@ Partial Class FrmCostoTotalDeProduccion
         Me.TxtMPD = New System.Windows.Forms.TextBox()
         Me.TxtMOD = New System.Windows.Forms.TextBox()
         Me.DtgCostoTotalDeProduccion = New System.Windows.Forms.DataGridView()
-        Me.BtnAgregar = New System.Windows.Forms.Button()
-        Me.TxtGifAsignado = New System.Windows.Forms.TextBox()
-        Me.LblGIFAsignados = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.BtnAgregarCtp = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.ColProducto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColMPD = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColMOD = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Col_GIF_Asignado = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColCostoTotalDeProduccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColCostoUnitario = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BtnAgregar = New System.Windows.Forms.Button()
+        Me.TxtGifAsignado = New System.Windows.Forms.TextBox()
+        Me.LblGIFAsignados = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.BtnAgregarCtp = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.BtnEliminar = New System.Windows.Forms.Button()
         CType(Me.DtgCostoTotalDeProduccion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -108,6 +109,69 @@ Partial Class FrmCostoTotalDeProduccion
         Me.DtgCostoTotalDeProduccion.Size = New System.Drawing.Size(805, 120)
         Me.DtgCostoTotalDeProduccion.TabIndex = 6
         '
+        'ColProducto
+        '
+        Me.ColProducto.HeaderText = "Producto"
+        Me.ColProducto.MinimumWidth = 6
+        Me.ColProducto.Name = "ColProducto"
+        Me.ColProducto.ReadOnly = True
+        Me.ColProducto.Width = 125
+        '
+        'ColMPD
+        '
+        DataGridViewCellStyle1.Format = "C2"
+        DataGridViewCellStyle1.NullValue = "C$"
+        Me.ColMPD.DefaultCellStyle = DataGridViewCellStyle1
+        Me.ColMPD.HeaderText = "MPD (C$)"
+        Me.ColMPD.MinimumWidth = 6
+        Me.ColMPD.Name = "ColMPD"
+        Me.ColMPD.ReadOnly = True
+        Me.ColMPD.Width = 125
+        '
+        'ColMOD
+        '
+        DataGridViewCellStyle2.Format = "C2"
+        DataGridViewCellStyle2.NullValue = "C$"
+        Me.ColMOD.DefaultCellStyle = DataGridViewCellStyle2
+        Me.ColMOD.HeaderText = "MOD(C$)"
+        Me.ColMOD.MinimumWidth = 6
+        Me.ColMOD.Name = "ColMOD"
+        Me.ColMOD.ReadOnly = True
+        Me.ColMOD.Width = 125
+        '
+        'Col_GIF_Asignado
+        '
+        DataGridViewCellStyle3.Format = "C2"
+        DataGridViewCellStyle3.NullValue = "C$"
+        Me.Col_GIF_Asignado.DefaultCellStyle = DataGridViewCellStyle3
+        Me.Col_GIF_Asignado.HeaderText = "GIF Asignado (C$)"
+        Me.Col_GIF_Asignado.MinimumWidth = 6
+        Me.Col_GIF_Asignado.Name = "Col_GIF_Asignado"
+        Me.Col_GIF_Asignado.ReadOnly = True
+        Me.Col_GIF_Asignado.Width = 125
+        '
+        'ColCostoTotalDeProduccion
+        '
+        DataGridViewCellStyle4.Format = "C2"
+        DataGridViewCellStyle4.NullValue = "C$"
+        Me.ColCostoTotalDeProduccion.DefaultCellStyle = DataGridViewCellStyle4
+        Me.ColCostoTotalDeProduccion.HeaderText = "Costo Total De Produccion (C$)"
+        Me.ColCostoTotalDeProduccion.MinimumWidth = 6
+        Me.ColCostoTotalDeProduccion.Name = "ColCostoTotalDeProduccion"
+        Me.ColCostoTotalDeProduccion.ReadOnly = True
+        Me.ColCostoTotalDeProduccion.Width = 125
+        '
+        'ColCostoUnitario
+        '
+        DataGridViewCellStyle5.Format = "C2"
+        DataGridViewCellStyle5.NullValue = "C$"
+        Me.ColCostoUnitario.DefaultCellStyle = DataGridViewCellStyle5
+        Me.ColCostoUnitario.HeaderText = "Costo Unitario"
+        Me.ColCostoUnitario.MinimumWidth = 6
+        Me.ColCostoUnitario.Name = "ColCostoUnitario"
+        Me.ColCostoUnitario.ReadOnly = True
+        Me.ColCostoUnitario.Width = 125
+        '
         'BtnAgregar
         '
         Me.BtnAgregar.Location = New System.Drawing.Point(157, 249)
@@ -160,74 +224,21 @@ Partial Class FrmCostoTotalDeProduccion
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "GIF Asignado " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
-        'ColProducto
+        'BtnEliminar
         '
-        Me.ColProducto.HeaderText = "Producto"
-        Me.ColProducto.MinimumWidth = 6
-        Me.ColProducto.Name = "ColProducto"
-        Me.ColProducto.ReadOnly = True
-        Me.ColProducto.Width = 125
-        '
-        'ColMPD
-        '
-        DataGridViewCellStyle6.Format = "C2"
-        DataGridViewCellStyle6.NullValue = "C$"
-        Me.ColMPD.DefaultCellStyle = DataGridViewCellStyle6
-        Me.ColMPD.HeaderText = "MPD (C$)"
-        Me.ColMPD.MinimumWidth = 6
-        Me.ColMPD.Name = "ColMPD"
-        Me.ColMPD.ReadOnly = True
-        Me.ColMPD.Width = 125
-        '
-        'ColMOD
-        '
-        DataGridViewCellStyle7.Format = "C2"
-        DataGridViewCellStyle7.NullValue = "C$"
-        Me.ColMOD.DefaultCellStyle = DataGridViewCellStyle7
-        Me.ColMOD.HeaderText = "MOD(C$)"
-        Me.ColMOD.MinimumWidth = 6
-        Me.ColMOD.Name = "ColMOD"
-        Me.ColMOD.ReadOnly = True
-        Me.ColMOD.Width = 125
-        '
-        'Col_GIF_Asignado
-        '
-        DataGridViewCellStyle8.Format = "C2"
-        DataGridViewCellStyle8.NullValue = "C$"
-        Me.Col_GIF_Asignado.DefaultCellStyle = DataGridViewCellStyle8
-        Me.Col_GIF_Asignado.HeaderText = "GIF Asignado (C$)"
-        Me.Col_GIF_Asignado.MinimumWidth = 6
-        Me.Col_GIF_Asignado.Name = "Col_GIF_Asignado"
-        Me.Col_GIF_Asignado.ReadOnly = True
-        Me.Col_GIF_Asignado.Width = 125
-        '
-        'ColCostoTotalDeProduccion
-        '
-        DataGridViewCellStyle9.Format = "C2"
-        DataGridViewCellStyle9.NullValue = "C$"
-        Me.ColCostoTotalDeProduccion.DefaultCellStyle = DataGridViewCellStyle9
-        Me.ColCostoTotalDeProduccion.HeaderText = "Costo Total De Produccion (C$)"
-        Me.ColCostoTotalDeProduccion.MinimumWidth = 6
-        Me.ColCostoTotalDeProduccion.Name = "ColCostoTotalDeProduccion"
-        Me.ColCostoTotalDeProduccion.ReadOnly = True
-        Me.ColCostoTotalDeProduccion.Width = 125
-        '
-        'ColCostoUnitario
-        '
-        DataGridViewCellStyle10.Format = "C2"
-        DataGridViewCellStyle10.NullValue = "C$"
-        Me.ColCostoUnitario.DefaultCellStyle = DataGridViewCellStyle10
-        Me.ColCostoUnitario.HeaderText = "Costo Unitario"
-        Me.ColCostoUnitario.MinimumWidth = 6
-        Me.ColCostoUnitario.Name = "ColCostoUnitario"
-        Me.ColCostoUnitario.ReadOnly = True
-        Me.ColCostoUnitario.Width = 125
+        Me.BtnEliminar.Location = New System.Drawing.Point(281, 249)
+        Me.BtnEliminar.Name = "BtnEliminar"
+        Me.BtnEliminar.Size = New System.Drawing.Size(252, 62)
+        Me.BtnEliminar.TabIndex = 10
+        Me.BtnEliminar.Text = "Eliminar"
+        Me.BtnEliminar.UseVisualStyleBackColor = True
         '
         'FrmCostoTotalDeProduccion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1191, 341)
+        Me.Controls.Add(Me.BtnEliminar)
         Me.Controls.Add(Me.TxtGifAsignado)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.LblGIFAsignados)
@@ -268,4 +279,5 @@ Partial Class FrmCostoTotalDeProduccion
     Friend WithEvents Col_GIF_Asignado As DataGridViewTextBoxColumn
     Friend WithEvents ColCostoTotalDeProduccion As DataGridViewTextBoxColumn
     Friend WithEvents ColCostoUnitario As DataGridViewTextBoxColumn
+    Friend WithEvents BtnEliminar As Button
 End Class
