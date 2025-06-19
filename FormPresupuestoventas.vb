@@ -10,9 +10,6 @@ Public Class FrmPresupuestoVentas
         If String.IsNullOrWhiteSpace(TxtNombreProducto.Text) Then
             MsgBox("Escriba un nombre del producto")
             TxtNombreProducto.Focus()
-
-        Else
-            'DtgPresupuestodeventas.Rows.Add(TxtNombreProducto.Text.Trim())
         End If
 
 

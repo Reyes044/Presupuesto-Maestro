@@ -1,5 +1,58 @@
-﻿Public Class FrmCostoTotalDeProduccion
-    Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnAgregar.Click, Button1.Click
+﻿Imports System.Diagnostics.Eventing.Reader
+Imports System.Text
+
+Public Class FrmCostoTotalDeProduccion
+    Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnAgregar.Click, BtnAgregarCtp.Click
+
+        If TxtProducto.Text = ("") Then
+            MsgBox("Escriba un nombre del producto")
+            TxtProducto.Focus()
+            Return
+        ElseIf IsNumeric(TxtProducto.Text) Then
+            MsgBox("Escriba un nombre no numerico del producto")
+            TxtProducto.Clear()
+            TxtProducto.Focus()
+
+        End If
+
+
+        If TxtMPD.Text = ("") Then
+            MsgBox("Escriba un valor para Materia Prima Directao")
+            TxtMPD.Focus()
+            Return
+        ElseIf Not IsNumeric(TxtMPD.Text) Then
+            MsgBox("Escriba un valor numérico para Materia Prima Directa")
+            TxtMPD.Clear()
+            TxtMPD.Focus()
+            Return
+        End If
+
+
+        If TxtMOD.Text = ("") Then
+            MsgBox("Escriba un valor para Mano de Obra Directa")
+            TxtMOD.Focus()
+            Return
+        ElseIf Not IsNumeric(TxtMOD.Text) Then
+            MsgBox("Escriba un valor numérico para Mano de Obra Directa")
+            TxtMOD.Clear()
+            TxtMOD.Focus()
+            Return
+        End If
+
+
+        If TxtGifAsignado.Text = ("") Then
+            MsgBox("Escriba un valor para Gasto Indirecto de Fabricacion")
+            TxtGifAsignado.Focus()
+            Return
+        ElseIf Not IsNumeric(TxtGifAsignado.Text) Then
+            MsgBox("Escriba un valor numérico para Gasto Indirecto de Fabricacion")
+            TxtGifAsignado.Clear()
+            TxtGifAsignado.Focus()
+            Return
+        End If
+
+
+
         Dim producto As String = TxtProducto.Text
         Dim Materia_Prima_Directa As Integer = TxtMPD.Text
         Dim Mano_de_Obra_Directa As Integer = TxtMOD.Text
@@ -11,27 +64,7 @@
 
     End Sub
 
-    Private Sub TxtMOD_TextChanged(sender As Object, e As EventArgs) Handles TxtMOD.TextChanged
-
-    End Sub
-
-    Private Sub LblMOD_Click(sender As Object, e As EventArgs) Handles LblMOD.Click, Label1.Click
-
-    End Sub
-
     Private Sub FrmCostoTotalDeProduccion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub TxtGifAsignado_TextChanged(sender As Object, e As EventArgs) Handles TxtGifAsignado.TextChanged, TextBox1.TextChanged
-
-    End Sub
-
-    Private Sub LblGIFAsignados_Click(sender As Object, e As EventArgs) Handles LblGIFAsignados.Click, Label2.Click
-
-    End Sub
-
-    Private Sub DtgCostoTotalDeProduccion_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DtgCostoTotalDeProduccion.CellContentClick
-
+        DtgCostoTotalDeProduccion.AllowUserToAddRows = False
     End Sub
 End Class
