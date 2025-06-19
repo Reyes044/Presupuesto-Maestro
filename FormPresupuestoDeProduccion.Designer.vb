@@ -22,19 +22,19 @@ Partial Class FormPresupuestoDeProduccion
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.dtgPresupuestoProducción = New System.Windows.Forms.DataGridView()
         Me.Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Unidades_a_Vender = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -54,6 +54,7 @@ Partial Class FormPresupuestoDeProduccion
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnAgregarColumn = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.dtgPresupuestoProducción, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -63,14 +64,14 @@ Partial Class FormPresupuestoDeProduccion
         Me.dtgPresupuestoProducción.AllowUserToResizeRows = False
         Me.dtgPresupuestoProducción.BackgroundColor = System.Drawing.SystemColors.Control
         Me.dtgPresupuestoProducción.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Info
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.HotTrack
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtgPresupuestoProducción.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Info
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.HotTrack
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtgPresupuestoProducción.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
         Me.dtgPresupuestoProducción.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dtgPresupuestoProducción.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Producto, Me.Unidades_a_Vender, Me.Inventario_Final, Me.Inventario_Inicial, Me.Costo_Unitario, Me.MOD_Unidad, Me.CIF_Unidad, Me.Unidades_a_Producir, Me.Costo_Total_Producción, Me.Costo_Total_MOD, Me.Costo_Total_CIF, Me.Costo_Total_Planeado})
         Me.dtgPresupuestoProducción.GridColor = System.Drawing.SystemColors.InfoText
@@ -83,11 +84,11 @@ Partial Class FormPresupuestoDeProduccion
         '
         'Producto
         '
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Producto.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        Me.Producto.DefaultCellStyle = DataGridViewCellStyle15
         Me.Producto.HeaderText = "Producto"
         Me.Producto.MinimumWidth = 8
         Me.Producto.Name = "Producto"
@@ -95,11 +96,11 @@ Partial Class FormPresupuestoDeProduccion
         '
         'Unidades_a_Vender
         '
-        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.Format = "N2"
-        DataGridViewCellStyle3.NullValue = "0"
-        Me.Unidades_a_Vender.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle16.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle16.Format = "N2"
+        DataGridViewCellStyle16.NullValue = "0"
+        Me.Unidades_a_Vender.DefaultCellStyle = DataGridViewCellStyle16
         Me.Unidades_a_Vender.HeaderText = "Unidades a vender"
         Me.Unidades_a_Vender.MinimumWidth = 8
         Me.Unidades_a_Vender.Name = "Unidades_a_Vender"
@@ -107,11 +108,11 @@ Partial Class FormPresupuestoDeProduccion
         '
         'Inventario_Final
         '
-        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.Format = "N2"
-        DataGridViewCellStyle4.NullValue = "0"
-        Me.Inventario_Final.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle17.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle17.Format = "N2"
+        DataGridViewCellStyle17.NullValue = "0"
+        Me.Inventario_Final.DefaultCellStyle = DataGridViewCellStyle17
         Me.Inventario_Final.HeaderText = "Inventario Final"
         Me.Inventario_Final.MinimumWidth = 8
         Me.Inventario_Final.Name = "Inventario_Final"
@@ -119,11 +120,11 @@ Partial Class FormPresupuestoDeProduccion
         '
         'Inventario_Inicial
         '
-        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.Format = "N2"
-        DataGridViewCellStyle5.NullValue = "0"
-        Me.Inventario_Inicial.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle18.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle18.Format = "N2"
+        DataGridViewCellStyle18.NullValue = "0"
+        Me.Inventario_Inicial.DefaultCellStyle = DataGridViewCellStyle18
         Me.Inventario_Inicial.HeaderText = "Inventario Inicial"
         Me.Inventario_Inicial.MinimumWidth = 8
         Me.Inventario_Inicial.Name = "Inventario_Inicial"
@@ -131,11 +132,11 @@ Partial Class FormPresupuestoDeProduccion
         '
         'Costo_Unitario
         '
-        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.Format = "C2"
-        DataGridViewCellStyle6.NullValue = "0"
-        Me.Costo_Unitario.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle19.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle19.Format = "C2"
+        DataGridViewCellStyle19.NullValue = "0"
+        Me.Costo_Unitario.DefaultCellStyle = DataGridViewCellStyle19
         Me.Costo_Unitario.HeaderText = "Costo Unitario"
         Me.Costo_Unitario.MinimumWidth = 8
         Me.Costo_Unitario.Name = "Costo_Unitario"
@@ -143,11 +144,11 @@ Partial Class FormPresupuestoDeProduccion
         '
         'MOD_Unidad
         '
-        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.Format = "C2"
-        DataGridViewCellStyle7.NullValue = "0"
-        Me.MOD_Unidad.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle20.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle20.Format = "C2"
+        DataGridViewCellStyle20.NullValue = "0"
+        Me.MOD_Unidad.DefaultCellStyle = DataGridViewCellStyle20
         Me.MOD_Unidad.HeaderText = "MOD por Unidad"
         Me.MOD_Unidad.MinimumWidth = 8
         Me.MOD_Unidad.Name = "MOD_Unidad"
@@ -155,11 +156,11 @@ Partial Class FormPresupuestoDeProduccion
         '
         'CIF_Unidad
         '
-        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.Format = "C2"
-        DataGridViewCellStyle8.NullValue = "0"
-        Me.CIF_Unidad.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle21.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle21.Format = "C2"
+        DataGridViewCellStyle21.NullValue = "0"
+        Me.CIF_Unidad.DefaultCellStyle = DataGridViewCellStyle21
         Me.CIF_Unidad.HeaderText = "CIF por Unidad"
         Me.CIF_Unidad.MinimumWidth = 8
         Me.CIF_Unidad.Name = "CIF_Unidad"
@@ -167,11 +168,11 @@ Partial Class FormPresupuestoDeProduccion
         '
         'Unidades_a_Producir
         '
-        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.ControlDark
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.Format = "N2"
-        DataGridViewCellStyle9.NullValue = "0"
-        Me.Unidades_a_Producir.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.ControlDark
+        DataGridViewCellStyle22.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle22.Format = "N2"
+        DataGridViewCellStyle22.NullValue = "0"
+        Me.Unidades_a_Producir.DefaultCellStyle = DataGridViewCellStyle22
         Me.Unidades_a_Producir.HeaderText = "Unidades a Producir"
         Me.Unidades_a_Producir.MinimumWidth = 8
         Me.Unidades_a_Producir.Name = "Unidades_a_Producir"
@@ -179,11 +180,11 @@ Partial Class FormPresupuestoDeProduccion
         '
         'Costo_Total_Producción
         '
-        DataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.ControlDark
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.Format = "C2"
-        DataGridViewCellStyle10.NullValue = "0"
-        Me.Costo_Total_Producción.DefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.ControlDark
+        DataGridViewCellStyle23.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle23.Format = "C2"
+        DataGridViewCellStyle23.NullValue = "0"
+        Me.Costo_Total_Producción.DefaultCellStyle = DataGridViewCellStyle23
         Me.Costo_Total_Producción.HeaderText = "Costo Total Producción"
         Me.Costo_Total_Producción.MinimumWidth = 8
         Me.Costo_Total_Producción.Name = "Costo_Total_Producción"
@@ -191,11 +192,11 @@ Partial Class FormPresupuestoDeProduccion
         '
         'Costo_Total_MOD
         '
-        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.ControlDark
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle11.Format = "C2"
-        DataGridViewCellStyle11.NullValue = "0"
-        Me.Costo_Total_MOD.DefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.ControlDark
+        DataGridViewCellStyle24.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle24.Format = "C2"
+        DataGridViewCellStyle24.NullValue = "0"
+        Me.Costo_Total_MOD.DefaultCellStyle = DataGridViewCellStyle24
         Me.Costo_Total_MOD.HeaderText = "Costo Total MOD"
         Me.Costo_Total_MOD.MinimumWidth = 8
         Me.Costo_Total_MOD.Name = "Costo_Total_MOD"
@@ -203,11 +204,11 @@ Partial Class FormPresupuestoDeProduccion
         '
         'Costo_Total_CIF
         '
-        DataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.ControlDark
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle12.Format = "C2"
-        DataGridViewCellStyle12.NullValue = "0"
-        Me.Costo_Total_CIF.DefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.ControlDark
+        DataGridViewCellStyle25.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle25.Format = "C2"
+        DataGridViewCellStyle25.NullValue = "0"
+        Me.Costo_Total_CIF.DefaultCellStyle = DataGridViewCellStyle25
         Me.Costo_Total_CIF.HeaderText = "Costo Total CIF"
         Me.Costo_Total_CIF.MinimumWidth = 8
         Me.Costo_Total_CIF.Name = "Costo_Total_CIF"
@@ -215,11 +216,11 @@ Partial Class FormPresupuestoDeProduccion
         '
         'Costo_Total_Planeado
         '
-        DataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.ControlDark
-        DataGridViewCellStyle13.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle13.Format = "C2"
-        DataGridViewCellStyle13.NullValue = "0"
-        Me.Costo_Total_Planeado.DefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.ControlDark
+        DataGridViewCellStyle26.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle26.Format = "C2"
+        DataGridViewCellStyle26.NullValue = "0"
+        Me.Costo_Total_Planeado.DefaultCellStyle = DataGridViewCellStyle26
         Me.Costo_Total_Planeado.HeaderText = "Costo Total Planeado"
         Me.Costo_Total_Planeado.MinimumWidth = 8
         Me.Costo_Total_Planeado.Name = "Costo_Total_Planeado"
@@ -287,11 +288,21 @@ Partial Class FormPresupuestoDeProduccion
         Me.btnAgregarColumn.Text = "Agregar Producto"
         Me.btnAgregarColumn.UseVisualStyleBackColor = True
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(571, 483)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(68, 13)
+        Me.Label4.TabIndex = 12
+        Me.Label4.Text = "Viva sandino"
+        '
         'FormPresupuestoDeProduccion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1284, 630)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txtTotalUndVender)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -326,4 +337,5 @@ Partial Class FormPresupuestoDeProduccion
     Friend WithEvents Label2 As Label
     Friend WithEvents btnEliminar As Button
     Friend WithEvents btnAgregarColumn As Button
+    Friend WithEvents Label4 As Label
 End Class
