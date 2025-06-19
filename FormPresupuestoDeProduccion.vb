@@ -4,7 +4,11 @@
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        'dgvDatos.Columns(2).SortMode = DataGridViewColumnSortMode.NotSortable 'Evita que el usuario pueda dar clic en la columna para ordenarla automáticamente
 
+        For i = 0 To dtgPresupuestoProducción.ColumnCount - 1
+            dtgPresupuestoProducción.Columns(i).SortMode = DataGridViewColumnSortMode.NotSortable
+        Next
 
         dtgPresupuestoProducción.Columns(0).Width = 350
 
