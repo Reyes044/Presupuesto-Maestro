@@ -284,10 +284,10 @@ Partial Class FormPresupuestomaestro
         '
         'PictureBox2
         '
-        Me.PictureBox2.Image = Global.Presupuesto_Maestro.My.Resources.Resources.images
-        Me.PictureBox2.Location = New System.Drawing.Point(327, 304)
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(387, 296)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(205, 166)
+        Me.PictureBox2.Size = New System.Drawing.Size(340, 182)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 25
         Me.PictureBox2.TabStop = False
