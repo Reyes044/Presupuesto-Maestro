@@ -5,6 +5,7 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
 
+
         dtgPresupuestoProducción.Columns(0).Width = 350
 
         dtgPresupuestoProducción.Columns(7).ReadOnly = True
@@ -87,17 +88,106 @@
     Private Sub CalcularTotal()
         Dim total As Decimal = 0
 
+
         For Each fila As DataGridViewRow In dtgPresupuestoProducción.Rows
             Dim valor = fila.Cells("Unidades_a_Vender").Value
 
             If IsNumeric(valor) Then
                 total += CDec(valor)
+                txtTotalUndVender.Text = total
             End If
         Next
-        txtTotalUndVender.Text = total
+        total = 0
+
+
+        For Each fila As DataGridViewRow In dtgPresupuestoProducción.Rows
+            Dim valor = fila.Cells("Inventario_Final").Value
+
+            If IsNumeric(valor) Then
+                total += CDec(valor)
+                txtInventarioFinal.Text = total
+            End If
+        Next
+        total = 0
+
+
+        For Each fila As DataGridViewRow In dtgPresupuestoProducción.Rows
+            Dim valor = fila.Cells("Inventario_Inicial").Value
+
+            If IsNumeric(valor) Then
+                total += CDec(valor)
+                txtInventarioInicial.Text = total
+            End If
+        Next
+        total = 0
+
+
+        For Each fila As DataGridViewRow In dtgPresupuestoProducción.Rows
+            Dim valor = fila.Cells("Unidades_a_Producir").Value
+
+            If IsNumeric(valor) Then
+                total += CDec(valor)
+                txtUnidadesProducir.Text = total
+            End If
+        Next
+        total = 0
+
+
+        For Each fila As DataGridViewRow In dtgPresupuestoProducción.Rows
+            Dim valor = fila.Cells("Costo_Total_Producción").Value
+
+            If IsNumeric(valor) Then
+                total += CDec(valor)
+                txtCostoTotalProduccion.Text = total
+            End If
+        Next
+        total = 0
+
+
+        For Each fila As DataGridViewRow In dtgPresupuestoProducción.Rows
+            Dim valor = fila.Cells("Costo_Total_MOD").Value
+
+            If IsNumeric(valor) Then
+                total += CDec(valor)
+                txtCostoTotalMOD.Text = total
+            End If
+        Next
+        total = 0
+
+
+        For Each fila As DataGridViewRow In dtgPresupuestoProducción.Rows
+            Dim valor = fila.Cells("Costo_Total_CIF").Value
+
+            If IsNumeric(valor) Then
+                total += CDec(valor)
+                txtCostoTotalCIF.Text = total
+                txtCostoTotalCIF.Text = FormatCurrency(total, 2)
+            End If
+        Next
+        total = 0
+
+
+        For Each fila As DataGridViewRow In dtgPresupuestoProducción.Rows
+            Dim valor = fila.Cells("Costo_Total_Planeado").Value
+
+            If IsNumeric(valor) Then
+                total += CDec(valor)
+                txtCostoTotalPlaneado.Text = total
+            End If
+        Next
+        total = 0
+
+
+
+
+
+
+
+
 
     End Sub
     Private Sub dtgPresupuestoProducción_RowsRemoved(sender As Object, e As DataGridViewRowsRemovedEventArgs) Handles dtgPresupuestoProducción.RowsRemoved
         CalcularTotal()
     End Sub
+
 End Class
