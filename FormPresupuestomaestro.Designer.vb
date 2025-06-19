@@ -50,6 +50,9 @@ Partial Class FormPresupuestomaestro
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -292,11 +295,40 @@ Partial Class FormPresupuestomaestro
         Me.PictureBox2.TabIndex = 25
         Me.PictureBox2.TabStop = False
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(789, 346)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(96, 20)
+        Me.TextBox1.TabIndex = 26
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(778, 402)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(81, 17)
+        Me.CheckBox1.TabIndex = 27
+        Me.CheckBox1.Text = "CheckBox1"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(825, 436)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(72, 25)
+        Me.Button1.TabIndex = 28
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'FormPresupuestomaestro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(963, 482)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
@@ -357,4 +389,7 @@ Partial Class FormPresupuestomaestro
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Button1 As Button
 End Class
