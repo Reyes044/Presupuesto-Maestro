@@ -186,6 +186,7 @@ Public Class FormPresupuestoDeProduccion
     Private Sub LimpiarTxts()
         txtTotalUndVender.Clear()
         txtCostoTotalMOD.Clear()
+        txtCostoTotalCIF.Clear()
         txtCostoTotalPlaneado.Clear()
         txtCostoTotalProduccion.Clear()
         txtInventarioFinal.Clear()
