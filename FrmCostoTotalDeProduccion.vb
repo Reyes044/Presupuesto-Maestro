@@ -123,6 +123,8 @@ Public Class FrmCostoTotalDeProduccion
         End If
     End Sub
 
+
+
     Private Sub CalcularTotal_GIF()
         Dim total As Decimal = 0
 
@@ -163,6 +165,9 @@ Public Class FrmCostoTotalDeProduccion
         Next
         TxtTotalMOD.Text = total
     End Sub
+
+
+
     Private Sub BtnEliminar_Click(sender As Object, e As EventArgs) Handles BtnEliminar.Click
         If DtgCostoTotalDeProduccion.SelectedRows.Count > 0 Then
             DtgCostoTotalDeProduccion.Rows.RemoveAt(DtgCostoTotalDeProduccion.SelectedRows(0).Index)
