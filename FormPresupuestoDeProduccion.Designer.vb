@@ -74,11 +74,11 @@ Partial Class FormPresupuestoDeProduccion
         Me.dtgPresupuestoProducción.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dtgPresupuestoProducción.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Producto, Me.Unidades_a_Vender, Me.Inventario_Final, Me.Inventario_Inicial, Me.Costo_Unitario, Me.MOD_Unidad, Me.CIF_Unidad, Me.Unidades_a_Producir, Me.Costo_Total_Producción, Me.Costo_Total_MOD, Me.Costo_Total_CIF, Me.Costo_Total_Planeado})
         Me.dtgPresupuestoProducción.GridColor = System.Drawing.SystemColors.InfoText
-        Me.dtgPresupuestoProducción.Location = New System.Drawing.Point(12, 77)
-        Me.dtgPresupuestoProducción.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.dtgPresupuestoProducción.Location = New System.Drawing.Point(16, 95)
+        Me.dtgPresupuestoProducción.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
         Me.dtgPresupuestoProducción.Name = "dtgPresupuestoProducción"
         Me.dtgPresupuestoProducción.RowHeadersWidth = 62
-        Me.dtgPresupuestoProducción.Size = New System.Drawing.Size(1262, 368)
+        Me.dtgPresupuestoProducción.Size = New System.Drawing.Size(1683, 453)
         Me.dtgPresupuestoProducción.TabIndex = 1
         '
         'Producto
@@ -229,10 +229,10 @@ Partial Class FormPresupuestoDeProduccion
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Rockwell", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(398, 29)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(531, 36)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(319, 27)
+        Me.Label1.Size = New System.Drawing.Size(396, 35)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Presupuesto de Producción"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -240,17 +240,19 @@ Partial Class FormPresupuestoDeProduccion
         'txtTotalUndVender
         '
         Me.txtTotalUndVender.Enabled = False
-        Me.txtTotalUndVender.Location = New System.Drawing.Point(192, 598)
+        Me.txtTotalUndVender.Location = New System.Drawing.Point(256, 736)
+        Me.txtTotalUndVender.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTotalUndVender.Name = "txtTotalUndVender"
-        Me.txtTotalUndVender.Size = New System.Drawing.Size(159, 20)
+        Me.txtTotalUndVender.Size = New System.Drawing.Size(211, 22)
         Me.txtTotalUndVender.TabIndex = 11
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(31, 598)
+        Me.Label3.Location = New System.Drawing.Point(41, 736)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(98, 13)
+        Me.Label3.Size = New System.Drawing.Size(124, 16)
         Me.Label3.TabIndex = 10
         Me.Label3.Text = "Unidades a Vender"
         '
@@ -258,10 +260,10 @@ Partial Class FormPresupuestoDeProduccion
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Rockwell", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(28, 530)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(37, 652)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(92, 27)
+        Me.Label2.Size = New System.Drawing.Size(114, 35)
         Me.Label2.TabIndex = 9
         Me.Label2.Text = "Totales"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -269,29 +271,29 @@ Partial Class FormPresupuestoDeProduccion
         'btnEliminar
         '
         Me.btnEliminar.Enabled = False
-        Me.btnEliminar.Location = New System.Drawing.Point(705, 453)
-        Me.btnEliminar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnEliminar.Location = New System.Drawing.Point(940, 558)
+        Me.btnEliminar.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
         Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(222, 37)
+        Me.btnEliminar.Size = New System.Drawing.Size(296, 46)
         Me.btnEliminar.TabIndex = 8
         Me.btnEliminar.Text = "Eliminar Producto"
         Me.btnEliminar.UseVisualStyleBackColor = True
         '
         'btnAgregarColumn
         '
-        Me.btnAgregarColumn.Location = New System.Drawing.Point(312, 453)
-        Me.btnAgregarColumn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnAgregarColumn.Location = New System.Drawing.Point(416, 558)
+        Me.btnAgregarColumn.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
         Me.btnAgregarColumn.Name = "btnAgregarColumn"
-        Me.btnAgregarColumn.Size = New System.Drawing.Size(222, 37)
+        Me.btnAgregarColumn.Size = New System.Drawing.Size(296, 46)
         Me.btnAgregarColumn.TabIndex = 7
         Me.btnAgregarColumn.Text = "Agregar Producto"
         Me.btnAgregarColumn.UseVisualStyleBackColor = True
         '
         'FormPresupuestoDeProduccion
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1284, 630)
+        Me.ClientSize = New System.Drawing.Size(1712, 775)
         Me.Controls.Add(Me.txtTotalUndVender)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -299,6 +301,7 @@ Partial Class FormPresupuestoDeProduccion
         Me.Controls.Add(Me.btnAgregarColumn)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.dtgPresupuestoProducción)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FormPresupuestoDeProduccion"
         Me.Text = "FormPresupuestoDeProduccion"
         CType(Me.dtgPresupuestoProducción, System.ComponentModel.ISupportInitialize).EndInit()

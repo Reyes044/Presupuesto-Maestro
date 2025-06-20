@@ -24,6 +24,7 @@ Public Class FrmGastos_Indirectos
         Dim monto As Decimal = TxtMonto.Text
 
         DtgGastosIndirectos.Rows.Add(concepto, monto)
+        CalcularTotal()
 
     End Sub
     Private Sub TxtConcepto_KeyUp(sender As Object, e As KeyEventArgs) Handles TxtConcepto.KeyUp
@@ -45,12 +46,37 @@ Public Class FrmGastos_Indirectos
     Private Sub BtnEliminar_Click(sender As Object, e As EventArgs) Handles BtnEliminar.Click
         If DtgGastosIndirectos.SelectedRows.Count > 0 Then
             DtgGastosIndirectos.Rows.RemoveAt(DtgGastosIndirectos.SelectedRows(0).Index)
+            CalcularTotal()
         Else
             MsgBox("Seleccione una fila para eliminar.")
         End If
+
     End Sub
 
     Private Sub FrmGastos_Indirectos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DtgGastosIndirectos.AllowUserToAddRows = False
     End Sub
+
+    Private Sub CalcularTotal()
+        Dim total As Decimal = 0
+
+        For Each fila As DataGridViewRow In DtgGastosIndirectos.Rows
+            Dim valor = fila.Cells("ColMonto").Value
+
+            If IsNumeric(valor) Then
+                total += (valor)
+            End If
+        Next
+        TxtTotal.Text = total
+
+    End Sub
+
+
+
+
+    Private Sub DtgGastosIndirectos_RowsRemoved(sender As Object, e As DataGridViewRowsRemovedEventArgs) Handles DtgGastosIndirectos.RowsRemoved
+        CalcularTotal()
+    End Sub
+
+
 End Class

@@ -31,12 +31,14 @@ Partial Class FrmGastos_Indirectos
         Me.ColConcepto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColMonto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BtnEliminar = New System.Windows.Forms.Button()
+        Me.TxtTotal = New System.Windows.Forms.TextBox()
+        Me.LblTotal = New System.Windows.Forms.Label()
         CType(Me.DtgGastosIndirectos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TxtMonto
         '
-        Me.TxtMonto.Location = New System.Drawing.Point(87, 95)
+        Me.TxtMonto.Location = New System.Drawing.Point(87, 78)
         Me.TxtMonto.Name = "TxtMonto"
         Me.TxtMonto.Size = New System.Drawing.Size(122, 22)
         Me.TxtMonto.TabIndex = 15
@@ -44,7 +46,7 @@ Partial Class FrmGastos_Indirectos
         'LblMonto
         '
         Me.LblMonto.AutoSize = True
-        Me.LblMonto.Location = New System.Drawing.Point(15, 98)
+        Me.LblMonto.Location = New System.Drawing.Point(15, 84)
         Me.LblMonto.Name = "LblMonto"
         Me.LblMonto.Size = New System.Drawing.Size(44, 16)
         Me.LblMonto.TabIndex = 14
@@ -109,11 +111,30 @@ Partial Class FrmGastos_Indirectos
         Me.BtnEliminar.Text = "Eliminar"
         Me.BtnEliminar.UseVisualStyleBackColor = True
         '
+        'TxtTotal
+        '
+        Me.TxtTotal.Location = New System.Drawing.Point(382, 301)
+        Me.TxtTotal.Name = "TxtTotal"
+        Me.TxtTotal.ReadOnly = True
+        Me.TxtTotal.Size = New System.Drawing.Size(122, 22)
+        Me.TxtTotal.TabIndex = 19
+        '
+        'LblTotal
+        '
+        Me.LblTotal.AutoSize = True
+        Me.LblTotal.Location = New System.Drawing.Point(310, 307)
+        Me.LblTotal.Name = "LblTotal"
+        Me.LblTotal.Size = New System.Drawing.Size(38, 16)
+        Me.LblTotal.TabIndex = 18
+        Me.LblTotal.Text = "Total"
+        '
         'FrmGastos_Indirectos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(646, 323)
+        Me.ClientSize = New System.Drawing.Size(646, 380)
+        Me.Controls.Add(Me.TxtTotal)
+        Me.Controls.Add(Me.LblTotal)
         Me.Controls.Add(Me.BtnEliminar)
         Me.Controls.Add(Me.DtgGastosIndirectos)
         Me.Controls.Add(Me.TxtMonto)
@@ -140,4 +161,6 @@ Partial Class FrmGastos_Indirectos
     Friend WithEvents ColConcepto As DataGridViewTextBoxColumn
     Friend WithEvents ColMonto As DataGridViewTextBoxColumn
     Friend WithEvents BtnEliminar As Button
+    Friend WithEvents TxtTotal As TextBox
+    Friend WithEvents LblTotal As Label
 End Class
