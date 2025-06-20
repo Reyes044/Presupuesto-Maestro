@@ -1,10 +1,10 @@
-﻿Public Class FormPresupuestoDeProduccion
+﻿Imports System.Security.Cryptography
+
+Public Class FormPresupuestoDeProduccion
     Dim TotalUnidadesVender As Decimal
     Dim UnidadesVenderDeleted As Decimal
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-        'dgvDatos.Columns(2).SortMode = DataGridViewColumnSortMode.NotSortable 'Evita que el usuario pueda dar clic en la columna para ordenarla automáticamente
 
         For i = 0 To dtgPresupuestoProducción.ColumnCount - 1
             dtgPresupuestoProducción.Columns(i).SortMode = DataGridViewColumnSortMode.NotSortable
@@ -35,7 +35,7 @@
             Dim texto As String
 
 
-            If celda.Value IsNot Nothing Then 'Si celda.Value no es Nothing, usalo; si es Nothing, usá "" (texto vacío)'.
+            If celda.Value IsNot Nothing And celda.Value > 0 Then 'Si celda.Value no es Nothing, usalo; si es Nothing, usá "" (texto vacío)'.
                 texto = celda.Value.ToString().Trim() 'borra cualquier espacio en blanco al principio o al final de ese texto.'
             Else
                 texto = ""
@@ -45,7 +45,7 @@
             If Decimal.TryParse(texto, valorDecimal) Then 'TryParse devuelve True si la conversión fue exitosa, y pone el valor convertido dentro de valorDecimal'
                 celda.Value = valorDecimal ' Guarda como decimal
             Else
-                MessageBox.Show("Solo se permiten valores numéricos en '" & nombreColumna & "'.", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                MessageBox.Show("Solo se permiten valores numéricos positivos en '" & nombreColumna & "'.", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 celda.Value = Nothing ' Borra automáticamente si es inválido
             End If
         End If
@@ -85,8 +85,6 @@
     Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
         If dtgPresupuestoProducción.SelectedRows.Count > 0 Then
             dtgPresupuestoProducción.Rows.Remove(dtgPresupuestoProducción.CurrentRow)
-            'UnidadesVenderDeleted = dtgPresupuestoProducción.CurrentRow.Cells(1).Value'
-
         End If
     End Sub
     Private Sub CalcularTotal()
@@ -98,7 +96,7 @@
 
             If IsNumeric(valor) Then
                 total += CDec(valor)
-                txtTotalUndVender.Text = total
+                txtTotalUndVender.Text = total.ToString("N2")
             End If
         Next
         total = 0
@@ -109,7 +107,7 @@
 
             If IsNumeric(valor) Then
                 total += CDec(valor)
-                txtInventarioFinal.Text = total
+                txtInventarioFinal.Text = total.ToString("N2")
             End If
         Next
         total = 0
@@ -120,7 +118,7 @@
 
             If IsNumeric(valor) Then
                 total += CDec(valor)
-                txtInventarioInicial.Text = total
+                txtInventarioInicial.Text = total.ToString("N2")
             End If
         Next
         total = 0
@@ -131,7 +129,7 @@
 
             If IsNumeric(valor) Then
                 total += CDec(valor)
-                txtUnidadesProducir.Text = total
+                txtUnidadesProducir.Text = total.ToString("N2")
             End If
         Next
         total = 0
@@ -142,7 +140,7 @@
 
             If IsNumeric(valor) Then
                 total += CDec(valor)
-                txtCostoTotalProduccion.Text = total
+                txtCostoTotalProduccion.Text = total.ToString("C2")
             End If
         Next
         total = 0
@@ -153,7 +151,7 @@
 
             If IsNumeric(valor) Then
                 total += CDec(valor)
-                txtCostoTotalMOD.Text = total
+                txtCostoTotalMOD.Text = total.ToString("C2")
             End If
         Next
         total = 0
@@ -176,7 +174,7 @@
 
             If IsNumeric(valor) Then
                 total += CDec(valor)
-                txtCostoTotalPlaneado.Text = total
+                txtCostoTotalPlaneado.Text = total.ToString("C2")
             End If
         Next
         total = 0

@@ -16,4 +16,8 @@
     Private Sub BtnPresupuestoProduccion_Click(sender As Object, e As EventArgs) Handles BtnPresupuestoProduccion.Click
         FormPresupuestoDeProduccion.ShowDialog()
     End Sub
+
+    Private Sub BtnPresupuestoMod_Click(sender As Object, e As EventArgs) Handles BtnPresupuestoMod.Click
+        FormPresupuestoMOD.ShowDialog()
+    End Sub
 End Class
