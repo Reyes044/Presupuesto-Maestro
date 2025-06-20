@@ -35,12 +35,6 @@ Partial Class FrmCostoTotalDeProduccion
         Me.TxtMPD = New System.Windows.Forms.TextBox()
         Me.TxtMOD = New System.Windows.Forms.TextBox()
         Me.DtgCostoTotalDeProduccion = New System.Windows.Forms.DataGridView()
-        Me.ColProducto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ColMPD = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ColMOD = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Col_GIF_Asignado = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ColCostoTotalDeProduccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ColCostoUnitario = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BtnAgregar = New System.Windows.Forms.Button()
         Me.TxtGifAsignado = New System.Windows.Forms.TextBox()
         Me.LblGIFAsignados = New System.Windows.Forms.Label()
@@ -54,6 +48,12 @@ Partial Class FrmCostoTotalDeProduccion
         Me.LbltotalMPD = New System.Windows.Forms.Label()
         Me.TxtTotalMOD = New System.Windows.Forms.TextBox()
         Me.LblTotalMOD = New System.Windows.Forms.Label()
+        Me.ColProducto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColMPD = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColMOD = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Col_GIF_Asignado = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColCostoTotalDeProduccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColCostoUnitario = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DtgCostoTotalDeProduccion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -118,69 +118,6 @@ Partial Class FrmCostoTotalDeProduccion
         Me.DtgCostoTotalDeProduccion.Size = New System.Drawing.Size(1012, 120)
         Me.DtgCostoTotalDeProduccion.TabIndex = 6
         '
-        'ColProducto
-        '
-        Me.ColProducto.HeaderText = "Producto"
-        Me.ColProducto.MinimumWidth = 6
-        Me.ColProducto.Name = "ColProducto"
-        Me.ColProducto.ReadOnly = True
-        Me.ColProducto.Width = 125
-        '
-        'ColMPD
-        '
-        DataGridViewCellStyle1.Format = "C2"
-        DataGridViewCellStyle1.NullValue = "C$"
-        Me.ColMPD.DefaultCellStyle = DataGridViewCellStyle1
-        Me.ColMPD.HeaderText = "MPD (C$)"
-        Me.ColMPD.MinimumWidth = 6
-        Me.ColMPD.Name = "ColMPD"
-        Me.ColMPD.ReadOnly = True
-        Me.ColMPD.Width = 125
-        '
-        'ColMOD
-        '
-        DataGridViewCellStyle2.Format = "C2"
-        DataGridViewCellStyle2.NullValue = "C$"
-        Me.ColMOD.DefaultCellStyle = DataGridViewCellStyle2
-        Me.ColMOD.HeaderText = "MOD(C$)"
-        Me.ColMOD.MinimumWidth = 6
-        Me.ColMOD.Name = "ColMOD"
-        Me.ColMOD.ReadOnly = True
-        Me.ColMOD.Width = 125
-        '
-        'Col_GIF_Asignado
-        '
-        DataGridViewCellStyle3.Format = "C2"
-        DataGridViewCellStyle3.NullValue = "C$"
-        Me.Col_GIF_Asignado.DefaultCellStyle = DataGridViewCellStyle3
-        Me.Col_GIF_Asignado.HeaderText = "GIF Asignado (C$)"
-        Me.Col_GIF_Asignado.MinimumWidth = 6
-        Me.Col_GIF_Asignado.Name = "Col_GIF_Asignado"
-        Me.Col_GIF_Asignado.ReadOnly = True
-        Me.Col_GIF_Asignado.Width = 125
-        '
-        'ColCostoTotalDeProduccion
-        '
-        DataGridViewCellStyle4.Format = "C2"
-        DataGridViewCellStyle4.NullValue = "C$"
-        Me.ColCostoTotalDeProduccion.DefaultCellStyle = DataGridViewCellStyle4
-        Me.ColCostoTotalDeProduccion.HeaderText = "Costo Total De Produccion (C$)"
-        Me.ColCostoTotalDeProduccion.MinimumWidth = 6
-        Me.ColCostoTotalDeProduccion.Name = "ColCostoTotalDeProduccion"
-        Me.ColCostoTotalDeProduccion.ReadOnly = True
-        Me.ColCostoTotalDeProduccion.Width = 125
-        '
-        'ColCostoUnitario
-        '
-        DataGridViewCellStyle5.Format = "C2"
-        DataGridViewCellStyle5.NullValue = "C$"
-        Me.ColCostoUnitario.DefaultCellStyle = DataGridViewCellStyle5
-        Me.ColCostoUnitario.HeaderText = "Costo Unitario"
-        Me.ColCostoUnitario.MinimumWidth = 6
-        Me.ColCostoUnitario.Name = "ColCostoUnitario"
-        Me.ColCostoUnitario.ReadOnly = True
-        Me.ColCostoUnitario.Width = 125
-        '
         'BtnAgregar
         '
         Me.BtnAgregar.Location = New System.Drawing.Point(157, 249)
@@ -244,7 +181,8 @@ Partial Class FrmCostoTotalDeProduccion
         '
         'TxtTotalGIF
         '
-        Me.TxtTotalGIF.Location = New System.Drawing.Point(864, 269)
+        Me.TxtTotalGIF.Enabled = False
+        Me.TxtTotalGIF.Location = New System.Drawing.Point(874, 272)
         Me.TxtTotalGIF.Name = "TxtTotalGIF"
         Me.TxtTotalGIF.Size = New System.Drawing.Size(107, 22)
         Me.TxtTotalGIF.TabIndex = 12
@@ -260,7 +198,8 @@ Partial Class FrmCostoTotalDeProduccion
         '
         'TxtTotalMPD
         '
-        Me.TxtTotalMPD.Location = New System.Drawing.Point(864, 175)
+        Me.TxtTotalMPD.Enabled = False
+        Me.TxtTotalMPD.Location = New System.Drawing.Point(874, 178)
         Me.TxtTotalMPD.Name = "TxtTotalMPD"
         Me.TxtTotalMPD.Size = New System.Drawing.Size(107, 22)
         Me.TxtTotalMPD.TabIndex = 14
@@ -276,7 +215,8 @@ Partial Class FrmCostoTotalDeProduccion
         '
         'TxtTotalMOD
         '
-        Me.TxtTotalMOD.Location = New System.Drawing.Point(864, 221)
+        Me.TxtTotalMOD.Enabled = False
+        Me.TxtTotalMOD.Location = New System.Drawing.Point(874, 218)
         Me.TxtTotalMOD.Name = "TxtTotalMOD"
         Me.TxtTotalMOD.Size = New System.Drawing.Size(107, 22)
         Me.TxtTotalMOD.TabIndex = 16
@@ -289,6 +229,75 @@ Partial Class FrmCostoTotalDeProduccion
         Me.LblTotalMOD.Size = New System.Drawing.Size(192, 16)
         Me.LblTotalMOD.TabIndex = 15
         Me.LblTotalMOD.Text = "Total de Mano de Obra Directa"
+        '
+        'ColProducto
+        '
+        Me.ColProducto.HeaderText = "Producto"
+        Me.ColProducto.MinimumWidth = 6
+        Me.ColProducto.Name = "ColProducto"
+        Me.ColProducto.ReadOnly = True
+        Me.ColProducto.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.ColProducto.Width = 125
+        '
+        'ColMPD
+        '
+        DataGridViewCellStyle1.Format = "C2"
+        DataGridViewCellStyle1.NullValue = "C$"
+        Me.ColMPD.DefaultCellStyle = DataGridViewCellStyle1
+        Me.ColMPD.HeaderText = "MPD (C$)"
+        Me.ColMPD.MinimumWidth = 6
+        Me.ColMPD.Name = "ColMPD"
+        Me.ColMPD.ReadOnly = True
+        Me.ColMPD.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.ColMPD.Width = 125
+        '
+        'ColMOD
+        '
+        DataGridViewCellStyle2.Format = "C2"
+        DataGridViewCellStyle2.NullValue = "C$"
+        Me.ColMOD.DefaultCellStyle = DataGridViewCellStyle2
+        Me.ColMOD.HeaderText = "MOD(C$)"
+        Me.ColMOD.MinimumWidth = 6
+        Me.ColMOD.Name = "ColMOD"
+        Me.ColMOD.ReadOnly = True
+        Me.ColMOD.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.ColMOD.Width = 125
+        '
+        'Col_GIF_Asignado
+        '
+        DataGridViewCellStyle3.Format = "C2"
+        DataGridViewCellStyle3.NullValue = "C$"
+        Me.Col_GIF_Asignado.DefaultCellStyle = DataGridViewCellStyle3
+        Me.Col_GIF_Asignado.HeaderText = "GIF Asignado (C$)"
+        Me.Col_GIF_Asignado.MinimumWidth = 6
+        Me.Col_GIF_Asignado.Name = "Col_GIF_Asignado"
+        Me.Col_GIF_Asignado.ReadOnly = True
+        Me.Col_GIF_Asignado.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Col_GIF_Asignado.Width = 125
+        '
+        'ColCostoTotalDeProduccion
+        '
+        DataGridViewCellStyle4.Format = "C2"
+        DataGridViewCellStyle4.NullValue = "C$"
+        Me.ColCostoTotalDeProduccion.DefaultCellStyle = DataGridViewCellStyle4
+        Me.ColCostoTotalDeProduccion.HeaderText = "Costo Total De Produccion (C$)"
+        Me.ColCostoTotalDeProduccion.MinimumWidth = 6
+        Me.ColCostoTotalDeProduccion.Name = "ColCostoTotalDeProduccion"
+        Me.ColCostoTotalDeProduccion.ReadOnly = True
+        Me.ColCostoTotalDeProduccion.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.ColCostoTotalDeProduccion.Width = 125
+        '
+        'ColCostoUnitario
+        '
+        DataGridViewCellStyle5.Format = "C2"
+        DataGridViewCellStyle5.NullValue = "C$"
+        Me.ColCostoUnitario.DefaultCellStyle = DataGridViewCellStyle5
+        Me.ColCostoUnitario.HeaderText = "Costo Unitario"
+        Me.ColCostoUnitario.MinimumWidth = 6
+        Me.ColCostoUnitario.Name = "ColCostoUnitario"
+        Me.ColCostoUnitario.ReadOnly = True
+        Me.ColCostoUnitario.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.ColCostoUnitario.Width = 125
         '
         'FrmCostoTotalDeProduccion
         '
@@ -340,12 +349,6 @@ Partial Class FrmCostoTotalDeProduccion
     Friend WithEvents BtnAgregarCtp As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents TxtGifAsignado As TextBox
-    Friend WithEvents ColProducto As DataGridViewTextBoxColumn
-    Friend WithEvents ColMPD As DataGridViewTextBoxColumn
-    Friend WithEvents ColMOD As DataGridViewTextBoxColumn
-    Friend WithEvents Col_GIF_Asignado As DataGridViewTextBoxColumn
-    Friend WithEvents ColCostoTotalDeProduccion As DataGridViewTextBoxColumn
-    Friend WithEvents ColCostoUnitario As DataGridViewTextBoxColumn
     Friend WithEvents BtnEliminar As Button
     Friend WithEvents TxtTotalGIF As TextBox
     Friend WithEvents LblTotalGIF As Label
@@ -353,4 +356,10 @@ Partial Class FrmCostoTotalDeProduccion
     Friend WithEvents LbltotalMPD As Label
     Friend WithEvents TxtTotalMOD As TextBox
     Friend WithEvents LblTotalMOD As Label
+    Friend WithEvents ColProducto As DataGridViewTextBoxColumn
+    Friend WithEvents ColMPD As DataGridViewTextBoxColumn
+    Friend WithEvents ColMOD As DataGridViewTextBoxColumn
+    Friend WithEvents Col_GIF_Asignado As DataGridViewTextBoxColumn
+    Friend WithEvents ColCostoTotalDeProduccion As DataGridViewTextBoxColumn
+    Friend WithEvents ColCostoUnitario As DataGridViewTextBoxColumn
 End Class

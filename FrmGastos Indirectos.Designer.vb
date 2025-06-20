@@ -29,11 +29,11 @@ Partial Class FrmGastos_Indirectos
         Me.TxtConcepto = New System.Windows.Forms.TextBox()
         Me.LblConcepto = New System.Windows.Forms.Label()
         Me.DtgGastosIndirectos = New System.Windows.Forms.DataGridView()
-        Me.ColConcepto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ColMonto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BtnEliminar = New System.Windows.Forms.Button()
         Me.TxtTotal = New System.Windows.Forms.TextBox()
         Me.LblTotal = New System.Windows.Forms.Label()
+        Me.ColConcepto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColMonto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DtgGastosIndirectos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -91,20 +91,6 @@ Partial Class FrmGastos_Indirectos
         Me.DtgGastosIndirectos.Size = New System.Drawing.Size(361, 221)
         Me.DtgGastosIndirectos.TabIndex = 16
         '
-        'ColConcepto
-        '
-        Me.ColConcepto.HeaderText = "Concepto"
-        Me.ColConcepto.MinimumWidth = 6
-        Me.ColConcepto.Name = "ColConcepto"
-        Me.ColConcepto.Width = 125
-        '
-        'ColMonto
-        '
-        Me.ColMonto.HeaderText = "Monto"
-        Me.ColMonto.MinimumWidth = 6
-        Me.ColMonto.Name = "ColMonto"
-        Me.ColMonto.Width = 125
-        '
         'BtnEliminar
         '
         Me.BtnEliminar.Location = New System.Drawing.Point(18, 212)
@@ -116,6 +102,7 @@ Partial Class FrmGastos_Indirectos
         '
         'TxtTotal
         '
+        Me.TxtTotal.Enabled = False
         Me.TxtTotal.Location = New System.Drawing.Point(382, 301)
         Me.TxtTotal.Name = "TxtTotal"
         Me.TxtTotal.ReadOnly = True
@@ -125,11 +112,27 @@ Partial Class FrmGastos_Indirectos
         'LblTotal
         '
         Me.LblTotal.AutoSize = True
-        Me.LblTotal.Location = New System.Drawing.Point(310, 307)
+        Me.LblTotal.Location = New System.Drawing.Point(310, 304)
         Me.LblTotal.Name = "LblTotal"
         Me.LblTotal.Size = New System.Drawing.Size(38, 16)
         Me.LblTotal.TabIndex = 18
         Me.LblTotal.Text = "Total"
+        '
+        'ColConcepto
+        '
+        Me.ColConcepto.HeaderText = "Concepto"
+        Me.ColConcepto.MinimumWidth = 6
+        Me.ColConcepto.Name = "ColConcepto"
+        Me.ColConcepto.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.ColConcepto.Width = 125
+        '
+        'ColMonto
+        '
+        Me.ColMonto.HeaderText = "Monto"
+        Me.ColMonto.MinimumWidth = 6
+        Me.ColMonto.Name = "ColMonto"
+        Me.ColMonto.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.ColMonto.Width = 125
         '
         'FrmGastos_Indirectos
         '
@@ -164,9 +167,9 @@ Partial Class FrmGastos_Indirectos
     Friend WithEvents TxtConcepto As TextBox
     Friend WithEvents LblConcepto As Label
     Friend WithEvents DtgGastosIndirectos As DataGridView
-    Friend WithEvents ColConcepto As DataGridViewTextBoxColumn
-    Friend WithEvents ColMonto As DataGridViewTextBoxColumn
     Friend WithEvents BtnEliminar As Button
     Friend WithEvents TxtTotal As TextBox
     Friend WithEvents LblTotal As Label
+    Friend WithEvents ColConcepto As DataGridViewTextBoxColumn
+    Friend WithEvents ColMonto As DataGridViewTextBoxColumn
 End Class
