@@ -48,6 +48,7 @@ Public Class FrmPresupuestoVentas
             MsgBox("Escribe un valor numérico, para unidades proyectadas")
             Return
         End If
+
         If IsNumeric(txtunidaesproyectadas.Text) Then
 
             If CDbl(txtunidaesproyectadas.Text) <= 0 Then
@@ -61,7 +62,7 @@ Public Class FrmPresupuestoVentas
                 Unidad1 = Integer.Parse(txtunidaesproyectadas.Text)
             End If
 
-            Return
+
         End If
         'Validando txt preciounitario
         If Not IsNumeric(txtPreciounitario.Text) Then
