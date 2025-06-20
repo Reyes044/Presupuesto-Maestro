@@ -19,11 +19,9 @@
     End Sub
 
     Private Sub btnEliminarProducto_Click(sender As Object, e As EventArgs) Handles btnEliminarProducto.Click
-
         If dtgPresupuestoMOD.SelectedRows.Count > 0 Then
             dtgPresupuestoMOD.Rows.Remove(dtgPresupuestoMOD.CurrentRow)
         End If
-
     End Sub
 
     Private Sub dtgPresupuestoMOD_CellEndEdit(sender As Object, e As DataGridViewCellEventArgs) Handles dtgPresupuestoMOD.CellEndEdit
@@ -36,14 +34,14 @@
             Dim celda = dtgPresupuestoMOD.Rows(e.RowIndex).Cells(e.ColumnIndex)
             Dim texto As String
 
-            If celda.Value IsNot Nothing And celda.Value > 0 Then
+            If celda.Value IsNot Nothing Then
                 texto = celda.Value.ToString().Trim()
             Else
                 texto = ""
             End If
             Dim valorDecimal As Decimal
 
-            If Decimal.TryParse(texto, valorDecimal) Then
+            If Decimal.TryParse(texto, valorDecimal) And valorDecimal > 0 Then
                 celda.Value = valorDecimal
             Else
                 MessageBox.Show("Solo se permiten valores numéricos en '" & nombreColumna & "'.", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning)

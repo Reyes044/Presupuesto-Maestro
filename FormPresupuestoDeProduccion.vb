@@ -34,15 +34,14 @@ Public Class FormPresupuestoDeProduccion
             Dim celda = dtgPresupuestoProducción.Rows(e.RowIndex).Cells(e.ColumnIndex)
             Dim texto As String
 
-
-            If celda.Value IsNot Nothing And celda.Value > 0 Then 'Si celda.Value no es Nothing, usalo; si es Nothing, usá "" (texto vacío)'.
+            If celda.Value IsNot Nothing Then  'Si celda.Value no es Nothing, usalo; si es Nothing, usá "" (texto vacío)'.
                 texto = celda.Value.ToString().Trim() 'borra cualquier espacio en blanco al principio o al final de ese texto.'
             Else
                 texto = ""
             End If
             Dim valorDecimal As Decimal
 
-            If Decimal.TryParse(texto, valorDecimal) Then 'TryParse devuelve True si la conversión fue exitosa, y pone el valor convertido dentro de valorDecimal'
+            If Decimal.TryParse(texto, valorDecimal) And valorDecimal > 0 Then 'TryParse devuelve True si la conversión fue exitosa, y pone el valor convertido dentro de valorDecimal'
                 celda.Value = valorDecimal ' Guarda como decimal
             Else
                 MessageBox.Show("Solo se permiten valores numéricos positivos en '" & nombreColumna & "'.", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning)

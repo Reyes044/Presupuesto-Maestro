@@ -20,4 +20,8 @@
     Private Sub BtnPresupuestoMod_Click(sender As Object, e As EventArgs) Handles BtnPresupuestoMod.Click
         FormPresupuestoMOD.ShowDialog()
     End Sub
+
+    Private Sub BtnPresupuestoCaja_Click(sender As Object, e As EventArgs) Handles BtnPresupuestoCaja.Click
+        FormPresupuestoCaja.ShowDialog()
+    End Sub
 End Class
