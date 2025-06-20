@@ -47,6 +47,12 @@ Partial Class FrmCostoTotalDeProduccion
         Me.BtnAgregarCtp = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.BtnEliminar = New System.Windows.Forms.Button()
+        Me.TxtTotalGIF = New System.Windows.Forms.TextBox()
+        Me.LblTotalGIF = New System.Windows.Forms.Label()
+        Me.TxtTotalMPD = New System.Windows.Forms.TextBox()
+        Me.LbltotalMPD = New System.Windows.Forms.Label()
+        Me.TxtTotalMOD = New System.Windows.Forms.TextBox()
+        Me.LblTotalMOD = New System.Windows.Forms.Label()
         CType(Me.DtgCostoTotalDeProduccion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -233,11 +239,65 @@ Partial Class FrmCostoTotalDeProduccion
         Me.BtnEliminar.Text = "Eliminar"
         Me.BtnEliminar.UseVisualStyleBackColor = True
         '
+        'TxtTotalGIF
+        '
+        Me.TxtTotalGIF.Location = New System.Drawing.Point(864, 269)
+        Me.TxtTotalGIF.Name = "TxtTotalGIF"
+        Me.TxtTotalGIF.Size = New System.Drawing.Size(107, 22)
+        Me.TxtTotalGIF.TabIndex = 12
+        '
+        'LblTotalGIF
+        '
+        Me.LblTotalGIF.AutoSize = True
+        Me.LblTotalGIF.Location = New System.Drawing.Point(601, 272)
+        Me.LblTotalGIF.Name = "LblTotalGIF"
+        Me.LblTotalGIF.Size = New System.Drawing.Size(257, 16)
+        Me.LblTotalGIF.TabIndex = 11
+        Me.LblTotalGIF.Text = "Total de Gastos Indirectos de Fabricacion"
+        '
+        'TxtTotalMPD
+        '
+        Me.TxtTotalMPD.Location = New System.Drawing.Point(864, 175)
+        Me.TxtTotalMPD.Name = "TxtTotalMPD"
+        Me.TxtTotalMPD.Size = New System.Drawing.Size(107, 22)
+        Me.TxtTotalMPD.TabIndex = 14
+        '
+        'LbltotalMPD
+        '
+        Me.LbltotalMPD.AutoSize = True
+        Me.LbltotalMPD.Location = New System.Drawing.Point(601, 181)
+        Me.LbltotalMPD.Name = "LbltotalMPD"
+        Me.LbltotalMPD.Size = New System.Drawing.Size(189, 16)
+        Me.LbltotalMPD.TabIndex = 13
+        Me.LbltotalMPD.Text = "Total de Materia Prima Directa"
+        '
+        'TxtTotalMOD
+        '
+        Me.TxtTotalMOD.Location = New System.Drawing.Point(864, 221)
+        Me.TxtTotalMOD.Name = "TxtTotalMOD"
+        Me.TxtTotalMOD.Size = New System.Drawing.Size(107, 22)
+        Me.TxtTotalMOD.TabIndex = 16
+        '
+        'LblTotalMOD
+        '
+        Me.LblTotalMOD.AutoSize = True
+        Me.LblTotalMOD.Location = New System.Drawing.Point(601, 221)
+        Me.LblTotalMOD.Name = "LblTotalMOD"
+        Me.LblTotalMOD.Size = New System.Drawing.Size(192, 16)
+        Me.LblTotalMOD.TabIndex = 15
+        Me.LblTotalMOD.Text = "Total de Mano de Obra Directa"
+        '
         'FrmCostoTotalDeProduccion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1191, 341)
+        Me.Controls.Add(Me.TxtTotalMOD)
+        Me.Controls.Add(Me.LblTotalMOD)
+        Me.Controls.Add(Me.TxtTotalMPD)
+        Me.Controls.Add(Me.LbltotalMPD)
+        Me.Controls.Add(Me.TxtTotalGIF)
+        Me.Controls.Add(Me.LblTotalGIF)
         Me.Controls.Add(Me.BtnEliminar)
         Me.Controls.Add(Me.TxtGifAsignado)
         Me.Controls.Add(Me.Label2)
@@ -282,4 +342,10 @@ Partial Class FrmCostoTotalDeProduccion
     Friend WithEvents ColCostoTotalDeProduccion As DataGridViewTextBoxColumn
     Friend WithEvents ColCostoUnitario As DataGridViewTextBoxColumn
     Friend WithEvents BtnEliminar As Button
+    Friend WithEvents TxtTotalGIF As TextBox
+    Friend WithEvents LblTotalGIF As Label
+    Friend WithEvents TxtTotalMPD As TextBox
+    Friend WithEvents LbltotalMPD As Label
+    Friend WithEvents TxtTotalMOD As TextBox
+    Friend WithEvents LblTotalMOD As Label
 End Class

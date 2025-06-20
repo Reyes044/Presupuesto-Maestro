@@ -62,7 +62,9 @@ Public Class FrmCostoTotalDeProduccion
         Dim Costo_Total_Produccion As Integer = Materia_Prima_Directa + Mano_de_Obra_Directa + Gif
 
         DtgCostoTotalDeProduccion.Rows.Add(producto, Materia_Prima_Directa, Mano_de_Obra_Directa, Gif, Costo_Total_Produccion)
-
+        CalcularTotal_GIF()
+        CalcularTotal_MOD()
+        CalcularTotal_MPD()
     End Sub
 
     Private Sub FrmCostoTotalDeProduccion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -121,11 +123,62 @@ Public Class FrmCostoTotalDeProduccion
         End If
     End Sub
 
+    Private Sub CalcularTotal_GIF()
+        Dim total As Decimal = 0
+
+        For Each fila As DataGridViewRow In DtgCostoTotalDeProduccion.Rows
+            Dim valor = fila.Cells("Col_GIF_Asignado").Value
+
+            If IsNumeric(valor) Then
+                total += (valor)
+            End If
+        Next
+        TxtTotalGIF.Text = total
+
+    End Sub
+
+    Private Sub CalcularTotal_MPD()
+        Dim total As Decimal = 0
+
+        For Each fila As DataGridViewRow In DtgCostoTotalDeProduccion.Rows
+            Dim valor = fila.Cells("ColMPD").Value
+
+            If IsNumeric(valor) Then
+                total += (valor)
+            End If
+        Next
+        TxtTotalMPD.Text = total
+
+    End Sub
+
+    Private Sub CalcularTotal_MOD()
+        Dim total As Decimal = 0
+
+        For Each fila As DataGridViewRow In DtgCostoTotalDeProduccion.Rows
+            Dim valor = fila.Cells("ColMOD").Value
+
+            If IsNumeric(valor) Then
+                total += (valor)
+            End If
+        Next
+        TxtTotalMOD.Text = total
+    End Sub
     Private Sub BtnEliminar_Click(sender As Object, e As EventArgs) Handles BtnEliminar.Click
         If DtgCostoTotalDeProduccion.SelectedRows.Count > 0 Then
             DtgCostoTotalDeProduccion.Rows.RemoveAt(DtgCostoTotalDeProduccion.SelectedRows(0).Index)
+            CalcularTotal_GIF()
+            CalcularTotal_MOD()
+            CalcularTotal_MPD()
         Else
             MsgBox("Seleccione una fila para eliminar.")
         End If
+    End Sub
+
+
+    Private Sub DtgCostoTotalDeProduccion_RowsRemoved(sender As Object, e As DataGridViewRowsRemovedEventArgs) Handles DtgCostoTotalDeProduccion.RowsRemoved
+        CalcularTotal_GIF()
+        CalcularTotal_MOD()
+        CalcularTotal_MPD()
+
     End Sub
 End Class

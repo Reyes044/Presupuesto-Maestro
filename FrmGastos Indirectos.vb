@@ -17,9 +17,6 @@ Public Class FrmGastos_Indirectos
             Return
         End If
 
-
-
-
         Dim concepto As String = TxtConcepto.Text
         Dim monto As Decimal = TxtMonto.Text
 
@@ -77,6 +74,5 @@ Public Class FrmGastos_Indirectos
     Private Sub DtgGastosIndirectos_RowsRemoved(sender As Object, e As DataGridViewRowsRemovedEventArgs) Handles DtgGastosIndirectos.RowsRemoved
         CalcularTotal()
     End Sub
-
 
 End Class
