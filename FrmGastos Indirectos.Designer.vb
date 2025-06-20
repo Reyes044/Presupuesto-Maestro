@@ -24,12 +24,13 @@ Partial Class FrmGastos_Indirectos
     Private Sub InitializeComponent()
         Me.TxtMonto = New System.Windows.Forms.TextBox()
         Me.LblMonto = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BtnAgregar = New System.Windows.Forms.Button()
         Me.TxtConcepto = New System.Windows.Forms.TextBox()
         Me.LblConcepto = New System.Windows.Forms.Label()
         Me.DtgGastosIndirectos = New System.Windows.Forms.DataGridView()
         Me.ColConcepto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColMonto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BtnEliminar = New System.Windows.Forms.Button()
         CType(Me.DtgGastosIndirectos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -49,14 +50,14 @@ Partial Class FrmGastos_Indirectos
         Me.LblMonto.TabIndex = 14
         Me.LblMonto.Text = "Monto"
         '
-        'Button1
+        'BtnAgregar
         '
-        Me.Button1.Location = New System.Drawing.Point(18, 170)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(191, 45)
-        Me.Button1.TabIndex = 13
-        Me.Button1.Text = "Agregar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BtnAgregar.Location = New System.Drawing.Point(18, 161)
+        Me.BtnAgregar.Name = "BtnAgregar"
+        Me.BtnAgregar.Size = New System.Drawing.Size(191, 45)
+        Me.BtnAgregar.TabIndex = 13
+        Me.BtnAgregar.Text = "Agregar"
+        Me.BtnAgregar.UseVisualStyleBackColor = True
         '
         'TxtConcepto
         '
@@ -82,7 +83,7 @@ Partial Class FrmGastos_Indirectos
         Me.DtgGastosIndirectos.Name = "DtgGastosIndirectos"
         Me.DtgGastosIndirectos.RowHeadersWidth = 51
         Me.DtgGastosIndirectos.RowTemplate.Height = 24
-        Me.DtgGastosIndirectos.Size = New System.Drawing.Size(361, 179)
+        Me.DtgGastosIndirectos.Size = New System.Drawing.Size(361, 221)
         Me.DtgGastosIndirectos.TabIndex = 16
         '
         'ColConcepto
@@ -99,15 +100,25 @@ Partial Class FrmGastos_Indirectos
         Me.ColMonto.Name = "ColMonto"
         Me.ColMonto.Width = 125
         '
+        'BtnEliminar
+        '
+        Me.BtnEliminar.Location = New System.Drawing.Point(18, 212)
+        Me.BtnEliminar.Name = "BtnEliminar"
+        Me.BtnEliminar.Size = New System.Drawing.Size(191, 45)
+        Me.BtnEliminar.TabIndex = 17
+        Me.BtnEliminar.Text = "Eliminar"
+        Me.BtnEliminar.UseVisualStyleBackColor = True
+        '
         'FrmGastos_Indirectos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(637, 266)
+        Me.ClientSize = New System.Drawing.Size(646, 323)
+        Me.Controls.Add(Me.BtnEliminar)
         Me.Controls.Add(Me.DtgGastosIndirectos)
         Me.Controls.Add(Me.TxtMonto)
         Me.Controls.Add(Me.LblMonto)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.BtnAgregar)
         Me.Controls.Add(Me.TxtConcepto)
         Me.Controls.Add(Me.LblConcepto)
         Me.Name = "FrmGastos_Indirectos"
@@ -120,10 +131,11 @@ Partial Class FrmGastos_Indirectos
 
     Friend WithEvents TxtMonto As TextBox
     Friend WithEvents LblMonto As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents BtnAgregar As Button
     Friend WithEvents TxtConcepto As TextBox
     Friend WithEvents LblConcepto As Label
     Friend WithEvents DtgGastosIndirectos As DataGridView
     Friend WithEvents ColConcepto As DataGridViewTextBoxColumn
     Friend WithEvents ColMonto As DataGridViewTextBoxColumn
+    Friend WithEvents BtnEliminar As Button
 End Class

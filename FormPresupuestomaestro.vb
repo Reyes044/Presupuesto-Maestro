@@ -24,4 +24,8 @@
     Private Sub BtnGastosindirectos_Click(sender As Object, e As EventArgs) Handles BtnGastosindirectos.Click
         FrmGastos_Indirectos.ShowDialog()
     End Sub
+
+    Private Sub BtnPresupuestoMod_Click(sender As Object, e As EventArgs) Handles BtnPresupuestoMod.Click
+
+    End Sub
 End Class

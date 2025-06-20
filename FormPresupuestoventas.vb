@@ -10,6 +10,7 @@ Public Class FrmPresupuestoVentas
         If String.IsNullOrWhiteSpace(TxtNombreProducto.Text) Then
             MsgBox("Escriba un nombre del producto")
             TxtNombreProducto.Focus()
+
         End If
 
 
