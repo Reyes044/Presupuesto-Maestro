@@ -1,18 +1,23 @@
 ﻿Imports System.ComponentModel
 
 Public Class FrmPresupuestoVentas
+    Public Unidad1 As Integer = 0
+    Public Preciounitario01 As Decimal = 0
+    Public Gastoventas1 As Decimal = 0
+    Public publicidadUnidad1 As Decimal = 0
     Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnAgregar.Click
-        If TxtNombreProducto.Text = "Ingrese el nombre del producto" Then
-            TxtNombreProducto.Clear()
-            TxtNombreProducto.Text.Trim()
-        End If
-        If String.IsNullOrWhiteSpace(TxtNombreProducto.Text) Then
-            TxtNombreProducto.Clear()
-            MsgBox("Escriba un nombre del producto")
-            TxtNombreProducto.Focus()
-        Else
 
-        End If
+        ' If TxtNombreProducto.Text = "Ingrese el nombre del producto" Then
+        ' TxtNombreProducto.Clear()
+        'TxtNombreProducto.Text.Trim()
+        'End If
+        ' If String.IsNullOrWhiteSpace(TxtNombreProducto.Text) Then
+        ' TxtNombreProducto.Clear()
+        'Box("Escriba un nombre del producto")
+        'TxtNombreProducto.Focus()
+        '  Else
+
+        'End If
 
         If String.IsNullOrWhiteSpace(txtPreciounitario.Text) Then
             txtPreciounitario.Clear()
@@ -27,12 +32,101 @@ Public Class FrmPresupuestoVentas
             txtPreciounitario.Focus()
 
         End If
-        'Guardamos los datos de los textbox en variables.
+        If txtunidaesproyectadas.Text.Trim = "" Then
+            MsgBox("No deje espacios en blanco")
+            txtunidaesproyectadas.Clear()
+            txtunidaesproyectadas.Focus()
+        End If
+        'Validando txt unidades proyectadas
+        If txtunidaesproyectadas.Text = ("") Then
+            MsgBox("No se permiten espacios en blanco, en unidades proyectadas")
+            Return
+        End If
+        If Not IsNumeric(txtunidaesproyectadas.Text) Then
+            txtunidaesproyectadas.Clear()
+            txtunidaesproyectadas.Focus()
+            MsgBox("Escribe un valor numérico, para unidades proyectadas")
+            Return
+        End If
+        If IsNumeric(txtunidaesproyectadas.Text) Then
+
+            If CDbl(txtunidaesproyectadas.Text) <= 0 Then
+
+                MsgBox("No se permiten numeros negativos o 0, en unidades proyectadas")
+
+                txtunidaesproyectadas.Clear()
+                txtunidaesproyectadas.Focus()
+                Return
+            Else
+                Unidad1 = Integer.Parse(txtunidaesproyectadas.Text)
+            End If
+
+            Return
+        End If
+        'Validando txt preciounitario
+        If Not IsNumeric(txtPreciounitario.Text) Then
+            txtPreciounitario.Clear()
+            txtPreciounitario.Focus()
+            MsgBox("Escribe un valor numérico, para Precio unitario")
+
+        End If
+        If IsNumeric(txtPreciounitario.Text) Then
+            If CDbl(txtPreciounitario.Text) <= 0 Then
+
+                MsgBox("No se permiten numeros negativos o 0, en precio unitario")
+
+                txtPreciounitario.Clear()
+                txtPreciounitario.Focus()
+            Else
+                Preciounitario01 = Decimal.Parse(txtPreciounitario.Text)
+            End If
+
+
+        End If
+        'Validando txtgasto de ventas :p
+        If Not IsNumeric(TxtGastoVentas.Text) Then
+            TxtGastoVentas.Clear()
+            TxtGastoVentas.Focus()
+            MsgBox("Escribe un valor numérico, en gasto de ventas")
+
+        End If
+        If IsNumeric(TxtGastoVentas.Text) Then
+            If CDbl(TxtGastoVentas.Text) <= 0 Then
+
+                MsgBox("No se permiten numeros negativos o 0, en gasto de ventas")
+
+                TxtGastoVentas.Clear()
+                TxtGastoVentas.Focus()
+            Else
+                Gastoventas1 = Decimal.Parse(TxtGastoVentas.Text)
+            End If
+        End If
+        'Validando txtpublicidadunidad
+        If Not IsNumeric(txtPublicidadCsUnidad.Text) Then
+            txtPublicidadCsUnidad.Clear()
+            txtPublicidadCsUnidad.Focus()
+            MsgBox("Escribe un valor numérico, en publicidad (C$/unidad)")
+
+        End If
+        If IsNumeric(txtPublicidadCsUnidad.Text) Then
+            If CDbl(txtPublicidadCsUnidad.Text) <= 0 Then
+
+                MsgBox("No se permiten numeros negativos o 0, en publicidad (C$/unidad)")
+
+                txtPublicidadCsUnidad.Clear()
+                txtPublicidadCsUnidad.Focus()
+            Else
+                publicidadUnidad1 = Decimal.Parse(txtPublicidadCsUnidad.Text)
+            End If
+        End If
+
+
+        'Guardamos los datos 0e los textbox en variables.
         Dim Producto As String = TxtNombreProducto.Text
-        Dim Unidades As Integer = Integer.Parse(txtunidaesproyectadas.Text)
-        Dim Preciounitario As Decimal = Decimal.Parse(txtPreciounitario.Text)
-        Dim gastoventas As Decimal = Decimal.Parse(TxtGastoVentas.Text)
-        Dim publicidadUnidad As Decimal = Decimal.Parse(txtPublicidadCsUnidad.Text)
+        Dim Unidades As Integer = Unidad1
+        Dim Preciounitario As Decimal = Preciounitario01
+        Dim gastoventas As Decimal = Gastoventas1
+        Dim publicidadUnidad As Decimal = publicidadUnidad1
         'Calculos de cada variable.
         Dim ingresosbrutos As Decimal = Unidades * Preciounitario
         Dim Devoluciones As Decimal = ingresosbrutos * 0.05D
@@ -42,21 +136,29 @@ Public Class FrmPresupuestoVentas
         Dim utilidadbruta As Decimal = ingresosNetos - CostoVentas - gastoventas - gastoPublicidad
 
         'Agregar las variables en orden al datagriedview.
+
         DtgPresupuestodeventas.Rows.Add(Producto, Unidades, Preciounitario, ingresosbrutos, Devoluciones, ingresosNetos, CostoVentas, gastoventas, publicidadUnidad, gastoPublicidad, utilidadbruta)
         ActualizaTotales()
-
+        'Limpiar textbox
+        TxtNombreProducto.Clear()
+        txtunidaesproyectadas.Clear()
+        txtPreciounitario.Clear()
+        TxtGastoVentas.Clear()
+        txtPublicidadCsUnidad.Clear()
 
     End Sub
 
     Private Sub TxtNombreProducto_Enter(sender As Object, e As EventArgs) Handles TxtNombreProducto.Enter
 
-        If TxtNombreProducto.Text = ("Ingrese el nombre del producto") Then
+        If TxtNombreProducto.Text = ("Ingrese el nombre del producto") & ("") Then
             TxtNombreProducto.Text = ("")
             TxtNombreProducto.ForeColor = Color.Black
             TxtNombreProducto.Font = New Font("Microsoft Sans Serif", 9, FontStyle.Regular)
             txtPreciounitario.Enabled = True
+
         End If
         If TxtNombreProducto.Text Is Nothing Then
+            TxtNombreProducto.Clear()
             MsgBox("Escriba un nombre del producto")
         Else
         End If
@@ -112,20 +214,26 @@ Public Class FrmPresupuestoVentas
     Private Sub FrmPresupuestoVentas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DtgPresupuestodeventas.AllowUserToAddRows = False
 
+
     End Sub
 
     Private Sub TxtGastoVentas_Validating(sender As Object, e As CancelEventArgs) Handles TxtGastoVentas.Validating
+
         If Not IsNumeric(TxtGastoVentas.Text) Then
             TxtGastoVentas.Clear()
             TxtGastoVentas.Focus()
-            MsgBox("Por favor, introduzca un valor numerico valido para gasto de ventas.")
+            MsgBox("Escribe un valor numérico")
 
         End If
-        If TxtGastoVentas.Text <= 0 Then
-            MsgBox("No se permiten numeros negativos o 0")
-            TxtGastoVentas.Clear()
-            TxtGastoVentas.Focus()
+        If IsNumeric(TxtGastoVentas.Text) Then
+            If CDbl(TxtGastoVentas.Text) <= 0 Then
+
+                MsgBox("No se permiten numeros negativos o 0")
+                TxtGastoVentas.Clear()
+                TxtGastoVentas.Focus()
+            End If
         End If
+
 
     End Sub
 
