@@ -22,6 +22,7 @@ Partial Class FrmGastos_Indirectos
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmGastos_Indirectos))
         Me.TxtMonto = New System.Windows.Forms.TextBox()
         Me.LblMonto = New System.Windows.Forms.Label()
         Me.BtnAgregar = New System.Windows.Forms.Button()
@@ -79,8 +80,10 @@ Partial Class FrmGastos_Indirectos
         '
         'DtgGastosIndirectos
         '
+        Me.DtgGastosIndirectos.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(249, Byte), Integer))
         Me.DtgGastosIndirectos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DtgGastosIndirectos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ColConcepto, Me.ColMonto})
+        Me.DtgGastosIndirectos.GridColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.DtgGastosIndirectos.Location = New System.Drawing.Point(238, 36)
         Me.DtgGastosIndirectos.Name = "DtgGastosIndirectos"
         Me.DtgGastosIndirectos.RowHeadersWidth = 51
@@ -132,6 +135,7 @@ Partial Class FrmGastos_Indirectos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(249, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(646, 380)
         Me.Controls.Add(Me.TxtTotal)
         Me.Controls.Add(Me.LblTotal)
@@ -142,6 +146,8 @@ Partial Class FrmGastos_Indirectos
         Me.Controls.Add(Me.BtnAgregar)
         Me.Controls.Add(Me.TxtConcepto)
         Me.Controls.Add(Me.LblConcepto)
+        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(121, Byte), Integer))
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "FrmGastos_Indirectos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

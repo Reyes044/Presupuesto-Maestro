@@ -22,11 +22,12 @@ Partial Class FrmCostoTotalDeProduccion
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmCostoTotalDeProduccion))
         Me.LblProducto = New System.Windows.Forms.Label()
         Me.LblMPD = New System.Windows.Forms.Label()
         Me.LblMOD = New System.Windows.Forms.Label()
@@ -106,13 +107,15 @@ Partial Class FrmCostoTotalDeProduccion
         '
         'DtgCostoTotalDeProduccion
         '
+        Me.DtgCostoTotalDeProduccion.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(249, Byte), Integer))
         Me.DtgCostoTotalDeProduccion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DtgCostoTotalDeProduccion.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ColProducto, Me.ColMPD, Me.ColMOD, Me.Col_GIF_Asignado, Me.ColCostoTotalDeProduccion, Me.ColCostoUnitario})
+        Me.DtgCostoTotalDeProduccion.GridColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.DtgCostoTotalDeProduccion.Location = New System.Drawing.Point(333, 39)
         Me.DtgCostoTotalDeProduccion.Name = "DtgCostoTotalDeProduccion"
         Me.DtgCostoTotalDeProduccion.RowHeadersWidth = 51
         Me.DtgCostoTotalDeProduccion.RowTemplate.Height = 24
-        Me.DtgCostoTotalDeProduccion.Size = New System.Drawing.Size(805, 120)
+        Me.DtgCostoTotalDeProduccion.Size = New System.Drawing.Size(1012, 120)
         Me.DtgCostoTotalDeProduccion.TabIndex = 6
         '
         'ColProducto
@@ -125,9 +128,9 @@ Partial Class FrmCostoTotalDeProduccion
         '
         'ColMPD
         '
-        DataGridViewCellStyle6.Format = "C2"
-        DataGridViewCellStyle6.NullValue = "C$"
-        Me.ColMPD.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle1.Format = "C2"
+        DataGridViewCellStyle1.NullValue = "C$"
+        Me.ColMPD.DefaultCellStyle = DataGridViewCellStyle1
         Me.ColMPD.HeaderText = "MPD (C$)"
         Me.ColMPD.MinimumWidth = 6
         Me.ColMPD.Name = "ColMPD"
@@ -136,9 +139,9 @@ Partial Class FrmCostoTotalDeProduccion
         '
         'ColMOD
         '
-        DataGridViewCellStyle7.Format = "C2"
-        DataGridViewCellStyle7.NullValue = "C$"
-        Me.ColMOD.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle2.Format = "C2"
+        DataGridViewCellStyle2.NullValue = "C$"
+        Me.ColMOD.DefaultCellStyle = DataGridViewCellStyle2
         Me.ColMOD.HeaderText = "MOD(C$)"
         Me.ColMOD.MinimumWidth = 6
         Me.ColMOD.Name = "ColMOD"
@@ -147,9 +150,9 @@ Partial Class FrmCostoTotalDeProduccion
         '
         'Col_GIF_Asignado
         '
-        DataGridViewCellStyle8.Format = "C2"
-        DataGridViewCellStyle8.NullValue = "C$"
-        Me.Col_GIF_Asignado.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle3.Format = "C2"
+        DataGridViewCellStyle3.NullValue = "C$"
+        Me.Col_GIF_Asignado.DefaultCellStyle = DataGridViewCellStyle3
         Me.Col_GIF_Asignado.HeaderText = "GIF Asignado (C$)"
         Me.Col_GIF_Asignado.MinimumWidth = 6
         Me.Col_GIF_Asignado.Name = "Col_GIF_Asignado"
@@ -158,9 +161,9 @@ Partial Class FrmCostoTotalDeProduccion
         '
         'ColCostoTotalDeProduccion
         '
-        DataGridViewCellStyle9.Format = "C2"
-        DataGridViewCellStyle9.NullValue = "C$"
-        Me.ColCostoTotalDeProduccion.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle4.Format = "C2"
+        DataGridViewCellStyle4.NullValue = "C$"
+        Me.ColCostoTotalDeProduccion.DefaultCellStyle = DataGridViewCellStyle4
         Me.ColCostoTotalDeProduccion.HeaderText = "Costo Total De Produccion (C$)"
         Me.ColCostoTotalDeProduccion.MinimumWidth = 6
         Me.ColCostoTotalDeProduccion.Name = "ColCostoTotalDeProduccion"
@@ -169,9 +172,9 @@ Partial Class FrmCostoTotalDeProduccion
         '
         'ColCostoUnitario
         '
-        DataGridViewCellStyle10.Format = "C2"
-        DataGridViewCellStyle10.NullValue = "C$"
-        Me.ColCostoUnitario.DefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle5.Format = "C2"
+        DataGridViewCellStyle5.NullValue = "C$"
+        Me.ColCostoUnitario.DefaultCellStyle = DataGridViewCellStyle5
         Me.ColCostoUnitario.HeaderText = "Costo Unitario"
         Me.ColCostoUnitario.MinimumWidth = 6
         Me.ColCostoUnitario.Name = "ColCostoUnitario"
@@ -291,7 +294,8 @@ Partial Class FrmCostoTotalDeProduccion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1191, 341)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(249, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(1379, 341)
         Me.Controls.Add(Me.TxtTotalMOD)
         Me.Controls.Add(Me.LblTotalMOD)
         Me.Controls.Add(Me.TxtTotalMPD)
@@ -312,7 +316,8 @@ Partial Class FrmCostoTotalDeProduccion
         Me.Controls.Add(Me.LblMOD)
         Me.Controls.Add(Me.LblMPD)
         Me.Controls.Add(Me.LblProducto)
-        Me.MaximizeBox = False
+        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(121, Byte), Integer))
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FrmCostoTotalDeProduccion"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmCostoTotalDeProduccion"

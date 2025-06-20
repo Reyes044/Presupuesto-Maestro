@@ -54,7 +54,7 @@ Partial Class FormPresupuestomaestro
         '
         'BtnPresupuestoVentas
         '
-        Me.BtnPresupuestoVentas.Location = New System.Drawing.Point(139, 43)
+        Me.BtnPresupuestoVentas.Location = New System.Drawing.Point(29, 43)
         Me.BtnPresupuestoVentas.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BtnPresupuestoVentas.Name = "BtnPresupuestoVentas"
         Me.BtnPresupuestoVentas.Size = New System.Drawing.Size(232, 128)
@@ -72,7 +72,7 @@ Partial Class FormPresupuestomaestro
         '
         'BtnPresupuestoProduccion
         '
-        Me.BtnPresupuestoProduccion.Location = New System.Drawing.Point(421, 43)
+        Me.BtnPresupuestoProduccion.Location = New System.Drawing.Point(311, 43)
         Me.BtnPresupuestoProduccion.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BtnPresupuestoProduccion.Name = "BtnPresupuestoProduccion"
         Me.BtnPresupuestoProduccion.Size = New System.Drawing.Size(232, 128)
@@ -81,7 +81,7 @@ Partial Class FormPresupuestomaestro
         '
         'BtnCostoTotalProducción
         '
-        Me.BtnCostoTotalProducción.Location = New System.Drawing.Point(707, 43)
+        Me.BtnCostoTotalProducción.Location = New System.Drawing.Point(597, 43)
         Me.BtnCostoTotalProducción.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BtnCostoTotalProducción.Name = "BtnCostoTotalProducción"
         Me.BtnCostoTotalProducción.Size = New System.Drawing.Size(232, 128)
@@ -90,7 +90,7 @@ Partial Class FormPresupuestomaestro
         '
         'BtnPresupuestoCompras
         '
-        Me.BtnPresupuestoCompras.Location = New System.Drawing.Point(989, 43)
+        Me.BtnPresupuestoCompras.Location = New System.Drawing.Point(879, 43)
         Me.BtnPresupuestoCompras.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BtnPresupuestoCompras.Name = "BtnPresupuestoCompras"
         Me.BtnPresupuestoCompras.Size = New System.Drawing.Size(232, 128)
@@ -99,7 +99,7 @@ Partial Class FormPresupuestomaestro
         '
         'BtnPresupuestoMod
         '
-        Me.BtnPresupuestoMod.Location = New System.Drawing.Point(139, 229)
+        Me.BtnPresupuestoMod.Location = New System.Drawing.Point(29, 229)
         Me.BtnPresupuestoMod.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BtnPresupuestoMod.Name = "BtnPresupuestoMod"
         Me.BtnPresupuestoMod.Size = New System.Drawing.Size(232, 128)
@@ -108,7 +108,7 @@ Partial Class FormPresupuestomaestro
         '
         'BtnGastosindirectos
         '
-        Me.BtnGastosindirectos.Location = New System.Drawing.Point(421, 229)
+        Me.BtnGastosindirectos.Location = New System.Drawing.Point(311, 229)
         Me.BtnGastosindirectos.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BtnGastosindirectos.Name = "BtnGastosindirectos"
         Me.BtnGastosindirectos.Size = New System.Drawing.Size(232, 128)
@@ -117,7 +117,7 @@ Partial Class FormPresupuestomaestro
         '
         'BtnGastoAdmyVentas
         '
-        Me.BtnGastoAdmyVentas.Location = New System.Drawing.Point(707, 229)
+        Me.BtnGastoAdmyVentas.Location = New System.Drawing.Point(597, 229)
         Me.BtnGastoAdmyVentas.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BtnGastoAdmyVentas.Name = "BtnGastoAdmyVentas"
         Me.BtnGastoAdmyVentas.Size = New System.Drawing.Size(232, 128)
@@ -126,7 +126,7 @@ Partial Class FormPresupuestomaestro
         '
         'BtnPresupuestoCaja
         '
-        Me.BtnPresupuestoCaja.Location = New System.Drawing.Point(989, 229)
+        Me.BtnPresupuestoCaja.Location = New System.Drawing.Point(879, 229)
         Me.BtnPresupuestoCaja.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BtnPresupuestoCaja.Name = "BtnPresupuestoCaja"
         Me.BtnPresupuestoCaja.Size = New System.Drawing.Size(232, 128)
@@ -135,7 +135,7 @@ Partial Class FormPresupuestomaestro
         '
         'BtnResumen
         '
-        Me.BtnResumen.Location = New System.Drawing.Point(139, 412)
+        Me.BtnResumen.Location = New System.Drawing.Point(29, 412)
         Me.BtnResumen.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BtnResumen.Name = "BtnResumen"
         Me.BtnResumen.Size = New System.Drawing.Size(232, 128)
@@ -146,7 +146,7 @@ Partial Class FormPresupuestomaestro
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Bodoni MT Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(171, 12)
+        Me.Label2.Location = New System.Drawing.Point(61, 12)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(161, 28)
@@ -157,7 +157,7 @@ Partial Class FormPresupuestomaestro
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Bodoni MT Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(431, 11)
+        Me.Label3.Location = New System.Drawing.Point(321, 11)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(196, 28)
@@ -168,7 +168,7 @@ Partial Class FormPresupuestomaestro
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Bodoni MT Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(1024, 198)
+        Me.Label4.Location = New System.Drawing.Point(928, 197)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(145, 28)
@@ -179,7 +179,7 @@ Partial Class FormPresupuestomaestro
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Bodoni MT Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(743, 198)
+        Me.Label5.Location = New System.Drawing.Point(633, 198)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(153, 28)
@@ -190,7 +190,7 @@ Partial Class FormPresupuestomaestro
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Bodoni MT Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(476, 198)
+        Me.Label6.Location = New System.Drawing.Point(366, 198)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(125, 28)
@@ -201,7 +201,7 @@ Partial Class FormPresupuestomaestro
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Bodoni MT Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(185, 198)
+        Me.Label7.Location = New System.Drawing.Point(75, 198)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(127, 28)
@@ -212,7 +212,7 @@ Partial Class FormPresupuestomaestro
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Bodoni MT Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(1008, 11)
+        Me.Label8.Location = New System.Drawing.Point(898, 11)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(175, 28)
@@ -223,7 +223,7 @@ Partial Class FormPresupuestomaestro
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Bodoni MT Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(725, 11)
+        Me.Label9.Location = New System.Drawing.Point(615, 11)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(184, 28)
@@ -234,7 +234,7 @@ Partial Class FormPresupuestomaestro
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Bodoni MT Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(213, 382)
+        Me.Label10.Location = New System.Drawing.Point(103, 382)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(72, 28)
@@ -244,10 +244,10 @@ Partial Class FormPresupuestomaestro
         'LblHora
         '
         Me.LblHora.AutoSize = True
-        Me.LblHora.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.LblHora.BackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(249, Byte), Integer))
         Me.LblHora.Font = New System.Drawing.Font("Bodoni MT Condensed", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblHora.ForeColor = System.Drawing.SystemColors.Highlight
-        Me.LblHora.Location = New System.Drawing.Point(1412, 197)
+        Me.LblHora.ForeColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(121, Byte), Integer))
+        Me.LblHora.Location = New System.Drawing.Point(1282, 179)
         Me.LblHora.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LblHora.Name = "LblHora"
         Me.LblHora.Size = New System.Drawing.Size(54, 36)
@@ -258,7 +258,7 @@ Partial Class FormPresupuestomaestro
         '
         Me.LblFecha.AutoSize = True
         Me.LblFecha.Font = New System.Drawing.Font("Bodoni MT Condensed", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblFecha.Location = New System.Drawing.Point(1412, 233)
+        Me.LblFecha.Location = New System.Drawing.Point(1282, 215)
         Me.LblFecha.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LblFecha.Name = "LblFecha"
         Me.LblFecha.Size = New System.Drawing.Size(57, 32)
@@ -273,7 +273,7 @@ Partial Class FormPresupuestomaestro
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Bodoni MT", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(1300, 207)
+        Me.Label11.Location = New System.Drawing.Point(1170, 189)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(58, 23)
@@ -284,7 +284,7 @@ Partial Class FormPresupuestomaestro
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Bodoni MT", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(1300, 238)
+        Me.Label12.Location = New System.Drawing.Point(1170, 220)
         Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(66, 23)
@@ -294,7 +294,7 @@ Partial Class FormPresupuestomaestro
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(1293, 43)
+        Me.PictureBox1.Location = New System.Drawing.Point(1163, 25)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(248, 146)
@@ -306,7 +306,8 @@ Partial Class FormPresupuestomaestro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1284, 593)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(249, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(1566, 593)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.LblFecha)
@@ -331,9 +332,11 @@ Partial Class FormPresupuestomaestro
         Me.Controls.Add(Me.BtnPresupuestoProduccion)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BtnPresupuestoVentas)
+        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(121, Byte), Integer))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "FormPresupuestomaestro"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds
         Me.Text = "Presupuesto maestro"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
