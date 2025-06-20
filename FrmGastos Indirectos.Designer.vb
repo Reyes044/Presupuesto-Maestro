@@ -121,7 +121,9 @@ Partial Class FrmGastos_Indirectos
         Me.Controls.Add(Me.BtnAgregar)
         Me.Controls.Add(Me.TxtConcepto)
         Me.Controls.Add(Me.LblConcepto)
+        Me.MaximizeBox = False
         Me.Name = "FrmGastos_Indirectos"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmGastos_Indirectos"
         CType(Me.DtgGastosIndirectos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
