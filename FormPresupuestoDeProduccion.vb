@@ -10,7 +10,7 @@ Public Class FormPresupuestoDeProduccion
             dtgPresupuestoProducción.Columns(i).SortMode = DataGridViewColumnSortMode.NotSortable
         Next
 
-        dtgPresupuestoProducción.Columns(0).Width = 350
+        dtgPresupuestoProducción.Columns(0).Width = 300
 
         dtgPresupuestoProducción.Columns(7).ReadOnly = True
         dtgPresupuestoProducción.Columns(8).ReadOnly = True
@@ -22,6 +22,9 @@ Public Class FormPresupuestoDeProduccion
     End Sub
 
     Private Sub dtgPresupuestoProducción_CellEndEdit(sender As Object, e As DataGridViewCellEventArgs) Handles dtgPresupuestoProducción.CellEndEdit
+
+        LimpiarTxts()
+
         'Hacer un arreglo con el nombre de cada columna decimal'
         Dim columnasDecimal As String() = {"Unidades_a_Vender", "Inventario_Final", "Inventario_Inicial", "Costo_Unitario", "MOD_Unidad", "CIF_Unidad", " Unidades_a_Producir", "Costo_Total_Producción", "Costo_Total_MOD", "Costo_Total_CIF", "Costo_Total_Planeado"}
 
@@ -42,12 +45,15 @@ Public Class FormPresupuestoDeProduccion
             Dim valorDecimal As Decimal
 
             If Decimal.TryParse(texto, valorDecimal) And valorDecimal > 0 Then 'TryParse devuelve True si la conversión fue exitosa, y pone el valor convertido dentro de valorDecimal'
+                celda.Style.BackColor = Color.White
                 celda.Value = valorDecimal ' Guarda como decimal
             Else
                 MessageBox.Show("Solo se permiten valores numéricos positivos en '" & nombreColumna & "'.", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                celda.Style.BackColor = Color.Yellow
                 celda.Value = Nothing ' Borra automáticamente si es inválido
             End If
         End If
+
 
         'Calculos'
         dtgPresupuestoProducción.CurrentRow.Cells(7).Value = dtgPresupuestoProducción.CurrentRow.Cells(1).Value + dtgPresupuestoProducción.CurrentRow.Cells(2).Value - dtgPresupuestoProducción.CurrentRow.Cells(3).Value
@@ -60,16 +66,18 @@ Public Class FormPresupuestoDeProduccion
 
         dtgPresupuestoProducción.CurrentRow.Cells(11).Value = dtgPresupuestoProducción.CurrentRow.Cells(8).Value + dtgPresupuestoProducción.CurrentRow.Cells(9).Value + dtgPresupuestoProducción.CurrentRow.Cells(10).Value
 
-        'TotalUnidadesVender = dtgPresupuestoProducción.CurrentRow.Cells(1).Value + TotalUnidadesVender - UnidadesVenderDeleted'
-
-        'Totales'
-
-        ''For Each fila As DataGridViewRow In dtgPresupuestoProducción.Rows
-        'TotalUnidadesVender += Val(fila.Cells(1).Value)
-        'Next
-        'txtTotalUndVender.Text = TotalUnidadesVender
-
         CalcularTotal()
+
+        'Validación Negativo´
+        For i = 7 To dtgPresupuestoProducción.ColumnCount - 1
+            If dtgPresupuestoProducción.CurrentRow.Cells(i).Value < 0 Then
+                dtgPresupuestoProducción.CurrentRow.Cells(i).Style.BackColor = Color.FromArgb(200, 100, 100)
+
+            Else
+                dtgPresupuestoProducción.CurrentRow.Cells(i).Style.BackColor = Color.Gray
+
+            End If
+        Next
 
     End Sub
 
@@ -127,7 +135,13 @@ Public Class FormPresupuestoDeProduccion
 
             If IsNumeric(valor) Then
                 total += CDec(valor)
-                txtUnidadesProducir.Text = total.ToString("N2")
+                If total > 0 Then
+                    txtUnidadesProducir.Text = total.ToString("N2")
+                    txtUnidadesProducir.BackColor = SystemColors.Window
+                Else
+                    txtUnidadesProducir.Text = total.ToString("N2")
+                    txtUnidadesProducir.BackColor = Color.FromArgb(200, 100, 100)
+                End If
             End If
         Next
         total = 0
@@ -138,7 +152,13 @@ Public Class FormPresupuestoDeProduccion
 
             If IsNumeric(valor) Then
                 total += CDec(valor)
-                txtCostoTotalProduccion.Text = total.ToString("C2")
+                If total > 0 Then
+                    txtCostoTotalProduccion.Text = total.ToString("N2")
+                    txtUnidadesProducir.BackColor = SystemColors.Window
+                Else
+                    txtUnidadesProducir.Text = total.ToString("N2")
+                    txtUnidadesProducir.BackColor = Color.FromArgb(200, 100, 100)
+                End If
             End If
         Next
         total = 0
@@ -194,4 +214,5 @@ Public Class FormPresupuestoDeProduccion
         txtTotalUndVender.Clear()
         txtUnidadesProducir.Clear()
     End Sub
+
 End Class
