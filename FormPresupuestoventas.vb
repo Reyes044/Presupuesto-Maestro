@@ -58,8 +58,15 @@ Public Class FrmPresupuestoVentas
                 txtunidaesproyectadas.Clear()
                 txtunidaesproyectadas.Focus()
                 Return
+
+            ElseIf Integer.TryParse(txtunidaesproyectadas.Text, Unidad1) Then
+
             Else
-                Unidad1 = Integer.Parse(txtunidaesproyectadas.Text)
+                MsgBox("No se permiten decimales")
+                txtunidaesproyectadas.Clear()
+                txtunidaesproyectadas.Focus()
+                Return
+
             End If
 
 
