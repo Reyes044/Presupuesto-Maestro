@@ -22,6 +22,9 @@ Public Class FrmGastos_Indirectos
 
         DtgGastosIndirectos.Rows.Add(concepto, monto)
         CalcularTotal()
+        TxtConcepto.Clear()
+        TxtMonto.Clear()
+
 
     End Sub
     Private Sub TxtConcepto_KeyUp(sender As Object, e As KeyEventArgs) Handles TxtConcepto.KeyUp
@@ -44,6 +47,9 @@ Public Class FrmGastos_Indirectos
         If DtgGastosIndirectos.SelectedRows.Count > 0 Then
             DtgGastosIndirectos.Rows.RemoveAt(DtgGastosIndirectos.SelectedRows(0).Index)
             CalcularTotal()
+            TxtConcepto.Clear()
+            TxtMonto.Clear()
+
         Else
             MsgBox("Seleccione una fila para eliminar.")
         End If

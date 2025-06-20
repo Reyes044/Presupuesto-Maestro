@@ -65,6 +65,11 @@ Public Class FrmCostoTotalDeProduccion
         CalcularTotal_GIF()
         CalcularTotal_MOD()
         CalcularTotal_MPD()
+        TxtMPD.Clear()
+        TxtMOD.Clear()
+        TxtProducto.Clear()
+        TxtGifAsignado.Clear()
+
     End Sub
 
     Private Sub FrmCostoTotalDeProduccion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
