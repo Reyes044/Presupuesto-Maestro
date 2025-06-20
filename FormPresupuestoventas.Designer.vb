@@ -51,6 +51,27 @@ Partial Class FrmPresupuestoVentas
         Me.LblPublicidad = New System.Windows.Forms.Label()
         Me.LblGastoventas = New System.Windows.Forms.Label()
         Me.LblPrecioUnitario = New System.Windows.Forms.Label()
+        Me.LblUnidadesproyectadasTotal = New System.Windows.Forms.Label()
+        Me.txtunidadesproyectadastotal = New System.Windows.Forms.TextBox()
+        Me.txttotalpreciounitario = New System.Windows.Forms.TextBox()
+        Me.lblTotalpreciounitario = New System.Windows.Forms.Label()
+        Me.txtTotalingresosbrutos = New System.Windows.Forms.TextBox()
+        Me.LblIngresosbrutostotales = New System.Windows.Forms.Label()
+        Me.LblTotalDevoluciones = New System.Windows.Forms.Label()
+        Me.txtTotaldevoluciones = New System.Windows.Forms.TextBox()
+        Me.txtTotalingresosNetos = New System.Windows.Forms.TextBox()
+        Me.LblTotalingresosNetos = New System.Windows.Forms.Label()
+        Me.LblCostodeventas = New System.Windows.Forms.Label()
+        Me.txtTotalCostodeventas = New System.Windows.Forms.TextBox()
+        Me.LblTotalGastoVentas = New System.Windows.Forms.Label()
+        Me.txtTotalgastoVentas = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtTotalPublicidad = New System.Windows.Forms.TextBox()
+        Me.LblTotalgastopublicidad = New System.Windows.Forms.Label()
+        Me.txtTotalgastoPublicidad = New System.Windows.Forms.TextBox()
+        Me.LblTotalUtilidadBruta = New System.Windows.Forms.Label()
+        Me.txtTotalUtilidadbruta = New System.Windows.Forms.TextBox()
+        Me.BtnEliminarfila = New System.Windows.Forms.Button()
         CType(Me.DtgPresupuestodeventas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GrpPresupuestodeventas.SuspendLayout()
         Me.SuspendLayout()
@@ -221,10 +242,13 @@ Partial Class FrmPresupuestoVentas
         '
         'TxtGastoVentas
         '
+        Me.TxtGastoVentas.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtGastoVentas.ForeColor = System.Drawing.SystemColors.ScrollBar
         Me.TxtGastoVentas.Location = New System.Drawing.Point(664, 81)
         Me.TxtGastoVentas.Name = "TxtGastoVentas"
         Me.TxtGastoVentas.Size = New System.Drawing.Size(149, 20)
         Me.TxtGastoVentas.TabIndex = 9
+        Me.TxtGastoVentas.Text = "Ingrese el gasto de ventas"
         '
         'LblCordoba
         '
@@ -307,20 +331,221 @@ Partial Class FrmPresupuestoVentas
         Me.LblPrecioUnitario.TabIndex = 1
         Me.LblPrecioUnitario.Text = "Precio unitario:"
         '
+        'LblUnidadesproyectadasTotal
+        '
+        Me.LblUnidadesproyectadasTotal.AutoSize = True
+        Me.LblUnidadesproyectadasTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblUnidadesproyectadasTotal.Location = New System.Drawing.Point(-2, 439)
+        Me.LblUnidadesproyectadasTotal.Name = "LblUnidadesproyectadasTotal"
+        Me.LblUnidadesproyectadasTotal.Size = New System.Drawing.Size(207, 60)
+        Me.LblUnidadesproyectadasTotal.TabIndex = 3
+        Me.LblUnidadesproyectadasTotal.Text = "Unidades proyectadas total:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'txtunidadesproyectadastotal
+        '
+        Me.txtunidadesproyectadastotal.Location = New System.Drawing.Point(211, 441)
+        Me.txtunidadesproyectadastotal.Name = "txtunidadesproyectadastotal"
+        Me.txtunidadesproyectadastotal.Size = New System.Drawing.Size(159, 20)
+        Me.txtunidadesproyectadastotal.TabIndex = 4
+        '
+        'txttotalpreciounitario
+        '
+        Me.txttotalpreciounitario.Location = New System.Drawing.Point(211, 486)
+        Me.txttotalpreciounitario.Name = "txttotalpreciounitario"
+        Me.txttotalpreciounitario.Size = New System.Drawing.Size(159, 20)
+        Me.txttotalpreciounitario.TabIndex = 7
+        '
+        'lblTotalpreciounitario
+        '
+        Me.lblTotalpreciounitario.AutoSize = True
+        Me.lblTotalpreciounitario.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalpreciounitario.Location = New System.Drawing.Point(53, 484)
+        Me.lblTotalpreciounitario.Name = "lblTotalpreciounitario"
+        Me.lblTotalpreciounitario.Size = New System.Drawing.Size(152, 20)
+        Me.lblTotalpreciounitario.TabIndex = 8
+        Me.lblTotalpreciounitario.Text = "Total predio unitario:"
+        '
+        'txtTotalingresosbrutos
+        '
+        Me.txtTotalingresosbrutos.Location = New System.Drawing.Point(211, 524)
+        Me.txtTotalingresosbrutos.Name = "txtTotalingresosbrutos"
+        Me.txtTotalingresosbrutos.Size = New System.Drawing.Size(159, 20)
+        Me.txtTotalingresosbrutos.TabIndex = 9
+        '
+        'LblIngresosbrutostotales
+        '
+        Me.LblIngresosbrutostotales.AutoSize = True
+        Me.LblIngresosbrutostotales.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblIngresosbrutostotales.Location = New System.Drawing.Point(44, 524)
+        Me.LblIngresosbrutostotales.Name = "LblIngresosbrutostotales"
+        Me.LblIngresosbrutostotales.Size = New System.Drawing.Size(161, 20)
+        Me.LblIngresosbrutostotales.TabIndex = 10
+        Me.LblIngresosbrutostotales.Text = "Total ingresos brutos:"
+        '
+        'LblTotalDevoluciones
+        '
+        Me.LblTotalDevoluciones.AutoSize = True
+        Me.LblTotalDevoluciones.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblTotalDevoluciones.Location = New System.Drawing.Point(61, 560)
+        Me.LblTotalDevoluciones.Name = "LblTotalDevoluciones"
+        Me.LblTotalDevoluciones.Size = New System.Drawing.Size(144, 20)
+        Me.LblTotalDevoluciones.TabIndex = 11
+        Me.LblTotalDevoluciones.Text = "Total devoluciones:"
+        '
+        'txtTotaldevoluciones
+        '
+        Me.txtTotaldevoluciones.Location = New System.Drawing.Point(211, 562)
+        Me.txtTotaldevoluciones.Name = "txtTotaldevoluciones"
+        Me.txtTotaldevoluciones.Size = New System.Drawing.Size(159, 20)
+        Me.txtTotaldevoluciones.TabIndex = 12
+        '
+        'txtTotalingresosNetos
+        '
+        Me.txtTotalingresosNetos.Location = New System.Drawing.Point(211, 598)
+        Me.txtTotalingresosNetos.Name = "txtTotalingresosNetos"
+        Me.txtTotalingresosNetos.Size = New System.Drawing.Size(159, 20)
+        Me.txtTotalingresosNetos.TabIndex = 13
+        '
+        'LblTotalingresosNetos
+        '
+        Me.LblTotalingresosNetos.AutoSize = True
+        Me.LblTotalingresosNetos.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblTotalingresosNetos.Location = New System.Drawing.Point(47, 598)
+        Me.LblTotalingresosNetos.Name = "LblTotalingresosNetos"
+        Me.LblTotalingresosNetos.Size = New System.Drawing.Size(158, 20)
+        Me.LblTotalingresosNetos.TabIndex = 14
+        Me.LblTotalingresosNetos.Text = "Total Ingresos netos:"
+        '
+        'LblCostodeventas
+        '
+        Me.LblCostodeventas.AutoSize = True
+        Me.LblCostodeventas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblCostodeventas.Location = New System.Drawing.Point(465, 439)
+        Me.LblCostodeventas.Name = "LblCostodeventas"
+        Me.LblCostodeventas.Size = New System.Drawing.Size(164, 20)
+        Me.LblCostodeventas.TabIndex = 15
+        Me.LblCostodeventas.Text = "Total costo de ventas:"
+        '
+        'txtTotalCostodeventas
+        '
+        Me.txtTotalCostodeventas.Location = New System.Drawing.Point(635, 441)
+        Me.txtTotalCostodeventas.Name = "txtTotalCostodeventas"
+        Me.txtTotalCostodeventas.Size = New System.Drawing.Size(159, 20)
+        Me.txtTotalCostodeventas.TabIndex = 16
+        '
+        'LblTotalGastoVentas
+        '
+        Me.LblTotalGastoVentas.AutoSize = True
+        Me.LblTotalGastoVentas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblTotalGastoVentas.Location = New System.Drawing.Point(465, 484)
+        Me.LblTotalGastoVentas.Name = "LblTotalGastoVentas"
+        Me.LblTotalGastoVentas.Size = New System.Drawing.Size(165, 20)
+        Me.LblTotalGastoVentas.TabIndex = 17
+        Me.LblTotalGastoVentas.Text = "Total gasto de ventas:"
+        '
+        'txtTotalgastoVentas
+        '
+        Me.txtTotalgastoVentas.Location = New System.Drawing.Point(635, 484)
+        Me.txtTotalgastoVentas.Name = "txtTotalgastoVentas"
+        Me.txtTotalgastoVentas.Size = New System.Drawing.Size(159, 20)
+        Me.txtTotalgastoVentas.TabIndex = 18
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(465, 524)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(128, 40)
+        Me.Label3.TabIndex = 19
+        Me.Label3.Text = "Total Publicidad: " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(C$/Unidad)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'txtTotalPublicidad
+        '
+        Me.txtTotalPublicidad.Location = New System.Drawing.Point(635, 526)
+        Me.txtTotalPublicidad.Name = "txtTotalPublicidad"
+        Me.txtTotalPublicidad.Size = New System.Drawing.Size(159, 20)
+        Me.txtTotalPublicidad.TabIndex = 20
+        '
+        'LblTotalgastopublicidad
+        '
+        Me.LblTotalgastopublicidad.AutoSize = True
+        Me.LblTotalgastopublicidad.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblTotalgastopublicidad.Location = New System.Drawing.Point(465, 578)
+        Me.LblTotalgastopublicidad.Name = "LblTotalgastopublicidad"
+        Me.LblTotalgastopublicidad.Size = New System.Drawing.Size(114, 60)
+        Me.LblTotalgastopublicidad.TabIndex = 21
+        Me.LblTotalgastopublicidad.Text = "Total gasto de " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "publicidad:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'txtTotalgastoPublicidad
+        '
+        Me.txtTotalgastoPublicidad.Location = New System.Drawing.Point(635, 578)
+        Me.txtTotalgastoPublicidad.Name = "txtTotalgastoPublicidad"
+        Me.txtTotalgastoPublicidad.Size = New System.Drawing.Size(159, 20)
+        Me.txtTotalgastoPublicidad.TabIndex = 22
+        '
+        'LblTotalUtilidadBruta
+        '
+        Me.LblTotalUtilidadBruta.AutoSize = True
+        Me.LblTotalUtilidadBruta.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblTotalUtilidadBruta.Location = New System.Drawing.Point(848, 441)
+        Me.LblTotalUtilidadBruta.Name = "LblTotalUtilidadBruta"
+        Me.LblTotalUtilidadBruta.Size = New System.Drawing.Size(143, 20)
+        Me.LblTotalUtilidadBruta.TabIndex = 23
+        Me.LblTotalUtilidadBruta.Text = "Total utilidad bruta:"
+        '
+        'txtTotalUtilidadbruta
+        '
+        Me.txtTotalUtilidadbruta.Location = New System.Drawing.Point(987, 439)
+        Me.txtTotalUtilidadbruta.Name = "txtTotalUtilidadbruta"
+        Me.txtTotalUtilidadbruta.Size = New System.Drawing.Size(144, 20)
+        Me.txtTotalUtilidadbruta.TabIndex = 24
+        '
+        'BtnEliminarfila
+        '
+        Me.BtnEliminarfila.Location = New System.Drawing.Point(986, 560)
+        Me.BtnEliminarfila.Name = "BtnEliminarfila"
+        Me.BtnEliminarfila.Size = New System.Drawing.Size(139, 48)
+        Me.BtnEliminarfila.TabIndex = 25
+        Me.BtnEliminarfila.Text = "Eliminar fila"
+        Me.BtnEliminarfila.UseVisualStyleBackColor = True
+        '
         'FrmPresupuestoVentas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1318, 450)
+        Me.ClientSize = New System.Drawing.Size(1318, 644)
+        Me.Controls.Add(Me.BtnEliminarfila)
+        Me.Controls.Add(Me.txtTotalUtilidadbruta)
+        Me.Controls.Add(Me.LblTotalUtilidadBruta)
+        Me.Controls.Add(Me.txtTotalgastoPublicidad)
+        Me.Controls.Add(Me.LblTotalgastopublicidad)
+        Me.Controls.Add(Me.txtTotalPublicidad)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.txtTotalgastoVentas)
+        Me.Controls.Add(Me.LblTotalGastoVentas)
+        Me.Controls.Add(Me.txtTotalCostodeventas)
+        Me.Controls.Add(Me.LblCostodeventas)
+        Me.Controls.Add(Me.LblTotalingresosNetos)
+        Me.Controls.Add(Me.txtTotalingresosNetos)
+        Me.Controls.Add(Me.txtTotaldevoluciones)
+        Me.Controls.Add(Me.LblTotalDevoluciones)
+        Me.Controls.Add(Me.LblIngresosbrutostotales)
+        Me.Controls.Add(Me.txtTotalingresosbrutos)
+        Me.Controls.Add(Me.lblTotalpreciounitario)
+        Me.Controls.Add(Me.txttotalpreciounitario)
+        Me.Controls.Add(Me.txtunidadesproyectadastotal)
+        Me.Controls.Add(Me.LblUnidadesproyectadasTotal)
         Me.Controls.Add(Me.GrpPresupuestodeventas)
         Me.Controls.Add(Me.DtgPresupuestodeventas)
         Me.Name = "FrmPresupuestoVentas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Presupuesto de ventas"
+        Me.Text = "Presupuesto de ventas:"
         CType(Me.DtgPresupuestodeventas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GrpPresupuestodeventas.ResumeLayout(False)
         Me.GrpPresupuestodeventas.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -351,4 +576,25 @@ Partial Class FrmPresupuestoVentas
     Friend WithEvents ColUtilidadBruta As DataGridViewTextBoxColumn
     Friend WithEvents txtunidaesproyectadas As TextBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents LblUnidadesproyectadasTotal As Label
+    Friend WithEvents txtunidadesproyectadastotal As TextBox
+    Friend WithEvents txttotalpreciounitario As TextBox
+    Friend WithEvents lblTotalpreciounitario As Label
+    Friend WithEvents txtTotalingresosbrutos As TextBox
+    Friend WithEvents LblIngresosbrutostotales As Label
+    Friend WithEvents LblTotalDevoluciones As Label
+    Friend WithEvents txtTotaldevoluciones As TextBox
+    Friend WithEvents txtTotalingresosNetos As TextBox
+    Friend WithEvents LblTotalingresosNetos As Label
+    Friend WithEvents LblCostodeventas As Label
+    Friend WithEvents txtTotalCostodeventas As TextBox
+    Friend WithEvents LblTotalGastoVentas As Label
+    Friend WithEvents txtTotalgastoVentas As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents txtTotalPublicidad As TextBox
+    Friend WithEvents LblTotalgastopublicidad As Label
+    Friend WithEvents txtTotalgastoPublicidad As TextBox
+    Friend WithEvents LblTotalUtilidadBruta As Label
+    Friend WithEvents txtTotalUtilidadbruta As TextBox
+    Friend WithEvents BtnEliminarfila As Button
 End Class
