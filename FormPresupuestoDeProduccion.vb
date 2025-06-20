@@ -135,11 +135,11 @@ Public Class FormPresupuestoDeProduccion
 
             If IsNumeric(valor) Then
                 total += CDec(valor)
-                If total > 0 Then
-                    txtUnidadesProducir.Text = total.ToString("N2")
+                If total >= 0 Then
+                    txtUnidadesProducir.Text = total.ToString("C2")
                     txtUnidadesProducir.BackColor = SystemColors.Window
                 Else
-                    txtUnidadesProducir.Text = total.ToString("N2")
+                    txtUnidadesProducir.Text = total.ToString("C2")
                     txtUnidadesProducir.BackColor = Color.FromArgb(200, 100, 100)
                 End If
             End If
@@ -152,12 +152,12 @@ Public Class FormPresupuestoDeProduccion
 
             If IsNumeric(valor) Then
                 total += CDec(valor)
-                If total > 0 Then
-                    txtCostoTotalProduccion.Text = total.ToString("N2")
-                    txtUnidadesProducir.BackColor = SystemColors.Window
+                If total >= 0 Then
+                    txtCostoTotalProduccion.Text = total.ToString("C2")
+                    txtCostoTotalProduccion.BackColor = SystemColors.Window
                 Else
-                    txtUnidadesProducir.Text = total.ToString("N2")
-                    txtUnidadesProducir.BackColor = Color.FromArgb(200, 100, 100)
+                    txtCostoTotalProduccion.Text = total.ToString("C2")
+                    txtCostoTotalProduccion.BackColor = Color.FromArgb(200, 100, 100)
                 End If
             End If
         Next
@@ -169,7 +169,13 @@ Public Class FormPresupuestoDeProduccion
 
             If IsNumeric(valor) Then
                 total += CDec(valor)
-                txtCostoTotalMOD.Text = total.ToString("C2")
+                If total >= 0 Then
+                    txtCostoTotalMOD.Text = total.ToString("N2")
+                    txtCostoTotalMOD.BackColor = SystemColors.Window
+                Else
+                    txtCostoTotalMOD.Text = total.ToString("N2")
+                    txtCostoTotalMOD.BackColor = Color.FromArgb(200, 100, 100)
+                End If
             End If
         Next
         total = 0
@@ -180,8 +186,13 @@ Public Class FormPresupuestoDeProduccion
 
             If IsNumeric(valor) Then
                 total += CDec(valor)
-                txtCostoTotalCIF.Text = total
-                txtCostoTotalCIF.Text = FormatCurrency(total, 2)
+                If total >= 0 Then
+                    txtCostoTotalCIF.Text = total.ToString("C2")
+                    txtCostoTotalCIF.BackColor = SystemColors.Window
+                Else
+                    txtCostoTotalCIF.Text = total.ToString("C2")
+                    txtCostoTotalCIF.BackColor = Color.FromArgb(200, 100, 100)
+                End If
             End If
         Next
         total = 0
@@ -192,7 +203,13 @@ Public Class FormPresupuestoDeProduccion
 
             If IsNumeric(valor) Then
                 total += CDec(valor)
-                txtCostoTotalPlaneado.Text = total.ToString("C2")
+                If total >= 0 Then
+                    txtCostoTotalPlaneado.Text = total.ToString("C2")
+                    txtCostoTotalPlaneado.BackColor = SystemColors.Window
+                Else
+                    txtCostoTotalPlaneado.Text = total.ToString("C2")
+                    txtCostoTotalPlaneado.BackColor = Color.FromArgb(200, 100, 100)
+                End If
             End If
         Next
         total = 0
