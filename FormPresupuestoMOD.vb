@@ -98,6 +98,13 @@
     End Sub
 
     Private Sub dtgPresupuestoMOD_RowsRemoved(sender As Object, e As DataGridViewRowsRemovedEventArgs) Handles dtgPresupuestoMOD.RowsRemoved
+        LimpiarTXT()
         CalcularTotal()
+    End Sub
+
+    Private Sub LimpiarTXT()
+        txtTotalHoras.Clear()
+        txtTotalMOD.Clear()
+        txtUnidadesProducir.Clear()
     End Sub
 End Class

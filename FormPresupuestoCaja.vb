@@ -114,7 +114,16 @@
     End Sub
 
     Private Sub dtgPresupuestoCaja_RowsRemoved(sender As Object, e As DataGridViewRowsRemovedEventArgs) Handles dtgPresupuestoCaja.RowsRemoved
+        LimpiarTxt()
         CalcularTotal()
+    End Sub
+
+    Private Sub LimpiarTxt()
+        txtIngresosPorVentas.Clear()
+        txtFNM.Clear()
+        txtOtrosPagos.Clear()
+        txtPagoProv.Clear()
+        txtPagoSueldos.Clear()
     End Sub
 
 End Class

@@ -89,7 +89,6 @@ Public Class FormPresupuestoDeProduccion
     Private Sub CalcularTotal()
         Dim total As Decimal = 0
 
-
         For Each fila As DataGridViewRow In dtgPresupuestoProducción.Rows
             Dim valor = fila.Cells("Unidades_a_Vender").Value
 
@@ -180,7 +179,18 @@ Public Class FormPresupuestoDeProduccion
 
     End Sub
     Private Sub dtgPresupuestoProducción_RowsRemoved(sender As Object, e As DataGridViewRowsRemovedEventArgs) Handles dtgPresupuestoProducción.RowsRemoved
+        LimpiarTxts()
         CalcularTotal()
     End Sub
 
+    Private Sub LimpiarTxts()
+        txtTotalUndVender.Clear()
+        txtCostoTotalMOD.Clear()
+        txtCostoTotalPlaneado.Clear()
+        txtCostoTotalProduccion.Clear()
+        txtInventarioFinal.Clear()
+        txtInventarioInicial.Clear()
+        txtTotalUndVender.Clear()
+        txtUnidadesProducir.Clear()
+    End Sub
 End Class
