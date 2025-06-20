@@ -75,4 +75,7 @@ Public Class FrmGastos_Indirectos
         CalcularTotal()
     End Sub
 
+    Private Sub TxtConcepto_TextChanged(sender As Object, e As EventArgs) Handles TxtConcepto.TextChanged
+
+    End Sub
 End Class

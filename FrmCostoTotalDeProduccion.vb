@@ -71,15 +71,21 @@ Public Class FrmCostoTotalDeProduccion
         DtgCostoTotalDeProduccion.AllowUserToAddRows = False
     End Sub
 
-    Private Sub TxtProducto_Validating(sender As Object, e As CancelEventArgs) Handles TxtProducto.Validating
+    Private Sub TxtProducto_KeyUp(sender As Object, e As KeyEventArgs) Handles TxtProducto.KeyUp
         If TxtProducto.Text = ("") Then
             MsgBox("Por favor, no deje espacios")
             TxtProducto.Clear()
             TxtProducto.Focus()
         End If
+        If IsNumeric(TxtProducto.Text) Then
+            MsgBox("Por favor, escriba un valor no numerico para el Producto")
+            TxtProducto.Clear()
+            TxtProducto.Focus()
+        End If
     End Sub
 
-    Private Sub TxtMPD_Validated(sender As Object, e As EventArgs) Handles TxtMPD.Validated
+    Private Sub TxtMPD_KeyUp(sender As Object, e As KeyEventArgs) Handles TxtMPD.KeyUp
+
         If Not IsNumeric(TxtMPD.Text) Then
             MsgBox("Por favor, escriba un valor numérico para Materia Prima Directa")
             TxtMPD.Clear()
@@ -93,7 +99,8 @@ Public Class FrmCostoTotalDeProduccion
             End If
         End If
     End Sub
-    Private Sub TxtGifAsignado_Validating(sender As Object, e As CancelEventArgs) Handles TxtGifAsignado.Validating
+
+    Private Sub TxtGifAsignado_KeyUp(sender As Object, e As KeyEventArgs) Handles TxtGifAsignado.KeyUp
         If Not IsNumeric(TxtGifAsignado.Text) Then
             MsgBox("Por favor, escriba un valor numérico para Materia Prima Directa")
             TxtGifAsignado.Clear()
@@ -107,8 +114,7 @@ Public Class FrmCostoTotalDeProduccion
             End If
         End If
     End Sub
-
-    Private Sub TxtMOD_Validating(sender As Object, e As CancelEventArgs) Handles TxtMOD.Validating
+    Private Sub TxtMOD_KeyUp(sender As Object, e As KeyEventArgs) Handles TxtMOD.KeyUp
         If Not IsNumeric(TxtMOD.Text) Then
             MsgBox("Por favor, escriba un valor numérico para Materia Prima Directa")
             TxtMOD.Clear()
@@ -122,8 +128,6 @@ Public Class FrmCostoTotalDeProduccion
             End If
         End If
     End Sub
-
-
 
     Private Sub CalcularTotal_GIF()
         Dim total As Decimal = 0
@@ -184,6 +188,14 @@ Public Class FrmCostoTotalDeProduccion
         CalcularTotal_GIF()
         CalcularTotal_MOD()
         CalcularTotal_MPD()
+
+    End Sub
+
+    Private Sub TxtProducto_TextChanged(sender As Object, e As EventArgs) Handles TxtProducto.TextChanged
+
+    End Sub
+
+    Private Sub TxtMPD_TextChanged(sender As Object, e As EventArgs) Handles TxtMPD.TextChanged
 
     End Sub
 End Class
