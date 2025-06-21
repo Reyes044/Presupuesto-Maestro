@@ -22,6 +22,9 @@
     End Sub
 
     Private Sub dtgPresupuestoCaja_CellEndEdit(sender As Object, e As DataGridViewCellEventArgs) Handles dtgPresupuestoCaja.CellEndEdit
+
+        LimpiarTxt()
+
         Dim columnasDecimal As String() = {"Ingresos_por_Ventas", "Pagos_Proveedores", "Pago_de_Sueldos", "Otros_Pagos", "Flujo_Mes"}
 
         Dim nombreColumna As String = dtgPresupuestoCaja.Columns(e.ColumnIndex).Name
@@ -38,9 +41,11 @@
             Dim valorDecimal As Decimal
 
             If Decimal.TryParse(texto, valorDecimal) And valorDecimal > 0 Then
+                celda.Style.BackColor = Color.White
                 celda.Value = valorDecimal
             Else
                 MessageBox.Show("Solo se permiten valores numéricos en '" & nombreColumna & "'.", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                celda.Style.BackColor = Color.Yellow
                 celda.Value = Nothing
             End If
         End If
@@ -48,6 +53,14 @@
         'Calculos'
         dtgPresupuestoCaja.CurrentRow.Cells(5).Value = dtgPresupuestoCaja.CurrentRow.Cells(1).Value - dtgPresupuestoCaja.CurrentRow.Cells(2).Value - dtgPresupuestoCaja.CurrentRow.Cells(3).Value - dtgPresupuestoCaja.CurrentRow.Cells(4).Value
         CalcularTotal()
+
+        If dtgPresupuestoCaja.CurrentRow.Cells(5).Value < 0 Then
+            dtgPresupuestoCaja.CurrentRow.Cells(5).Style.BackColor = Color.FromArgb(200, 100, 100)
+
+        Else
+            dtgPresupuestoCaja.CurrentRow.Cells(5).Style.BackColor = Color.Gray
+        End If
+
     End Sub
 
     Private Sub dtgPresupuestoCaja_SelectionChanged(sender As Object, e As EventArgs) Handles dtgPresupuestoCaja.SelectionChanged
@@ -107,7 +120,13 @@
 
             If IsNumeric(valor) Then
                 total += CDec(valor)
-                txtFNM.Text = total.ToString("C2")
+                If total >= 0 Then
+                    txtFNM.Text = total.ToString("C2")
+                    txtFNM.BackColor = SystemColors.Window
+                Else
+                    txtFNM.Text = total.ToString("C2")
+                    txtFNM.BackColor = Color.FromArgb(200, 100, 100)
+                End If
             End If
         Next
         total = 0

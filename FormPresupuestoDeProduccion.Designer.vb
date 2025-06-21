@@ -22,20 +22,32 @@ Partial Class FormPresupuestoDeProduccion
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle40 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle41 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle42 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle43 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle44 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle45 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle46 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle47 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle48 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle49 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle50 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle51 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle52 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.dtgPresupuestoProducción = New System.Windows.Forms.DataGridView()
+        Me.Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Unidades_a_Vender = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Inventario_Final = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Inventario_Inicial = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Costo_Unitario = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MOD_Unidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CIF_Unidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Unidades_a_Producir = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Costo_Total_Producción = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Costo_Total_MOD = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Costo_Total_CIF = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Costo_Total_Planeado = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.txtTotalUndVender = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -58,18 +70,7 @@ Partial Class FormPresupuestoDeProduccion
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Unidades_a_Vender = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Inventario_Final = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Inventario_Inicial = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Costo_Unitario = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MOD_Unidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CIF_Unidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Unidades_a_Producir = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Costo_Total_Producción = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Costo_Total_MOD = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Costo_Total_CIF = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Costo_Total_Planeado = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label10 = New System.Windows.Forms.Label()
         CType(Me.dtgPresupuestoProducción, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -80,14 +81,14 @@ Partial Class FormPresupuestoDeProduccion
         Me.dtgPresupuestoProducción.AllowUserToResizeRows = False
         Me.dtgPresupuestoProducción.BackgroundColor = System.Drawing.SystemColors.Control
         Me.dtgPresupuestoProducción.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        DataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle40.BackColor = System.Drawing.SystemColors.Info
-        DataGridViewCellStyle40.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle40.ForeColor = System.Drawing.SystemColors.HotTrack
-        DataGridViewCellStyle40.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle40.SelectionForeColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtgPresupuestoProducción.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle40
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Info
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.HotTrack
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtgPresupuestoProducción.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
         Me.dtgPresupuestoProducción.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dtgPresupuestoProducción.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Producto, Me.Unidades_a_Vender, Me.Inventario_Final, Me.Inventario_Inicial, Me.Costo_Unitario, Me.MOD_Unidad, Me.CIF_Unidad, Me.Unidades_a_Producir, Me.Costo_Total_Producción, Me.Costo_Total_MOD, Me.Costo_Total_CIF, Me.Costo_Total_Planeado})
         Me.dtgPresupuestoProducción.GridColor = System.Drawing.SystemColors.InfoText
@@ -97,6 +98,139 @@ Partial Class FormPresupuestoDeProduccion
         Me.dtgPresupuestoProducción.RowHeadersWidth = 62
         Me.dtgPresupuestoProducción.Size = New System.Drawing.Size(1840, 569)
         Me.dtgPresupuestoProducción.TabIndex = 1
+        '
+        'Producto
+        '
+        DataGridViewCellStyle15.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        Me.Producto.DefaultCellStyle = DataGridViewCellStyle15
+        Me.Producto.HeaderText = "Producto"
+        Me.Producto.MinimumWidth = 8
+        Me.Producto.Name = "Producto"
+        Me.Producto.Width = 150
+        '
+        'Unidades_a_Vender
+        '
+        DataGridViewCellStyle16.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle16.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle16.Format = "N2"
+        Me.Unidades_a_Vender.DefaultCellStyle = DataGridViewCellStyle16
+        Me.Unidades_a_Vender.HeaderText = "Unidades a vender"
+        Me.Unidades_a_Vender.MinimumWidth = 8
+        Me.Unidades_a_Vender.Name = "Unidades_a_Vender"
+        Me.Unidades_a_Vender.Width = 150
+        '
+        'Inventario_Final
+        '
+        DataGridViewCellStyle17.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle17.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle17.Format = "N2"
+        Me.Inventario_Final.DefaultCellStyle = DataGridViewCellStyle17
+        Me.Inventario_Final.HeaderText = "Inventario Final"
+        Me.Inventario_Final.MinimumWidth = 8
+        Me.Inventario_Final.Name = "Inventario_Final"
+        Me.Inventario_Final.Width = 150
+        '
+        'Inventario_Inicial
+        '
+        DataGridViewCellStyle18.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle18.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle18.Format = "N2"
+        Me.Inventario_Inicial.DefaultCellStyle = DataGridViewCellStyle18
+        Me.Inventario_Inicial.HeaderText = "Inventario Inicial"
+        Me.Inventario_Inicial.MinimumWidth = 8
+        Me.Inventario_Inicial.Name = "Inventario_Inicial"
+        Me.Inventario_Inicial.Width = 150
+        '
+        'Costo_Unitario
+        '
+        DataGridViewCellStyle19.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle19.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle19.Format = "C2"
+        Me.Costo_Unitario.DefaultCellStyle = DataGridViewCellStyle19
+        Me.Costo_Unitario.HeaderText = "Costo Unitario"
+        Me.Costo_Unitario.MinimumWidth = 8
+        Me.Costo_Unitario.Name = "Costo_Unitario"
+        Me.Costo_Unitario.Width = 150
+        '
+        'MOD_Unidad
+        '
+        DataGridViewCellStyle20.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle20.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle20.Format = "C2"
+        Me.MOD_Unidad.DefaultCellStyle = DataGridViewCellStyle20
+        Me.MOD_Unidad.HeaderText = "MOD por Unidad"
+        Me.MOD_Unidad.MinimumWidth = 8
+        Me.MOD_Unidad.Name = "MOD_Unidad"
+        Me.MOD_Unidad.Width = 150
+        '
+        'CIF_Unidad
+        '
+        DataGridViewCellStyle21.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle21.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle21.Format = "C2"
+        Me.CIF_Unidad.DefaultCellStyle = DataGridViewCellStyle21
+        Me.CIF_Unidad.HeaderText = "CIF por Unidad"
+        Me.CIF_Unidad.MinimumWidth = 8
+        Me.CIF_Unidad.Name = "CIF_Unidad"
+        Me.CIF_Unidad.Width = 150
+        '
+        'Unidades_a_Producir
+        '
+        DataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.ControlDark
+        DataGridViewCellStyle22.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle22.Format = "N2"
+        Me.Unidades_a_Producir.DefaultCellStyle = DataGridViewCellStyle22
+        Me.Unidades_a_Producir.HeaderText = "Unidades a Producir"
+        Me.Unidades_a_Producir.MinimumWidth = 8
+        Me.Unidades_a_Producir.Name = "Unidades_a_Producir"
+        Me.Unidades_a_Producir.Width = 150
+        '
+        'Costo_Total_Producción
+        '
+        DataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.ControlDark
+        DataGridViewCellStyle23.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle23.Format = "C2"
+        Me.Costo_Total_Producción.DefaultCellStyle = DataGridViewCellStyle23
+        Me.Costo_Total_Producción.HeaderText = "Costo Total Producción"
+        Me.Costo_Total_Producción.MinimumWidth = 8
+        Me.Costo_Total_Producción.Name = "Costo_Total_Producción"
+        Me.Costo_Total_Producción.Width = 150
+        '
+        'Costo_Total_MOD
+        '
+        DataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.ControlDark
+        DataGridViewCellStyle24.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle24.Format = "C2"
+        Me.Costo_Total_MOD.DefaultCellStyle = DataGridViewCellStyle24
+        Me.Costo_Total_MOD.HeaderText = "Costo Total MOD"
+        Me.Costo_Total_MOD.MinimumWidth = 8
+        Me.Costo_Total_MOD.Name = "Costo_Total_MOD"
+        Me.Costo_Total_MOD.Width = 150
+        '
+        'Costo_Total_CIF
+        '
+        DataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.ControlDark
+        DataGridViewCellStyle25.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle25.Format = "C2"
+        Me.Costo_Total_CIF.DefaultCellStyle = DataGridViewCellStyle25
+        Me.Costo_Total_CIF.HeaderText = "Costo Total CIF"
+        Me.Costo_Total_CIF.MinimumWidth = 8
+        Me.Costo_Total_CIF.Name = "Costo_Total_CIF"
+        Me.Costo_Total_CIF.Width = 150
+        '
+        'Costo_Total_Planeado
+        '
+        DataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.ControlDark
+        DataGridViewCellStyle26.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle26.Format = "C2"
+        Me.Costo_Total_Planeado.DefaultCellStyle = DataGridViewCellStyle26
+        Me.Costo_Total_Planeado.HeaderText = "Costo Total Planeado"
+        Me.Costo_Total_Planeado.MinimumWidth = 8
+        Me.Costo_Total_Planeado.Name = "Costo_Total_Planeado"
+        Me.Costo_Total_Planeado.Width = 150
         '
         'txtTotalUndVender
         '
@@ -297,6 +431,7 @@ Partial Class FormPresupuestoDeProduccion
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.btnEliminar)
         Me.GroupBox1.Controls.Add(Me.btnAgregarColumn)
         Me.GroupBox1.Controls.Add(Me.Label1)
@@ -314,138 +449,14 @@ Partial Class FormPresupuestoDeProduccion
         Me.GroupBox2.TabIndex = 36
         Me.GroupBox2.TabStop = False
         '
-        'Producto
+        'Label10
         '
-        DataGridViewCellStyle41.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle41.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle41.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle41.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Producto.DefaultCellStyle = DataGridViewCellStyle41
-        Me.Producto.HeaderText = "Producto"
-        Me.Producto.MinimumWidth = 8
-        Me.Producto.Name = "Producto"
-        Me.Producto.Width = 150
-        '
-        'Unidades_a_Vender
-        '
-        DataGridViewCellStyle42.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle42.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle42.Format = "N2"
-        Me.Unidades_a_Vender.DefaultCellStyle = DataGridViewCellStyle42
-        Me.Unidades_a_Vender.HeaderText = "Unidades a vender"
-        Me.Unidades_a_Vender.MinimumWidth = 8
-        Me.Unidades_a_Vender.Name = "Unidades_a_Vender"
-        Me.Unidades_a_Vender.Width = 150
-        '
-        'Inventario_Final
-        '
-        DataGridViewCellStyle43.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle43.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle43.Format = "N2"
-        Me.Inventario_Final.DefaultCellStyle = DataGridViewCellStyle43
-        Me.Inventario_Final.HeaderText = "Inventario Final"
-        Me.Inventario_Final.MinimumWidth = 8
-        Me.Inventario_Final.Name = "Inventario_Final"
-        Me.Inventario_Final.Width = 150
-        '
-        'Inventario_Inicial
-        '
-        DataGridViewCellStyle44.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle44.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle44.Format = "N2"
-        Me.Inventario_Inicial.DefaultCellStyle = DataGridViewCellStyle44
-        Me.Inventario_Inicial.HeaderText = "Inventario Inicial"
-        Me.Inventario_Inicial.MinimumWidth = 8
-        Me.Inventario_Inicial.Name = "Inventario_Inicial"
-        Me.Inventario_Inicial.Width = 150
-        '
-        'Costo_Unitario
-        '
-        DataGridViewCellStyle45.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle45.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle45.Format = "C2"
-        Me.Costo_Unitario.DefaultCellStyle = DataGridViewCellStyle45
-        Me.Costo_Unitario.HeaderText = "Costo Unitario"
-        Me.Costo_Unitario.MinimumWidth = 8
-        Me.Costo_Unitario.Name = "Costo_Unitario"
-        Me.Costo_Unitario.Width = 150
-        '
-        'MOD_Unidad
-        '
-        DataGridViewCellStyle46.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle46.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle46.Format = "C2"
-        Me.MOD_Unidad.DefaultCellStyle = DataGridViewCellStyle46
-        Me.MOD_Unidad.HeaderText = "MOD por Unidad"
-        Me.MOD_Unidad.MinimumWidth = 8
-        Me.MOD_Unidad.Name = "MOD_Unidad"
-        Me.MOD_Unidad.Width = 150
-        '
-        'CIF_Unidad
-        '
-        DataGridViewCellStyle47.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle47.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle47.Format = "C2"
-        Me.CIF_Unidad.DefaultCellStyle = DataGridViewCellStyle47
-        Me.CIF_Unidad.HeaderText = "CIF por Unidad"
-        Me.CIF_Unidad.MinimumWidth = 8
-        Me.CIF_Unidad.Name = "CIF_Unidad"
-        Me.CIF_Unidad.Width = 150
-        '
-        'Unidades_a_Producir
-        '
-        DataGridViewCellStyle48.BackColor = System.Drawing.SystemColors.ControlDark
-        DataGridViewCellStyle48.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle48.Format = "N2"
-        Me.Unidades_a_Producir.DefaultCellStyle = DataGridViewCellStyle48
-        Me.Unidades_a_Producir.HeaderText = "Unidades a Producir"
-        Me.Unidades_a_Producir.MinimumWidth = 8
-        Me.Unidades_a_Producir.Name = "Unidades_a_Producir"
-        Me.Unidades_a_Producir.Width = 150
-        '
-        'Costo_Total_Producción
-        '
-        DataGridViewCellStyle49.BackColor = System.Drawing.SystemColors.ControlDark
-        DataGridViewCellStyle49.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle49.Format = "C2"
-        Me.Costo_Total_Producción.DefaultCellStyle = DataGridViewCellStyle49
-        Me.Costo_Total_Producción.HeaderText = "Costo Total Producción"
-        Me.Costo_Total_Producción.MinimumWidth = 8
-        Me.Costo_Total_Producción.Name = "Costo_Total_Producción"
-        Me.Costo_Total_Producción.Width = 150
-        '
-        'Costo_Total_MOD
-        '
-        DataGridViewCellStyle50.BackColor = System.Drawing.SystemColors.ControlDark
-        DataGridViewCellStyle50.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle50.Format = "C2"
-        Me.Costo_Total_MOD.DefaultCellStyle = DataGridViewCellStyle50
-        Me.Costo_Total_MOD.HeaderText = "Costo Total MOD"
-        Me.Costo_Total_MOD.MinimumWidth = 8
-        Me.Costo_Total_MOD.Name = "Costo_Total_MOD"
-        Me.Costo_Total_MOD.Width = 150
-        '
-        'Costo_Total_CIF
-        '
-        DataGridViewCellStyle51.BackColor = System.Drawing.SystemColors.ControlDark
-        DataGridViewCellStyle51.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle51.Format = "C2"
-        Me.Costo_Total_CIF.DefaultCellStyle = DataGridViewCellStyle51
-        Me.Costo_Total_CIF.HeaderText = "Costo Total CIF"
-        Me.Costo_Total_CIF.MinimumWidth = 8
-        Me.Costo_Total_CIF.Name = "Costo_Total_CIF"
-        Me.Costo_Total_CIF.Width = 150
-        '
-        'Costo_Total_Planeado
-        '
-        DataGridViewCellStyle52.BackColor = System.Drawing.SystemColors.ControlDark
-        DataGridViewCellStyle52.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle52.Format = "C2"
-        Me.Costo_Total_Planeado.DefaultCellStyle = DataGridViewCellStyle52
-        Me.Costo_Total_Planeado.HeaderText = "Costo Total Planeado"
-        Me.Costo_Total_Planeado.MinimumWidth = 8
-        Me.Costo_Total_Planeado.Name = "Costo_Total_Planeado"
-        Me.Costo_Total_Planeado.Width = 150
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(34, 32)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(397, 20)
+        Me.Label10.TabIndex = 9
+        Me.Label10.Text = "Nota: Por favor, ingrese primero el nombre del producto"
         '
         'FormPresupuestoDeProduccion
         '
@@ -518,4 +529,5 @@ Partial Class FormPresupuestoDeProduccion
     Friend WithEvents Costo_Total_MOD As DataGridViewTextBoxColumn
     Friend WithEvents Costo_Total_CIF As DataGridViewTextBoxColumn
     Friend WithEvents Costo_Total_Planeado As DataGridViewTextBoxColumn
+    Friend WithEvents Label10 As Label
 End Class

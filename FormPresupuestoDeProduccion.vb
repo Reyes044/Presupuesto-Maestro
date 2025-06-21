@@ -6,22 +6,52 @@ Public Class FormPresupuestoDeProduccion
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        For i = 1 To dtgPresupuestoProducción.ColumnCount - 1
+            dtgPresupuestoProducción.Columns(i).ReadOnly = True
+        Next
+
+
         For i = 0 To dtgPresupuestoProducción.ColumnCount - 1
             dtgPresupuestoProducción.Columns(i).SortMode = DataGridViewColumnSortMode.NotSortable
         Next
 
         dtgPresupuestoProducción.Columns(0).Width = 300
 
-        dtgPresupuestoProducción.Columns(7).ReadOnly = True
-        dtgPresupuestoProducción.Columns(8).ReadOnly = True
-        dtgPresupuestoProducción.Columns(9).ReadOnly = True
-        dtgPresupuestoProducción.Columns(10).ReadOnly = True
-        dtgPresupuestoProducción.Columns(11).ReadOnly = True
+        'dtgPresupuestoProducción.Columns(7).ReadOnly = True
+        'dtgPresupuestoProducción.Columns(8).ReadOnly = True
+        'dtgPresupuestoProducción.Columns(9).ReadOnly = True
+        'dtgPresupuestoProducción.Columns(10).ReadOnly = True
+        'dtgPresupuestoProducción.Columns(11).ReadOnly = True
 
         dtgPresupuestoProducción.AllowUserToAddRows = False
     End Sub
 
     Private Sub dtgPresupuestoProducción_CellEndEdit(sender As Object, e As DataGridViewCellEventArgs) Handles dtgPresupuestoProducción.CellEndEdit
+
+        'Para habilitar las demas columnas'
+
+        If e.ColumnIndex = 0 Then
+            Dim celdaProducto = dtgPresupuestoProducción.Rows(e.RowIndex).Cells(0)
+            Dim texto As String = ""
+
+            If celdaProducto.Value IsNot Nothing Then
+                texto = celdaProducto.Value.ToString().Trim()
+            End If
+
+            If texto <> "" Then
+                For i = 1 To 6
+                    dtgPresupuestoProducción.Rows(e.RowIndex).Cells(i).ReadOnly = False
+                    dtgPresupuestoProducción.Rows(e.RowIndex).Cells(i).Style.BackColor = Color.White
+                Next
+            Else
+                For i = 1 To 6
+                    dtgPresupuestoProducción.Rows(e.RowIndex).Cells(i).ReadOnly = True
+                    dtgPresupuestoProducción.Rows(e.RowIndex).Cells(i).Style.BackColor = Color.LightGray
+                Next
+            End If
+        End If
+
+
 
         LimpiarTxts()
 
@@ -75,7 +105,6 @@ Public Class FormPresupuestoDeProduccion
 
             Else
                 dtgPresupuestoProducción.CurrentRow.Cells(i).Style.BackColor = Color.Gray
-
             End If
         Next
 
@@ -86,7 +115,11 @@ Public Class FormPresupuestoDeProduccion
     End Sub
 
     Private Sub btnAgregarColumn_Click(sender As Object, e As EventArgs) Handles btnAgregarColumn.Click
-        dtgPresupuestoProducción.Rows.Add()
+        Dim index = dtgPresupuestoProducción.Rows.Add()
+        For i = 1 To 6
+            dtgPresupuestoProducción.Rows(index).Cells(i).ReadOnly = True
+            dtgPresupuestoProducción.Rows(index).Cells(i).Style.BackColor = Color.LightGray
+        Next
     End Sub
 
     Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click

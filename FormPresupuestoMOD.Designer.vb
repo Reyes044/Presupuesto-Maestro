@@ -55,10 +55,10 @@ Partial Class FormPresupuestoMOD
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Rockwell", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(526, 16)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(789, 25)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(214, 27)
+        Me.Label1.Size = New System.Drawing.Size(319, 41)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Presupuesto MOD"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -75,9 +75,11 @@ Partial Class FormPresupuestoMOD
         Me.dtgPresupuestoMOD.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dtgPresupuestoMOD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dtgPresupuestoMOD.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Producto, Me.Unidades_a_Producir, Me.Horas_por_Unidad, Me.Total_de_Horas, Me.Costo_por_Horas, Me.Costo_Total_MOD})
-        Me.dtgPresupuestoMOD.Location = New System.Drawing.Point(85, 61)
+        Me.dtgPresupuestoMOD.Location = New System.Drawing.Point(128, 94)
+        Me.dtgPresupuestoMOD.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.dtgPresupuestoMOD.Name = "dtgPresupuestoMOD"
-        Me.dtgPresupuestoMOD.Size = New System.Drawing.Size(1031, 275)
+        Me.dtgPresupuestoMOD.RowHeadersWidth = 62
+        Me.dtgPresupuestoMOD.Size = New System.Drawing.Size(1546, 423)
         Me.dtgPresupuestoMOD.TabIndex = 5
         '
         'Producto
@@ -85,6 +87,7 @@ Partial Class FormPresupuestoMOD
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Producto.DefaultCellStyle = DataGridViewCellStyle2
         Me.Producto.HeaderText = "Producto"
+        Me.Producto.MinimumWidth = 8
         Me.Producto.Name = "Producto"
         Me.Producto.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.Producto.Width = 387
@@ -97,6 +100,7 @@ Partial Class FormPresupuestoMOD
         DataGridViewCellStyle3.NullValue = "0"
         Me.Unidades_a_Producir.DefaultCellStyle = DataGridViewCellStyle3
         Me.Unidades_a_Producir.HeaderText = "Unidades a Producir"
+        Me.Unidades_a_Producir.MinimumWidth = 8
         Me.Unidades_a_Producir.Name = "Unidades_a_Producir"
         Me.Unidades_a_Producir.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.Unidades_a_Producir.Width = 120
@@ -108,6 +112,7 @@ Partial Class FormPresupuestoMOD
         DataGridViewCellStyle4.NullValue = "0"
         Me.Horas_por_Unidad.DefaultCellStyle = DataGridViewCellStyle4
         Me.Horas_por_Unidad.HeaderText = "Horas por Unidad"
+        Me.Horas_por_Unidad.MinimumWidth = 8
         Me.Horas_por_Unidad.Name = "Horas_por_Unidad"
         Me.Horas_por_Unidad.Width = 120
         '
@@ -119,6 +124,7 @@ Partial Class FormPresupuestoMOD
         DataGridViewCellStyle5.NullValue = "0"
         Me.Total_de_Horas.DefaultCellStyle = DataGridViewCellStyle5
         Me.Total_de_Horas.HeaderText = "Total de Horas"
+        Me.Total_de_Horas.MinimumWidth = 8
         Me.Total_de_Horas.Name = "Total_de_Horas"
         Me.Total_de_Horas.Width = 120
         '
@@ -130,6 +136,7 @@ Partial Class FormPresupuestoMOD
         DataGridViewCellStyle6.NullValue = "0"
         Me.Costo_por_Horas.DefaultCellStyle = DataGridViewCellStyle6
         Me.Costo_por_Horas.HeaderText = "Costo por horas"
+        Me.Costo_por_Horas.MinimumWidth = 8
         Me.Costo_por_Horas.Name = "Costo_por_Horas"
         Me.Costo_por_Horas.Width = 120
         '
@@ -141,14 +148,16 @@ Partial Class FormPresupuestoMOD
         DataGridViewCellStyle7.NullValue = "0"
         Me.Costo_Total_MOD.DefaultCellStyle = DataGridViewCellStyle7
         Me.Costo_Total_MOD.HeaderText = "Costo Total MOD"
+        Me.Costo_Total_MOD.MinimumWidth = 8
         Me.Costo_Total_MOD.Name = "Costo_Total_MOD"
         Me.Costo_Total_MOD.Width = 120
         '
         'btnAgregar
         '
-        Me.btnAgregar.Location = New System.Drawing.Point(417, 374)
+        Me.btnAgregar.Location = New System.Drawing.Point(626, 575)
+        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(177, 48)
+        Me.btnAgregar.Size = New System.Drawing.Size(266, 74)
         Me.btnAgregar.TabIndex = 6
         Me.btnAgregar.Text = "Agregar un Producto"
         Me.btnAgregar.UseVisualStyleBackColor = True
@@ -156,9 +165,10 @@ Partial Class FormPresupuestoMOD
         'btnEliminarProducto
         '
         Me.btnEliminarProducto.Enabled = False
-        Me.btnEliminarProducto.Location = New System.Drawing.Point(668, 374)
+        Me.btnEliminarProducto.Location = New System.Drawing.Point(1002, 575)
+        Me.btnEliminarProducto.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnEliminarProducto.Name = "btnEliminarProducto"
-        Me.btnEliminarProducto.Size = New System.Drawing.Size(177, 48)
+        Me.btnEliminarProducto.Size = New System.Drawing.Size(266, 74)
         Me.btnEliminarProducto.TabIndex = 7
         Me.btnEliminarProducto.Text = "Eliminar un Producto"
         Me.btnEliminarProducto.UseVisualStyleBackColor = True
@@ -167,9 +177,11 @@ Partial Class FormPresupuestoMOD
         '
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.dtgPresupuestoMOD)
-        Me.GroupBox1.Location = New System.Drawing.Point(49, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(74, 18)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1184, 433)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.GroupBox1.Size = New System.Drawing.Size(1776, 666)
         Me.GroupBox1.TabIndex = 8
         Me.GroupBox1.TabStop = False
         '
@@ -177,10 +189,10 @@ Partial Class FormPresupuestoMOD
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Rockwell", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(42, 472)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(63, 726)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(133, 39)
+        Me.Label2.Size = New System.Drawing.Size(198, 59)
         Me.Label2.TabIndex = 10
         Me.Label2.Text = "Totales"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -188,59 +200,65 @@ Partial Class FormPresupuestoMOD
         'txtUnidadesProducir
         '
         Me.txtUnidadesProducir.Enabled = False
-        Me.txtUnidadesProducir.Location = New System.Drawing.Point(150, 521)
+        Me.txtUnidadesProducir.Location = New System.Drawing.Point(225, 802)
+        Me.txtUnidadesProducir.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtUnidadesProducir.Name = "txtUnidadesProducir"
-        Me.txtUnidadesProducir.Size = New System.Drawing.Size(90, 20)
+        Me.txtUnidadesProducir.Size = New System.Drawing.Size(133, 26)
         Me.txtUnidadesProducir.TabIndex = 13
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(41, 528)
+        Me.Label3.Location = New System.Drawing.Point(62, 812)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(103, 13)
+        Me.Label3.Size = New System.Drawing.Size(152, 20)
         Me.Label3.TabIndex = 12
         Me.Label3.Text = "Unidades a Producir" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'txtTotalHoras
         '
         Me.txtTotalHoras.Enabled = False
-        Me.txtTotalHoras.Location = New System.Drawing.Point(150, 562)
+        Me.txtTotalHoras.Location = New System.Drawing.Point(225, 865)
+        Me.txtTotalHoras.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtTotalHoras.Name = "txtTotalHoras"
-        Me.txtTotalHoras.Size = New System.Drawing.Size(90, 20)
+        Me.txtTotalHoras.Size = New System.Drawing.Size(133, 26)
         Me.txtTotalHoras.TabIndex = 15
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(60, 565)
+        Me.Label4.Location = New System.Drawing.Point(90, 869)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(79, 13)
+        Me.Label4.Size = New System.Drawing.Size(116, 20)
         Me.Label4.TabIndex = 14
         Me.Label4.Text = "Total De Horas"
         '
         'txtTotalMOD
         '
         Me.txtTotalMOD.Enabled = False
-        Me.txtTotalMOD.Location = New System.Drawing.Point(150, 597)
+        Me.txtTotalMOD.Location = New System.Drawing.Point(225, 918)
+        Me.txtTotalMOD.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtTotalMOD.Name = "txtTotalMOD"
-        Me.txtTotalMOD.Size = New System.Drawing.Size(90, 20)
+        Me.txtTotalMOD.Size = New System.Drawing.Size(133, 26)
         Me.txtTotalMOD.TabIndex = 17
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(50, 604)
+        Me.Label5.Location = New System.Drawing.Point(75, 929)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(89, 13)
+        Me.Label5.Size = New System.Drawing.Size(131, 20)
         Me.Label5.TabIndex = 16
         Me.Label5.Text = "Costo Total MOD"
         '
         'FormPresupuestoMOD
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1245, 658)
+        Me.ClientSize = New System.Drawing.Size(1868, 1012)
         Me.Controls.Add(Me.txtTotalMOD)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.txtTotalHoras)
@@ -251,6 +269,7 @@ Partial Class FormPresupuestoMOD
         Me.Controls.Add(Me.btnEliminarProducto)
         Me.Controls.Add(Me.btnAgregar)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "FormPresupuestoMOD"
         Me.Text = "FormPresupuestoMOD"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

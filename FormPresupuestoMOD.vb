@@ -26,6 +26,8 @@
 
     Private Sub dtgPresupuestoMOD_CellEndEdit(sender As Object, e As DataGridViewCellEventArgs) Handles dtgPresupuestoMOD.CellEndEdit
 
+        LimpiarTXT()
+
         Dim columnasDecimal As String() = {"Unidades_a_Producir", "Horas_por_Unidad", "Total_de_Horas", "Costo_por_Horas", "Costo_Total_MOD"}
 
         Dim nombreColumna As String = dtgPresupuestoMOD.Columns(e.ColumnIndex).Name
@@ -42,10 +44,13 @@
             Dim valorDecimal As Decimal
 
             If Decimal.TryParse(texto, valorDecimal) And valorDecimal > 0 Then
+                celda.Style.BackColor = Color.White
                 celda.Value = valorDecimal
             Else
                 MessageBox.Show("Solo se permiten valores numéricos en '" & nombreColumna & "'.", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                celda.Style.BackColor = Color.Yellow
                 celda.Value = Nothing
+
             End If
         End If
 
@@ -107,4 +112,5 @@
         txtTotalMOD.Clear()
         txtUnidadesProducir.Clear()
     End Sub
+
 End Class
