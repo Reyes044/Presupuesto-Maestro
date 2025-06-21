@@ -6,6 +6,8 @@ Public Class FormPresupuestoDeProduccion
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        dtgPresupuestoProducción.MultiSelect = False
+
         For i = 1 To dtgPresupuestoProducción.ColumnCount - 1
             dtgPresupuestoProducción.Columns(i).ReadOnly = True
         Next
@@ -45,6 +47,7 @@ Public Class FormPresupuestoDeProduccion
                 Next
             Else
                 For i = 1 To 6
+                    dtgPresupuestoProducción.Rows(e.RowIndex).Cells(i).Value = Nothing
                     dtgPresupuestoProducción.Rows(e.RowIndex).Cells(i).ReadOnly = True
                     dtgPresupuestoProducción.Rows(e.RowIndex).Cells(i).Style.BackColor = Color.LightGray
                 Next
