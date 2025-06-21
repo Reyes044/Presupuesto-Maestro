@@ -7,17 +7,61 @@ Public Class FrmPresupuestoVentas
     Public publicidadUnidad1 As Decimal = 0
     Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnAgregar.Click
 
-        ' If TxtNombreProducto.Text = "Ingrese el nombre del producto" Then
-        ' TxtNombreProducto.Clear()
-        'TxtNombreProducto.Text.Trim()
-        'End If
-        ' If String.IsNullOrWhiteSpace(TxtNombreProducto.Text) Then
-        ' TxtNombreProducto.Clear()
-        'Box("Escriba un nombre del producto")
-        'TxtNombreProducto.Focus()
-        '  Else
+        If TxtNombreProducto.Text = ("Ingrese el nombre del producto") & ("") Then
+            TxtNombreProducto.Text = ("")
+            TxtNombreProducto.ForeColor = Color.Black
+            TxtNombreProducto.Font = New Font("Microsoft Sans Serif", 9, FontStyle.Regular)
+            txtPreciounitario.Enabled = True
 
-        'End If
+        End If
+        If TxtNombreProducto.Text Is Nothing Then
+            TxtNombreProducto.Clear()
+            MsgBox("Escriba un nombre del producto")
+        Else
+        End If
+
+        If txtunidaesproyectadas.Text = ("Ingrese las unidades proyectadas") Then
+            txtunidaesproyectadas.Text = ("")
+            txtunidaesproyectadas.ForeColor = Color.Black
+            txtunidaesproyectadas.Font = New Font("Microsoft Sans Serif", 9, FontStyle.Regular)
+            If Not IsNumeric(txtunidaesproyectadas.Text) Then
+                txtunidaesproyectadas.Clear()
+                txtunidaesproyectadas.Focus()
+            End If
+
+        End If
+
+        If txtPreciounitario.Text = ("Ingrese el precio") Then
+            txtPreciounitario.Text = ("")
+            txtPreciounitario.ForeColor = Color.Black
+            txtPreciounitario.Font = New Font("Microsoft Sans Serif", 9, FontStyle.Regular)
+            If Not IsNumeric(txtPreciounitario.Text) Then
+                txtPreciounitario.Clear()
+                txtPreciounitario.Focus()
+            End If
+
+        End If
+        If TxtGastoVentas.Text = ("Ingrese el gasto de ventas") Then
+            TxtGastoVentas.Text = ("")
+            TxtGastoVentas.ForeColor = Color.Black
+            TxtGastoVentas.Font = New Font("Microsoft Sans Serif", 9, FontStyle.Regular)
+            If Not IsNumeric(TxtGastoVentas.Text) Then
+                TxtGastoVentas.Clear()
+                TxtGastoVentas.Focus()
+            End If
+
+        End If
+        If txtPublicidadCsUnidad.Text = ("Ingrese publicidad/unidad") Then
+            txtPublicidadCsUnidad.Text = ("")
+            txtPublicidadCsUnidad.ForeColor = Color.Black
+            txtPublicidadCsUnidad.Font = New Font("Microsoft Sans Serif", 9, FontStyle.Regular)
+            If Not IsNumeric(txtPublicidadCsUnidad.Text) Then
+                txtPublicidadCsUnidad.Clear()
+                txtPublicidadCsUnidad.Focus()
+            End If
+
+        End If
+        ''Validaciones para textbox
 
         If String.IsNullOrWhiteSpace(txtPreciounitario.Text) Then
             txtPreciounitario.Clear()
@@ -68,15 +112,51 @@ Public Class FrmPresupuestoVentas
                 Return
 
             End If
+            'validando gasto de ventas en el botón
+            If TxtGastoVentas.Text.Trim = "" Then
+                MsgBox("No deje espacios en blanco")
+                TxtGastoVentas.Clear()
+                TxtGastoVentas.Focus()
+            End If
+            If TxtGastoVentas.Text = ("") Then
+                MsgBox("No se permiten espacios en blanco, en unidades proyectadas")
+                Return
+            End If
+            If Not IsNumeric(TxtGastoVentas.Text) Then
+                TxtGastoVentas.Clear()
+                TxtGastoVentas.Focus()
+                MsgBox("Escribe un valor numérico, para unidades proyectadas")
+                Return
+            End If
+            If IsNumeric(TxtGastoVentas.Text) Then
+                If CDbl(TxtGastoVentas.Text) <= 0 Then
+
+                    MsgBox("No se permiten numeros negativos o 0, en gasto de ventas")
+
+                    TxtGastoVentas.Clear()
+                    TxtGastoVentas.Focus()
+                Else
+                    Gastoventas1 = Decimal.Parse(TxtGastoVentas.Text)
+                End If
+            End If
 
 
         End If
         'Validando txt preciounitario
+        If txtPreciounitario.Text.Trim = "" Then
+            MsgBox("No deje espacios en blanco")
+            txtPreciounitario.Clear()
+            txtPreciounitario.Clear()
+        End If
+        If txtPreciounitario.Text = ("") Then
+            MsgBox("No se permiten espacios en blanco")
+            Return
+        End If
         If Not IsNumeric(txtPreciounitario.Text) Then
             txtPreciounitario.Clear()
             txtPreciounitario.Focus()
             MsgBox("Escribe un valor numérico, para Precio unitario")
-
+            Return
         End If
         If IsNumeric(txtPreciounitario.Text) Then
             If CDbl(txtPreciounitario.Text) <= 0 Then
@@ -88,33 +168,22 @@ Public Class FrmPresupuestoVentas
             Else
                 Preciounitario01 = Decimal.Parse(txtPreciounitario.Text)
             End If
-
-
         End If
-        'Validando txtgasto de ventas :p
-        If Not IsNumeric(TxtGastoVentas.Text) Then
-            TxtGastoVentas.Clear()
-            TxtGastoVentas.Focus()
-            MsgBox("Escribe un valor numérico, en gasto de ventas")
-
+        'Validando txtPublicidadCsUnidad
+        If txtPublicidadCsUnidad.Text.Trim = "" Then
+            MsgBox("No deje espacios en blanco")
+            txtPublicidadCsUnidad.Clear()
+            txtPublicidadCsUnidad.Focus()
         End If
-        If IsNumeric(TxtGastoVentas.Text) Then
-            If CDbl(TxtGastoVentas.Text) <= 0 Then
-
-                MsgBox("No se permiten numeros negativos o 0, en gasto de ventas")
-
-                TxtGastoVentas.Clear()
-                TxtGastoVentas.Focus()
-            Else
-                Gastoventas1 = Decimal.Parse(TxtGastoVentas.Text)
-            End If
+        If txtPublicidadCsUnidad.Text = ("") Then
+            MsgBox("No se permiten espacios en blanco, en unidades proyectadas")
+            Return
         End If
-        'Validando txtpublicidadunidad
         If Not IsNumeric(txtPublicidadCsUnidad.Text) Then
             txtPublicidadCsUnidad.Clear()
             txtPublicidadCsUnidad.Focus()
             MsgBox("Escribe un valor numérico, en publicidad (C$/unidad)")
-
+            Return
         End If
         If IsNumeric(txtPublicidadCsUnidad.Text) Then
             If CDbl(txtPublicidadCsUnidad.Text) <= 0 Then
@@ -123,6 +192,7 @@ Public Class FrmPresupuestoVentas
 
                 txtPublicidadCsUnidad.Clear()
                 txtPublicidadCsUnidad.Focus()
+                Return
             Else
                 publicidadUnidad1 = Decimal.Parse(txtPublicidadCsUnidad.Text)
             End If
@@ -153,6 +223,17 @@ Public Class FrmPresupuestoVentas
         txtPreciounitario.Clear()
         TxtGastoVentas.Clear()
         txtPublicidadCsUnidad.Clear()
+
+        'Cambiando fuentes pa resetear
+        TxtNombreProducto.Font = New Font("Microsoft Sans Serif", 8, FontStyle.Regular)
+        txtunidaesproyectadas.Font = New Font("Microsoft Sans Serif", 8, FontStyle.Regular)
+        txtPreciounitario.Font = New Font("Microsoft Sans Serif", 8, FontStyle.Regular)
+        TxtGastoVentas.Font = New Font("Microsoft Sans Serif", 8, FontStyle.Regular)
+        txtPublicidadCsUnidad.Font = New Font("Microsoft Sans Serif", 8, FontStyle.Regular)
+
+
+
+
 
     End Sub
 
@@ -329,4 +410,57 @@ Public Class FrmPresupuestoVentas
         txtTotalgastoPublicidad.Text = totalGastoPublicidad.ToString()
         txtTotalUtilidadbruta.Text = totalUtilidadBruta.ToString()
     End Sub
+
+
+
+    Private Sub txtPublicidadCsUnidad_Validating(sender As Object, e As CancelEventArgs) Handles txtPublicidadCsUnidad.Validating
+        If txtPublicidadCsUnidad.Text.Trim = "" Then
+            MsgBox("No deje espacios en blanco")
+            txtPublicidadCsUnidad.Clear()
+            txtPublicidadCsUnidad.Focus()
+        End If
+
+        If Not IsNumeric(txtPublicidadCsUnidad.Text) Then
+            txtPublicidadCsUnidad.Clear()
+            txtPublicidadCsUnidad.Focus()
+            MsgBox("Escribe un valor numérico")
+
+        End If
+        If IsNumeric(txtPublicidadCsUnidad.Text) Then
+            If CDbl(txtPublicidadCsUnidad.Text) <= 0 Then
+
+                MsgBox("No se permiten numeros negativos o 0")
+                txtPublicidadCsUnidad.Clear()
+                txtPublicidadCsUnidad.Focus()
+            End If
+        End If
+    End Sub
+
+    Private Sub txtPublicidadCsUnidad_Enter(sender As Object, e As EventArgs) Handles txtPublicidadCsUnidad.Enter
+        If txtPublicidadCsUnidad.Text = ("Ingrese publicidad/unidad") Then
+            txtPublicidadCsUnidad.Text = ("")
+            txtPublicidadCsUnidad.ForeColor = Color.Black
+            txtPublicidadCsUnidad.Font = New Font("Microsoft Sans Serif", 9, FontStyle.Regular)
+            If Not IsNumeric(txtPublicidadCsUnidad.Text) Then
+                txtPublicidadCsUnidad.Clear()
+                txtPublicidadCsUnidad.Focus()
+            End If
+
+        End If
+    End Sub
+
+    Private Sub txtunidaesproyectadas_Enter(sender As Object, e As EventArgs) Handles txtunidaesproyectadas.Enter
+        If txtunidaesproyectadas.Text = ("Ingrese las unidades proyectadas") Then
+            txtunidaesproyectadas.Text = ("")
+            txtunidaesproyectadas.ForeColor = Color.Black
+            txtunidaesproyectadas.Font = New Font("Microsoft Sans Serif", 9, FontStyle.Regular)
+            If Not IsNumeric(txtunidaesproyectadas.Text) Then
+                txtunidaesproyectadas.Clear()
+                txtunidaesproyectadas.Focus()
+            End If
+
+        End If
+    End Sub
+
+
 End Class
