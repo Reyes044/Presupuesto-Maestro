@@ -55,7 +55,7 @@ Partial Class FormPresupuestomaestro
         'BtnPresupuestoVentas
         '
         Me.BtnPresupuestoVentas.Location = New System.Drawing.Point(29, 43)
-        Me.BtnPresupuestoVentas.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnPresupuestoVentas.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnPresupuestoVentas.Name = "BtnPresupuestoVentas"
         Me.BtnPresupuestoVentas.Size = New System.Drawing.Size(232, 128)
         Me.BtnPresupuestoVentas.TabIndex = 1
@@ -73,7 +73,7 @@ Partial Class FormPresupuestomaestro
         'BtnPresupuestoProduccion
         '
         Me.BtnPresupuestoProduccion.Location = New System.Drawing.Point(311, 43)
-        Me.BtnPresupuestoProduccion.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnPresupuestoProduccion.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnPresupuestoProduccion.Name = "BtnPresupuestoProduccion"
         Me.BtnPresupuestoProduccion.Size = New System.Drawing.Size(232, 128)
         Me.BtnPresupuestoProduccion.TabIndex = 3
@@ -82,7 +82,7 @@ Partial Class FormPresupuestomaestro
         'BtnCostoTotalProducción
         '
         Me.BtnCostoTotalProducción.Location = New System.Drawing.Point(597, 43)
-        Me.BtnCostoTotalProducción.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnCostoTotalProducción.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnCostoTotalProducción.Name = "BtnCostoTotalProducción"
         Me.BtnCostoTotalProducción.Size = New System.Drawing.Size(232, 128)
         Me.BtnCostoTotalProducción.TabIndex = 4
@@ -91,7 +91,7 @@ Partial Class FormPresupuestomaestro
         'BtnPresupuestoCompras
         '
         Me.BtnPresupuestoCompras.Location = New System.Drawing.Point(879, 43)
-        Me.BtnPresupuestoCompras.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnPresupuestoCompras.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnPresupuestoCompras.Name = "BtnPresupuestoCompras"
         Me.BtnPresupuestoCompras.Size = New System.Drawing.Size(232, 128)
         Me.BtnPresupuestoCompras.TabIndex = 5
@@ -100,7 +100,7 @@ Partial Class FormPresupuestomaestro
         'BtnPresupuestoMod
         '
         Me.BtnPresupuestoMod.Location = New System.Drawing.Point(29, 229)
-        Me.BtnPresupuestoMod.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnPresupuestoMod.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnPresupuestoMod.Name = "BtnPresupuestoMod"
         Me.BtnPresupuestoMod.Size = New System.Drawing.Size(232, 128)
         Me.BtnPresupuestoMod.TabIndex = 6
@@ -109,7 +109,7 @@ Partial Class FormPresupuestomaestro
         'BtnGastosindirectos
         '
         Me.BtnGastosindirectos.Location = New System.Drawing.Point(311, 229)
-        Me.BtnGastosindirectos.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnGastosindirectos.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnGastosindirectos.Name = "BtnGastosindirectos"
         Me.BtnGastosindirectos.Size = New System.Drawing.Size(232, 128)
         Me.BtnGastosindirectos.TabIndex = 7
@@ -118,7 +118,7 @@ Partial Class FormPresupuestomaestro
         'BtnGastoAdmyVentas
         '
         Me.BtnGastoAdmyVentas.Location = New System.Drawing.Point(597, 229)
-        Me.BtnGastoAdmyVentas.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnGastoAdmyVentas.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnGastoAdmyVentas.Name = "BtnGastoAdmyVentas"
         Me.BtnGastoAdmyVentas.Size = New System.Drawing.Size(232, 128)
         Me.BtnGastoAdmyVentas.TabIndex = 8
@@ -127,7 +127,7 @@ Partial Class FormPresupuestomaestro
         'BtnPresupuestoCaja
         '
         Me.BtnPresupuestoCaja.Location = New System.Drawing.Point(879, 229)
-        Me.BtnPresupuestoCaja.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnPresupuestoCaja.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnPresupuestoCaja.Name = "BtnPresupuestoCaja"
         Me.BtnPresupuestoCaja.Size = New System.Drawing.Size(232, 128)
         Me.BtnPresupuestoCaja.TabIndex = 9
@@ -136,7 +136,7 @@ Partial Class FormPresupuestomaestro
         'BtnResumen
         '
         Me.BtnResumen.Location = New System.Drawing.Point(29, 412)
-        Me.BtnResumen.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnResumen.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnResumen.Name = "BtnResumen"
         Me.BtnResumen.Size = New System.Drawing.Size(232, 128)
         Me.BtnResumen.TabIndex = 10
@@ -334,7 +334,7 @@ Partial Class FormPresupuestomaestro
         Me.Controls.Add(Me.BtnPresupuestoVentas)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(121, Byte), Integer))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FormPresupuestomaestro"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds
         Me.Text = "Presupuesto maestro"

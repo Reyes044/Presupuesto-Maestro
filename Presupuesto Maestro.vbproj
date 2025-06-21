@@ -104,6 +104,13 @@
     <Compile Include="FrmGastos Indirectos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmResumen.Designer.vb">
+      <DependentUpon>FrmResumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmResumen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulo_Totales.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -135,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmGastos Indirectos.resx">
       <DependentUpon>FrmGastos Indirectos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmResumen.resx">
+      <DependentUpon>FrmResumen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

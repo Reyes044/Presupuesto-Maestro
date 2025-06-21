@@ -22,6 +22,7 @@ Public Class FrmGastos_Indirectos
 
         DtgGastosIndirectos.Rows.Add(concepto, monto)
         CalcularTotal()
+        Modulo_Totales.TotalMonto = TxtTotal.Text
         TxtConcepto.Clear()
         TxtMonto.Clear()
 
@@ -47,6 +48,7 @@ Public Class FrmGastos_Indirectos
         If DtgGastosIndirectos.SelectedRows.Count > 0 Then
             DtgGastosIndirectos.Rows.RemoveAt(DtgGastosIndirectos.SelectedRows(0).Index)
             CalcularTotal()
+            Modulo_Totales.TotalMonto = TxtTotal.Text
             TxtConcepto.Clear()
             TxtMonto.Clear()
 
@@ -79,9 +81,5 @@ Public Class FrmGastos_Indirectos
 
     Private Sub DtgGastosIndirectos_RowsRemoved(sender As Object, e As DataGridViewRowsRemovedEventArgs) Handles DtgGastosIndirectos.RowsRemoved
         CalcularTotal()
-    End Sub
-
-    Private Sub TxtConcepto_TextChanged(sender As Object, e As EventArgs) Handles TxtConcepto.TextChanged
-
     End Sub
 End Class
