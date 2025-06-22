@@ -129,9 +129,12 @@ Public Class FormPresupuestoDeProduccion
         If dtgPresupuestoProducción.SelectedRows.Count > 0 Then
             dtgPresupuestoProducción.Rows.Remove(dtgPresupuestoProducción.CurrentRow)
         End If
+
     End Sub
     Private Sub CalcularTotal()
         Dim total As Decimal = 0
+        'txtTotalUndVender.Text = CDec(0)
+        'txtUnidadesProducir.Text = CDec(0)
 
         For Each fila As DataGridViewRow In dtgPresupuestoProducción.Rows
             Dim valor = fila.Cells("Unidades_a_Vender").Value
@@ -206,10 +209,10 @@ Public Class FormPresupuestoDeProduccion
             If IsNumeric(valor) Then
                 total += CDec(valor)
                 If total >= 0 Then
-                    txtCostoTotalMOD.Text = total.ToString("N2")
+                    txtCostoTotalMOD.Text = total.ToString("C2")
                     txtCostoTotalMOD.BackColor = SystemColors.Window
                 Else
-                    txtCostoTotalMOD.Text = total.ToString("N2")
+                    txtCostoTotalMOD.Text = total.ToString("C2")
                     txtCostoTotalMOD.BackColor = Color.FromArgb(200, 100, 100)
                 End If
             End If
@@ -264,7 +267,6 @@ Public Class FormPresupuestoDeProduccion
         txtCostoTotalProduccion.Clear()
         txtInventarioFinal.Clear()
         txtInventarioInicial.Clear()
-        txtTotalUndVender.Clear()
         txtUnidadesProducir.Clear()
     End Sub
 
