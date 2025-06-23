@@ -49,6 +49,8 @@ Partial Class FormPresupuestomaestro
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.BtnPlanilla = New System.Windows.Forms.Button()
+        Me.Label15 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -302,12 +304,34 @@ Partial Class FormPresupuestomaestro
         Me.PictureBox1.TabIndex = 20
         Me.PictureBox1.TabStop = False
         '
+        'BtnPlanilla
+        '
+        Me.BtnPlanilla.Location = New System.Drawing.Point(311, 412)
+        Me.BtnPlanilla.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnPlanilla.Name = "BtnPlanilla"
+        Me.BtnPlanilla.Size = New System.Drawing.Size(232, 128)
+        Me.BtnPlanilla.TabIndex = 27
+        Me.BtnPlanilla.UseVisualStyleBackColor = True
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Bodoni MT Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(385, 382)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(69, 28)
+        Me.Label15.TabIndex = 28
+        Me.Label15.Text = "Planilla "
+        '
         'FormPresupuestomaestro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(249, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1566, 593)
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.BtnPlanilla)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.LblFecha)
@@ -368,4 +392,6 @@ Partial Class FormPresupuestomaestro
     Friend WithEvents Tiempo As Timer
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
+    Friend WithEvents BtnPlanilla As Button
+    Friend WithEvents Label15 As Label
 End Class

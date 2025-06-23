@@ -104,6 +104,12 @@
     <Compile Include="FrmGastos Indirectos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmPlanilla.Designer.vb">
+      <DependentUpon>FrmPlanilla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPlanilla.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmResumen.Designer.vb">
       <DependentUpon>FrmResumen.vb</DependentUpon>
     </Compile>
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmGastos Indirectos.resx">
       <DependentUpon>FrmGastos Indirectos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlanilla.resx">
+      <DependentUpon>FrmPlanilla.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmResumen.resx">
       <DependentUpon>FrmResumen.vb</DependentUpon>
