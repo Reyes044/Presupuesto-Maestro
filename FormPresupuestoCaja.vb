@@ -8,6 +8,9 @@
             dtgPresupuestoCaja.Columns(i).SortMode = DataGridViewColumnSortMode.NotSortable
         Next
 
+        For i = 1 To dtgPresupuestoCaja.ColumnCount - 1
+            dtgPresupuestoCaja.Columns(i).ReadOnly = True
+        Next
 
     End Sub
 
@@ -59,6 +62,32 @@
 
         Else
             dtgPresupuestoCaja.CurrentRow.Cells(5).Style.BackColor = Color.Gray
+        End If
+
+        'Para que no se repitan los meses
+        Call No_Repeated_Meses(e)
+
+
+        If e.ColumnIndex = 0 Then
+            Dim celdaMes = dtgPresupuestoCaja.Rows(e.RowIndex).Cells(0)
+            Dim texto As String = ""
+
+            If celdaMes.Value IsNot Nothing Then
+                texto = celdaMes.Value.ToString().Trim()
+            End If
+
+            If texto <> "" Then
+                For i = 1 To 5
+                    dtgPresupuestoCaja.Rows(e.RowIndex).Cells(i).ReadOnly = False
+                    dtgPresupuestoCaja.Rows(e.RowIndex).Cells(i).Style.BackColor = Color.White
+                Next
+            Else
+                For i = 1 To 5
+                    dtgPresupuestoCaja.Rows(e.RowIndex).Cells(i).Value = Nothing
+                    dtgPresupuestoCaja.Rows(e.RowIndex).Cells(i).ReadOnly = True
+                    dtgPresupuestoCaja.Rows(e.RowIndex).Cells(i).Style.BackColor = Color.LightGray
+                Next
+            End If
         End If
 
     End Sub
@@ -130,6 +159,12 @@
             End If
         Next
         total = 0
+
+
+        If txtFNM.Text = Nothing And txtFNM.BackColor = Color.FromArgb(200, 100, 100) Then
+            txtFNM.BackColor = SystemColors.Window
+        End If
+
     End Sub
 
     Private Sub dtgPresupuestoCaja_RowsRemoved(sender As Object, e As DataGridViewRowsRemovedEventArgs) Handles dtgPresupuestoCaja.RowsRemoved
@@ -143,6 +178,25 @@
         txtOtrosPagos.Clear()
         txtPagoProv.Clear()
         txtPagoSueldos.Clear()
+    End Sub
+
+    Private Sub No_Repeated_Meses(e)
+        If e.ColumnIndex = dtgPresupuestoCaja.Columns("Mes").Index Then
+            Dim mes_selected = dtgPresupuestoCaja.Rows(e.RowIndex).Cells(e.ColumnIndex).Value.ToString()
+
+            ' Verificar si el mes ya está usado en otra fila'
+            For Each fila As DataGridViewRow In dtgPresupuestoCaja.Rows
+                If Not fila.IsNewRow AndAlso fila.Index <> e.RowIndex Then
+                    Dim valor = fila.Cells("Mes").Value.ToString()
+
+                    If valor = mes_selected Then
+                        MsgBox("Ese mes ya fue seleccionado.", MsgBoxStyle.Exclamation, "Advertencia")
+                        dtgPresupuestoCaja.Rows(e.RowIndex).Cells(e.ColumnIndex).Value = Nothing
+                        Exit For
+                    End If
+                End If
+            Next
+        End If
     End Sub
 
 End Class

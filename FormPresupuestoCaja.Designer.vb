@@ -45,7 +45,7 @@ Partial Class FormPresupuestoCaja
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtFNM = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Mes = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Mes = New System.Windows.Forms.DataGridViewComboBoxColumn()
         Me.Ingresos_por_Ventas = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Pagos_Proveedores = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Pago_de_Sueldos = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -227,14 +227,16 @@ Partial Class FormPresupuestoCaja
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Mes.DefaultCellStyle = DataGridViewCellStyle2
         Me.Mes.HeaderText = "Mes"
+        Me.Mes.Items.AddRange(New Object() {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"})
         Me.Mes.MinimumWidth = 8
         Me.Mes.Name = "Mes"
         Me.Mes.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Mes.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         Me.Mes.Width = 150
         '
         'Ingresos_por_Ventas
         '
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.LightGray
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle3.Format = "C2"
         Me.Ingresos_por_Ventas.DefaultCellStyle = DataGridViewCellStyle3
@@ -246,6 +248,7 @@ Partial Class FormPresupuestoCaja
         '
         'Pagos_Proveedores
         '
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.LightGray
         DataGridViewCellStyle4.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle4.Format = "C2"
         Me.Pagos_Proveedores.DefaultCellStyle = DataGridViewCellStyle4
@@ -256,7 +259,7 @@ Partial Class FormPresupuestoCaja
         '
         'Pago_de_Sueldos
         '
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.LightGray
         DataGridViewCellStyle5.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle5.Format = "C2"
         Me.Pago_de_Sueldos.DefaultCellStyle = DataGridViewCellStyle5
@@ -267,7 +270,7 @@ Partial Class FormPresupuestoCaja
         '
         'Otros_Pagos
         '
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.LightGray
         DataGridViewCellStyle6.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle6.Format = "C2"
         Me.Otros_Pagos.DefaultCellStyle = DataGridViewCellStyle6
@@ -333,7 +336,7 @@ Partial Class FormPresupuestoCaja
     Friend WithEvents Label7 As Label
     Friend WithEvents txtFNM As TextBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents Mes As DataGridViewTextBoxColumn
+    Friend WithEvents Mes As DataGridViewComboBoxColumn
     Friend WithEvents Ingresos_por_Ventas As DataGridViewTextBoxColumn
     Friend WithEvents Pagos_Proveedores As DataGridViewTextBoxColumn
     Friend WithEvents Pago_de_Sueldos As DataGridViewTextBoxColumn
