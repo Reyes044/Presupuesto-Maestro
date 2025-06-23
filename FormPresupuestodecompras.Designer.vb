@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormPresupuestodecompras
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,13 +20,13 @@ Partial Class FormPresupuestodecompras
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblIngreselosDatos = New System.Windows.Forms.Label()
         Me.txtMaterial = New System.Windows.Forms.TextBox()
         Me.GrpPresupuestodecompras = New System.Windows.Forms.GroupBox()
-        Me.BtnAgregar = New System.Windows.Forms.Button()
+        Me.BtnAgregarC = New System.Windows.Forms.Button()
         Me.LblCostounitariototal = New System.Windows.Forms.Label()
         Me.txtCostounitariototal = New System.Windows.Forms.TextBox()
         Me.LblCostosAdicionales = New System.Windows.Forms.Label()
@@ -51,6 +51,26 @@ Partial Class FormPresupuestodecompras
         Me.ColCostoAdicionales = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Colcostounitariototal = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColPagototal = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Lblunidadesnec = New System.Windows.Forms.Label()
+        Me.LblTotalInventarioFinal = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.LblTotalInventinicial = New System.Windows.Forms.Label()
+        Me.LblUnidadescomprar = New System.Windows.Forms.Label()
+        Me.LblTotalCostoporunidad = New System.Windows.Forms.Label()
+        Me.LblCostoTotalCOmpra = New System.Windows.Forms.Label()
+        Me.LblCostoadicionales = New System.Windows.Forms.Label()
+        Me.LblCostounto = New System.Windows.Forms.Label()
+        Me.LblPagototal = New System.Windows.Forms.Label()
+        Me.txtTotalunidadesNecesarias = New System.Windows.Forms.TextBox()
+        Me.txtTotalInventariofinal = New System.Windows.Forms.TextBox()
+        Me.txtTotalInventarioinic = New System.Windows.Forms.TextBox()
+        Me.txtTotalUnidadesComprar = New System.Windows.Forms.TextBox()
+        Me.txtTotalCostounidad = New System.Windows.Forms.TextBox()
+        Me.txtTotalCostoTotalCompra = New System.Windows.Forms.TextBox()
+        Me.txtTotalCostoAdicionales = New System.Windows.Forms.TextBox()
+        Me.txtTotalCostounitarioTotal = New System.Windows.Forms.TextBox()
+        Me.txtTotaldepagoTotal = New System.Windows.Forms.TextBox()
+        Me.BtnEliminarfila = New System.Windows.Forms.Button()
         Me.GrpPresupuestodecompras.SuspendLayout()
         CType(Me.DtgPresupuestoCompras, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -88,7 +108,7 @@ Partial Class FormPresupuestodecompras
         '
         'GrpPresupuestodecompras
         '
-        Me.GrpPresupuestodecompras.Controls.Add(Me.BtnAgregar)
+        Me.GrpPresupuestodecompras.Controls.Add(Me.BtnAgregarC)
         Me.GrpPresupuestodecompras.Controls.Add(Me.LblCostounitariototal)
         Me.GrpPresupuestodecompras.Controls.Add(Me.txtCostounitariototal)
         Me.GrpPresupuestodecompras.Controls.Add(Me.LblCostosAdicionales)
@@ -107,18 +127,18 @@ Partial Class FormPresupuestodecompras
         Me.GrpPresupuestodecompras.Controls.Add(Me.lblIngreselosDatos)
         Me.GrpPresupuestodecompras.Location = New System.Drawing.Point(3, 4)
         Me.GrpPresupuestodecompras.Name = "GrpPresupuestodecompras"
-        Me.GrpPresupuestodecompras.Size = New System.Drawing.Size(1090, 205)
+        Me.GrpPresupuestodecompras.Size = New System.Drawing.Size(1186, 205)
         Me.GrpPresupuestodecompras.TabIndex = 4
         Me.GrpPresupuestodecompras.TabStop = False
         '
-        'BtnAgregar
+        'BtnAgregarC
         '
-        Me.BtnAgregar.Location = New System.Drawing.Point(915, 123)
-        Me.BtnAgregar.Name = "BtnAgregar"
-        Me.BtnAgregar.Size = New System.Drawing.Size(105, 55)
-        Me.BtnAgregar.TabIndex = 17
-        Me.BtnAgregar.Text = "Agregar"
-        Me.BtnAgregar.UseVisualStyleBackColor = True
+        Me.BtnAgregarC.Location = New System.Drawing.Point(915, 123)
+        Me.BtnAgregarC.Name = "BtnAgregarC"
+        Me.BtnAgregarC.Size = New System.Drawing.Size(105, 55)
+        Me.BtnAgregarC.TabIndex = 17
+        Me.BtnAgregarC.Text = "Agregar"
+        Me.BtnAgregarC.UseVisualStyleBackColor = True
         '
         'LblCostounitariototal
         '
@@ -256,7 +276,7 @@ Partial Class FormPresupuestodecompras
         Me.DtgPresupuestoCompras.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ColMaterial, Me.ColUnidadesnecesarias, Me.ColInventariofinaldeseado, Me.Colinventarioinicial, Me.ColUnidadescomprar, Me.ColCostoporunidad, Me.Colcostototaldecompra, Me.ColCostoAdicionales, Me.Colcostounitariototal, Me.ColPagototal})
         Me.DtgPresupuestoCompras.Location = New System.Drawing.Point(3, 215)
         Me.DtgPresupuestoCompras.Name = "DtgPresupuestoCompras"
-        Me.DtgPresupuestoCompras.Size = New System.Drawing.Size(1090, 191)
+        Me.DtgPresupuestoCompras.Size = New System.Drawing.Size(1186, 191)
         Me.DtgPresupuestoCompras.TabIndex = 5
         '
         'ColMaterial
@@ -318,11 +338,210 @@ Partial Class FormPresupuestodecompras
         Me.ColPagototal.Name = "ColPagototal"
         Me.ColPagototal.Width = 120
         '
+        'Lblunidadesnec
+        '
+        Me.Lblunidadesnec.AutoSize = True
+        Me.Lblunidadesnec.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lblunidadesnec.Location = New System.Drawing.Point(6, 428)
+        Me.Lblunidadesnec.Name = "Lblunidadesnec"
+        Me.Lblunidadesnec.Size = New System.Drawing.Size(198, 20)
+        Me.Lblunidadesnec.TabIndex = 6
+        Me.Lblunidadesnec.Text = "Total unidades necesarias:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'LblTotalInventarioFinal
+        '
+        Me.LblTotalInventarioFinal.AutoSize = True
+        Me.LblTotalInventarioFinal.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblTotalInventarioFinal.Location = New System.Drawing.Point(6, 475)
+        Me.LblTotalInventarioFinal.Name = "LblTotalInventarioFinal"
+        Me.LblTotalInventarioFinal.Size = New System.Drawing.Size(153, 20)
+        Me.LblTotalInventarioFinal.TabIndex = 7
+        Me.LblTotalInventarioFinal.Text = "Total inventario final:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(572, 437)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(0, 13)
+        Me.Label4.TabIndex = 8
+        '
+        'LblTotalInventinicial
+        '
+        Me.LblTotalInventinicial.AutoSize = True
+        Me.LblTotalInventinicial.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblTotalInventinicial.Location = New System.Drawing.Point(6, 524)
+        Me.LblTotalInventinicial.Name = "LblTotalInventinicial"
+        Me.LblTotalInventinicial.Size = New System.Drawing.Size(162, 20)
+        Me.LblTotalInventinicial.TabIndex = 9
+        Me.LblTotalInventinicial.Text = "Total inventario inicial:"
+        '
+        'LblUnidadescomprar
+        '
+        Me.LblUnidadescomprar.AutoSize = True
+        Me.LblUnidadescomprar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblUnidadescomprar.Location = New System.Drawing.Point(6, 571)
+        Me.LblUnidadescomprar.Name = "LblUnidadescomprar"
+        Me.LblUnidadescomprar.Size = New System.Drawing.Size(192, 20)
+        Me.LblUnidadescomprar.TabIndex = 10
+        Me.LblUnidadescomprar.Text = "Total unidades a comprar:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'LblTotalCostoporunidad
+        '
+        Me.LblTotalCostoporunidad.AutoSize = True
+        Me.LblTotalCostoporunidad.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblTotalCostoporunidad.Location = New System.Drawing.Point(467, 428)
+        Me.LblTotalCostoporunidad.Name = "LblTotalCostoporunidad"
+        Me.LblTotalCostoporunidad.Size = New System.Drawing.Size(170, 20)
+        Me.LblTotalCostoporunidad.TabIndex = 11
+        Me.LblTotalCostoporunidad.Text = "Total costo por unidad:"
+        '
+        'LblCostoTotalCOmpra
+        '
+        Me.LblCostoTotalCOmpra.AutoSize = True
+        Me.LblCostoTotalCOmpra.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblCostoTotalCOmpra.Location = New System.Drawing.Point(467, 475)
+        Me.LblCostoTotalCOmpra.Name = "LblCostoTotalCOmpra"
+        Me.LblCostoTotalCOmpra.Size = New System.Drawing.Size(264, 20)
+        Me.LblCostoTotalCOmpra.TabIndex = 12
+        Me.LblCostoTotalCOmpra.Text = "Total del costo total de compra (C$):"
+        '
+        'LblCostoadicionales
+        '
+        Me.LblCostoadicionales.AutoSize = True
+        Me.LblCostoadicionales.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblCostoadicionales.Location = New System.Drawing.Point(467, 524)
+        Me.LblCostoadicionales.Name = "LblCostoadicionales"
+        Me.LblCostoadicionales.Size = New System.Drawing.Size(268, 20)
+        Me.LblCostoadicionales.TabIndex = 13
+        Me.LblCostoadicionales.Text = "Total costos adicionales (C$/unidad):"
+        '
+        'LblCostounto
+        '
+        Me.LblCostounto.AutoSize = True
+        Me.LblCostounto.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblCostounto.Location = New System.Drawing.Point(467, 571)
+        Me.LblCostounto.Name = "LblCostounto"
+        Me.LblCostounto.Size = New System.Drawing.Size(216, 20)
+        Me.LblCostounto.TabIndex = 14
+        Me.LblCostounto.Text = "Total costo unitario total (C$):" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'LblPagototal
+        '
+        Me.LblPagototal.AutoSize = True
+        Me.LblPagototal.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblPagototal.Location = New System.Drawing.Point(1007, 428)
+        Me.LblPagototal.Name = "LblPagototal"
+        Me.LblPagototal.Size = New System.Drawing.Size(182, 20)
+        Me.LblPagototal.TabIndex = 15
+        Me.LblPagototal.Text = "Total del pago total (C$):" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'txtTotalunidadesNecesarias
+        '
+        Me.txtTotalunidadesNecesarias.Enabled = False
+        Me.txtTotalunidadesNecesarias.Location = New System.Drawing.Point(210, 428)
+        Me.txtTotalunidadesNecesarias.Name = "txtTotalunidadesNecesarias"
+        Me.txtTotalunidadesNecesarias.Size = New System.Drawing.Size(198, 20)
+        Me.txtTotalunidadesNecesarias.TabIndex = 16
+        '
+        'txtTotalInventariofinal
+        '
+        Me.txtTotalInventariofinal.Enabled = False
+        Me.txtTotalInventariofinal.Location = New System.Drawing.Point(165, 477)
+        Me.txtTotalInventariofinal.Name = "txtTotalInventariofinal"
+        Me.txtTotalInventariofinal.Size = New System.Drawing.Size(200, 20)
+        Me.txtTotalInventariofinal.TabIndex = 17
+        '
+        'txtTotalInventarioinic
+        '
+        Me.txtTotalInventarioinic.Enabled = False
+        Me.txtTotalInventarioinic.Location = New System.Drawing.Point(174, 526)
+        Me.txtTotalInventarioinic.Name = "txtTotalInventarioinic"
+        Me.txtTotalInventarioinic.Size = New System.Drawing.Size(191, 20)
+        Me.txtTotalInventarioinic.TabIndex = 18
+        '
+        'txtTotalUnidadesComprar
+        '
+        Me.txtTotalUnidadesComprar.Enabled = False
+        Me.txtTotalUnidadesComprar.Location = New System.Drawing.Point(204, 573)
+        Me.txtTotalUnidadesComprar.Name = "txtTotalUnidadesComprar"
+        Me.txtTotalUnidadesComprar.Size = New System.Drawing.Size(204, 20)
+        Me.txtTotalUnidadesComprar.TabIndex = 19
+        '
+        'txtTotalCostounidad
+        '
+        Me.txtTotalCostounidad.Enabled = False
+        Me.txtTotalCostounidad.Location = New System.Drawing.Point(643, 428)
+        Me.txtTotalCostounidad.Name = "txtTotalCostounidad"
+        Me.txtTotalCostounidad.Size = New System.Drawing.Size(201, 20)
+        Me.txtTotalCostounidad.TabIndex = 20
+        '
+        'txtTotalCostoTotalCompra
+        '
+        Me.txtTotalCostoTotalCompra.Enabled = False
+        Me.txtTotalCostoTotalCompra.Location = New System.Drawing.Point(737, 475)
+        Me.txtTotalCostoTotalCompra.Name = "txtTotalCostoTotalCompra"
+        Me.txtTotalCostoTotalCompra.Size = New System.Drawing.Size(193, 20)
+        Me.txtTotalCostoTotalCompra.TabIndex = 21
+        '
+        'txtTotalCostoAdicionales
+        '
+        Me.txtTotalCostoAdicionales.Enabled = False
+        Me.txtTotalCostoAdicionales.Location = New System.Drawing.Point(741, 524)
+        Me.txtTotalCostoAdicionales.Name = "txtTotalCostoAdicionales"
+        Me.txtTotalCostoAdicionales.Size = New System.Drawing.Size(204, 20)
+        Me.txtTotalCostoAdicionales.TabIndex = 22
+        '
+        'txtTotalCostounitarioTotal
+        '
+        Me.txtTotalCostounitarioTotal.Enabled = False
+        Me.txtTotalCostounitarioTotal.Location = New System.Drawing.Point(689, 573)
+        Me.txtTotalCostounitarioTotal.Name = "txtTotalCostounitarioTotal"
+        Me.txtTotalCostounitarioTotal.Size = New System.Drawing.Size(204, 20)
+        Me.txtTotalCostounitarioTotal.TabIndex = 23
+        '
+        'txtTotaldepagoTotal
+        '
+        Me.txtTotaldepagoTotal.Enabled = False
+        Me.txtTotaldepagoTotal.Location = New System.Drawing.Point(1011, 462)
+        Me.txtTotaldepagoTotal.Name = "txtTotaldepagoTotal"
+        Me.txtTotaldepagoTotal.Size = New System.Drawing.Size(172, 20)
+        Me.txtTotaldepagoTotal.TabIndex = 24
+        '
+        'BtnEliminarfila
+        '
+        Me.BtnEliminarfila.Location = New System.Drawing.Point(1011, 550)
+        Me.BtnEliminarfila.Name = "BtnEliminarfila"
+        Me.BtnEliminarfila.Size = New System.Drawing.Size(115, 64)
+        Me.BtnEliminarfila.TabIndex = 25
+        Me.BtnEliminarfila.Text = "Eliminar"
+        Me.BtnEliminarfila.UseVisualStyleBackColor = True
+        '
         'FormPresupuestodecompras
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1105, 487)
+        Me.ClientSize = New System.Drawing.Size(1201, 650)
+        Me.Controls.Add(Me.BtnEliminarfila)
+        Me.Controls.Add(Me.txtTotaldepagoTotal)
+        Me.Controls.Add(Me.txtTotalCostounitarioTotal)
+        Me.Controls.Add(Me.txtTotalCostoAdicionales)
+        Me.Controls.Add(Me.txtTotalCostoTotalCompra)
+        Me.Controls.Add(Me.txtTotalCostounidad)
+        Me.Controls.Add(Me.txtTotalUnidadesComprar)
+        Me.Controls.Add(Me.txtTotalInventarioinic)
+        Me.Controls.Add(Me.txtTotalInventariofinal)
+        Me.Controls.Add(Me.txtTotalunidadesNecesarias)
+        Me.Controls.Add(Me.LblPagototal)
+        Me.Controls.Add(Me.LblCostounto)
+        Me.Controls.Add(Me.LblCostoadicionales)
+        Me.Controls.Add(Me.LblCostoTotalCOmpra)
+        Me.Controls.Add(Me.LblTotalCostoporunidad)
+        Me.Controls.Add(Me.LblUnidadescomprar)
+        Me.Controls.Add(Me.LblTotalInventinicial)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.LblTotalInventarioFinal)
+        Me.Controls.Add(Me.Lblunidadesnec)
         Me.Controls.Add(Me.DtgPresupuestoCompras)
         Me.Controls.Add(Me.GrpPresupuestodecompras)
         Me.Name = "FormPresupuestodecompras"
@@ -331,6 +550,7 @@ Partial Class FormPresupuestodecompras
         Me.GrpPresupuestodecompras.PerformLayout()
         CType(Me.DtgPresupuestoCompras, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -351,7 +571,7 @@ Partial Class FormPresupuestodecompras
     Friend WithEvents txtInventarioInicial As TextBox
     Friend WithEvents LblCostounitariototal As Label
     Friend WithEvents txtCostounitariototal As TextBox
-    Friend WithEvents BtnAgregar As Button
+    Friend WithEvents BtnAgregarC As Button
     Friend WithEvents DtgPresupuestoCompras As DataGridView
     Friend WithEvents ColMaterial As DataGridViewTextBoxColumn
     Friend WithEvents ColUnidadesnecesarias As DataGridViewTextBoxColumn
@@ -363,4 +583,24 @@ Partial Class FormPresupuestodecompras
     Friend WithEvents ColCostoAdicionales As DataGridViewTextBoxColumn
     Friend WithEvents Colcostounitariototal As DataGridViewTextBoxColumn
     Friend WithEvents ColPagototal As DataGridViewTextBoxColumn
+    Friend WithEvents Lblunidadesnec As Label
+    Friend WithEvents LblTotalInventarioFinal As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents LblTotalInventinicial As Label
+    Friend WithEvents LblUnidadescomprar As Label
+    Friend WithEvents LblTotalCostoporunidad As Label
+    Friend WithEvents LblCostoTotalCOmpra As Label
+    Friend WithEvents LblCostoadicionales As Label
+    Friend WithEvents LblCostounto As Label
+    Friend WithEvents LblPagototal As Label
+    Friend WithEvents txtTotalunidadesNecesarias As TextBox
+    Friend WithEvents txtTotalInventariofinal As TextBox
+    Friend WithEvents txtTotalInventarioinic As TextBox
+    Friend WithEvents txtTotalUnidadesComprar As TextBox
+    Friend WithEvents txtTotalCostounidad As TextBox
+    Friend WithEvents txtTotalCostoTotalCompra As TextBox
+    Friend WithEvents txtTotalCostoAdicionales As TextBox
+    Friend WithEvents txtTotalCostounitarioTotal As TextBox
+    Friend WithEvents txtTotaldepagoTotal As TextBox
+    Friend WithEvents BtnEliminarfila As Button
 End Class

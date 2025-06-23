@@ -34,6 +34,17 @@ Partial Class FrmPresupuestoVentas
         Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DtgPresupuestodeventas = New System.Windows.Forms.DataGridView()
+        Me.ColProducto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColUnidadesProyectadas = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColPrecioUnitario = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColIngresosBrutos = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColDevoluciones = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColIngresosnetos = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColCostoVentas = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColGastoVentas = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColPublicidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColGastopublicidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColUtilidadBruta = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GrpPresupuestodeventas = New System.Windows.Forms.GroupBox()
         Me.txtunidaesproyectadas = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -69,17 +80,6 @@ Partial Class FrmPresupuestoVentas
         Me.LblTotalUtilidadBruta = New System.Windows.Forms.Label()
         Me.txtTotalUtilidadbruta = New System.Windows.Forms.TextBox()
         Me.BtnEliminarfila = New System.Windows.Forms.Button()
-        Me.ColProducto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ColUnidadesProyectadas = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ColPrecioUnitario = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ColIngresosBrutos = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ColDevoluciones = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ColIngresosnetos = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ColCostoVentas = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ColGastoVentas = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ColPublicidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ColGastopublicidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ColUtilidadBruta = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DtgPresupuestodeventas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GrpPresupuestodeventas.SuspendLayout()
         Me.SuspendLayout()
@@ -112,6 +112,110 @@ Partial Class FrmPresupuestoVentas
         Me.DtgPresupuestodeventas.RowHeadersWidth = 51
         Me.DtgPresupuestodeventas.Size = New System.Drawing.Size(1274, 218)
         Me.DtgPresupuestodeventas.TabIndex = 1
+        '
+        'ColProducto
+        '
+        Me.ColProducto.HeaderText = "Producto"
+        Me.ColProducto.MinimumWidth = 6
+        Me.ColProducto.Name = "ColProducto"
+        Me.ColProducto.Width = 125
+        '
+        'ColUnidadesProyectadas
+        '
+        Me.ColUnidadesProyectadas.HeaderText = "Unidades Proyectadas"
+        Me.ColUnidadesProyectadas.MinimumWidth = 6
+        Me.ColUnidadesProyectadas.Name = "ColUnidadesProyectadas"
+        Me.ColUnidadesProyectadas.Width = 125
+        '
+        'ColPrecioUnitario
+        '
+        DataGridViewCellStyle1.Format = "C2"
+        DataGridViewCellStyle1.NullValue = Nothing
+        Me.ColPrecioUnitario.DefaultCellStyle = DataGridViewCellStyle1
+        Me.ColPrecioUnitario.HeaderText = "Precio Unitario (C$)"
+        Me.ColPrecioUnitario.MinimumWidth = 6
+        Me.ColPrecioUnitario.Name = "ColPrecioUnitario"
+        Me.ColPrecioUnitario.Width = 125
+        '
+        'ColIngresosBrutos
+        '
+        DataGridViewCellStyle2.Format = "C2"
+        DataGridViewCellStyle2.NullValue = Nothing
+        Me.ColIngresosBrutos.DefaultCellStyle = DataGridViewCellStyle2
+        Me.ColIngresosBrutos.HeaderText = "Ingresos brutos (C$)"
+        Me.ColIngresosBrutos.MinimumWidth = 6
+        Me.ColIngresosBrutos.Name = "ColIngresosBrutos"
+        Me.ColIngresosBrutos.Width = 125
+        '
+        'ColDevoluciones
+        '
+        DataGridViewCellStyle3.Format = "C2"
+        DataGridViewCellStyle3.NullValue = Nothing
+        Me.ColDevoluciones.DefaultCellStyle = DataGridViewCellStyle3
+        Me.ColDevoluciones.HeaderText = "Devoluciones (5%)"
+        Me.ColDevoluciones.MinimumWidth = 6
+        Me.ColDevoluciones.Name = "ColDevoluciones"
+        Me.ColDevoluciones.Width = 125
+        '
+        'ColIngresosnetos
+        '
+        DataGridViewCellStyle4.Format = "C2"
+        DataGridViewCellStyle4.NullValue = Nothing
+        Me.ColIngresosnetos.DefaultCellStyle = DataGridViewCellStyle4
+        Me.ColIngresosnetos.HeaderText = "Ingresos Netos"
+        Me.ColIngresosnetos.MinimumWidth = 6
+        Me.ColIngresosnetos.Name = "ColIngresosnetos"
+        Me.ColIngresosnetos.Width = 125
+        '
+        'ColCostoVentas
+        '
+        DataGridViewCellStyle5.Format = "C2"
+        DataGridViewCellStyle5.NullValue = Nothing
+        Me.ColCostoVentas.DefaultCellStyle = DataGridViewCellStyle5
+        Me.ColCostoVentas.HeaderText = "Costo de ventas (40%)"
+        Me.ColCostoVentas.MinimumWidth = 6
+        Me.ColCostoVentas.Name = "ColCostoVentas"
+        Me.ColCostoVentas.Width = 125
+        '
+        'ColGastoVentas
+        '
+        DataGridViewCellStyle6.Format = "C2"
+        DataGridViewCellStyle6.NullValue = Nothing
+        Me.ColGastoVentas.DefaultCellStyle = DataGridViewCellStyle6
+        Me.ColGastoVentas.HeaderText = "Gasto de ventas (C$)"
+        Me.ColGastoVentas.MinimumWidth = 6
+        Me.ColGastoVentas.Name = "ColGastoVentas"
+        Me.ColGastoVentas.Width = 125
+        '
+        'ColPublicidad
+        '
+        DataGridViewCellStyle7.Format = "C2"
+        DataGridViewCellStyle7.NullValue = Nothing
+        Me.ColPublicidad.DefaultCellStyle = DataGridViewCellStyle7
+        Me.ColPublicidad.HeaderText = "Publicidad (C$/unidad)"
+        Me.ColPublicidad.MinimumWidth = 6
+        Me.ColPublicidad.Name = "ColPublicidad"
+        Me.ColPublicidad.Width = 125
+        '
+        'ColGastopublicidad
+        '
+        DataGridViewCellStyle8.Format = "C2"
+        DataGridViewCellStyle8.NullValue = Nothing
+        Me.ColGastopublicidad.DefaultCellStyle = DataGridViewCellStyle8
+        Me.ColGastopublicidad.HeaderText = "Gasto de Publicidad"
+        Me.ColGastopublicidad.MinimumWidth = 6
+        Me.ColGastopublicidad.Name = "ColGastopublicidad"
+        Me.ColGastopublicidad.Width = 125
+        '
+        'ColUtilidadBruta
+        '
+        DataGridViewCellStyle9.Format = "C2"
+        DataGridViewCellStyle9.NullValue = Nothing
+        Me.ColUtilidadBruta.DefaultCellStyle = DataGridViewCellStyle9
+        Me.ColUtilidadBruta.HeaderText = "Utilidad Bruta"
+        Me.ColUtilidadBruta.MinimumWidth = 6
+        Me.ColUtilidadBruta.Name = "ColUtilidadBruta"
+        Me.ColUtilidadBruta.Width = 125
         '
         'GrpPresupuestodeventas
         '
@@ -157,6 +261,7 @@ Partial Class FrmPresupuestoVentas
         '
         'BtnAgregar
         '
+        Me.BtnAgregar.Enabled = False
         Me.BtnAgregar.Location = New System.Drawing.Point(1062, 136)
         Me.BtnAgregar.Name = "BtnAgregar"
         Me.BtnAgregar.Size = New System.Drawing.Size(124, 42)
@@ -453,110 +558,6 @@ Partial Class FrmPresupuestoVentas
         Me.BtnEliminarfila.TabIndex = 25
         Me.BtnEliminarfila.Text = "Eliminar fila"
         Me.BtnEliminarfila.UseVisualStyleBackColor = True
-        '
-        'ColProducto
-        '
-        Me.ColProducto.HeaderText = "Producto"
-        Me.ColProducto.MinimumWidth = 6
-        Me.ColProducto.Name = "ColProducto"
-        Me.ColProducto.Width = 125
-        '
-        'ColUnidadesProyectadas
-        '
-        Me.ColUnidadesProyectadas.HeaderText = "Unidades Proyectadas"
-        Me.ColUnidadesProyectadas.MinimumWidth = 6
-        Me.ColUnidadesProyectadas.Name = "ColUnidadesProyectadas"
-        Me.ColUnidadesProyectadas.Width = 125
-        '
-        'ColPrecioUnitario
-        '
-        DataGridViewCellStyle1.Format = "C2"
-        DataGridViewCellStyle1.NullValue = Nothing
-        Me.ColPrecioUnitario.DefaultCellStyle = DataGridViewCellStyle1
-        Me.ColPrecioUnitario.HeaderText = "Precio Unitario (C$)"
-        Me.ColPrecioUnitario.MinimumWidth = 6
-        Me.ColPrecioUnitario.Name = "ColPrecioUnitario"
-        Me.ColPrecioUnitario.Width = 125
-        '
-        'ColIngresosBrutos
-        '
-        DataGridViewCellStyle2.Format = "C2"
-        DataGridViewCellStyle2.NullValue = Nothing
-        Me.ColIngresosBrutos.DefaultCellStyle = DataGridViewCellStyle2
-        Me.ColIngresosBrutos.HeaderText = "Ingresos brutos (C$)"
-        Me.ColIngresosBrutos.MinimumWidth = 6
-        Me.ColIngresosBrutos.Name = "ColIngresosBrutos"
-        Me.ColIngresosBrutos.Width = 125
-        '
-        'ColDevoluciones
-        '
-        DataGridViewCellStyle3.Format = "C2"
-        DataGridViewCellStyle3.NullValue = Nothing
-        Me.ColDevoluciones.DefaultCellStyle = DataGridViewCellStyle3
-        Me.ColDevoluciones.HeaderText = "Devoluciones (5%)"
-        Me.ColDevoluciones.MinimumWidth = 6
-        Me.ColDevoluciones.Name = "ColDevoluciones"
-        Me.ColDevoluciones.Width = 125
-        '
-        'ColIngresosnetos
-        '
-        DataGridViewCellStyle4.Format = "C2"
-        DataGridViewCellStyle4.NullValue = Nothing
-        Me.ColIngresosnetos.DefaultCellStyle = DataGridViewCellStyle4
-        Me.ColIngresosnetos.HeaderText = "Ingresos Netos"
-        Me.ColIngresosnetos.MinimumWidth = 6
-        Me.ColIngresosnetos.Name = "ColIngresosnetos"
-        Me.ColIngresosnetos.Width = 125
-        '
-        'ColCostoVentas
-        '
-        DataGridViewCellStyle5.Format = "C2"
-        DataGridViewCellStyle5.NullValue = Nothing
-        Me.ColCostoVentas.DefaultCellStyle = DataGridViewCellStyle5
-        Me.ColCostoVentas.HeaderText = "Costo de ventas (40%)"
-        Me.ColCostoVentas.MinimumWidth = 6
-        Me.ColCostoVentas.Name = "ColCostoVentas"
-        Me.ColCostoVentas.Width = 125
-        '
-        'ColGastoVentas
-        '
-        DataGridViewCellStyle6.Format = "C2"
-        DataGridViewCellStyle6.NullValue = Nothing
-        Me.ColGastoVentas.DefaultCellStyle = DataGridViewCellStyle6
-        Me.ColGastoVentas.HeaderText = "Gasto de ventas (C$)"
-        Me.ColGastoVentas.MinimumWidth = 6
-        Me.ColGastoVentas.Name = "ColGastoVentas"
-        Me.ColGastoVentas.Width = 125
-        '
-        'ColPublicidad
-        '
-        DataGridViewCellStyle7.Format = "C2"
-        DataGridViewCellStyle7.NullValue = Nothing
-        Me.ColPublicidad.DefaultCellStyle = DataGridViewCellStyle7
-        Me.ColPublicidad.HeaderText = "Publicidad (C$/unidad)"
-        Me.ColPublicidad.MinimumWidth = 6
-        Me.ColPublicidad.Name = "ColPublicidad"
-        Me.ColPublicidad.Width = 125
-        '
-        'ColGastopublicidad
-        '
-        DataGridViewCellStyle8.Format = "C2"
-        DataGridViewCellStyle8.NullValue = Nothing
-        Me.ColGastopublicidad.DefaultCellStyle = DataGridViewCellStyle8
-        Me.ColGastopublicidad.HeaderText = "Gasto de Publicidad"
-        Me.ColGastopublicidad.MinimumWidth = 6
-        Me.ColGastopublicidad.Name = "ColGastopublicidad"
-        Me.ColGastopublicidad.Width = 125
-        '
-        'ColUtilidadBruta
-        '
-        DataGridViewCellStyle9.Format = "C2"
-        DataGridViewCellStyle9.NullValue = Nothing
-        Me.ColUtilidadBruta.DefaultCellStyle = DataGridViewCellStyle9
-        Me.ColUtilidadBruta.HeaderText = "Utilidad Bruta"
-        Me.ColUtilidadBruta.MinimumWidth = 6
-        Me.ColUtilidadBruta.Name = "ColUtilidadBruta"
-        Me.ColUtilidadBruta.Width = 125
         '
         'FrmPresupuestoVentas
         '

@@ -302,8 +302,7 @@ Public Class FrmPresupuestoVentas
 
     Private Sub FrmPresupuestoVentas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DtgPresupuestodeventas.AllowUserToAddRows = False
-
-
+        ValidarCampos()
     End Sub
 
     Private Sub TxtGastoVentas_Validating(sender As Object, e As CancelEventArgs) Handles TxtGastoVentas.Validating
@@ -460,5 +459,26 @@ Public Class FrmPresupuestoVentas
             End If
 
         End If
+    End Sub
+    Private Sub ValidarCampos()
+        If TxtNombreProducto.Text <> "" And TxtNombreProducto.Text <> "Ingrese el nombre del producto" And
+           txtunidaesproyectadas.Text <> "" And txtunidaesproyectadas.Text <> "las unidades proyectadas" And
+           TxtGastoVentas.Text <> "" And TxtGastoVentas.Text <> "Ingrese el gasto de ventas" And
+           txtPreciounitario.Text <> "" And txtPreciounitario.Text <> "Ingrese el precio" And
+           txtPublicidadCsUnidad.Text <> "" And txtPublicidadCsUnidad.Text <> "Ingrese publicidad/unidad" Then
+
+            BtnAgregar.Enabled = True
+        Else
+            BtnAgregar.Enabled = False
+        End If
+    End Sub
+    Private Sub TextBoxes_TextChanged(sender As Object, e As EventArgs) _
+    Handles TxtNombreProducto.TextChanged,
+            txtunidaesproyectadas.TextChanged,
+            TxtGastoVentas.TextChanged,
+            txtPreciounitario.TextChanged,
+            txtPublicidadCsUnidad.TextChanged
+
+        ValidarCampos()
     End Sub
 End Class

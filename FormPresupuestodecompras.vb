@@ -292,7 +292,7 @@ Public Class FormPresupuestodecompras
         DtgPresupuestoCompras.AllowUserToAddRows = False
     End Sub
 
-    Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnAgregar.Click
+    Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnAgregarC.Click
 
         'Validacion txt material
         If txtMaterial.Text = ("") Then
@@ -390,12 +390,14 @@ Public Class FormPresupuestodecompras
             MsgBox("por favor, escriba los costos adicionales")
             txtCostosAdicionales.Clear()
             txtCostosAdicionales.Focus()
+            Return
         ElseIf Not IsNumeric(txtCostosAdicionales.Text) Then
             txtCostosAdicionales.Clear()
             txtCostosAdicionales.Focus()
             txtCostosAdicionales.ForeColor = Color.Black
             txtCostosAdicionales.Font = New Font("Microsoft Sans Serif", 9, FontStyle.Regular)
             MsgBox("Escriba un valor numérico")
+            Return
         ElseIf IsNumeric(txtCostosAdicionales.Text) Then
             If (txtCostosAdicionales.Text) <= 0 Then
                 MsgBox("No se permiten numeros negativos o 0")
@@ -410,12 +412,14 @@ Public Class FormPresupuestodecompras
             MsgBox("por favor, escriba el costo unitario total")
             txtCostounitariototal.Clear()
             txtCostounitariototal.Focus()
+            Return
         ElseIf Not IsNumeric(txtCostounitariototal.Text) Then
             txtCostounitariototal.Clear()
             txtCostounitariototal.Focus()
             txtCostounitariototal.ForeColor = Color.Black
             txtCostounitariototal.Font = New Font("Microsoft Sans Serif", 9, FontStyle.Regular)
             MsgBox("Escriba un valor numérico")
+            Return
         ElseIf IsNumeric(txtCostounitariototal.Text) Then
             If (txtCostounitariototal.Text) <= 0 Then
                 MsgBox("No se permiten numeros negativos o 0")
@@ -433,9 +437,63 @@ Public Class FormPresupuestodecompras
         Dim PagoTotal As Decimal = UnidadesComprar * CostoUnitarioTotal
         'Agregar al data griedview
         DtgPresupuestoCompras.Rows.Add(Material, UnidadesRequeridas01, InventarioFinalD01, InventarioInicial01, UnidadesComprar, CostoUnidad01, CostoTotalCompra, CostosAdicionales, CostoUnitarioTotal, PagoTotal)
+        ActualizaTotales()
+
+        'txtMaterial.Clear()
+        'txtUnidadesNecesarias.Clear()
+        'txtInventarioFinalDeseado.Clear()
+        'txtInventarioInicial.Clear()
+        'txtCostoUnidad.Clear()
+        'txtCostosAdicionales.Clear()
+        'txtCostounitariototal.Clear()
 
 
     End Sub
 
+    Private Sub BtnEliminarfila_Click(sender As Object, e As EventArgs) Handles BtnEliminarfila.Click
+        If DtgPresupuestoCompras.SelectedRows.Count > 0 Then
+            DtgPresupuestoCompras.Rows.Remove(DtgPresupuestoCompras.CurrentRow)
+            ActualizaTotales()
+        End If
+    End Sub
+    Private Sub ActualizaTotales()
+        Dim TotalUnidadesNecesarias As Integer = 0
+        Dim TotalInventarioFinal As Decimal = 0D
+        Dim TotalInventarioInicial As Decimal = 0D
+        Dim TotalunidadesComprar As Decimal = 0D
+        Dim TotalCostoUnidad As Decimal = 0D
+        Dim TotalCostoTotalCompra As Decimal = 0D
+        Dim TotalCostosAdicionales As Decimal = 0D
+        Dim totalCostoUnitarioTotal As Decimal = 0D
+        Dim totalPagototal As Decimal = 0D
+        Dim totalUtilidadBruta As Decimal = 0D
+        'Este foreach recorre las filas del dtg 
+        For Each fila As DataGridViewRow In DtgPresupuestoCompras.Rows
+            'Verificamos q no sea la ultima fila vacia
+            If Not fila.IsNewRow Then
+                'Acumulamos los valores de cada columna
+                TotalUnidadesNecesarias += CInt(fila.Cells("ColUnidadesnecesarias").Value)
+                TotalInventarioFinal += CDec(fila.Cells("ColInventariofinaldeseado").Value)
+                TotalInventarioInicial += CDec(fila.Cells("Colinventarioinicial").Value)
+                TotalunidadesComprar += CDec(fila.Cells("ColUnidadescomprar").Value)
+                TotalCostoUnidad += CDec(fila.Cells("ColCostoporunidad").Value)
+                TotalCostoTotalCompra += CDec(fila.Cells("Colcostototaldecompra").Value)
+                TotalCostosAdicionales += CDec(fila.Cells("ColCostoAdicionales").Value)
+                totalCostoUnitarioTotal += CDec(fila.Cells("Colcostounitariototal").Value)
+                totalPagototal += CDec(fila.Cells("ColPagototal").Value)
 
+            End If
+        Next
+        'Actualiza los textbox de totales
+        txtTotalunidadesNecesarias.Text = TotalUnidadesNecesarias.ToString()
+        txtTotalInventariofinal.Text = TotalInventarioFinal.ToString()
+        txtTotalInventarioinic.Text = TotalInventarioInicial.ToString()
+        txtTotalUnidadesComprar.Text = TotalunidadesComprar.ToString()
+        txtTotalCostounidad.Text = TotalCostoUnidad.ToString()
+        txtTotalCostoTotalCompra.Text = TotalCostoTotalCompra.ToString()
+        txtTotalCostoAdicionales.Text = TotalCostosAdicionales.ToString()
+        txtTotalCostounitarioTotal.Text = totalCostoUnitarioTotal.ToString()
+        txtTotaldepagoTotal.Text = totalPagototal.ToString()
+
+    End Sub
 End Class
