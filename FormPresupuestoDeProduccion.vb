@@ -253,6 +253,28 @@ Public Class FormPresupuestoDeProduccion
         Next
         total = 0
 
+        'Solucion Bug'
+
+        If txtUnidadesProducir.Text = Nothing And txtUnidadesProducir.BackColor = Color.FromArgb(200, 100, 100) Then
+            txtUnidadesProducir.BackColor = SystemColors.Window
+        End If
+
+        If txtCostoTotalProduccion.Text = Nothing And txtCostoTotalProduccion.BackColor = Color.FromArgb(200, 100, 100) Then
+            txtCostoTotalProduccion.BackColor = SystemColors.Window
+        End If
+
+        If txtCostoTotalMOD.Text = Nothing And txtCostoTotalMOD.BackColor = Color.FromArgb(200, 100, 100) Then
+            txtCostoTotalMOD.BackColor = SystemColors.Window
+        End If
+
+        If txtCostoTotalCIF.Text = Nothing And txtCostoTotalCIF.BackColor = Color.FromArgb(200, 100, 100) Then
+            txtCostoTotalCIF.BackColor = SystemColors.Window
+        End If
+
+        If txtCostoTotalPlaneado.Text = Nothing And txtCostoTotalPlaneado.BackColor = Color.FromArgb(200, 100, 100) Then
+            txtCostoTotalPlaneado.BackColor = SystemColors.Window
+        End If
+
     End Sub
     Private Sub dtgPresupuestoProducción_RowsRemoved(sender As Object, e As DataGridViewRowsRemovedEventArgs) Handles dtgPresupuestoProducción.RowsRemoved
         LimpiarTxts()
