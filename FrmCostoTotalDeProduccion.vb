@@ -3,7 +3,7 @@ Imports System.Diagnostics.Eventing.Reader
 Imports System.Text
 
 Public Class FrmCostoTotalDeProduccion
-    Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnAgregar.Click, BtnAgregarCtp.Click
+    Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnAgregarCtp.Click
 
         If TxtProducto.Text = ("") Then
             MsgBox("Escriba un nombre del producto")
@@ -65,6 +65,11 @@ Public Class FrmCostoTotalDeProduccion
         CalcularTotal_GIF()
         CalcularTotal_MOD()
         CalcularTotal_MPD()
+        CalcularTotal_CTP()
+        Modulo_Totales.TotalMPD = TxtTotalMPD.Text
+        Modulo_Totales.TotalMOD = TxtTotalMOD.Text
+        Modulo_Totales.TotalGIF = TxtTotalGIF.Text
+        Modulo_Totales.TotalCTP = TxtTotalCTP.Text
         TxtMPD.Clear()
         TxtMOD.Clear()
         TxtProducto.Clear()
@@ -75,6 +80,7 @@ Public Class FrmCostoTotalDeProduccion
     Private Sub FrmCostoTotalDeProduccion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DtgCostoTotalDeProduccion.AllowUserToAddRows = False
     End Sub
+
 
     Private Sub TxtProducto_KeyUp(sender As Object, e As KeyEventArgs) Handles TxtProducto.KeyUp
         If TxtProducto.Text = ("") Then
@@ -175,7 +181,18 @@ Public Class FrmCostoTotalDeProduccion
         TxtTotalMOD.Text = total
     End Sub
 
+    Private Sub CalcularTotal_CTP()
+        Dim total As Decimal = 0
 
+        For Each fila As DataGridViewRow In DtgCostoTotalDeProduccion.Rows
+            Dim valor = fila.Cells("ColCostoTotalDeProduccion").Value
+
+            If IsNumeric(valor) Then
+                total += (valor)
+            End If
+        Next
+        TxtTotalCTP.Text = total
+    End Sub
 
     Private Sub BtnEliminar_Click(sender As Object, e As EventArgs) Handles BtnEliminar.Click
         If DtgCostoTotalDeProduccion.SelectedRows.Count > 0 Then
@@ -183,6 +200,7 @@ Public Class FrmCostoTotalDeProduccion
             CalcularTotal_GIF()
             CalcularTotal_MOD()
             CalcularTotal_MPD()
+            CalcularTotal_CTP()
         Else
             MsgBox("Seleccione una fila para eliminar.")
         End If
@@ -193,14 +211,7 @@ Public Class FrmCostoTotalDeProduccion
         CalcularTotal_GIF()
         CalcularTotal_MOD()
         CalcularTotal_MPD()
-
-    End Sub
-
-    Private Sub TxtProducto_TextChanged(sender As Object, e As EventArgs) Handles TxtProducto.TextChanged
-
-    End Sub
-
-    Private Sub TxtMPD_TextChanged(sender As Object, e As EventArgs) Handles TxtMPD.TextChanged
+        CalcularTotal_CTP()
 
     End Sub
 End Class

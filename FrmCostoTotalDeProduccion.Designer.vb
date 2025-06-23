@@ -35,12 +35,9 @@ Partial Class FrmCostoTotalDeProduccion
         Me.TxtMPD = New System.Windows.Forms.TextBox()
         Me.TxtMOD = New System.Windows.Forms.TextBox()
         Me.DtgCostoTotalDeProduccion = New System.Windows.Forms.DataGridView()
-        Me.BtnAgregar = New System.Windows.Forms.Button()
         Me.TxtGifAsignado = New System.Windows.Forms.TextBox()
         Me.LblGIFAsignados = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.BtnAgregarCtp = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.BtnEliminar = New System.Windows.Forms.Button()
         Me.TxtTotalGIF = New System.Windows.Forms.TextBox()
         Me.LblTotalGIF = New System.Windows.Forms.Label()
@@ -48,6 +45,8 @@ Partial Class FrmCostoTotalDeProduccion
         Me.LbltotalMPD = New System.Windows.Forms.Label()
         Me.TxtTotalMOD = New System.Windows.Forms.TextBox()
         Me.LblTotalMOD = New System.Windows.Forms.Label()
+        Me.TxtTotalCTP = New System.Windows.Forms.TextBox()
+        Me.LblCTP = New System.Windows.Forms.Label()
         Me.ColProducto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColMPD = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColMOD = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -60,7 +59,7 @@ Partial Class FrmCostoTotalDeProduccion
         'LblProducto
         '
         Me.LblProducto.AutoSize = True
-        Me.LblProducto.Location = New System.Drawing.Point(12, 48)
+        Me.LblProducto.Location = New System.Drawing.Point(53, 48)
         Me.LblProducto.Name = "LblProducto"
         Me.LblProducto.Size = New System.Drawing.Size(61, 16)
         Me.LblProducto.TabIndex = 0
@@ -69,7 +68,7 @@ Partial Class FrmCostoTotalDeProduccion
         'LblMPD
         '
         Me.LblMPD.AutoSize = True
-        Me.LblMPD.Location = New System.Drawing.Point(12, 91)
+        Me.LblMPD.Location = New System.Drawing.Point(249, 48)
         Me.LblMPD.Name = "LblMPD"
         Me.LblMPD.Size = New System.Drawing.Size(139, 16)
         Me.LblMPD.TabIndex = 1
@@ -78,7 +77,7 @@ Partial Class FrmCostoTotalDeProduccion
         'LblMOD
         '
         Me.LblMOD.AutoSize = True
-        Me.LblMOD.Location = New System.Drawing.Point(12, 143)
+        Me.LblMOD.Location = New System.Drawing.Point(558, 48)
         Me.LblMOD.Name = "LblMOD"
         Me.LblMOD.Size = New System.Drawing.Size(139, 16)
         Me.LblMOD.TabIndex = 2
@@ -86,21 +85,21 @@ Partial Class FrmCostoTotalDeProduccion
         '
         'TxtProducto
         '
-        Me.TxtProducto.Location = New System.Drawing.Point(157, 45)
+        Me.TxtProducto.Location = New System.Drawing.Point(120, 42)
         Me.TxtProducto.Name = "TxtProducto"
         Me.TxtProducto.Size = New System.Drawing.Size(107, 22)
         Me.TxtProducto.TabIndex = 3
         '
         'TxtMPD
         '
-        Me.TxtMPD.Location = New System.Drawing.Point(157, 91)
+        Me.TxtMPD.Location = New System.Drawing.Point(394, 42)
         Me.TxtMPD.Name = "TxtMPD"
         Me.TxtMPD.Size = New System.Drawing.Size(107, 22)
         Me.TxtMPD.TabIndex = 4
         '
         'TxtMOD
         '
-        Me.TxtMOD.Location = New System.Drawing.Point(157, 143)
+        Me.TxtMOD.Location = New System.Drawing.Point(706, 42)
         Me.TxtMOD.Name = "TxtMOD"
         Me.TxtMOD.Size = New System.Drawing.Size(107, 22)
         Me.TxtMOD.TabIndex = 5
@@ -111,25 +110,16 @@ Partial Class FrmCostoTotalDeProduccion
         Me.DtgCostoTotalDeProduccion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DtgCostoTotalDeProduccion.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ColProducto, Me.ColMPD, Me.ColMOD, Me.Col_GIF_Asignado, Me.ColCostoTotalDeProduccion, Me.ColCostoUnitario})
         Me.DtgCostoTotalDeProduccion.GridColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.DtgCostoTotalDeProduccion.Location = New System.Drawing.Point(333, 39)
+        Me.DtgCostoTotalDeProduccion.Location = New System.Drawing.Point(43, 163)
         Me.DtgCostoTotalDeProduccion.Name = "DtgCostoTotalDeProduccion"
         Me.DtgCostoTotalDeProduccion.RowHeadersWidth = 51
         Me.DtgCostoTotalDeProduccion.RowTemplate.Height = 24
-        Me.DtgCostoTotalDeProduccion.Size = New System.Drawing.Size(1012, 120)
+        Me.DtgCostoTotalDeProduccion.Size = New System.Drawing.Size(1070, 223)
         Me.DtgCostoTotalDeProduccion.TabIndex = 6
-        '
-        'BtnAgregar
-        '
-        Me.BtnAgregar.Location = New System.Drawing.Point(157, 249)
-        Me.BtnAgregar.Name = "BtnAgregar"
-        Me.BtnAgregar.Size = New System.Drawing.Size(107, 45)
-        Me.BtnAgregar.TabIndex = 7
-        Me.BtnAgregar.Text = "Agregar"
-        Me.BtnAgregar.UseVisualStyleBackColor = True
         '
         'TxtGifAsignado
         '
-        Me.TxtGifAsignado.Location = New System.Drawing.Point(157, 196)
+        Me.TxtGifAsignado.Location = New System.Drawing.Point(972, 42)
         Me.TxtGifAsignado.Name = "TxtGifAsignado"
         Me.TxtGifAsignado.Size = New System.Drawing.Size(107, 22)
         Me.TxtGifAsignado.TabIndex = 9
@@ -137,44 +127,26 @@ Partial Class FrmCostoTotalDeProduccion
         'LblGIFAsignados
         '
         Me.LblGIFAsignados.AutoSize = True
-        Me.LblGIFAsignados.Location = New System.Drawing.Point(12, 196)
+        Me.LblGIFAsignados.Location = New System.Drawing.Point(874, 48)
         Me.LblGIFAsignados.Name = "LblGIFAsignados"
         Me.LblGIFAsignados.Size = New System.Drawing.Size(92, 16)
         Me.LblGIFAsignados.TabIndex = 8
         Me.LblGIFAsignados.Text = "GIF Asignado " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 143)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(139, 16)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Mano de Obra Directa"
-        '
         'BtnAgregarCtp
         '
-        Me.BtnAgregarCtp.Location = New System.Drawing.Point(12, 249)
+        Me.BtnAgregarCtp.Location = New System.Drawing.Point(394, 92)
         Me.BtnAgregarCtp.Name = "BtnAgregarCtp"
-        Me.BtnAgregarCtp.Size = New System.Drawing.Size(252, 62)
+        Me.BtnAgregarCtp.Size = New System.Drawing.Size(155, 42)
         Me.BtnAgregarCtp.TabIndex = 7
         Me.BtnAgregarCtp.Text = "Agregar"
         Me.BtnAgregarCtp.UseVisualStyleBackColor = True
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 196)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(92, 16)
-        Me.Label2.TabIndex = 8
-        Me.Label2.Text = "GIF Asignado " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        '
         'BtnEliminar
         '
-        Me.BtnEliminar.Location = New System.Drawing.Point(281, 249)
+        Me.BtnEliminar.Location = New System.Drawing.Point(561, 92)
         Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(252, 62)
+        Me.BtnEliminar.Size = New System.Drawing.Size(155, 42)
         Me.BtnEliminar.TabIndex = 10
         Me.BtnEliminar.Text = "Eliminar"
         Me.BtnEliminar.UseVisualStyleBackColor = True
@@ -182,7 +154,7 @@ Partial Class FrmCostoTotalDeProduccion
         'TxtTotalGIF
         '
         Me.TxtTotalGIF.Enabled = False
-        Me.TxtTotalGIF.Location = New System.Drawing.Point(874, 272)
+        Me.TxtTotalGIF.Location = New System.Drawing.Point(754, 404)
         Me.TxtTotalGIF.Name = "TxtTotalGIF"
         Me.TxtTotalGIF.Size = New System.Drawing.Size(107, 22)
         Me.TxtTotalGIF.TabIndex = 12
@@ -190,7 +162,7 @@ Partial Class FrmCostoTotalDeProduccion
         'LblTotalGIF
         '
         Me.LblTotalGIF.AutoSize = True
-        Me.LblTotalGIF.Location = New System.Drawing.Point(601, 272)
+        Me.LblTotalGIF.Location = New System.Drawing.Point(459, 410)
         Me.LblTotalGIF.Name = "LblTotalGIF"
         Me.LblTotalGIF.Size = New System.Drawing.Size(257, 16)
         Me.LblTotalGIF.TabIndex = 11
@@ -199,7 +171,7 @@ Partial Class FrmCostoTotalDeProduccion
         'TxtTotalMPD
         '
         Me.TxtTotalMPD.Enabled = False
-        Me.TxtTotalMPD.Location = New System.Drawing.Point(874, 178)
+        Me.TxtTotalMPD.Location = New System.Drawing.Point(281, 404)
         Me.TxtTotalMPD.Name = "TxtTotalMPD"
         Me.TxtTotalMPD.Size = New System.Drawing.Size(107, 22)
         Me.TxtTotalMPD.TabIndex = 14
@@ -207,7 +179,7 @@ Partial Class FrmCostoTotalDeProduccion
         'LbltotalMPD
         '
         Me.LbltotalMPD.AutoSize = True
-        Me.LbltotalMPD.Location = New System.Drawing.Point(601, 181)
+        Me.LbltotalMPD.Location = New System.Drawing.Point(53, 410)
         Me.LbltotalMPD.Name = "LbltotalMPD"
         Me.LbltotalMPD.Size = New System.Drawing.Size(189, 16)
         Me.LbltotalMPD.TabIndex = 13
@@ -216,7 +188,7 @@ Partial Class FrmCostoTotalDeProduccion
         'TxtTotalMOD
         '
         Me.TxtTotalMOD.Enabled = False
-        Me.TxtTotalMOD.Location = New System.Drawing.Point(874, 218)
+        Me.TxtTotalMOD.Location = New System.Drawing.Point(281, 444)
         Me.TxtTotalMOD.Name = "TxtTotalMOD"
         Me.TxtTotalMOD.Size = New System.Drawing.Size(107, 22)
         Me.TxtTotalMOD.TabIndex = 16
@@ -224,11 +196,28 @@ Partial Class FrmCostoTotalDeProduccion
         'LblTotalMOD
         '
         Me.LblTotalMOD.AutoSize = True
-        Me.LblTotalMOD.Location = New System.Drawing.Point(601, 221)
+        Me.LblTotalMOD.Location = New System.Drawing.Point(50, 450)
         Me.LblTotalMOD.Name = "LblTotalMOD"
         Me.LblTotalMOD.Size = New System.Drawing.Size(192, 16)
         Me.LblTotalMOD.TabIndex = 15
         Me.LblTotalMOD.Text = "Total de Mano de Obra Directa"
+        '
+        'TxtTotalCTP
+        '
+        Me.TxtTotalCTP.Enabled = False
+        Me.TxtTotalCTP.Location = New System.Drawing.Point(754, 444)
+        Me.TxtTotalCTP.Name = "TxtTotalCTP"
+        Me.TxtTotalCTP.Size = New System.Drawing.Size(107, 22)
+        Me.TxtTotalCTP.TabIndex = 18
+        '
+        'LblCTP
+        '
+        Me.LblCTP.AutoSize = True
+        Me.LblCTP.Location = New System.Drawing.Point(550, 450)
+        Me.LblCTP.Name = "LblCTP"
+        Me.LblCTP.Size = New System.Drawing.Size(166, 16)
+        Me.LblCTP.TabIndex = 17
+        Me.LblCTP.Text = "Costo Total de Produccion"
         '
         'ColProducto
         '
@@ -304,7 +293,9 @@ Partial Class FrmCostoTotalDeProduccion
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(249, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1379, 341)
+        Me.ClientSize = New System.Drawing.Size(1159, 497)
+        Me.Controls.Add(Me.TxtTotalCTP)
+        Me.Controls.Add(Me.LblCTP)
         Me.Controls.Add(Me.TxtTotalMOD)
         Me.Controls.Add(Me.LblTotalMOD)
         Me.Controls.Add(Me.TxtTotalMPD)
@@ -313,14 +304,11 @@ Partial Class FrmCostoTotalDeProduccion
         Me.Controls.Add(Me.LblTotalGIF)
         Me.Controls.Add(Me.BtnEliminar)
         Me.Controls.Add(Me.TxtGifAsignado)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.LblGIFAsignados)
         Me.Controls.Add(Me.BtnAgregarCtp)
-        Me.Controls.Add(Me.BtnAgregar)
         Me.Controls.Add(Me.DtgCostoTotalDeProduccion)
         Me.Controls.Add(Me.TxtMOD)
         Me.Controls.Add(Me.TxtMPD)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TxtProducto)
         Me.Controls.Add(Me.LblMOD)
         Me.Controls.Add(Me.LblMPD)
@@ -343,11 +331,8 @@ Partial Class FrmCostoTotalDeProduccion
     Friend WithEvents TxtMPD As TextBox
     Friend WithEvents TxtMOD As TextBox
     Friend WithEvents DtgCostoTotalDeProduccion As DataGridView
-    Friend WithEvents BtnAgregar As Button
     Friend WithEvents LblGIFAsignados As Label
-    Friend WithEvents Label1 As Label
     Friend WithEvents BtnAgregarCtp As Button
-    Friend WithEvents Label2 As Label
     Friend WithEvents TxtGifAsignado As TextBox
     Friend WithEvents BtnEliminar As Button
     Friend WithEvents TxtTotalGIF As TextBox
@@ -356,6 +341,8 @@ Partial Class FrmCostoTotalDeProduccion
     Friend WithEvents LbltotalMPD As Label
     Friend WithEvents TxtTotalMOD As TextBox
     Friend WithEvents LblTotalMOD As Label
+    Friend WithEvents TxtTotalCTP As TextBox
+    Friend WithEvents LblCTP As Label
     Friend WithEvents ColProducto As DataGridViewTextBoxColumn
     Friend WithEvents ColMPD As DataGridViewTextBoxColumn
     Friend WithEvents ColMOD As DataGridViewTextBoxColumn

@@ -29,17 +29,17 @@ Partial Class FrmGastos_Indirectos
         Me.TxtConcepto = New System.Windows.Forms.TextBox()
         Me.LblConcepto = New System.Windows.Forms.Label()
         Me.DtgGastosIndirectos = New System.Windows.Forms.DataGridView()
+        Me.ColConcepto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColMonto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BtnEliminar = New System.Windows.Forms.Button()
         Me.TxtTotal = New System.Windows.Forms.TextBox()
         Me.LblTotal = New System.Windows.Forms.Label()
-        Me.ColConcepto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ColMonto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DtgGastosIndirectos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TxtMonto
         '
-        Me.TxtMonto.Location = New System.Drawing.Point(87, 78)
+        Me.TxtMonto.Location = New System.Drawing.Point(92, 51)
         Me.TxtMonto.Name = "TxtMonto"
         Me.TxtMonto.Size = New System.Drawing.Size(122, 22)
         Me.TxtMonto.TabIndex = 15
@@ -47,7 +47,7 @@ Partial Class FrmGastos_Indirectos
         'LblMonto
         '
         Me.LblMonto.AutoSize = True
-        Me.LblMonto.Location = New System.Drawing.Point(15, 84)
+        Me.LblMonto.Location = New System.Drawing.Point(42, 57)
         Me.LblMonto.Name = "LblMonto"
         Me.LblMonto.Size = New System.Drawing.Size(44, 16)
         Me.LblMonto.TabIndex = 14
@@ -55,7 +55,7 @@ Partial Class FrmGastos_Indirectos
         '
         'BtnAgregar
         '
-        Me.BtnAgregar.Location = New System.Drawing.Point(18, 161)
+        Me.BtnAgregar.Location = New System.Drawing.Point(244, 12)
         Me.BtnAgregar.Name = "BtnAgregar"
         Me.BtnAgregar.Size = New System.Drawing.Size(191, 45)
         Me.BtnAgregar.TabIndex = 13
@@ -64,7 +64,7 @@ Partial Class FrmGastos_Indirectos
         '
         'TxtConcepto
         '
-        Me.TxtConcepto.Location = New System.Drawing.Point(87, 36)
+        Me.TxtConcepto.Location = New System.Drawing.Point(92, 12)
         Me.TxtConcepto.Name = "TxtConcepto"
         Me.TxtConcepto.Size = New System.Drawing.Size(122, 22)
         Me.TxtConcepto.TabIndex = 11
@@ -72,7 +72,7 @@ Partial Class FrmGastos_Indirectos
         'LblConcepto
         '
         Me.LblConcepto.AutoSize = True
-        Me.LblConcepto.Location = New System.Drawing.Point(15, 36)
+        Me.LblConcepto.Location = New System.Drawing.Point(21, 18)
         Me.LblConcepto.Name = "LblConcepto"
         Me.LblConcepto.Size = New System.Drawing.Size(65, 16)
         Me.LblConcepto.TabIndex = 10
@@ -84,39 +84,12 @@ Partial Class FrmGastos_Indirectos
         Me.DtgGastosIndirectos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DtgGastosIndirectos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ColConcepto, Me.ColMonto})
         Me.DtgGastosIndirectos.GridColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.DtgGastosIndirectos.Location = New System.Drawing.Point(238, 36)
+        Me.DtgGastosIndirectos.Location = New System.Drawing.Point(488, 12)
         Me.DtgGastosIndirectos.Name = "DtgGastosIndirectos"
         Me.DtgGastosIndirectos.RowHeadersWidth = 51
         Me.DtgGastosIndirectos.RowTemplate.Height = 24
-        Me.DtgGastosIndirectos.Size = New System.Drawing.Size(361, 221)
+        Me.DtgGastosIndirectos.Size = New System.Drawing.Size(405, 221)
         Me.DtgGastosIndirectos.TabIndex = 16
-        '
-        'BtnEliminar
-        '
-        Me.BtnEliminar.Location = New System.Drawing.Point(18, 212)
-        Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(191, 45)
-        Me.BtnEliminar.TabIndex = 17
-        Me.BtnEliminar.Text = "Eliminar"
-        Me.BtnEliminar.UseVisualStyleBackColor = True
-        '
-        'TxtTotal
-        '
-        Me.TxtTotal.Enabled = False
-        Me.TxtTotal.Location = New System.Drawing.Point(382, 301)
-        Me.TxtTotal.Name = "TxtTotal"
-        Me.TxtTotal.ReadOnly = True
-        Me.TxtTotal.Size = New System.Drawing.Size(122, 22)
-        Me.TxtTotal.TabIndex = 19
-        '
-        'LblTotal
-        '
-        Me.LblTotal.AutoSize = True
-        Me.LblTotal.Location = New System.Drawing.Point(310, 304)
-        Me.LblTotal.Name = "LblTotal"
-        Me.LblTotal.Size = New System.Drawing.Size(38, 16)
-        Me.LblTotal.TabIndex = 18
-        Me.LblTotal.Text = "Total"
         '
         'ColConcepto
         '
@@ -134,12 +107,39 @@ Partial Class FrmGastos_Indirectos
         Me.ColMonto.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.ColMonto.Width = 125
         '
+        'BtnEliminar
+        '
+        Me.BtnEliminar.Location = New System.Drawing.Point(244, 72)
+        Me.BtnEliminar.Name = "BtnEliminar"
+        Me.BtnEliminar.Size = New System.Drawing.Size(191, 45)
+        Me.BtnEliminar.TabIndex = 17
+        Me.BtnEliminar.Text = "Eliminar"
+        Me.BtnEliminar.UseVisualStyleBackColor = True
+        '
+        'TxtTotal
+        '
+        Me.TxtTotal.Enabled = False
+        Me.TxtTotal.Location = New System.Drawing.Point(92, 95)
+        Me.TxtTotal.Name = "TxtTotal"
+        Me.TxtTotal.ReadOnly = True
+        Me.TxtTotal.Size = New System.Drawing.Size(122, 22)
+        Me.TxtTotal.TabIndex = 19
+        '
+        'LblTotal
+        '
+        Me.LblTotal.AutoSize = True
+        Me.LblTotal.Location = New System.Drawing.Point(48, 101)
+        Me.LblTotal.Name = "LblTotal"
+        Me.LblTotal.Size = New System.Drawing.Size(38, 16)
+        Me.LblTotal.TabIndex = 18
+        Me.LblTotal.Text = "Total"
+        '
         'FrmGastos_Indirectos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(249, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(646, 380)
+        Me.ClientSize = New System.Drawing.Size(930, 272)
         Me.Controls.Add(Me.TxtTotal)
         Me.Controls.Add(Me.LblTotal)
         Me.Controls.Add(Me.BtnEliminar)

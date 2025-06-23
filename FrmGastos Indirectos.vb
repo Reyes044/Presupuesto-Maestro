@@ -82,4 +82,6 @@ Public Class FrmGastos_Indirectos
     Private Sub DtgGastosIndirectos_RowsRemoved(sender As Object, e As DataGridViewRowsRemovedEventArgs) Handles DtgGastosIndirectos.RowsRemoved
         CalcularTotal()
     End Sub
+
+
 End Class

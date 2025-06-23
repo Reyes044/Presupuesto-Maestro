@@ -336,7 +336,7 @@ Partial Class FormPresupuestomaestro
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FormPresupuestomaestro"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Presupuesto maestro"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
