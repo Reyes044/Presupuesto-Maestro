@@ -31,12 +31,6 @@ Partial Class FormPresupuestoMOD
         Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dtgPresupuestoMOD = New System.Windows.Forms.DataGridView()
-        Me.Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Unidades_a_Producir = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Horas_por_Unidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Total_de_Horas = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Costo_por_Horas = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Costo_Total_MOD = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnAgregar = New System.Windows.Forms.Button()
         Me.btnEliminarProducto = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -47,6 +41,12 @@ Partial Class FormPresupuestoMOD
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtTotalMOD = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Unidades_a_Producir = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Horas_por_Unidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Total_de_Horas = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Costo_por_Horas = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Costo_Total_MOD = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.dtgPresupuestoMOD, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -81,76 +81,6 @@ Partial Class FormPresupuestoMOD
         Me.dtgPresupuestoMOD.RowHeadersWidth = 62
         Me.dtgPresupuestoMOD.Size = New System.Drawing.Size(1546, 423)
         Me.dtgPresupuestoMOD.TabIndex = 5
-        '
-        'Producto
-        '
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Producto.DefaultCellStyle = DataGridViewCellStyle2
-        Me.Producto.HeaderText = "Producto"
-        Me.Producto.MinimumWidth = 8
-        Me.Producto.Name = "Producto"
-        Me.Producto.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Producto.Width = 387
-        '
-        'Unidades_a_Producir
-        '
-        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.Format = "N2"
-        DataGridViewCellStyle3.NullValue = "0"
-        Me.Unidades_a_Producir.DefaultCellStyle = DataGridViewCellStyle3
-        Me.Unidades_a_Producir.HeaderText = "Unidades a Producir"
-        Me.Unidades_a_Producir.MinimumWidth = 8
-        Me.Unidades_a_Producir.Name = "Unidades_a_Producir"
-        Me.Unidades_a_Producir.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Unidades_a_Producir.Width = 120
-        '
-        'Horas_por_Unidad
-        '
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.Format = "N2"
-        DataGridViewCellStyle4.NullValue = "0"
-        Me.Horas_por_Unidad.DefaultCellStyle = DataGridViewCellStyle4
-        Me.Horas_por_Unidad.HeaderText = "Horas por Unidad"
-        Me.Horas_por_Unidad.MinimumWidth = 8
-        Me.Horas_por_Unidad.Name = "Horas_por_Unidad"
-        Me.Horas_por_Unidad.Width = 120
-        '
-        'Total_de_Horas
-        '
-        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.ControlDark
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.Format = "N2"
-        DataGridViewCellStyle5.NullValue = "0"
-        Me.Total_de_Horas.DefaultCellStyle = DataGridViewCellStyle5
-        Me.Total_de_Horas.HeaderText = "Total de Horas"
-        Me.Total_de_Horas.MinimumWidth = 8
-        Me.Total_de_Horas.Name = "Total_de_Horas"
-        Me.Total_de_Horas.Width = 120
-        '
-        'Costo_por_Horas
-        '
-        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.Format = "C2"
-        DataGridViewCellStyle6.NullValue = "0"
-        Me.Costo_por_Horas.DefaultCellStyle = DataGridViewCellStyle6
-        Me.Costo_por_Horas.HeaderText = "Costo por horas"
-        Me.Costo_por_Horas.MinimumWidth = 8
-        Me.Costo_por_Horas.Name = "Costo_por_Horas"
-        Me.Costo_por_Horas.Width = 120
-        '
-        'Costo_Total_MOD
-        '
-        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.ControlDark
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.Format = "C2"
-        DataGridViewCellStyle7.NullValue = "0"
-        Me.Costo_Total_MOD.DefaultCellStyle = DataGridViewCellStyle7
-        Me.Costo_Total_MOD.HeaderText = "Costo Total MOD"
-        Me.Costo_Total_MOD.MinimumWidth = 8
-        Me.Costo_Total_MOD.Name = "Costo_Total_MOD"
-        Me.Costo_Total_MOD.Width = 120
         '
         'btnAgregar
         '
@@ -199,10 +129,10 @@ Partial Class FormPresupuestoMOD
         '
         'txtUnidadesProducir
         '
-        Me.txtUnidadesProducir.Enabled = False
         Me.txtUnidadesProducir.Location = New System.Drawing.Point(225, 802)
         Me.txtUnidadesProducir.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtUnidadesProducir.Name = "txtUnidadesProducir"
+        Me.txtUnidadesProducir.ReadOnly = True
         Me.txtUnidadesProducir.Size = New System.Drawing.Size(133, 26)
         Me.txtUnidadesProducir.TabIndex = 13
         '
@@ -218,10 +148,10 @@ Partial Class FormPresupuestoMOD
         '
         'txtTotalHoras
         '
-        Me.txtTotalHoras.Enabled = False
         Me.txtTotalHoras.Location = New System.Drawing.Point(225, 865)
         Me.txtTotalHoras.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtTotalHoras.Name = "txtTotalHoras"
+        Me.txtTotalHoras.ReadOnly = True
         Me.txtTotalHoras.Size = New System.Drawing.Size(133, 26)
         Me.txtTotalHoras.TabIndex = 15
         '
@@ -237,10 +167,10 @@ Partial Class FormPresupuestoMOD
         '
         'txtTotalMOD
         '
-        Me.txtTotalMOD.Enabled = False
         Me.txtTotalMOD.Location = New System.Drawing.Point(225, 918)
         Me.txtTotalMOD.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtTotalMOD.Name = "txtTotalMOD"
+        Me.txtTotalMOD.ReadOnly = True
         Me.txtTotalMOD.Size = New System.Drawing.Size(133, 26)
         Me.txtTotalMOD.TabIndex = 17
         '
@@ -253,6 +183,86 @@ Partial Class FormPresupuestoMOD
         Me.Label5.Size = New System.Drawing.Size(131, 20)
         Me.Label5.TabIndex = 16
         Me.Label5.Text = "Costo Total MOD"
+        '
+        'Producto
+        '
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Producto.DefaultCellStyle = DataGridViewCellStyle2
+        Me.Producto.HeaderText = "Producto"
+        Me.Producto.MinimumWidth = 8
+        Me.Producto.Name = "Producto"
+        Me.Producto.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Producto.Width = 350
+        '
+        'Unidades_a_Producir
+        '
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.Format = "N2"
+        DataGridViewCellStyle3.NullValue = "0"
+        Me.Unidades_a_Producir.DefaultCellStyle = DataGridViewCellStyle3
+        Me.Unidades_a_Producir.HeaderText = "Unidades a Producir"
+        Me.Unidades_a_Producir.MinimumWidth = 8
+        Me.Unidades_a_Producir.Name = "Unidades_a_Producir"
+        Me.Unidades_a_Producir.ReadOnly = True
+        Me.Unidades_a_Producir.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Unidades_a_Producir.Width = 120
+        '
+        'Horas_por_Unidad
+        '
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.Format = "N2"
+        DataGridViewCellStyle4.NullValue = "0"
+        Me.Horas_por_Unidad.DefaultCellStyle = DataGridViewCellStyle4
+        Me.Horas_por_Unidad.HeaderText = "Horas por Unidad"
+        Me.Horas_por_Unidad.MinimumWidth = 8
+        Me.Horas_por_Unidad.Name = "Horas_por_Unidad"
+        Me.Horas_por_Unidad.ReadOnly = True
+        Me.Horas_por_Unidad.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Horas_por_Unidad.Width = 120
+        '
+        'Total_de_Horas
+        '
+        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.ControlDark
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.Format = "N2"
+        DataGridViewCellStyle5.NullValue = "0"
+        Me.Total_de_Horas.DefaultCellStyle = DataGridViewCellStyle5
+        Me.Total_de_Horas.HeaderText = "Total de Horas"
+        Me.Total_de_Horas.MinimumWidth = 8
+        Me.Total_de_Horas.Name = "Total_de_Horas"
+        Me.Total_de_Horas.ReadOnly = True
+        Me.Total_de_Horas.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Total_de_Horas.Width = 120
+        '
+        'Costo_por_Horas
+        '
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.Format = "C2"
+        DataGridViewCellStyle6.NullValue = "0"
+        Me.Costo_por_Horas.DefaultCellStyle = DataGridViewCellStyle6
+        Me.Costo_por_Horas.HeaderText = "Costo por horas"
+        Me.Costo_por_Horas.MinimumWidth = 8
+        Me.Costo_por_Horas.Name = "Costo_por_Horas"
+        Me.Costo_por_Horas.ReadOnly = True
+        Me.Costo_por_Horas.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Costo_por_Horas.Width = 120
+        '
+        'Costo_Total_MOD
+        '
+        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.ControlDark
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.Format = "C2"
+        DataGridViewCellStyle7.NullValue = "0"
+        Me.Costo_Total_MOD.DefaultCellStyle = DataGridViewCellStyle7
+        Me.Costo_Total_MOD.HeaderText = "Costo Total MOD"
+        Me.Costo_Total_MOD.MinimumWidth = 8
+        Me.Costo_Total_MOD.Name = "Costo_Total_MOD"
+        Me.Costo_Total_MOD.ReadOnly = True
+        Me.Costo_Total_MOD.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Costo_Total_MOD.Width = 120
         '
         'FormPresupuestoMOD
         '
@@ -285,12 +295,6 @@ Partial Class FormPresupuestoMOD
     Friend WithEvents dtgPresupuestoMOD As DataGridView
     Friend WithEvents btnAgregar As Button
     Friend WithEvents btnEliminarProducto As Button
-    Friend WithEvents Producto As DataGridViewTextBoxColumn
-    Friend WithEvents Unidades_a_Producir As DataGridViewTextBoxColumn
-    Friend WithEvents Horas_por_Unidad As DataGridViewTextBoxColumn
-    Friend WithEvents Total_de_Horas As DataGridViewTextBoxColumn
-    Friend WithEvents Costo_por_Horas As DataGridViewTextBoxColumn
-    Friend WithEvents Costo_Total_MOD As DataGridViewTextBoxColumn
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label2 As Label
     Friend WithEvents txtUnidadesProducir As TextBox
@@ -299,4 +303,10 @@ Partial Class FormPresupuestoMOD
     Friend WithEvents Label4 As Label
     Friend WithEvents txtTotalMOD As TextBox
     Friend WithEvents Label5 As Label
+    Friend WithEvents Producto As DataGridViewTextBoxColumn
+    Friend WithEvents Unidades_a_Producir As DataGridViewTextBoxColumn
+    Friend WithEvents Horas_por_Unidad As DataGridViewTextBoxColumn
+    Friend WithEvents Total_de_Horas As DataGridViewTextBoxColumn
+    Friend WithEvents Costo_por_Horas As DataGridViewTextBoxColumn
+    Friend WithEvents Costo_Total_MOD As DataGridViewTextBoxColumn
 End Class

@@ -73,6 +73,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="FormPresupuestoCaja.Designer.vb">
       <DependentUpon>FormPresupuestoCaja.vb</DependentUpon>
     </Compile>

@@ -4,6 +4,8 @@
         dtgPresupuestoMOD.AllowUserToAddRows = False
 
 
+        dtgPresupuestoMOD.MultiSelect = False
+
         dtgPresupuestoMOD.Columns(3).ReadOnly = True
         dtgPresupuestoMOD.Columns(5).ReadOnly = True
 
@@ -15,7 +17,13 @@
     End Sub
 
     Private Sub btnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
-        dtgPresupuestoMOD.Rows.Add()
+        Dim index = dtgPresupuestoMOD.Rows.Add()
+        For i = 1 To 2
+            dtgPresupuestoMOD.Rows(index).Cells(i).ReadOnly = True
+            dtgPresupuestoMOD.Rows(index).Cells(i).Style.BackColor = Color.LightGray
+            dtgPresupuestoMOD.Rows(index).Cells(4).ReadOnly = True
+            dtgPresupuestoMOD.Rows(index).Cells(4).Style.BackColor = Color.LightGray
+        Next
     End Sub
 
     Private Sub btnEliminarProducto_Click(sender As Object, e As EventArgs) Handles btnEliminarProducto.Click
@@ -25,6 +33,36 @@
     End Sub
 
     Private Sub dtgPresupuestoMOD_CellEndEdit(sender As Object, e As DataGridViewCellEventArgs) Handles dtgPresupuestoMOD.CellEndEdit
+
+
+        If e.ColumnIndex = 0 Then
+            Dim celdaProducto = dtgPresupuestoMOD.Rows(e.RowIndex).Cells(0)
+            Dim texto As String = ""
+
+            If celdaProducto.Value IsNot Nothing Then
+                texto = celdaProducto.Value.ToString().Trim()
+            End If
+
+            If texto <> "" Then
+                For i = 1 To 2
+                    dtgPresupuestoMOD.Rows(e.RowIndex).Cells(i).ReadOnly = False
+                    dtgPresupuestoMOD.Rows(e.RowIndex).Cells(i).Style.BackColor = Color.White
+                    dtgPresupuestoMOD.Rows(e.RowIndex).Cells(4).ReadOnly = False
+                    dtgPresupuestoMOD.Rows(e.RowIndex).Cells(4).Style.BackColor = Color.White
+                Next
+            Else
+                For i = 1 To 2
+                    dtgPresupuestoMOD.Rows(e.RowIndex).Cells(i).Value = Nothing
+                    dtgPresupuestoMOD.Rows(e.RowIndex).Cells(i).ReadOnly = True
+                    dtgPresupuestoMOD.Rows(e.RowIndex).Cells(i).Style.BackColor = Color.LightGray
+                    dtgPresupuestoMOD.Rows(e.RowIndex).Cells(4).Value = Nothing
+                    dtgPresupuestoMOD.Rows(e.RowIndex).Cells(4).ReadOnly = True
+                    dtgPresupuestoMOD.Rows(e.RowIndex).Cells(4).Style.BackColor = Color.LightGray
+                Next
+            End If
+        End If
+
+
 
         LimpiarTXT()
 

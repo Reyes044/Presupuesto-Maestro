@@ -191,6 +191,8 @@
     End Sub
 
     Private Sub No_Repeated_Meses(e)
+        LimpiarTxt()
+        CalcularTotal()
 
         If e.ColumnIndex = dtgPresupuestoCaja.Columns("Mes").Index Then
 
@@ -199,20 +201,21 @@
             Dim mes_selected = dtgPresupuestoCaja.Rows(e.RowIndex).Cells(e.ColumnIndex).Value
             If mes_selected Is Nothing Then Exit Sub
 
-                ' Verificar si el mes ya está usado en otra fila'
-                For Each fila As DataGridViewRow In dtgPresupuestoCaja.Rows
+            ' Verificar si el mes ya está usado en otra fila'
+            For Each fila As DataGridViewRow In dtgPresupuestoCaja.Rows
 
-                    If Not fila.IsNewRow AndAlso fila.Index <> e.RowIndex Then
-                        Dim valor = fila.Cells("Mes").Value
+                If Not fila.IsNewRow AndAlso fila.Index <> e.RowIndex Then
+                    Dim valor = fila.Cells("Mes").Value
 
-                        If valor = mes_selected Then
+                    If valor = mes_selected Then
                         MsgBox("Ese mes ya fue seleccionado.", MsgBoxStyle.Exclamation, "Advertencia")
                         dtgPresupuestoCaja.Rows(e.RowIndex).Cells(e.ColumnIndex).Value = Nothing
+
                         Exit For
                     End If
-                    End If
-                Next
-            End If
+                End If
+            Next
+        End If
     End Sub
 
 End Class
