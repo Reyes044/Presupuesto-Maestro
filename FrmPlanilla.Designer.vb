@@ -558,7 +558,7 @@ Partial Class FrmPlanilla
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(121, Byte), Integer))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FrmPlanilla"
-        Me.Text = "FrmPlanilla"
+        Me.Text = "Planilla"
         CType(Me.DtgPlanilla, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

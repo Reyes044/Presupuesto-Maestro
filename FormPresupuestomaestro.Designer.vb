@@ -27,13 +27,10 @@ Partial Class FormPresupuestomaestro
         Me.BtnPresupuestoVentas = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.BtnPresupuestoProduccion = New System.Windows.Forms.Button()
-        Me.BtnCostoTotalProducción = New System.Windows.Forms.Button()
         Me.BtnPresupuestoCompras = New System.Windows.Forms.Button()
         Me.BtnPresupuestoMod = New System.Windows.Forms.Button()
-        Me.BtnGastosindirectos = New System.Windows.Forms.Button()
         Me.BtnGastoAdmyVentas = New System.Windows.Forms.Button()
         Me.BtnPresupuestoCaja = New System.Windows.Forms.Button()
-        Me.BtnResumen = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -48,9 +45,12 @@ Partial Class FormPresupuestomaestro
         Me.Tiempo = New System.Windows.Forms.Timer(Me.components)
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.BtnPlanilla = New System.Windows.Forms.Button()
         Me.Label15 = New System.Windows.Forms.Label()
+        Me.BtnPlanilla = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.BtnResumen = New System.Windows.Forms.Button()
+        Me.BtnGastosindirectos = New System.Windows.Forms.Button()
+        Me.BtnCostoTotalProducción = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -81,15 +81,6 @@ Partial Class FormPresupuestomaestro
         Me.BtnPresupuestoProduccion.TabIndex = 3
         Me.BtnPresupuestoProduccion.UseVisualStyleBackColor = True
         '
-        'BtnCostoTotalProducción
-        '
-        Me.BtnCostoTotalProducción.Location = New System.Drawing.Point(597, 43)
-        Me.BtnCostoTotalProducción.Margin = New System.Windows.Forms.Padding(4)
-        Me.BtnCostoTotalProducción.Name = "BtnCostoTotalProducción"
-        Me.BtnCostoTotalProducción.Size = New System.Drawing.Size(232, 128)
-        Me.BtnCostoTotalProducción.TabIndex = 4
-        Me.BtnCostoTotalProducción.UseVisualStyleBackColor = True
-        '
         'BtnPresupuestoCompras
         '
         Me.BtnPresupuestoCompras.Location = New System.Drawing.Point(879, 43)
@@ -108,15 +99,6 @@ Partial Class FormPresupuestomaestro
         Me.BtnPresupuestoMod.TabIndex = 6
         Me.BtnPresupuestoMod.UseVisualStyleBackColor = True
         '
-        'BtnGastosindirectos
-        '
-        Me.BtnGastosindirectos.Location = New System.Drawing.Point(311, 229)
-        Me.BtnGastosindirectos.Margin = New System.Windows.Forms.Padding(4)
-        Me.BtnGastosindirectos.Name = "BtnGastosindirectos"
-        Me.BtnGastosindirectos.Size = New System.Drawing.Size(232, 128)
-        Me.BtnGastosindirectos.TabIndex = 7
-        Me.BtnGastosindirectos.UseVisualStyleBackColor = True
-        '
         'BtnGastoAdmyVentas
         '
         Me.BtnGastoAdmyVentas.Location = New System.Drawing.Point(597, 229)
@@ -134,15 +116,6 @@ Partial Class FormPresupuestomaestro
         Me.BtnPresupuestoCaja.Size = New System.Drawing.Size(232, 128)
         Me.BtnPresupuestoCaja.TabIndex = 9
         Me.BtnPresupuestoCaja.UseVisualStyleBackColor = True
-        '
-        'BtnResumen
-        '
-        Me.BtnResumen.Location = New System.Drawing.Point(29, 412)
-        Me.BtnResumen.Margin = New System.Windows.Forms.Padding(4)
-        Me.BtnResumen.Name = "BtnResumen"
-        Me.BtnResumen.Size = New System.Drawing.Size(232, 128)
-        Me.BtnResumen.TabIndex = 10
-        Me.BtnResumen.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -293,6 +266,28 @@ Partial Class FormPresupuestomaestro
         Me.Label12.TabIndex = 24
         Me.Label12.Text = "Fecha:"
         '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Bodoni MT Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(385, 382)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(69, 28)
+        Me.Label15.TabIndex = 28
+        Me.Label15.Text = "Planilla "
+        '
+        'BtnPlanilla
+        '
+        Me.BtnPlanilla.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources.sobresalir
+        Me.BtnPlanilla.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnPlanilla.Location = New System.Drawing.Point(311, 412)
+        Me.BtnPlanilla.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnPlanilla.Name = "BtnPlanilla"
+        Me.BtnPlanilla.Size = New System.Drawing.Size(232, 128)
+        Me.BtnPlanilla.TabIndex = 27
+        Me.BtnPlanilla.UseVisualStyleBackColor = True
+        '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
@@ -304,25 +299,38 @@ Partial Class FormPresupuestomaestro
         Me.PictureBox1.TabIndex = 20
         Me.PictureBox1.TabStop = False
         '
-        'BtnPlanilla
+        'BtnResumen
         '
-        Me.BtnPlanilla.Location = New System.Drawing.Point(311, 412)
-        Me.BtnPlanilla.Margin = New System.Windows.Forms.Padding(4)
-        Me.BtnPlanilla.Name = "BtnPlanilla"
-        Me.BtnPlanilla.Size = New System.Drawing.Size(232, 128)
-        Me.BtnPlanilla.TabIndex = 27
-        Me.BtnPlanilla.UseVisualStyleBackColor = True
+        Me.BtnResumen.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources.resumen_de_compra
+        Me.BtnResumen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnResumen.Location = New System.Drawing.Point(29, 412)
+        Me.BtnResumen.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnResumen.Name = "BtnResumen"
+        Me.BtnResumen.Size = New System.Drawing.Size(232, 128)
+        Me.BtnResumen.TabIndex = 10
+        Me.BtnResumen.UseVisualStyleBackColor = True
         '
-        'Label15
+        'BtnGastosindirectos
         '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Bodoni MT Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(385, 382)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(69, 28)
-        Me.Label15.TabIndex = 28
-        Me.Label15.Text = "Planilla "
+        Me.BtnGastosindirectos.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources.costo__1_
+        Me.BtnGastosindirectos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnGastosindirectos.Location = New System.Drawing.Point(311, 229)
+        Me.BtnGastosindirectos.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnGastosindirectos.Name = "BtnGastosindirectos"
+        Me.BtnGastosindirectos.Size = New System.Drawing.Size(232, 128)
+        Me.BtnGastosindirectos.TabIndex = 7
+        Me.BtnGastosindirectos.UseVisualStyleBackColor = True
+        '
+        'BtnCostoTotalProducción
+        '
+        Me.BtnCostoTotalProducción.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources.costo
+        Me.BtnCostoTotalProducción.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnCostoTotalProducción.Location = New System.Drawing.Point(597, 43)
+        Me.BtnCostoTotalProducción.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnCostoTotalProducción.Name = "BtnCostoTotalProducción"
+        Me.BtnCostoTotalProducción.Size = New System.Drawing.Size(232, 128)
+        Me.BtnCostoTotalProducción.TabIndex = 4
+        Me.BtnCostoTotalProducción.UseVisualStyleBackColor = True
         '
         'FormPresupuestomaestro
         '

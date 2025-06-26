@@ -177,5 +177,56 @@
   <ItemGroup>
     <None Include="Resources\images.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinero-calculadora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinero-calculadora1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinero-calculadora2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinero-calculadora %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinero-calculadora %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinero-calculadora3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archivo-excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archivo-excel %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gastos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verificacion-resumida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinero-calculadora4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-google-sheets-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hoja-de-balance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\costo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\costo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resumen-de-compra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sobresalir.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

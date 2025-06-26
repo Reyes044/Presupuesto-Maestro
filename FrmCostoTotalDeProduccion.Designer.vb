@@ -338,7 +338,7 @@ Partial Class FrmCostoTotalDeProduccion
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FrmCostoTotalDeProduccion"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FrmCostoTotalDeProduccion"
+        Me.Text = "Costo Total de Produccion"
         CType(Me.DtgCostoTotalDeProduccion, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

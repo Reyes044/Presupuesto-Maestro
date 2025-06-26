@@ -154,7 +154,7 @@ Partial Class FrmGastos_Indirectos
         Me.MaximizeBox = False
         Me.Name = "FrmGastos_Indirectos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FrmGastos_Indirectos"
+        Me.Text = "Gastos Indirectos"
         CType(Me.DtgGastosIndirectos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
