@@ -1,15 +1,15 @@
 ﻿Public Class SplashScreen
     Private Sub SplashScreen_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TimerCargando.Start()
-        ProgressBarCargando.Value = 0
+        ProgressBarLoading.Value = 0
 
     End Sub
 
     Private Sub TimerCargando_Tick(sender As Object, e As EventArgs) Handles TimerCargando.Tick
 
-        ProgressBarCargando.Increment(3)
+        ProgressBarLoading.Increment(2)
 
-        If ProgressBarCargando.Value >= 100 Then
+        If ProgressBarLoading.Value >= 100 Then
             TimerCargando.Stop()
             Me.Hide()
             FormPresupuestomaestro.ShowDialog()
@@ -17,4 +17,6 @@
 
         End If
     End Sub
+
+
 End Class
