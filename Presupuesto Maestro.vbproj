@@ -79,9 +79,7 @@
     <Compile Include="FormPresupuestoDeProduccion.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPresupuestomaestro.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="FormPresupuestomaestro.vb" />
     <Compile Include="FormPresupuestomaestro.Designer.vb">
       <DependentUpon>FormPresupuestomaestro.vb</DependentUpon>
       <SubType>Form</SubType>

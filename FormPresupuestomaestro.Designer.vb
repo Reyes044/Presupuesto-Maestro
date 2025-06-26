@@ -51,6 +51,16 @@ Partial Class FormPresupuestomaestro
         Me.BtnResumen = New System.Windows.Forms.Button()
         Me.BtnGastosindirectos = New System.Windows.Forms.Button()
         Me.BtnCostoTotalProducción = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -120,99 +130,99 @@ Partial Class FormPresupuestomaestro
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Montserrat", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(42, 15)
+        Me.Label2.Font = New System.Drawing.Font("Montserrat", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(43, 15)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(203, 27)
+        Me.Label2.Size = New System.Drawing.Size(157, 20)
         Me.Label2.TabIndex = 11
         Me.Label2.Text = "Presupuesto de ventas"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Montserrat", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(306, 15)
+        Me.Label3.Font = New System.Drawing.Font("Montserrat", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(307, 15)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(248, 27)
+        Me.Label3.Size = New System.Drawing.Size(188, 20)
         Me.Label3.TabIndex = 12
         Me.Label3.Text = "Presupuesto de producción" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Montserrat", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Montserrat", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(907, 246)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(183, 27)
+        Me.Label4.Size = New System.Drawing.Size(141, 20)
         Me.Label4.TabIndex = 13
         Me.Label4.Text = "Presupuesto de caja" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Montserrat", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Montserrat", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(615, 246)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(191, 27)
+        Me.Label5.Size = New System.Drawing.Size(146, 20)
         Me.Label5.TabIndex = 14
         Me.Label5.Text = "Gastos Adm. y ventas"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Montserrat", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Montserrat", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(351, 246)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(159, 27)
+        Me.Label6.Size = New System.Drawing.Size(118, 20)
         Me.Label6.TabIndex = 15
         Me.Label6.Text = "Gastos indirectos"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Montserrat", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Montserrat", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(61, 246)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(166, 27)
+        Me.Label7.Size = New System.Drawing.Size(128, 20)
         Me.Label7.TabIndex = 16
         Me.Label7.Text = "Presupuesto MOD"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Montserrat", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Montserrat", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(888, 22)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(223, 27)
+        Me.Label8.Size = New System.Drawing.Size(171, 20)
         Me.Label8.TabIndex = 17
         Me.Label8.Text = "Presupuesto de compras" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Montserrat", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Montserrat", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(592, 15)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(235, 27)
+        Me.Label9.Size = New System.Drawing.Size(174, 20)
         Me.Label9.TabIndex = 18
         Me.Label9.Text = "Costo total de producción"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Montserrat", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(92, 483)
+        Me.Label10.Font = New System.Drawing.Font("Montserrat", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(92, 482)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(92, 27)
+        Me.Label10.Size = New System.Drawing.Size(72, 20)
         Me.Label10.TabIndex = 19
         Me.Label10.Text = "Resumen"
         '
@@ -220,23 +230,23 @@ Partial Class FormPresupuestomaestro
         '
         Me.LblHora.AutoSize = True
         Me.LblHora.BackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(249, Byte), Integer))
-        Me.LblHora.Font = New System.Drawing.Font("Bodoni MT Condensed", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblHora.Font = New System.Drawing.Font("Montserrat Black", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblHora.ForeColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(121, Byte), Integer))
-        Me.LblHora.Location = New System.Drawing.Point(1282, 224)
+        Me.LblHora.Location = New System.Drawing.Point(1271, 252)
         Me.LblHora.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LblHora.Name = "LblHora"
-        Me.LblHora.Size = New System.Drawing.Size(54, 36)
+        Me.LblHora.Size = New System.Drawing.Size(56, 27)
         Me.LblHora.TabIndex = 21
         Me.LblHora.Text = "Hora"
         '
         'LblFecha
         '
         Me.LblFecha.AutoSize = True
-        Me.LblFecha.Font = New System.Drawing.Font("Bodoni MT Condensed", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblFecha.Location = New System.Drawing.Point(1282, 269)
+        Me.LblFecha.Font = New System.Drawing.Font("Montserrat Black", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblFecha.Location = New System.Drawing.Point(1264, 292)
         Me.LblFecha.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LblFecha.Name = "LblFecha"
-        Me.LblFecha.Size = New System.Drawing.Size(57, 32)
+        Me.LblFecha.Size = New System.Drawing.Size(67, 27)
         Me.LblFecha.TabIndex = 22
         Me.LblFecha.Text = "Fecha"
         '
@@ -247,33 +257,33 @@ Partial Class FormPresupuestomaestro
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Bodoni MT", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(1170, 236)
+        Me.Label11.Font = New System.Drawing.Font("Montserrat Black", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(1184, 252)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(58, 23)
+        Me.Label11.Size = New System.Drawing.Size(61, 27)
         Me.Label11.TabIndex = 23
         Me.Label11.Text = "Hora:"
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Bodoni MT", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(1170, 275)
+        Me.Label12.Font = New System.Drawing.Font("Montserrat Black", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(1184, 292)
         Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(66, 23)
+        Me.Label12.Size = New System.Drawing.Size(72, 27)
         Me.Label12.TabIndex = 24
         Me.Label12.Text = "Fecha:"
         '
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Montserrat", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(386, 483)
+        Me.Label15.Font = New System.Drawing.Font("Montserrat", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(387, 482)
         Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(79, 27)
+        Me.Label15.Size = New System.Drawing.Size(58, 20)
         Me.Label15.TabIndex = 28
         Me.Label15.Text = "Planilla "
         '
@@ -332,13 +342,112 @@ Partial Class FormPresupuestomaestro
         Me.BtnCostoTotalProducción.TabIndex = 4
         Me.BtnCostoTotalProducción.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(29, 54)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(232, 160)
+        Me.Button1.TabIndex = 1
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(311, 54)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(232, 160)
+        Me.Button2.TabIndex = 3
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources.costo
+        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button3.Location = New System.Drawing.Point(597, 54)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(232, 160)
+        Me.Button3.TabIndex = 4
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(879, 54)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(232, 160)
+        Me.Button4.TabIndex = 5
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(29, 286)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(232, 160)
+        Me.Button5.TabIndex = 6
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources.costo__1_
+        Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button6.Location = New System.Drawing.Point(311, 286)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(232, 160)
+        Me.Button6.TabIndex = 7
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(597, 286)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(232, 160)
+        Me.Button7.TabIndex = 8
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(879, 286)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(232, 160)
+        Me.Button8.TabIndex = 9
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button9
+        '
+        Me.Button9.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources.resumen_de_compra
+        Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button9.Location = New System.Drawing.Point(29, 515)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(232, 160)
+        Me.Button9.TabIndex = 10
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Button10
+        '
+        Me.Button10.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources.sobresalir
+        Me.Button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button10.Location = New System.Drawing.Point(311, 515)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(232, 160)
+        Me.Button10.TabIndex = 27
+        Me.Button10.UseVisualStyleBackColor = True
+        '
         'FormPresupuestomaestro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(249, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1439, 741)
+        Me.ClientSize = New System.Drawing.Size(1283, 741)
         Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.BtnPlanilla)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
@@ -354,15 +463,24 @@ Partial Class FormPresupuestomaestro
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.BtnResumen)
+        Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.BtnPresupuestoCaja)
+        Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.BtnGastoAdmyVentas)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.BtnGastosindirectos)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.BtnPresupuestoMod)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.BtnPresupuestoCompras)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.BtnCostoTotalProducción)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.BtnPresupuestoProduccion)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.BtnPresupuestoVentas)
         Me.Font = New System.Drawing.Font("Montserrat", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(121, Byte), Integer))
@@ -403,4 +521,14 @@ Partial Class FormPresupuestomaestro
     Friend WithEvents Label12 As Label
     Friend WithEvents BtnPlanilla As Button
     Friend WithEvents Label15 As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Button9 As Button
+    Friend WithEvents Button10 As Button
 End Class

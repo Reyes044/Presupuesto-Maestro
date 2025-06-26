@@ -3,7 +3,7 @@
 
     End Sub
 
-    Private Sub BtnPresupuestoVentas_Click(sender As Object, e As EventArgs) Handles BtnPresupuestoVentas.Click
+    Private Sub BtnPresupuestoVentas_Click(sender As Object, e As EventArgs) Handles BtnPresupuestoVentas.Click, Button1.Click
         FrmPresupuestoVentas.ShowDialog()
     End Sub
 
@@ -13,23 +13,23 @@
 
     End Sub
 
-    Private Sub BtnPresupuestoProduccion_Click(sender As Object, e As EventArgs) Handles BtnPresupuestoProduccion.Click
+    Private Sub BtnPresupuestoProduccion_Click(sender As Object, e As EventArgs) Handles BtnPresupuestoProduccion.Click, Button2.Click
         FormPresupuestoDeProduccion.ShowDialog()
     End Sub
 
-    Private Sub BtnCostoTotalProducción_Click(sender As Object, e As EventArgs) Handles BtnCostoTotalProducción.Click
+    Private Sub BtnCostoTotalProducción_Click(sender As Object, e As EventArgs) Handles BtnCostoTotalProducción.Click, Button3.Click
         FrmCostoTotalDeProduccion.ShowDialog()
     End Sub
 
-    Private Sub BtnGastosindirectos_Click(sender As Object, e As EventArgs) Handles BtnGastosindirectos.Click
+    Private Sub BtnGastosindirectos_Click(sender As Object, e As EventArgs) Handles BtnGastosindirectos.Click, Button6.Click
         FrmGastos_Indirectos.ShowDialog()
     End Sub
-    Private Sub BtnResumen_Click(sender As Object, e As EventArgs) Handles BtnResumen.Click
+    Private Sub BtnResumen_Click(sender As Object, e As EventArgs) Handles BtnResumen.Click, Button9.Click
         FrmResumen.ShowDialog()
 
     End Sub
 
-    Private Sub BtnPlanilla_Click(sender As Object, e As EventArgs) Handles BtnPlanilla.Click
+    Private Sub BtnPlanilla_Click(sender As Object, e As EventArgs) Handles BtnPlanilla.Click, Button10.Click
         FrmPlanilla.ShowDialog()
     End Sub
 
