@@ -1,4 +1,5 @@
 ﻿Imports System.ComponentModel
+Imports System.Net.Security
 
 Public Class FrmPlanilla
     Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnAgregar.Click
@@ -371,4 +372,6 @@ Public Class FrmPlanilla
             TxtFirmas.Focus()
         End If
     End Sub
+
+
 End Class
