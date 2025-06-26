@@ -214,4 +214,5 @@ Public Class FrmCostoTotalDeProduccion
         CalcularTotal_CTP()
 
     End Sub
+
 End Class
