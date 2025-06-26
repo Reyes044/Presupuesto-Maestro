@@ -42,28 +42,6 @@ Partial Class FrmPlanilla
         Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmPlanilla))
         Me.DtgPlanilla = New System.Windows.Forms.DataGridView()
-        Me.LblCedula = New System.Windows.Forms.Label()
-        Me.TxtNombres = New System.Windows.Forms.TextBox()
-        Me.LblNombre = New System.Windows.Forms.Label()
-        Me.TxtCargo = New System.Windows.Forms.TextBox()
-        Me.LblCargo = New System.Windows.Forms.Label()
-        Me.TxtSalarioMensual = New System.Windows.Forms.TextBox()
-        Me.LblSalMen = New System.Windows.Forms.Label()
-        Me.TxtPrestamos = New System.Windows.Forms.TextBox()
-        Me.LblPrestamos = New System.Windows.Forms.Label()
-        Me.TxtFeriados = New System.Windows.Forms.TextBox()
-        Me.LblFeriados = New System.Windows.Forms.Label()
-        Me.TxtSubsidios = New System.Windows.Forms.TextBox()
-        Me.LblSubsidios = New System.Windows.Forms.Label()
-        Me.TxtDiasTrab = New System.Windows.Forms.TextBox()
-        Me.LblDiaTrab = New System.Windows.Forms.Label()
-        Me.BtnAgregar = New System.Windows.Forms.Button()
-        Me.BtnEliminar = New System.Windows.Forms.Button()
-        Me.TxtVacaciones1 = New System.Windows.Forms.TextBox()
-        Me.LblVac1 = New System.Windows.Forms.Label()
-        Me.TxtFirmas = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.MskCedula = New System.Windows.Forms.MaskedTextBox()
         Me.ColCedula = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColNombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColCargo = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -87,6 +65,28 @@ Partial Class FrmPlanilla
         Me.ColInatec = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColVac2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColAguinaldo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LblCedula = New System.Windows.Forms.Label()
+        Me.TxtNombres = New System.Windows.Forms.TextBox()
+        Me.LblNombre = New System.Windows.Forms.Label()
+        Me.TxtCargo = New System.Windows.Forms.TextBox()
+        Me.LblCargo = New System.Windows.Forms.Label()
+        Me.TxtSalarioMensual = New System.Windows.Forms.TextBox()
+        Me.LblSalMen = New System.Windows.Forms.Label()
+        Me.TxtPrestamos = New System.Windows.Forms.TextBox()
+        Me.LblPrestamos = New System.Windows.Forms.Label()
+        Me.TxtFeriados = New System.Windows.Forms.TextBox()
+        Me.LblFeriados = New System.Windows.Forms.Label()
+        Me.TxtSubsidios = New System.Windows.Forms.TextBox()
+        Me.LblSubsidios = New System.Windows.Forms.Label()
+        Me.TxtDiasTrab = New System.Windows.Forms.TextBox()
+        Me.LblDiaTrab = New System.Windows.Forms.Label()
+        Me.BtnAgregar = New System.Windows.Forms.Button()
+        Me.BtnEliminar = New System.Windows.Forms.Button()
+        Me.TxtVacaciones1 = New System.Windows.Forms.TextBox()
+        Me.LblVac1 = New System.Windows.Forms.Label()
+        Me.TxtFirmas = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.MskCedula = New System.Windows.Forms.MaskedTextBox()
         CType(Me.DtgPlanilla, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -100,185 +100,6 @@ Partial Class FrmPlanilla
         Me.DtgPlanilla.RowTemplate.Height = 24
         Me.DtgPlanilla.Size = New System.Drawing.Size(1397, 242)
         Me.DtgPlanilla.TabIndex = 0
-        '
-        'LblCedula
-        '
-        Me.LblCedula.AutoSize = True
-        Me.LblCedula.Location = New System.Drawing.Point(38, 51)
-        Me.LblCedula.Name = "LblCedula"
-        Me.LblCedula.Size = New System.Drawing.Size(50, 16)
-        Me.LblCedula.TabIndex = 1
-        Me.LblCedula.Text = "Cedula"
-        '
-        'TxtNombres
-        '
-        Me.TxtNombres.Location = New System.Drawing.Point(182, 83)
-        Me.TxtNombres.Name = "TxtNombres"
-        Me.TxtNombres.Size = New System.Drawing.Size(100, 22)
-        Me.TxtNombres.TabIndex = 4
-        '
-        'LblNombre
-        '
-        Me.LblNombre.AutoSize = True
-        Me.LblNombre.Location = New System.Drawing.Point(38, 89)
-        Me.LblNombre.Name = "LblNombre"
-        Me.LblNombre.Size = New System.Drawing.Size(135, 16)
-        Me.LblNombre.TabIndex = 3
-        Me.LblNombre.Text = "Nombres y apellidos "
-        '
-        'TxtCargo
-        '
-        Me.TxtCargo.Location = New System.Drawing.Point(182, 119)
-        Me.TxtCargo.Name = "TxtCargo"
-        Me.TxtCargo.Size = New System.Drawing.Size(100, 22)
-        Me.TxtCargo.TabIndex = 6
-        '
-        'LblCargo
-        '
-        Me.LblCargo.AutoSize = True
-        Me.LblCargo.Location = New System.Drawing.Point(38, 125)
-        Me.LblCargo.Name = "LblCargo"
-        Me.LblCargo.Size = New System.Drawing.Size(44, 16)
-        Me.LblCargo.TabIndex = 5
-        Me.LblCargo.Text = "Cargo"
-        '
-        'TxtSalarioMensual
-        '
-        Me.TxtSalarioMensual.Location = New System.Drawing.Point(182, 158)
-        Me.TxtSalarioMensual.Name = "TxtSalarioMensual"
-        Me.TxtSalarioMensual.Size = New System.Drawing.Size(100, 22)
-        Me.TxtSalarioMensual.TabIndex = 8
-        '
-        'LblSalMen
-        '
-        Me.LblSalMen.AutoSize = True
-        Me.LblSalMen.Location = New System.Drawing.Point(38, 164)
-        Me.LblSalMen.Name = "LblSalMen"
-        Me.LblSalMen.Size = New System.Drawing.Size(104, 16)
-        Me.LblSalMen.TabIndex = 7
-        Me.LblSalMen.Text = "Salario Mensual"
-        '
-        'TxtPrestamos
-        '
-        Me.TxtPrestamos.Location = New System.Drawing.Point(804, 45)
-        Me.TxtPrestamos.Name = "TxtPrestamos"
-        Me.TxtPrestamos.Size = New System.Drawing.Size(100, 22)
-        Me.TxtPrestamos.TabIndex = 16
-        '
-        'LblPrestamos
-        '
-        Me.LblPrestamos.AutoSize = True
-        Me.LblPrestamos.Location = New System.Drawing.Point(666, 51)
-        Me.LblPrestamos.Name = "LblPrestamos"
-        Me.LblPrestamos.Size = New System.Drawing.Size(75, 16)
-        Me.LblPrestamos.TabIndex = 15
-        Me.LblPrestamos.Text = "Prestamos "
-        '
-        'TxtFeriados
-        '
-        Me.TxtFeriados.Location = New System.Drawing.Point(522, 119)
-        Me.TxtFeriados.Name = "TxtFeriados"
-        Me.TxtFeriados.Size = New System.Drawing.Size(100, 22)
-        Me.TxtFeriados.TabIndex = 14
-        '
-        'LblFeriados
-        '
-        Me.LblFeriados.AutoSize = True
-        Me.LblFeriados.Location = New System.Drawing.Point(384, 125)
-        Me.LblFeriados.Name = "LblFeriados"
-        Me.LblFeriados.Size = New System.Drawing.Size(61, 16)
-        Me.LblFeriados.TabIndex = 13
-        Me.LblFeriados.Text = "Feriados"
-        '
-        'TxtSubsidios
-        '
-        Me.TxtSubsidios.Location = New System.Drawing.Point(522, 83)
-        Me.TxtSubsidios.Name = "TxtSubsidios"
-        Me.TxtSubsidios.Size = New System.Drawing.Size(100, 22)
-        Me.TxtSubsidios.TabIndex = 12
-        '
-        'LblSubsidios
-        '
-        Me.LblSubsidios.AutoSize = True
-        Me.LblSubsidios.Location = New System.Drawing.Point(384, 89)
-        Me.LblSubsidios.Name = "LblSubsidios"
-        Me.LblSubsidios.Size = New System.Drawing.Size(67, 16)
-        Me.LblSubsidios.TabIndex = 11
-        Me.LblSubsidios.Text = "Subcidios"
-        '
-        'TxtDiasTrab
-        '
-        Me.TxtDiasTrab.Location = New System.Drawing.Point(522, 45)
-        Me.TxtDiasTrab.Name = "TxtDiasTrab"
-        Me.TxtDiasTrab.Size = New System.Drawing.Size(100, 22)
-        Me.TxtDiasTrab.TabIndex = 10
-        '
-        'LblDiaTrab
-        '
-        Me.LblDiaTrab.AutoSize = True
-        Me.LblDiaTrab.Location = New System.Drawing.Point(384, 51)
-        Me.LblDiaTrab.Name = "LblDiaTrab"
-        Me.LblDiaTrab.Size = New System.Drawing.Size(109, 16)
-        Me.LblDiaTrab.TabIndex = 9
-        Me.LblDiaTrab.Text = "Dias Trabajados"
-        '
-        'BtnAgregar
-        '
-        Me.BtnAgregar.Location = New System.Drawing.Point(1026, 42)
-        Me.BtnAgregar.Name = "BtnAgregar"
-        Me.BtnAgregar.Size = New System.Drawing.Size(106, 35)
-        Me.BtnAgregar.TabIndex = 17
-        Me.BtnAgregar.Text = "Agregar"
-        Me.BtnAgregar.UseVisualStyleBackColor = True
-        '
-        'BtnEliminar
-        '
-        Me.BtnEliminar.Location = New System.Drawing.Point(1026, 106)
-        Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(106, 35)
-        Me.BtnEliminar.TabIndex = 18
-        Me.BtnEliminar.Text = "Eliminar"
-        Me.BtnEliminar.UseVisualStyleBackColor = True
-        '
-        'TxtVacaciones1
-        '
-        Me.TxtVacaciones1.Location = New System.Drawing.Point(522, 158)
-        Me.TxtVacaciones1.Name = "TxtVacaciones1"
-        Me.TxtVacaciones1.Size = New System.Drawing.Size(100, 22)
-        Me.TxtVacaciones1.TabIndex = 20
-        '
-        'LblVac1
-        '
-        Me.LblVac1.AutoSize = True
-        Me.LblVac1.Location = New System.Drawing.Point(384, 164)
-        Me.LblVac1.Name = "LblVac1"
-        Me.LblVac1.Size = New System.Drawing.Size(79, 16)
-        Me.LblVac1.TabIndex = 19
-        Me.LblVac1.Text = "Vacaciones"
-        '
-        'TxtFirmas
-        '
-        Me.TxtFirmas.Location = New System.Drawing.Point(804, 80)
-        Me.TxtFirmas.Name = "TxtFirmas"
-        Me.TxtFirmas.Size = New System.Drawing.Size(100, 22)
-        Me.TxtFirmas.TabIndex = 22
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(666, 86)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(51, 16)
-        Me.Label1.TabIndex = 21
-        Me.Label1.Text = "Firmas "
-        '
-        'MskCedula
-        '
-        Me.MskCedula.Location = New System.Drawing.Point(182, 51)
-        Me.MskCedula.Mask = "000-000000-0000?"
-        Me.MskCedula.Name = "MskCedula"
-        Me.MskCedula.Size = New System.Drawing.Size(100, 22)
-        Me.MskCedula.TabIndex = 23
         '
         'ColCedula
         '
@@ -525,6 +346,185 @@ Partial Class FrmPlanilla
         Me.ColAguinaldo.ReadOnly = True
         Me.ColAguinaldo.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.ColAguinaldo.Width = 125
+        '
+        'LblCedula
+        '
+        Me.LblCedula.AutoSize = True
+        Me.LblCedula.Location = New System.Drawing.Point(38, 51)
+        Me.LblCedula.Name = "LblCedula"
+        Me.LblCedula.Size = New System.Drawing.Size(50, 16)
+        Me.LblCedula.TabIndex = 1
+        Me.LblCedula.Text = "Cedula"
+        '
+        'TxtNombres
+        '
+        Me.TxtNombres.Location = New System.Drawing.Point(182, 83)
+        Me.TxtNombres.Name = "TxtNombres"
+        Me.TxtNombres.Size = New System.Drawing.Size(100, 22)
+        Me.TxtNombres.TabIndex = 4
+        '
+        'LblNombre
+        '
+        Me.LblNombre.AutoSize = True
+        Me.LblNombre.Location = New System.Drawing.Point(38, 89)
+        Me.LblNombre.Name = "LblNombre"
+        Me.LblNombre.Size = New System.Drawing.Size(135, 16)
+        Me.LblNombre.TabIndex = 3
+        Me.LblNombre.Text = "Nombres y apellidos "
+        '
+        'TxtCargo
+        '
+        Me.TxtCargo.Location = New System.Drawing.Point(182, 119)
+        Me.TxtCargo.Name = "TxtCargo"
+        Me.TxtCargo.Size = New System.Drawing.Size(100, 22)
+        Me.TxtCargo.TabIndex = 6
+        '
+        'LblCargo
+        '
+        Me.LblCargo.AutoSize = True
+        Me.LblCargo.Location = New System.Drawing.Point(38, 125)
+        Me.LblCargo.Name = "LblCargo"
+        Me.LblCargo.Size = New System.Drawing.Size(44, 16)
+        Me.LblCargo.TabIndex = 5
+        Me.LblCargo.Text = "Cargo"
+        '
+        'TxtSalarioMensual
+        '
+        Me.TxtSalarioMensual.Location = New System.Drawing.Point(182, 158)
+        Me.TxtSalarioMensual.Name = "TxtSalarioMensual"
+        Me.TxtSalarioMensual.Size = New System.Drawing.Size(100, 22)
+        Me.TxtSalarioMensual.TabIndex = 8
+        '
+        'LblSalMen
+        '
+        Me.LblSalMen.AutoSize = True
+        Me.LblSalMen.Location = New System.Drawing.Point(38, 164)
+        Me.LblSalMen.Name = "LblSalMen"
+        Me.LblSalMen.Size = New System.Drawing.Size(104, 16)
+        Me.LblSalMen.TabIndex = 7
+        Me.LblSalMen.Text = "Salario Mensual"
+        '
+        'TxtPrestamos
+        '
+        Me.TxtPrestamos.Location = New System.Drawing.Point(804, 45)
+        Me.TxtPrestamos.Name = "TxtPrestamos"
+        Me.TxtPrestamos.Size = New System.Drawing.Size(100, 22)
+        Me.TxtPrestamos.TabIndex = 16
+        '
+        'LblPrestamos
+        '
+        Me.LblPrestamos.AutoSize = True
+        Me.LblPrestamos.Location = New System.Drawing.Point(666, 51)
+        Me.LblPrestamos.Name = "LblPrestamos"
+        Me.LblPrestamos.Size = New System.Drawing.Size(75, 16)
+        Me.LblPrestamos.TabIndex = 15
+        Me.LblPrestamos.Text = "Prestamos "
+        '
+        'TxtFeriados
+        '
+        Me.TxtFeriados.Location = New System.Drawing.Point(522, 119)
+        Me.TxtFeriados.Name = "TxtFeriados"
+        Me.TxtFeriados.Size = New System.Drawing.Size(100, 22)
+        Me.TxtFeriados.TabIndex = 14
+        '
+        'LblFeriados
+        '
+        Me.LblFeriados.AutoSize = True
+        Me.LblFeriados.Location = New System.Drawing.Point(384, 125)
+        Me.LblFeriados.Name = "LblFeriados"
+        Me.LblFeriados.Size = New System.Drawing.Size(61, 16)
+        Me.LblFeriados.TabIndex = 13
+        Me.LblFeriados.Text = "Feriados"
+        '
+        'TxtSubsidios
+        '
+        Me.TxtSubsidios.Location = New System.Drawing.Point(522, 83)
+        Me.TxtSubsidios.Name = "TxtSubsidios"
+        Me.TxtSubsidios.Size = New System.Drawing.Size(100, 22)
+        Me.TxtSubsidios.TabIndex = 12
+        '
+        'LblSubsidios
+        '
+        Me.LblSubsidios.AutoSize = True
+        Me.LblSubsidios.Location = New System.Drawing.Point(384, 89)
+        Me.LblSubsidios.Name = "LblSubsidios"
+        Me.LblSubsidios.Size = New System.Drawing.Size(67, 16)
+        Me.LblSubsidios.TabIndex = 11
+        Me.LblSubsidios.Text = "Subcidios"
+        '
+        'TxtDiasTrab
+        '
+        Me.TxtDiasTrab.Location = New System.Drawing.Point(522, 45)
+        Me.TxtDiasTrab.Name = "TxtDiasTrab"
+        Me.TxtDiasTrab.Size = New System.Drawing.Size(100, 22)
+        Me.TxtDiasTrab.TabIndex = 10
+        '
+        'LblDiaTrab
+        '
+        Me.LblDiaTrab.AutoSize = True
+        Me.LblDiaTrab.Location = New System.Drawing.Point(384, 51)
+        Me.LblDiaTrab.Name = "LblDiaTrab"
+        Me.LblDiaTrab.Size = New System.Drawing.Size(109, 16)
+        Me.LblDiaTrab.TabIndex = 9
+        Me.LblDiaTrab.Text = "Dias Trabajados"
+        '
+        'BtnAgregar
+        '
+        Me.BtnAgregar.Location = New System.Drawing.Point(1026, 42)
+        Me.BtnAgregar.Name = "BtnAgregar"
+        Me.BtnAgregar.Size = New System.Drawing.Size(106, 35)
+        Me.BtnAgregar.TabIndex = 17
+        Me.BtnAgregar.Text = "Agregar"
+        Me.BtnAgregar.UseVisualStyleBackColor = True
+        '
+        'BtnEliminar
+        '
+        Me.BtnEliminar.Location = New System.Drawing.Point(1026, 106)
+        Me.BtnEliminar.Name = "BtnEliminar"
+        Me.BtnEliminar.Size = New System.Drawing.Size(106, 35)
+        Me.BtnEliminar.TabIndex = 18
+        Me.BtnEliminar.Text = "Eliminar"
+        Me.BtnEliminar.UseVisualStyleBackColor = True
+        '
+        'TxtVacaciones1
+        '
+        Me.TxtVacaciones1.Location = New System.Drawing.Point(522, 158)
+        Me.TxtVacaciones1.Name = "TxtVacaciones1"
+        Me.TxtVacaciones1.Size = New System.Drawing.Size(100, 22)
+        Me.TxtVacaciones1.TabIndex = 20
+        '
+        'LblVac1
+        '
+        Me.LblVac1.AutoSize = True
+        Me.LblVac1.Location = New System.Drawing.Point(384, 164)
+        Me.LblVac1.Name = "LblVac1"
+        Me.LblVac1.Size = New System.Drawing.Size(79, 16)
+        Me.LblVac1.TabIndex = 19
+        Me.LblVac1.Text = "Vacaciones"
+        '
+        'TxtFirmas
+        '
+        Me.TxtFirmas.Location = New System.Drawing.Point(804, 80)
+        Me.TxtFirmas.Name = "TxtFirmas"
+        Me.TxtFirmas.Size = New System.Drawing.Size(100, 22)
+        Me.TxtFirmas.TabIndex = 22
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(666, 86)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(51, 16)
+        Me.Label1.TabIndex = 21
+        Me.Label1.Text = "Firmas "
+        '
+        'MskCedula
+        '
+        Me.MskCedula.Location = New System.Drawing.Point(182, 51)
+        Me.MskCedula.Mask = "000-000000-0000?"
+        Me.MskCedula.Name = "MskCedula"
+        Me.MskCedula.Size = New System.Drawing.Size(100, 22)
+        Me.MskCedula.TabIndex = 23
         '
         'FrmPlanilla
         '

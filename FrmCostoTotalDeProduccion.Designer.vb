@@ -53,6 +53,8 @@ Partial Class FrmCostoTotalDeProduccion
         Me.LblTotalMOD = New System.Windows.Forms.Label()
         Me.TxtTotalCTP = New System.Windows.Forms.TextBox()
         Me.LblCTP = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.DtgCostoTotalDeProduccion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -223,7 +225,7 @@ Partial Class FrmCostoTotalDeProduccion
         'TxtTotalGIF
         '
         Me.TxtTotalGIF.Enabled = False
-        Me.TxtTotalGIF.Location = New System.Drawing.Point(754, 404)
+        Me.TxtTotalGIF.Location = New System.Drawing.Point(725, 404)
         Me.TxtTotalGIF.Name = "TxtTotalGIF"
         Me.TxtTotalGIF.Size = New System.Drawing.Size(107, 22)
         Me.TxtTotalGIF.TabIndex = 12
@@ -231,7 +233,7 @@ Partial Class FrmCostoTotalDeProduccion
         'LblTotalGIF
         '
         Me.LblTotalGIF.AutoSize = True
-        Me.LblTotalGIF.Location = New System.Drawing.Point(459, 410)
+        Me.LblTotalGIF.Location = New System.Drawing.Point(430, 410)
         Me.LblTotalGIF.Name = "LblTotalGIF"
         Me.LblTotalGIF.Size = New System.Drawing.Size(257, 16)
         Me.LblTotalGIF.TabIndex = 11
@@ -274,7 +276,7 @@ Partial Class FrmCostoTotalDeProduccion
         'TxtTotalCTP
         '
         Me.TxtTotalCTP.Enabled = False
-        Me.TxtTotalCTP.Location = New System.Drawing.Point(754, 444)
+        Me.TxtTotalCTP.Location = New System.Drawing.Point(725, 444)
         Me.TxtTotalCTP.Name = "TxtTotalCTP"
         Me.TxtTotalCTP.Size = New System.Drawing.Size(107, 22)
         Me.TxtTotalCTP.TabIndex = 18
@@ -282,11 +284,28 @@ Partial Class FrmCostoTotalDeProduccion
         'LblCTP
         '
         Me.LblCTP.AutoSize = True
-        Me.LblCTP.Location = New System.Drawing.Point(550, 450)
+        Me.LblCTP.Location = New System.Drawing.Point(521, 450)
         Me.LblCTP.Name = "LblCTP"
         Me.LblCTP.Size = New System.Drawing.Size(166, 16)
         Me.LblCTP.TabIndex = 17
         Me.LblCTP.Text = "Costo Total de Produccion"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Enabled = False
+        Me.TextBox1.Location = New System.Drawing.Point(1006, 404)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(107, 22)
+        Me.TextBox1.TabIndex = 20
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(909, 410)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(91, 16)
+        Me.Label1.TabIndex = 19
+        Me.Label1.Text = "Costo Unitario"
         '
         'FrmCostoTotalDeProduccion
         '
@@ -294,6 +313,8 @@ Partial Class FrmCostoTotalDeProduccion
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(249, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1159, 497)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TxtTotalCTP)
         Me.Controls.Add(Me.LblCTP)
         Me.Controls.Add(Me.TxtTotalMOD)
@@ -349,4 +370,6 @@ Partial Class FrmCostoTotalDeProduccion
     Friend WithEvents Col_GIF_Asignado As DataGridViewTextBoxColumn
     Friend WithEvents ColCostoTotalDeProduccion As DataGridViewTextBoxColumn
     Friend WithEvents ColCostoUnitario As DataGridViewTextBoxColumn
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label1 As Label
 End Class

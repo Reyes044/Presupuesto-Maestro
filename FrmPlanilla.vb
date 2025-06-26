@@ -155,7 +155,6 @@ Public Class FrmPlanilla
         filaTotal.Cells(8).Value = "C$" & totalSubsidios.ToString("N2")
         filaTotal.Cells(9).Value = "C$" & totalFeriados.ToString("N2")
         filaTotal.Cells(10).Value = "C$" & totalVacaciones.ToString("N2")
-
         filaTotal.Cells(12).Value = "C$" & totalDevengados.ToString("N2")
         filaTotal.Cells(13).Value = "C$" & totalINNDSLAB.ToString("N2")
         filaTotal.Cells(14).Value = "C$" & totalPrestamos.ToString("N2")
@@ -339,13 +338,7 @@ Public Class FrmPlanilla
             TxtFirmas.Focus()
         End If
     End Sub
-    Private Sub TxtFirmas_Validating(sender As Object, e As CancelEventArgs) Handles TxtFirmas.Validating
-        If TxtFirmas.Text = ("") Then
-            MsgBox("Por favor, no deje espacios")
-            TxtFirmas.Clear()
-            TxtFirmas.Focus()
-        End If
-    End Sub
+
 
 
 
