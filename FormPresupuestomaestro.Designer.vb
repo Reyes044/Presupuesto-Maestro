@@ -54,6 +54,7 @@ Partial Class FormPresupuestomaestro
         '
         'BtnPresupuestoVentas
         '
+        Me.BtnPresupuestoVentas.Image = CType(resources.GetObject("BtnPresupuestoVentas.Image"), System.Drawing.Image)
         Me.BtnPresupuestoVentas.Location = New System.Drawing.Point(104, 35)
         Me.BtnPresupuestoVentas.Name = "BtnPresupuestoVentas"
         Me.BtnPresupuestoVentas.Size = New System.Drawing.Size(174, 104)
@@ -88,6 +89,7 @@ Partial Class FormPresupuestomaestro
         '
         'BtnPresupuestoCompras
         '
+        Me.BtnPresupuestoCompras.Image = CType(resources.GetObject("BtnPresupuestoCompras.Image"), System.Drawing.Image)
         Me.BtnPresupuestoCompras.Location = New System.Drawing.Point(742, 35)
         Me.BtnPresupuestoCompras.Name = "BtnPresupuestoCompras"
         Me.BtnPresupuestoCompras.Size = New System.Drawing.Size(174, 104)
@@ -112,6 +114,8 @@ Partial Class FormPresupuestomaestro
         '
         'BtnGastoAdmyVentas
         '
+        Me.BtnGastoAdmyVentas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BtnGastoAdmyVentas.Image = CType(resources.GetObject("BtnGastoAdmyVentas.Image"), System.Drawing.Image)
         Me.BtnGastoAdmyVentas.Location = New System.Drawing.Point(530, 186)
         Me.BtnGastoAdmyVentas.Name = "BtnGastoAdmyVentas"
         Me.BtnGastoAdmyVentas.Size = New System.Drawing.Size(174, 104)

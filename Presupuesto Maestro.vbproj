@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormGastosAdmyVentas.Designer.vb">
+      <DependentUpon>FormGastosAdmyVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormGastosAdmyVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormPresupuestodecompras.Designer.vb">
       <DependentUpon>FormPresupuestodecompras.vb</DependentUpon>
     </Compile>
@@ -115,6 +121,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormGastosAdmyVentas.resx">
+      <DependentUpon>FormGastosAdmyVentas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPresupuestodecompras.resx">
       <DependentUpon>FormPresupuestodecompras.vb</DependentUpon>
     </EmbeddedResource>

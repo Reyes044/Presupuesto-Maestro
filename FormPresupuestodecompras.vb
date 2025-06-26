@@ -439,13 +439,13 @@ Public Class FormPresupuestodecompras
         DtgPresupuestoCompras.Rows.Add(Material, UnidadesRequeridas01, InventarioFinalD01, InventarioInicial01, UnidadesComprar, CostoUnidad01, CostoTotalCompra, CostosAdicionales, CostoUnitarioTotal, PagoTotal)
         ActualizaTotales()
 
-        'txtMaterial.Clear()
-        'txtUnidadesNecesarias.Clear()
-        'txtInventarioFinalDeseado.Clear()
-        'txtInventarioInicial.Clear()
-        'txtCostoUnidad.Clear()
-        'txtCostosAdicionales.Clear()
-        'txtCostounitariototal.Clear()
+        txtMaterial.Clear()
+        txtUnidadesNecesarias.Clear()
+        txtInventarioFinalDeseado.Clear()
+        txtInventarioInicial.Clear()
+        txtCostoUnidad.Clear()
+        txtCostosAdicionales.Clear()
+        txtCostounitariototal.Clear()
 
 
     End Sub
@@ -496,4 +496,32 @@ Public Class FormPresupuestodecompras
         txtTotaldepagoTotal.Text = totalPagototal.ToString()
 
     End Sub
+    Private Sub ValidarCampos()
+        If txtMaterial.Text <> "" And txtMaterial.Text <> "Escriba el material" And
+           txtUnidadesNecesarias.Text <> "" And txtUnidadesNecesarias.Text <> "Ingrese unidades necesarias" And
+           txtInventarioFinalDeseado.Text <> "" And txtInventarioFinalDeseado.Text <> "Ingrese inventario final" And
+           txtInventarioInicial.Text <> "" And txtInventarioInicial.Text <> "Ingrese inventario inicial" And
+           txtCostoUnidad.Text <> "" And txtCostoUnidad.Text <> "Ingrese costo por unidad" And
+           txtCostosAdicionales.Text <> "" And txtCostosAdicionales.Text <> "Ingrese los costos adicionales" And
+           txtCostounitariototal.Text <> "" And txtCostounitariototal.Text <> "Ingrese el costo unitario total" Then
+
+
+            BtnAgregarC.Enabled = True
+        Else
+            BtnAgregarC.Enabled = False
+        End If
+    End Sub
+    Private Sub TextBoxes_TextChanged(sender As Object, e As EventArgs) _
+   Handles txtMaterial.TextChanged,
+           txtUnidadesNecesarias.TextChanged,
+           txtInventarioFinalDeseado.TextChanged,
+           txtInventarioInicial.TextChanged,
+           txtCostoUnidad.TextChanged,
+           txtCostosAdicionales.TextChanged,
+           txtCostounitariototal.TextChanged
+
+
+        ValidarCampos()
+    End Sub
+
 End Class
