@@ -233,7 +233,7 @@ Partial Class FrmPlanilla
         '
         'BtnEliminar
         '
-        Me.BtnEliminar.Location = New System.Drawing.Point(1026, 89)
+        Me.BtnEliminar.Location = New System.Drawing.Point(1026, 106)
         Me.BtnEliminar.Name = "BtnEliminar"
         Me.BtnEliminar.Size = New System.Drawing.Size(106, 35)
         Me.BtnEliminar.TabIndex = 18
