@@ -29,7 +29,14 @@ Partial Class FormPresupuestoCaja
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormPresupuestoCaja))
         Me.dtgPresupuestoCaja = New System.Windows.Forms.DataGridView()
+        Me.Mes = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.Ingresos_por_Ventas = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Pagos_Proveedores = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Pago_de_Sueldos = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Otros_Pagos = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Flujo_Mes = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnEliminarProducto = New System.Windows.Forms.Button()
         Me.btnAgregar = New System.Windows.Forms.Button()
@@ -45,12 +52,6 @@ Partial Class FormPresupuestoCaja
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtFNM = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Mes = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.Ingresos_por_Ventas = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Pagos_Proveedores = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Pago_de_Sueldos = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Otros_Pagos = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Flujo_Mes = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.dtgPresupuestoCaja, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -72,6 +73,74 @@ Partial Class FormPresupuestoCaja
         Me.dtgPresupuestoCaja.RowHeadersWidth = 62
         Me.dtgPresupuestoCaja.Size = New System.Drawing.Size(1342, 423)
         Me.dtgPresupuestoCaja.TabIndex = 5
+        '
+        'Mes
+        '
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Mes.DefaultCellStyle = DataGridViewCellStyle2
+        Me.Mes.HeaderText = "Mes"
+        Me.Mes.Items.AddRange(New Object() {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"})
+        Me.Mes.MinimumWidth = 8
+        Me.Mes.Name = "Mes"
+        Me.Mes.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Mes.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.Mes.Width = 150
+        '
+        'Ingresos_por_Ventas
+        '
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.Format = "C2"
+        Me.Ingresos_por_Ventas.DefaultCellStyle = DataGridViewCellStyle3
+        Me.Ingresos_por_Ventas.HeaderText = "Ingresos Por Ventas"
+        Me.Ingresos_por_Ventas.MinimumWidth = 8
+        Me.Ingresos_por_Ventas.Name = "Ingresos_por_Ventas"
+        Me.Ingresos_por_Ventas.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Ingresos_por_Ventas.Width = 150
+        '
+        'Pagos_Proveedores
+        '
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.Format = "C2"
+        Me.Pagos_Proveedores.DefaultCellStyle = DataGridViewCellStyle4
+        Me.Pagos_Proveedores.HeaderText = "Pagos a Proveedores"
+        Me.Pagos_Proveedores.MinimumWidth = 8
+        Me.Pagos_Proveedores.Name = "Pagos_Proveedores"
+        Me.Pagos_Proveedores.Width = 150
+        '
+        'Pago_de_Sueldos
+        '
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.Format = "C2"
+        Me.Pago_de_Sueldos.DefaultCellStyle = DataGridViewCellStyle5
+        Me.Pago_de_Sueldos.HeaderText = "Pagos de Sueldos"
+        Me.Pago_de_Sueldos.MinimumWidth = 8
+        Me.Pago_de_Sueldos.Name = "Pago_de_Sueldos"
+        Me.Pago_de_Sueldos.Width = 150
+        '
+        'Otros_Pagos
+        '
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.Format = "C2"
+        Me.Otros_Pagos.DefaultCellStyle = DataGridViewCellStyle6
+        Me.Otros_Pagos.HeaderText = "Otros Pagos"
+        Me.Otros_Pagos.MinimumWidth = 8
+        Me.Otros_Pagos.Name = "Otros_Pagos"
+        Me.Otros_Pagos.Width = 150
+        '
+        'Flujo_Mes
+        '
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.Format = "C2"
+        Me.Flujo_Mes.DefaultCellStyle = DataGridViewCellStyle7
+        Me.Flujo_Mes.HeaderText = "Flujo Neto Del Mes"
+        Me.Flujo_Mes.MinimumWidth = 8
+        Me.Flujo_Mes.Name = "Flujo_Mes"
+        Me.Flujo_Mes.Width = 150
         '
         'Label1
         '
@@ -222,74 +291,6 @@ Partial Class FormPresupuestoCaja
         Me.Label8.TabIndex = 28
         Me.Label8.Text = "Flujo Neto del Mes"
         '
-        'Mes
-        '
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Mes.DefaultCellStyle = DataGridViewCellStyle2
-        Me.Mes.HeaderText = "Mes"
-        Me.Mes.Items.AddRange(New Object() {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"})
-        Me.Mes.MinimumWidth = 8
-        Me.Mes.Name = "Mes"
-        Me.Mes.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Mes.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.Mes.Width = 150
-        '
-        'Ingresos_por_Ventas
-        '
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.Format = "C2"
-        Me.Ingresos_por_Ventas.DefaultCellStyle = DataGridViewCellStyle3
-        Me.Ingresos_por_Ventas.HeaderText = "Ingresos Por Ventas"
-        Me.Ingresos_por_Ventas.MinimumWidth = 8
-        Me.Ingresos_por_Ventas.Name = "Ingresos_por_Ventas"
-        Me.Ingresos_por_Ventas.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Ingresos_por_Ventas.Width = 150
-        '
-        'Pagos_Proveedores
-        '
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.Format = "C2"
-        Me.Pagos_Proveedores.DefaultCellStyle = DataGridViewCellStyle4
-        Me.Pagos_Proveedores.HeaderText = "Pagos a Proveedores"
-        Me.Pagos_Proveedores.MinimumWidth = 8
-        Me.Pagos_Proveedores.Name = "Pagos_Proveedores"
-        Me.Pagos_Proveedores.Width = 150
-        '
-        'Pago_de_Sueldos
-        '
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.Format = "C2"
-        Me.Pago_de_Sueldos.DefaultCellStyle = DataGridViewCellStyle5
-        Me.Pago_de_Sueldos.HeaderText = "Pagos de Sueldos"
-        Me.Pago_de_Sueldos.MinimumWidth = 8
-        Me.Pago_de_Sueldos.Name = "Pago_de_Sueldos"
-        Me.Pago_de_Sueldos.Width = 150
-        '
-        'Otros_Pagos
-        '
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.Format = "C2"
-        Me.Otros_Pagos.DefaultCellStyle = DataGridViewCellStyle6
-        Me.Otros_Pagos.HeaderText = "Otros Pagos"
-        Me.Otros_Pagos.MinimumWidth = 8
-        Me.Otros_Pagos.Name = "Otros_Pagos"
-        Me.Otros_Pagos.Width = 150
-        '
-        'Flujo_Mes
-        '
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.Format = "C2"
-        Me.Flujo_Mes.DefaultCellStyle = DataGridViewCellStyle7
-        Me.Flujo_Mes.HeaderText = "Flujo Neto Del Mes"
-        Me.Flujo_Mes.MinimumWidth = 8
-        Me.Flujo_Mes.Name = "Flujo_Mes"
-        Me.Flujo_Mes.Width = 150
-        '
         'FormPresupuestoCaja
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -311,6 +312,7 @@ Partial Class FormPresupuestoCaja
         Me.Controls.Add(Me.btnAgregar)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.dtgPresupuestoCaja)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "FormPresupuestoCaja"
         Me.Text = "FormPresupuestoCaja"
