@@ -2,6 +2,26 @@
 
 Public Class FrmPlanilla
     Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnAgregar.Click
+
+        Dim controlesObligatorios As Control() = {MskCedula, TxtNombres, TxtCargo, TxtSalarioMensual, TxtDiasTrab, TxtSubsidios, TxtFeriados, TxtVacaciones1, TxtPrestamos}
+        For Each ctrl As Control In controlesObligatorios
+            If TypeOf ctrl Is TextBox Then
+                If String.IsNullOrWhiteSpace(CType(ctrl, TextBox).Text) Then
+                    MsgBox("Por favor, complete todos los campos antes de agregar.")
+                    ctrl.Focus()
+                    Exit Sub
+                End If
+            ElseIf TypeOf ctrl Is MaskedTextBox Then
+                Dim msk As MaskedTextBox = CType(ctrl, MaskedTextBox)
+                Dim textoSinFormato As String = msk.Text.Replace(" ", "").Replace("-", "")
+                If String.IsNullOrWhiteSpace(textoSinFormato) OrElse textoSinFormato.Length < msk.Mask.Replace("-", "").Length Then
+                    MsgBox("Por favor, complete todos los campos antes de agregar.")
+                    msk.Focus()
+                    Exit Sub
+                End If
+            End If
+        Next
+
         Dim textboxes As TextBox() = {TxtNombres, TxtCargo, TxtSalarioMensual, TxtDiasTrab, TxtSubsidios, TxtFeriados, TxtVacaciones1, TxtPrestamos, TxtFirmas}
         Dim Cedula As String = MskCedula.Text.Trim()
         Dim Nombres As String = TxtNombres.Text.Trim()
@@ -49,7 +69,6 @@ Public Class FrmPlanilla
     End Sub
 
     Private Sub ActualizarFilaTotales()
-        ' Eliminar fila TOTAL anterior
         For Each fila As DataGridViewRow In DtgPlanilla.Rows
             If Not fila.IsNewRow AndAlso fila.Cells(0).Value?.ToString() = "TOTALES" Then
                 DtgPlanilla.Rows.Remove(fila)
@@ -57,7 +76,6 @@ Public Class FrmPlanilla
             End If
         Next
 
-        ' Crear nueva fila de totales
         Dim filaTotal As New DataGridViewRow()
         filaTotal.CreateCells(DtgPlanilla)
 
@@ -133,16 +151,16 @@ Public Class FrmPlanilla
                     totalTotalAPagar += Convert.ToDecimal(fila.Cells(17).Value)
                 End If
                 If IsNumeric(fila.Cells(19).Value) Then
-                    totalINNSPatronal += Convert.ToDecimal(fila.Cells(18).Value)
+                    totalINNSPatronal += Convert.ToDecimal(fila.Cells(19).Value)
                 End If
                 If IsNumeric(fila.Cells(20).Value) Then
-                    totalINATEC += Convert.ToDecimal(fila.Cells(19).Value)
+                    totalINATEC += Convert.ToDecimal(fila.Cells(20).Value)
                 End If
                 If IsNumeric(fila.Cells(21).Value) Then
-                    totalVacacionesPatronal += Convert.ToDecimal(fila.Cells(20).Value)
+                    totalVacacionesPatronal += Convert.ToDecimal(fila.Cells(21).Value)
                 End If
                 If IsNumeric(fila.Cells(22).Value) Then
-                    totalAguinaldo += Convert.ToDecimal(fila.Cells(21).Value)
+                    totalAguinaldo += Convert.ToDecimal(fila.Cells(22).Value)
                 End If
 
             End If
@@ -179,7 +197,22 @@ Public Class FrmPlanilla
 
     'estas son las validaciones de los tekiste
 
+
     'CEDULA
+    Private Sub MskCedula_Validating(sender As Object, e As CancelEventArgs) Handles MskCedula.Validating
+        Dim cedulaSinFormato As String = MskCedula.Text.Replace(" ", "").Replace("-", "")
+        If String.IsNullOrWhiteSpace(cedulaSinFormato) OrElse cedulaSinFormato.Length < MskCedula.Mask.Replace("-", "").Length Then
+            MsgBox("Por favor, complete la cédula correctamente.")
+            MskCedula.Clear()
+            MskCedula.Focus()
+            e.Cancel = True
+        End If
+    End Sub
+
+
+
+
+    'NOMBRES Y APELLIDOS
     Private Sub TxtNombres_KeyUp(sender As Object, e As KeyEventArgs) Handles TxtNombres.KeyUp
         If IsNumeric(TxtNombres.Text) Then
             MsgBox("Por favor, escriba un valor no numerico para la casilla Nombres y Apellidos")
@@ -336,20 +369,6 @@ Public Class FrmPlanilla
             MsgBox("Por favor, escriba un valor no numerico para la casilla Firmas")
             TxtFirmas.Clear()
             TxtFirmas.Focus()
-        End If
-    End Sub
-
-
-
-
-    'CEDULA
-    Private Sub MskCedula_Validating(sender As Object, e As CancelEventArgs) Handles MskCedula.Validating
-        Dim cedulaSinFormato As String = MskCedula.Text.Replace(" ", "").Replace("-", "")
-        If String.IsNullOrWhiteSpace(cedulaSinFormato) OrElse cedulaSinFormato.Length < MskCedula.Mask.Replace("-", "").Length Then
-            MsgBox("Por favor, complete la cédula correctamente.")
-            MskCedula.Clear()
-            MskCedula.Focus()
-            e.Cancel = True
         End If
     End Sub
 End Class
