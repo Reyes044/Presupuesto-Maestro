@@ -98,7 +98,7 @@ Public Class FormGastosAdmyVentas
         ' Asegúrate de tener una fila reservada para totales al final
         Dim filaTotales As DataGridViewRow
 
-        ' Verifica si la última fila es la de totales
+        ' Aqui verifique si la última fila es la de totales pero no jala xd
         If DtgGastoAdmyVentas.Rows.Count = 0 OrElse DtgGastoAdmyVentas.Rows(DtgGastoAdmyVentas.Rows.Count - 1).IsNewRow Then
             'DtgGastoAdmyVentas.Rows.Add() ' Agrega fila si está vacía
         End If
