@@ -52,5 +52,6 @@
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         FormGastosAdmyVentas.ShowDialog()
+
     End Sub
 End Class
