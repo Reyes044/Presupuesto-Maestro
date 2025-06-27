@@ -231,6 +231,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property Intro() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("Intro", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property printer_print_machine_office_business_icon_192561() As System.Drawing.Bitmap
