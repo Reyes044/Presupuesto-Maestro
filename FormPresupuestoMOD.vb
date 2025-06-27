@@ -26,18 +26,14 @@ Public Class FormPresupuestoMOD
             dtgPresupuestoMOD.Rows(index).Cells(4).ReadOnly = True
             dtgPresupuestoMOD.Rows(index).Cells(4).Style.BackColor = Color.LightGray
         Next
-        Modulo_Totales.TotalUnidadesAProducirPresupuestoMOD = txtUnidadesProducir.Text
-        Modulo_Totales.TotalCostoPorHoraMODPresupuestoMOD = txtTotalHoras.Text
-        Modulo_Totales.TotalCostoTotalMODPresupuestoMOD = txtTotalMOD.Text
+
     End Sub
 
     Private Sub btnEliminarProducto_Click(sender As Object, e As EventArgs) Handles btnEliminarProducto.Click
         If dtgPresupuestoMOD.SelectedRows.Count > 0 Then
             dtgPresupuestoMOD.Rows.Remove(dtgPresupuestoMOD.CurrentRow)
         End If
-        Modulo_Totales.TotalUnidadesAProducirPresupuestoMOD = txtUnidadesProducir.Text
-        Modulo_Totales.TotalCostoPorHoraMODPresupuestoMOD = txtTotalHoras.Text
-        Modulo_Totales.TotalCostoTotalMODPresupuestoMOD = txtTotalMOD.Text
+
     End Sub
 
     Private Sub dtgPresupuestoMOD_CellEndEdit(sender As Object, e As DataGridViewCellEventArgs) Handles dtgPresupuestoMOD.CellEndEdit
@@ -105,6 +101,14 @@ Public Class FormPresupuestoMOD
         dtgPresupuestoMOD.CurrentRow.Cells(5).Value = dtgPresupuestoMOD.CurrentRow.Cells(3).Value * dtgPresupuestoMOD.CurrentRow.Cells(4).Value
 
         CalcularTotal()
+
+
+        'Modulos'
+
+        Modulo_Totales.TotalUnidadesAProducirPresupuestoMOD = txtUnidadesProducir.Text
+        Modulo_Totales.TotalCostoPorHoraMODPresupuestoMOD = txtTotalHoras.Text
+        Modulo_Totales.TotalCostoTotalMODPresupuestoMOD = txtTotalMOD.Text
+
     End Sub
 
     Private Sub dtgPresupuestoMOD_SelectionChanged(sender As Object, e As EventArgs) Handles dtgPresupuestoMOD.SelectionChanged
@@ -157,6 +161,10 @@ Public Class FormPresupuestoMOD
         txtTotalHoras.Clear()
         txtTotalMOD.Clear()
         txtUnidadesProducir.Clear()
+
+        Modulo_Totales.TotalUnidadesAProducirPresupuestoMOD = txtUnidadesProducir.Text
+        Modulo_Totales.TotalCostoPorHoraMODPresupuestoMOD = txtTotalHoras.Text
+        Modulo_Totales.TotalCostoTotalMODPresupuestoMOD = txtTotalMOD.Text
     End Sub
 
     Private Sub btnImprimir_Click(sender As Object, e As EventArgs) Handles btnImprimir.Click

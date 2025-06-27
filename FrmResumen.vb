@@ -60,4 +60,36 @@
         txtFNMTotal_R.Text = Modulo_Totales.FlujoNetoDelMesTotal_R
 
     End Sub
+
+    Private Sub Lblunidadesnec_Click(sender As Object, e As EventArgs) Handles Lblunidadesnec.Click
+
+    End Sub
+
+    Private Sub LblTotalInventinicial_Click(sender As Object, e As EventArgs) Handles LblTotalInventinicial.Click
+
+    End Sub
+
+    Private Sub txtTotalInventarioinicR_TextChanged(sender As Object, e As EventArgs) Handles txtTotalInventarioinicR.TextChanged
+
+    End Sub
+
+    Private Sub LblUnidadescomprar_Click(sender As Object, e As EventArgs) Handles LblUnidadescomprar.Click
+
+    End Sub
+
+    Private Sub txtTotalUnidadesComprarR_TextChanged(sender As Object, e As EventArgs) Handles txtTotalUnidadesComprarR.TextChanged
+
+    End Sub
+
+    Private Sub Label16_Click(sender As Object, e As EventArgs) Handles Label16.Click
+
+    End Sub
+
+    Private Sub TxtTotalPagoTotalR_TextChanged(sender As Object, e As EventArgs) Handles TxtTotalPagoTotalR.TextChanged
+
+    End Sub
+
+    Private Sub GroupBox5_Enter(sender As Object, e As EventArgs) Handles GroupBox5.Enter
+
+    End Sub
 End Class

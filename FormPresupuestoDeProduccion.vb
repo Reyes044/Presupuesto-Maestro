@@ -114,14 +114,7 @@ Public Class FormPresupuestoDeProduccion
             End If
         Next
 
-    End Sub
-
-    Private Sub DTG_SelectionChanged(sender As Object, e As EventArgs) Handles dtgPresupuestoProducción.SelectionChanged
-        btnEliminar.Visible = (dtgPresupuestoProducción.SelectedRows.Count > 0)
-    End Sub
-
-    Private Sub btnAgregarColumn_Click(sender As Object, e As EventArgs) Handles btnAgregarColumn.Click
-
+        'Modulo'
         Modulo_Totales.TotalUnidadesAVender = txtTotalUndVender.Text
         Modulo_Totales.TotalUnidadesAProducir = txtUnidadesProducir.Text
         Modulo_Totales.TotalCostoTotalPlaneado = txtCostoTotalPlaneado.Text
@@ -130,6 +123,23 @@ Public Class FormPresupuestoDeProduccion
         Modulo_Totales.TotalCostoTotalProduccion = txtCostoTotalProduccion.Text
         Modulo_Totales.TotalInventarioInicial = txtInventarioInicial.Text
         Modulo_Totales.TotalCostoTotalMOD = txtCostoTotalMOD.Text
+
+    End Sub
+
+    Private Sub DTG_SelectionChanged(sender As Object, e As EventArgs) Handles dtgPresupuestoProducción.SelectionChanged
+        btnEliminar.Visible = (dtgPresupuestoProducción.SelectedRows.Count > 0)
+    End Sub
+
+    Private Sub btnAgregarColumn_Click(sender As Object, e As EventArgs) Handles btnAgregarColumn.Click
+
+        'Modulo_Totales.TotalUnidadesAVender = txtTotalUndVender.Text
+        'Modulo_Totales.TotalUnidadesAProducir = txtUnidadesProducir.Text
+        'Modulo_Totales.TotalCostoTotalPlaneado = txtCostoTotalPlaneado.Text
+        'Modulo_Totales.TotalCostoTotalCIF = txtCostoTotalCIF.Text
+        'Modulo_Totales.TotalInventarioFinal = txtInventarioFinal.Text
+        'Modulo_Totales.TotalCostoTotalProduccion = txtCostoTotalProduccion.Text
+        'Modulo_Totales.TotalInventarioInicial = txtInventarioInicial.Text
+        'Modulo_Totales.TotalCostoTotalMOD = txtCostoTotalMOD.Text
 
         Dim index = dtgPresupuestoProducción.Rows.Add()
         For i = 1 To 6
@@ -318,7 +328,19 @@ Public Class FormPresupuestoDeProduccion
         txtInventarioFinal.Clear()
         txtInventarioInicial.Clear()
         txtUnidadesProducir.Clear()
+
+
+        Modulo_Totales.TotalUnidadesAVender = txtTotalUndVender.Text
+        Modulo_Totales.TotalUnidadesAProducir = txtUnidadesProducir.Text
+        Modulo_Totales.TotalCostoTotalPlaneado = txtCostoTotalPlaneado.Text
+        Modulo_Totales.TotalCostoTotalCIF = txtCostoTotalCIF.Text
+        Modulo_Totales.TotalInventarioFinal = txtInventarioFinal.Text
+        Modulo_Totales.TotalCostoTotalProduccion = txtCostoTotalProduccion.Text
+        Modulo_Totales.TotalInventarioInicial = txtInventarioInicial.Text
+        Modulo_Totales.TotalCostoTotalMOD = txtCostoTotalMOD.Text
     End Sub
+
+
 
     Private Sub btnImprimir_Click(sender As Object, e As EventArgs) Handles btnImprimir.Click
         'Dialogo para que el usuario guarde donde quiera su archivo
@@ -352,7 +374,4 @@ Public Class FormPresupuestoDeProduccion
         End If
     End Sub
 
-    Private Sub Label13_Click(sender As Object, e As EventArgs) Handles Label13.Click
-
-    End Sub
 End Class
