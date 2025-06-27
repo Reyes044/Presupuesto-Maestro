@@ -33,4 +33,8 @@
         FormPresupuestoDeProduccion.ShowDialog()
 
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        FormPresupuestoCaja.ShowDialog()
+    End Sub
 End Class

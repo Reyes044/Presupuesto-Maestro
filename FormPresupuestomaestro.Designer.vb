@@ -39,6 +39,8 @@ Partial Class FormPresupuestomaestro
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.BtnPlanilla = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -48,8 +50,7 @@ Partial Class FormPresupuestomaestro
         Me.BtnGastosindirectos = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.BtnCostoTotalProducción = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -211,6 +212,26 @@ Partial Class FormPresupuestomaestro
         Me.Label15.TabIndex = 28
         Me.Label15.Text = "Planilla "
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(34, 22)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(269, 33)
+        Me.Label2.TabIndex = 11
+        Me.Label2.Text = "Presupuesto de ventas"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(323, 93)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(219, 102)
+        Me.Button1.TabIndex = 29
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Button10
         '
         Me.Button10.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources.sobresalir
@@ -310,25 +331,14 @@ Partial Class FormPresupuestomaestro
         Me.BtnCostoTotalProducción.TabIndex = 4
         Me.BtnCostoTotalProducción.UseVisualStyleBackColor = True
         '
-        'Label2
+        'Button2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(34, 22)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(269, 33)
-        Me.Label2.TabIndex = 11
-        Me.Label2.Text = "Presupuesto de ventas"
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(323, 93)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(219, 102)
-        Me.Button1.TabIndex = 29
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button2.Location = New System.Drawing.Point(896, 315)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(219, 102)
+        Me.Button2.TabIndex = 30
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'FormPresupuestomaestro
         '
@@ -336,6 +346,7 @@ Partial Class FormPresupuestomaestro
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(249, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1444, 741)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Button10)
@@ -400,4 +411,5 @@ Partial Class FormPresupuestomaestro
     Friend WithEvents Button10 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class
