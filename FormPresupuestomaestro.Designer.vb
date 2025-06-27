@@ -24,14 +24,7 @@ Partial Class FormPresupuestomaestro
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormPresupuestomaestro))
-        Me.BtnPresupuestoVentas = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.BtnPresupuestoProduccion = New System.Windows.Forms.Button()
-        Me.BtnPresupuestoCompras = New System.Windows.Forms.Button()
-        Me.BtnPresupuestoMod = New System.Windows.Forms.Button()
-        Me.BtnGastoAdmyVentas = New System.Windows.Forms.Button()
-        Me.BtnPresupuestoCaja = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -46,12 +39,6 @@ Partial Class FormPresupuestomaestro
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.BtnPlanilla = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -61,17 +48,9 @@ Partial Class FormPresupuestomaestro
         Me.BtnGastosindirectos = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.BtnCostoTotalProducción = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'BtnPresupuestoVentas
-        '
-        Me.BtnPresupuestoVentas.Location = New System.Drawing.Point(29, 54)
-        Me.BtnPresupuestoVentas.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.BtnPresupuestoVentas.Name = "BtnPresupuestoVentas"
-        Me.BtnPresupuestoVentas.Size = New System.Drawing.Size(232, 160)
-        Me.BtnPresupuestoVentas.TabIndex = 1
-        Me.BtnPresupuestoVentas.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -79,64 +58,8 @@ Partial Class FormPresupuestomaestro
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(700, 560)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(0, 25)
+        Me.Label1.Size = New System.Drawing.Size(0, 20)
         Me.Label1.TabIndex = 2
-        '
-        'BtnPresupuestoProduccion
-        '
-        Me.BtnPresupuestoProduccion.Location = New System.Drawing.Point(311, 54)
-        Me.BtnPresupuestoProduccion.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.BtnPresupuestoProduccion.Name = "BtnPresupuestoProduccion"
-        Me.BtnPresupuestoProduccion.Size = New System.Drawing.Size(232, 160)
-        Me.BtnPresupuestoProduccion.TabIndex = 3
-        Me.BtnPresupuestoProduccion.UseVisualStyleBackColor = True
-        '
-        'BtnPresupuestoCompras
-        '
-        Me.BtnPresupuestoCompras.Location = New System.Drawing.Point(879, 54)
-        Me.BtnPresupuestoCompras.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.BtnPresupuestoCompras.Name = "BtnPresupuestoCompras"
-        Me.BtnPresupuestoCompras.Size = New System.Drawing.Size(232, 160)
-        Me.BtnPresupuestoCompras.TabIndex = 5
-        Me.BtnPresupuestoCompras.UseVisualStyleBackColor = True
-        '
-        'BtnPresupuestoMod
-        '
-        Me.BtnPresupuestoMod.Location = New System.Drawing.Point(29, 286)
-        Me.BtnPresupuestoMod.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.BtnPresupuestoMod.Name = "BtnPresupuestoMod"
-        Me.BtnPresupuestoMod.Size = New System.Drawing.Size(232, 160)
-        Me.BtnPresupuestoMod.TabIndex = 6
-        Me.BtnPresupuestoMod.UseVisualStyleBackColor = True
-        '
-        'BtnGastoAdmyVentas
-        '
-        Me.BtnGastoAdmyVentas.Location = New System.Drawing.Point(597, 286)
-        Me.BtnGastoAdmyVentas.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.BtnGastoAdmyVentas.Name = "BtnGastoAdmyVentas"
-        Me.BtnGastoAdmyVentas.Size = New System.Drawing.Size(232, 160)
-        Me.BtnGastoAdmyVentas.TabIndex = 8
-        Me.BtnGastoAdmyVentas.UseVisualStyleBackColor = True
-        '
-        'BtnPresupuestoCaja
-        '
-        Me.BtnPresupuestoCaja.Location = New System.Drawing.Point(879, 286)
-        Me.BtnPresupuestoCaja.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.BtnPresupuestoCaja.Name = "BtnPresupuestoCaja"
-        Me.BtnPresupuestoCaja.Size = New System.Drawing.Size(232, 160)
-        Me.BtnPresupuestoCaja.TabIndex = 9
-        Me.BtnPresupuestoCaja.UseVisualStyleBackColor = True
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(34, 22)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(222, 27)
-        Me.Label2.TabIndex = 11
-        Me.Label2.Text = "Presupuesto de ventas"
         '
         'Label3
         '
@@ -145,7 +68,7 @@ Partial Class FormPresupuestomaestro
         Me.Label3.Location = New System.Drawing.Point(295, 22)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(263, 27)
+        Me.Label3.Size = New System.Drawing.Size(216, 22)
         Me.Label3.TabIndex = 12
         Me.Label3.Text = "Presupuesto de producción" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -156,7 +79,7 @@ Partial Class FormPresupuestomaestro
         Me.Label4.Location = New System.Drawing.Point(874, 254)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(197, 27)
+        Me.Label4.Size = New System.Drawing.Size(162, 22)
         Me.Label4.TabIndex = 13
         Me.Label4.Text = "Presupuesto de caja" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -167,7 +90,7 @@ Partial Class FormPresupuestomaestro
         Me.Label5.Location = New System.Drawing.Point(592, 254)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(209, 27)
+        Me.Label5.Size = New System.Drawing.Size(173, 22)
         Me.Label5.TabIndex = 14
         Me.Label5.Text = "Gastos Adm. y ventas"
         '
@@ -178,7 +101,7 @@ Partial Class FormPresupuestomaestro
         Me.Label6.Location = New System.Drawing.Point(306, 254)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(169, 27)
+        Me.Label6.Size = New System.Drawing.Size(139, 22)
         Me.Label6.TabIndex = 15
         Me.Label6.Text = "Gastos indirectos"
         '
@@ -189,7 +112,7 @@ Partial Class FormPresupuestomaestro
         Me.Label7.Location = New System.Drawing.Point(24, 254)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(176, 27)
+        Me.Label7.Size = New System.Drawing.Size(146, 22)
         Me.Label7.TabIndex = 16
         Me.Label7.Text = "Presupuesto MOD"
         '
@@ -200,7 +123,7 @@ Partial Class FormPresupuestomaestro
         Me.Label8.Location = New System.Drawing.Point(879, 22)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(238, 27)
+        Me.Label8.Size = New System.Drawing.Size(197, 22)
         Me.Label8.TabIndex = 17
         Me.Label8.Text = "Presupuesto de compras" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -211,7 +134,7 @@ Partial Class FormPresupuestomaestro
         Me.Label9.Location = New System.Drawing.Point(592, 22)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(247, 27)
+        Me.Label9.Size = New System.Drawing.Size(201, 22)
         Me.Label9.TabIndex = 18
         Me.Label9.Text = "Costo total de producción"
         '
@@ -222,7 +145,7 @@ Partial Class FormPresupuestomaestro
         Me.Label10.Location = New System.Drawing.Point(24, 483)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(98, 27)
+        Me.Label10.Size = New System.Drawing.Size(81, 22)
         Me.Label10.TabIndex = 19
         Me.Label10.Text = "Resumen"
         '
@@ -235,7 +158,7 @@ Partial Class FormPresupuestomaestro
         Me.LblHora.Location = New System.Drawing.Point(1271, 252)
         Me.LblHora.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LblHora.Name = "LblHora"
-        Me.LblHora.Size = New System.Drawing.Size(56, 27)
+        Me.LblHora.Size = New System.Drawing.Size(45, 22)
         Me.LblHora.TabIndex = 21
         Me.LblHora.Text = "Hora"
         '
@@ -246,7 +169,7 @@ Partial Class FormPresupuestomaestro
         Me.LblFecha.Location = New System.Drawing.Point(1264, 292)
         Me.LblFecha.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LblFecha.Name = "LblFecha"
-        Me.LblFecha.Size = New System.Drawing.Size(67, 27)
+        Me.LblFecha.Size = New System.Drawing.Size(56, 22)
         Me.LblFecha.TabIndex = 22
         Me.LblFecha.Text = "Fecha"
         '
@@ -261,7 +184,7 @@ Partial Class FormPresupuestomaestro
         Me.Label11.Location = New System.Drawing.Point(1184, 252)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(61, 27)
+        Me.Label11.Size = New System.Drawing.Size(49, 22)
         Me.Label11.TabIndex = 23
         Me.Label11.Text = "Hora:"
         '
@@ -272,7 +195,7 @@ Partial Class FormPresupuestomaestro
         Me.Label12.Location = New System.Drawing.Point(1184, 292)
         Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(72, 27)
+        Me.Label12.Size = New System.Drawing.Size(60, 22)
         Me.Label12.TabIndex = 24
         Me.Label12.Text = "Fecha:"
         '
@@ -283,63 +206,9 @@ Partial Class FormPresupuestomaestro
         Me.Label15.Location = New System.Drawing.Point(306, 483)
         Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(84, 27)
+        Me.Label15.Size = New System.Drawing.Size(68, 22)
         Me.Label15.TabIndex = 28
         Me.Label15.Text = "Planilla "
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(29, 54)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(232, 160)
-        Me.Button1.TabIndex = 1
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(311, 54)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(232, 160)
-        Me.Button2.TabIndex = 3
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(879, 54)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(232, 160)
-        Me.Button4.TabIndex = 5
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(29, 286)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(232, 160)
-        Me.Button5.TabIndex = 6
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Button7
-        '
-        Me.Button7.Location = New System.Drawing.Point(597, 286)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(232, 160)
-        Me.Button7.TabIndex = 8
-        Me.Button7.UseVisualStyleBackColor = True
-        '
-        'Button8
-        '
-        Me.Button8.Location = New System.Drawing.Point(879, 286)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(232, 160)
-        Me.Button8.TabIndex = 9
-        Me.Button8.UseVisualStyleBackColor = True
         '
         'Button10
         '
@@ -440,12 +309,23 @@ Partial Class FormPresupuestomaestro
         Me.BtnCostoTotalProducción.TabIndex = 4
         Me.BtnCostoTotalProducción.UseVisualStyleBackColor = True
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(34, 22)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(183, 22)
+        Me.Label2.TabIndex = 11
+        Me.Label2.Text = "Presupuesto de ventas"
+        '
         'FormPresupuestomaestro
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(249, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1450, 741)
+        Me.ClientSize = New System.Drawing.Size(1444, 741)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.BtnPlanilla)
@@ -465,23 +345,11 @@ Partial Class FormPresupuestomaestro
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.BtnResumen)
-        Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.BtnPresupuestoCaja)
-        Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.BtnGastoAdmyVentas)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.BtnGastosindirectos)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.BtnPresupuestoMod)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.BtnPresupuestoCompras)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.BtnCostoTotalProducción)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.BtnPresupuestoProduccion)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.BtnPresupuestoVentas)
         Me.Font = New System.Drawing.Font("Montserrat", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(121, Byte), Integer))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -495,17 +363,10 @@ Partial Class FormPresupuestomaestro
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents BtnPresupuestoVentas As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents BtnPresupuestoProduccion As Button
     Friend WithEvents BtnCostoTotalProducción As Button
-    Friend WithEvents BtnPresupuestoCompras As Button
-    Friend WithEvents BtnPresupuestoMod As Button
     Friend WithEvents BtnGastosindirectos As Button
-    Friend WithEvents BtnGastoAdmyVentas As Button
-    Friend WithEvents BtnPresupuestoCaja As Button
     Friend WithEvents BtnResumen As Button
-    Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
@@ -522,14 +383,9 @@ Partial Class FormPresupuestomaestro
     Friend WithEvents Label12 As Label
     Friend WithEvents BtnPlanilla As Button
     Friend WithEvents Label15 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button8 As Button
     Friend WithEvents Button9 As Button
     Friend WithEvents Button10 As Button
+    Friend WithEvents Label2 As Label
 End Class
