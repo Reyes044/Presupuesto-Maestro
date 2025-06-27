@@ -136,6 +136,7 @@ Partial Class FrmCostoTotalDeProduccion
         Me.DtgCostoTotalDeProduccion.Location = New System.Drawing.Point(48, 250)
         Me.DtgCostoTotalDeProduccion.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.DtgCostoTotalDeProduccion.Name = "DtgCostoTotalDeProduccion"
+        Me.DtgCostoTotalDeProduccion.ReadOnly = True
         Me.DtgCostoTotalDeProduccion.RowHeadersWidth = 51
         Me.DtgCostoTotalDeProduccion.RowTemplate.Height = 24
         Me.DtgCostoTotalDeProduccion.Size = New System.Drawing.Size(1095, 279)
@@ -370,6 +371,7 @@ Partial Class FrmCostoTotalDeProduccion
         Me.BtnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.BtnEliminar.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources._1486564399_close_81512
         Me.BtnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnEliminar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnEliminar.FlatAppearance.BorderSize = 0
         Me.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnEliminar.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -385,6 +387,7 @@ Partial Class FrmCostoTotalDeProduccion
         Me.BtnAgregarCtp.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.BtnAgregarCtp.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources._1486564407_plus_green_81521
         Me.BtnAgregarCtp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnAgregarCtp.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnAgregarCtp.FlatAppearance.BorderSize = 0
         Me.BtnAgregarCtp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnAgregarCtp.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -400,6 +403,7 @@ Partial Class FrmCostoTotalDeProduccion
         Me.BtnImprimir.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.BtnImprimir.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources.printer_print_machine_office_business_icon_192561
         Me.BtnImprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnImprimir.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnImprimir.FlatAppearance.BorderSize = 0
         Me.BtnImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnImprimir.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))

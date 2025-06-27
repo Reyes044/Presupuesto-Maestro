@@ -102,14 +102,15 @@ Partial Class FrmPlanilla
         '
         'DtgPlanilla
         '
-        Me.DtgPlanilla.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader
         Me.DtgPlanilla.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.DtgPlanilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DtgPlanilla.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ColCedula, Me.ColNombre, Me.ColCargo, Me.ColSalMen, Me.ColSalDia, Me.ColTrab, Me.ColHExtra, Me.ColSalBasic, Me.ColSubcidios, Me.ColFeriados, Me.ColVac, Me.ColReajuste, Me.ColDevengado, Me.ColINSSLab, Me.ColPrestamos, Me.ColIR, Me.ColTdeduccion, Me.ColApagar, Me.ColFirma, Me.ColINNSPAT, Me.ColInatec, Me.ColVac2, Me.ColAguinaldo})
+        Me.DtgPlanilla.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DtgPlanilla.GridColor = System.Drawing.Color.Black
         Me.DtgPlanilla.Location = New System.Drawing.Point(14, 321)
         Me.DtgPlanilla.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.DtgPlanilla.Name = "DtgPlanilla"
+        Me.DtgPlanilla.ReadOnly = True
         Me.DtgPlanilla.RowHeadersWidth = 51
         Me.DtgPlanilla.RowTemplate.Height = 24
         Me.DtgPlanilla.Size = New System.Drawing.Size(1304, 302)
@@ -669,6 +670,7 @@ Partial Class FrmPlanilla
         Me.BtnImprimir.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.BtnImprimir.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources.printer_print_machine_office_business_icon_192561
         Me.BtnImprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnImprimir.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnImprimir.FlatAppearance.BorderSize = 0
         Me.BtnImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnImprimir.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -685,6 +687,7 @@ Partial Class FrmPlanilla
         Me.BtnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.BtnEliminar.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources._1486564399_close_81512
         Me.BtnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnEliminar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnEliminar.FlatAppearance.BorderSize = 0
         Me.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnEliminar.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -701,6 +704,7 @@ Partial Class FrmPlanilla
         Me.BtnAgregar.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.BtnAgregar.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources._1486564407_plus_green_81521
         Me.BtnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnAgregar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnAgregar.FlatAppearance.BorderSize = 0
         Me.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnAgregar.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
