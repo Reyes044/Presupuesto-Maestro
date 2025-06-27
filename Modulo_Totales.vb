@@ -7,6 +7,7 @@
     Public TotalMPD As String
     Public TotalCTP As String
     Public TotalGIF As String
+    Public CostoUnitario As String
     'total de los costos de ventas
     Public TotalUnidades As String
     Public TotalPrecioUnitario As String
@@ -39,4 +40,8 @@
     Public Total_PagoTotal As String
     'mi onda esa
     Public unidadesproyex As Decimal
+    'presupuesto mod
+    Public TotalUnidadesAProducirPresupuestoMOD As String
+    Public TotalCostoTotalMODPresupuestoMOD As String
+    Public TotalCostoPorHoraMODPresupuestoMOD As String
 End Module

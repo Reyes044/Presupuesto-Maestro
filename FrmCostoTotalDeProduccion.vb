@@ -55,12 +55,17 @@ Public Class FrmCostoTotalDeProduccion
 
 
 
+
         Dim producto As String = TxtProducto.Text
         Dim Materia_Prima_Directa As Integer = TxtMPD.Text
         Dim Mano_de_Obra_Directa As Integer = TxtMOD.Text
         Dim Gif As Integer = TxtGifAsignado.Text
         Dim Costo_Total_Produccion As Integer = Materia_Prima_Directa + Mano_de_Obra_Directa + Gif
         Dim CostoUnitario As Decimal = Costo_Total_Produccion / Modulo_Totales.unidadesproyex
+        If CostoUnitario = 0 Then
+            MsgBox("El Costo Unitario aun no esta establecido")
+            Return
+        End If
         DtgCostoTotalDeProduccion.Rows.Add(producto, Materia_Prima_Directa, Mano_de_Obra_Directa, Gif, Costo_Total_Produccion, CostoUnitario)
         CalcularTotal_GIF()
         CalcularTotal_MOD()
@@ -70,6 +75,7 @@ Public Class FrmCostoTotalDeProduccion
         Modulo_Totales.TotalMOD = TxtTotalMOD.Text
         Modulo_Totales.TotalGIF = TxtTotalGIF.Text
         Modulo_Totales.TotalCTP = TxtTotalCTP.Text
+        Modulo_Totales.CostoUnitario = TxtCU.Text
         TxtMPD.Clear()
         TxtMOD.Clear()
         TxtProducto.Clear()
@@ -201,6 +207,11 @@ Public Class FrmCostoTotalDeProduccion
             CalcularTotal_MOD()
             CalcularTotal_MPD()
             CalcularTotal_CTP()
+            Modulo_Totales.TotalMPD = TxtTotalMPD.Text
+            Modulo_Totales.TotalMOD = TxtTotalMOD.Text
+            Modulo_Totales.TotalGIF = TxtTotalGIF.Text
+            Modulo_Totales.TotalCTP = TxtTotalCTP.Text
+            Modulo_Totales.CostoUnitario = TxtCU.Text
         Else
             MsgBox("Seleccione una fila para eliminar.")
         End If

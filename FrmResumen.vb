@@ -8,6 +8,7 @@
         TxtTotalMODR.Text = Modulo_Totales.TotalMOD
         TxtTotalGifR.Text = Modulo_Totales.TotalGIF
         TxtTotalCTPR.Text = Modulo_Totales.TotalCTP
+        TxtCUR.Text = Modulo_Totales.CostoUnitario
 
 
         TxtTotalUnidadesProyectadasR.Text = Modulo_Totales.TotalUnidades
@@ -38,14 +39,17 @@
         txtTotalCostounidadR.Text = Modulo_Totales.Total_CostoTotalUnidad
         txtTotalCostoTotalCompraR.Text = Modulo_Totales.Total_CostoTotalCompras
         txtTotalCostoAdicionalesR.Text = Modulo_Totales.Total_CostoAdicionales
-
         txtTotalCostounitarioTotalR.Text = Modulo_Totales.Total_CostoTotalUnitario
         txtTotalunidadesNecesariasR.Text = Modulo_Totales.Total_UnidadesNecesarias
         txtTotalInventariofinalR.Text = Modulo_Totales.Total_InventarioFinal
-
         txtTotalInventarioinicR.Text = Modulo_Totales.Total_InventarioInicial
         txtTotalUnidadesComprarR.Text = Modulo_Totales.Total_UnidadesComprar
         TxtTotalPagoTotalR.Text = Modulo_Totales.Total_PagoTotal
-    End Sub
 
+
+
+        txtUnidadesProducir_R.Text = Modulo_Totales.TotalUnidadesAProducirPresupuestoMOD
+        txtTotalMOD_R.Text = Modulo_Totales.TotalCostoTotalMODPresupuestoMOD
+        txtTotalHoras_R.Text = Modulo_Totales.TotalCostoPorHoraMODPresupuestoMOD
+    End Sub
 End Class

@@ -26,12 +26,18 @@ Public Class FormPresupuestoMOD
             dtgPresupuestoMOD.Rows(index).Cells(4).ReadOnly = True
             dtgPresupuestoMOD.Rows(index).Cells(4).Style.BackColor = Color.LightGray
         Next
+        Modulo_Totales.TotalUnidadesAProducirPresupuestoMOD = txtUnidadesProducir.Text
+        Modulo_Totales.TotalCostoPorHoraMODPresupuestoMOD = txtTotalHoras.Text
+        Modulo_Totales.TotalCostoTotalMODPresupuestoMOD = txtTotalMOD.Text
     End Sub
 
     Private Sub btnEliminarProducto_Click(sender As Object, e As EventArgs) Handles btnEliminarProducto.Click
         If dtgPresupuestoMOD.SelectedRows.Count > 0 Then
             dtgPresupuestoMOD.Rows.Remove(dtgPresupuestoMOD.CurrentRow)
         End If
+        Modulo_Totales.TotalUnidadesAProducirPresupuestoMOD = txtUnidadesProducir.Text
+        Modulo_Totales.TotalCostoPorHoraMODPresupuestoMOD = txtTotalHoras.Text
+        Modulo_Totales.TotalCostoTotalMODPresupuestoMOD = txtTotalMOD.Text
     End Sub
 
     Private Sub dtgPresupuestoMOD_CellEndEdit(sender As Object, e As DataGridViewCellEventArgs) Handles dtgPresupuestoMOD.CellEndEdit

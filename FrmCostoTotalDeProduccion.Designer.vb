@@ -51,7 +51,7 @@ Partial Class FrmCostoTotalDeProduccion
         Me.LblTotalMOD = New System.Windows.Forms.Label()
         Me.TxtTotalCTP = New System.Windows.Forms.TextBox()
         Me.LblCTP = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TxtCU = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -314,17 +314,17 @@ Partial Class FrmCostoTotalDeProduccion
         Me.LblCTP.TabIndex = 17
         Me.LblCTP.Text = "Costo Total de Produccion"
         '
-        'TextBox1
+        'TxtCU
         '
-        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Font = New System.Drawing.Font("Montserrat Medium", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(1023, 634)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(120, 28)
-        Me.TextBox1.TabIndex = 20
+        Me.TxtCU.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.TxtCU.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtCU.Enabled = False
+        Me.TxtCU.Font = New System.Drawing.Font("Montserrat Medium", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtCU.Location = New System.Drawing.Point(1023, 634)
+        Me.TxtCU.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.TxtCU.Name = "TxtCU"
+        Me.TxtCU.Size = New System.Drawing.Size(120, 28)
+        Me.TxtCU.TabIndex = 20
         '
         'Label1
         '
@@ -435,7 +435,7 @@ Partial Class FrmCostoTotalDeProduccion
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.TxtCU)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TxtTotalCTP)
         Me.Controls.Add(Me.LblCTP)
@@ -496,7 +496,7 @@ Partial Class FrmCostoTotalDeProduccion
     Friend WithEvents Col_GIF_Asignado As DataGridViewTextBoxColumn
     Friend WithEvents ColCostoTotalDeProduccion As DataGridViewTextBoxColumn
     Friend WithEvents ColCostoUnitario As DataGridViewTextBoxColumn
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TxtCU As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
