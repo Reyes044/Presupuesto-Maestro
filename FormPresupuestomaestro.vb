@@ -41,4 +41,8 @@
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         FormPresupuestoMOD.ShowDialog()
     End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        FrmPresupuestoVentas.ShowDialog()
+    End Sub
 End Class
