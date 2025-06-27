@@ -85,6 +85,12 @@
     <Compile Include="FormPresupuestoCaja.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormPresupuestodecompras.Designer.vb">
+      <DependentUpon>FormPresupuestodecompras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPresupuestodecompras.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormPresupuestoDeProduccion.Designer.vb">
       <DependentUpon>FormPresupuestoDeProduccion.vb</DependentUpon>
     </Compile>
@@ -168,6 +174,9 @@
   <ItemGroup>
     <EmbeddedResource Include="FormPresupuestoCaja.resx">
       <DependentUpon>FormPresupuestoCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPresupuestodecompras.resx">
+      <DependentUpon>FormPresupuestodecompras.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPresupuestoDeProduccion.resx">
       <DependentUpon>FormPresupuestoDeProduccion.vb</DependentUpon>
