@@ -43,8 +43,6 @@ Partial Class FrmCostoTotalDeProduccion
         Me.ColCostoUnitario = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TxtGifAsignado = New System.Windows.Forms.TextBox()
         Me.LblGIFAsignados = New System.Windows.Forms.Label()
-        Me.BtnAgregarCtp = New System.Windows.Forms.Button()
-        Me.BtnEliminar = New System.Windows.Forms.Button()
         Me.TxtTotalGIF = New System.Windows.Forms.TextBox()
         Me.LblTotalGIF = New System.Windows.Forms.Label()
         Me.TxtTotalMPD = New System.Windows.Forms.TextBox()
@@ -55,68 +53,90 @@ Partial Class FrmCostoTotalDeProduccion
         Me.LblCTP = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.BtnEliminar = New System.Windows.Forms.Button()
+        Me.BtnAgregarCtp = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.DtgCostoTotalDeProduccion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LblProducto
         '
         Me.LblProducto.AutoSize = True
-        Me.LblProducto.Location = New System.Drawing.Point(53, 48)
+        Me.LblProducto.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblProducto.Location = New System.Drawing.Point(43, 133)
         Me.LblProducto.Name = "LblProducto"
-        Me.LblProducto.Size = New System.Drawing.Size(61, 16)
+        Me.LblProducto.Size = New System.Drawing.Size(96, 27)
         Me.LblProducto.TabIndex = 0
         Me.LblProducto.Text = "Producto"
         '
         'LblMPD
         '
         Me.LblMPD.AutoSize = True
-        Me.LblMPD.Location = New System.Drawing.Point(249, 48)
+        Me.LblMPD.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblMPD.Location = New System.Drawing.Point(43, 192)
         Me.LblMPD.Name = "LblMPD"
-        Me.LblMPD.Size = New System.Drawing.Size(139, 16)
+        Me.LblMPD.Size = New System.Drawing.Size(218, 27)
         Me.LblMPD.TabIndex = 1
         Me.LblMPD.Text = "Materia Prima Directa "
         '
         'LblMOD
         '
         Me.LblMOD.AutoSize = True
-        Me.LblMOD.Location = New System.Drawing.Point(558, 48)
+        Me.LblMOD.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblMOD.Location = New System.Drawing.Point(438, 136)
         Me.LblMOD.Name = "LblMOD"
-        Me.LblMOD.Size = New System.Drawing.Size(139, 16)
+        Me.LblMOD.Size = New System.Drawing.Size(211, 27)
         Me.LblMOD.TabIndex = 2
         Me.LblMOD.Text = "Mano de Obra Directa"
         '
         'TxtProducto
         '
-        Me.TxtProducto.Location = New System.Drawing.Point(120, 42)
+        Me.TxtProducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.TxtProducto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtProducto.Font = New System.Drawing.Font("Montserrat Medium", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtProducto.Location = New System.Drawing.Point(295, 133)
+        Me.TxtProducto.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TxtProducto.Name = "TxtProducto"
-        Me.TxtProducto.Size = New System.Drawing.Size(107, 22)
+        Me.TxtProducto.Size = New System.Drawing.Size(120, 28)
         Me.TxtProducto.TabIndex = 3
         '
         'TxtMPD
         '
-        Me.TxtMPD.Location = New System.Drawing.Point(394, 42)
+        Me.TxtMPD.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.TxtMPD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtMPD.Font = New System.Drawing.Font("Montserrat Medium", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtMPD.Location = New System.Drawing.Point(295, 192)
+        Me.TxtMPD.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TxtMPD.Name = "TxtMPD"
-        Me.TxtMPD.Size = New System.Drawing.Size(107, 22)
+        Me.TxtMPD.Size = New System.Drawing.Size(120, 28)
         Me.TxtMPD.TabIndex = 4
         '
         'TxtMOD
         '
-        Me.TxtMOD.Location = New System.Drawing.Point(706, 42)
+        Me.TxtMOD.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.TxtMOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtMOD.Font = New System.Drawing.Font("Montserrat Medium", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtMOD.Location = New System.Drawing.Point(700, 135)
+        Me.TxtMOD.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TxtMOD.Name = "TxtMOD"
-        Me.TxtMOD.Size = New System.Drawing.Size(107, 22)
+        Me.TxtMOD.Size = New System.Drawing.Size(120, 28)
         Me.TxtMOD.TabIndex = 5
         '
         'DtgCostoTotalDeProduccion
         '
-        Me.DtgCostoTotalDeProduccion.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(249, Byte), Integer))
+        Me.DtgCostoTotalDeProduccion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DtgCostoTotalDeProduccion.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.DtgCostoTotalDeProduccion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DtgCostoTotalDeProduccion.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ColProducto, Me.ColMPD, Me.ColMOD, Me.Col_GIF_Asignado, Me.ColCostoTotalDeProduccion, Me.ColCostoUnitario})
         Me.DtgCostoTotalDeProduccion.GridColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.DtgCostoTotalDeProduccion.Location = New System.Drawing.Point(43, 163)
+        Me.DtgCostoTotalDeProduccion.Location = New System.Drawing.Point(48, 250)
+        Me.DtgCostoTotalDeProduccion.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.DtgCostoTotalDeProduccion.Name = "DtgCostoTotalDeProduccion"
         Me.DtgCostoTotalDeProduccion.RowHeadersWidth = 51
         Me.DtgCostoTotalDeProduccion.RowTemplate.Height = 24
-        Me.DtgCostoTotalDeProduccion.Size = New System.Drawing.Size(1070, 223)
+        Me.DtgCostoTotalDeProduccion.Size = New System.Drawing.Size(1095, 279)
         Me.DtgCostoTotalDeProduccion.TabIndex = 6
         '
         'ColProducto
@@ -126,7 +146,6 @@ Partial Class FrmCostoTotalDeProduccion
         Me.ColProducto.Name = "ColProducto"
         Me.ColProducto.ReadOnly = True
         Me.ColProducto.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.ColProducto.Width = 125
         '
         'ColMPD
         '
@@ -138,7 +157,6 @@ Partial Class FrmCostoTotalDeProduccion
         Me.ColMPD.Name = "ColMPD"
         Me.ColMPD.ReadOnly = True
         Me.ColMPD.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.ColMPD.Width = 125
         '
         'ColMOD
         '
@@ -150,7 +168,6 @@ Partial Class FrmCostoTotalDeProduccion
         Me.ColMOD.Name = "ColMOD"
         Me.ColMOD.ReadOnly = True
         Me.ColMOD.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.ColMOD.Width = 125
         '
         'Col_GIF_Asignado
         '
@@ -162,7 +179,6 @@ Partial Class FrmCostoTotalDeProduccion
         Me.Col_GIF_Asignado.Name = "Col_GIF_Asignado"
         Me.Col_GIF_Asignado.ReadOnly = True
         Me.Col_GIF_Asignado.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Col_GIF_Asignado.Width = 125
         '
         'ColCostoTotalDeProduccion
         '
@@ -174,7 +190,6 @@ Partial Class FrmCostoTotalDeProduccion
         Me.ColCostoTotalDeProduccion.Name = "ColCostoTotalDeProduccion"
         Me.ColCostoTotalDeProduccion.ReadOnly = True
         Me.ColCostoTotalDeProduccion.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.ColCostoTotalDeProduccion.Width = 125
         '
         'ColCostoUnitario
         '
@@ -186,133 +201,207 @@ Partial Class FrmCostoTotalDeProduccion
         Me.ColCostoUnitario.Name = "ColCostoUnitario"
         Me.ColCostoUnitario.ReadOnly = True
         Me.ColCostoUnitario.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.ColCostoUnitario.Width = 125
         '
         'TxtGifAsignado
         '
-        Me.TxtGifAsignado.Location = New System.Drawing.Point(972, 42)
+        Me.TxtGifAsignado.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.TxtGifAsignado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtGifAsignado.Font = New System.Drawing.Font("Montserrat Medium", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtGifAsignado.Location = New System.Drawing.Point(700, 190)
+        Me.TxtGifAsignado.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TxtGifAsignado.Name = "TxtGifAsignado"
-        Me.TxtGifAsignado.Size = New System.Drawing.Size(107, 22)
+        Me.TxtGifAsignado.Size = New System.Drawing.Size(120, 28)
         Me.TxtGifAsignado.TabIndex = 9
         '
         'LblGIFAsignados
         '
         Me.LblGIFAsignados.AutoSize = True
-        Me.LblGIFAsignados.Location = New System.Drawing.Point(874, 48)
+        Me.LblGIFAsignados.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblGIFAsignados.Location = New System.Drawing.Point(438, 192)
         Me.LblGIFAsignados.Name = "LblGIFAsignados"
-        Me.LblGIFAsignados.Size = New System.Drawing.Size(92, 16)
+        Me.LblGIFAsignados.Size = New System.Drawing.Size(137, 27)
         Me.LblGIFAsignados.TabIndex = 8
         Me.LblGIFAsignados.Text = "GIF Asignado " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
-        'BtnAgregarCtp
-        '
-        Me.BtnAgregarCtp.Location = New System.Drawing.Point(394, 92)
-        Me.BtnAgregarCtp.Name = "BtnAgregarCtp"
-        Me.BtnAgregarCtp.Size = New System.Drawing.Size(155, 42)
-        Me.BtnAgregarCtp.TabIndex = 7
-        Me.BtnAgregarCtp.Text = "Agregar"
-        Me.BtnAgregarCtp.UseVisualStyleBackColor = True
-        '
-        'BtnEliminar
-        '
-        Me.BtnEliminar.Location = New System.Drawing.Point(561, 92)
-        Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(155, 42)
-        Me.BtnEliminar.TabIndex = 10
-        Me.BtnEliminar.Text = "Eliminar"
-        Me.BtnEliminar.UseVisualStyleBackColor = True
-        '
         'TxtTotalGIF
         '
+        Me.TxtTotalGIF.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.TxtTotalGIF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtTotalGIF.Enabled = False
-        Me.TxtTotalGIF.Location = New System.Drawing.Point(725, 404)
+        Me.TxtTotalGIF.Font = New System.Drawing.Font("Montserrat Medium", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtTotalGIF.Location = New System.Drawing.Point(866, 561)
+        Me.TxtTotalGIF.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TxtTotalGIF.Name = "TxtTotalGIF"
-        Me.TxtTotalGIF.Size = New System.Drawing.Size(107, 22)
+        Me.TxtTotalGIF.Size = New System.Drawing.Size(120, 28)
         Me.TxtTotalGIF.TabIndex = 12
         '
         'LblTotalGIF
         '
         Me.LblTotalGIF.AutoSize = True
-        Me.LblTotalGIF.Location = New System.Drawing.Point(430, 410)
+        Me.LblTotalGIF.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblTotalGIF.Location = New System.Drawing.Point(473, 564)
         Me.LblTotalGIF.Name = "LblTotalGIF"
-        Me.LblTotalGIF.Size = New System.Drawing.Size(257, 16)
+        Me.LblTotalGIF.Size = New System.Drawing.Size(387, 27)
         Me.LblTotalGIF.TabIndex = 11
         Me.LblTotalGIF.Text = "Total de Gastos Indirectos de Fabricacion"
         '
         'TxtTotalMPD
         '
+        Me.TxtTotalMPD.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.TxtTotalMPD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtTotalMPD.Enabled = False
-        Me.TxtTotalMPD.Location = New System.Drawing.Point(281, 404)
+        Me.TxtTotalMPD.Font = New System.Drawing.Font("Montserrat Medium", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtTotalMPD.Location = New System.Drawing.Point(337, 563)
+        Me.TxtTotalMPD.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TxtTotalMPD.Name = "TxtTotalMPD"
-        Me.TxtTotalMPD.Size = New System.Drawing.Size(107, 22)
+        Me.TxtTotalMPD.Size = New System.Drawing.Size(120, 28)
         Me.TxtTotalMPD.TabIndex = 14
         '
         'LbltotalMPD
         '
         Me.LbltotalMPD.AutoSize = True
-        Me.LbltotalMPD.Location = New System.Drawing.Point(53, 410)
+        Me.LbltotalMPD.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LbltotalMPD.Location = New System.Drawing.Point(40, 563)
         Me.LbltotalMPD.Name = "LbltotalMPD"
-        Me.LbltotalMPD.Size = New System.Drawing.Size(189, 16)
+        Me.LbltotalMPD.Size = New System.Drawing.Size(291, 27)
         Me.LbltotalMPD.TabIndex = 13
         Me.LbltotalMPD.Text = "Total de Materia Prima Directa"
         '
         'TxtTotalMOD
         '
+        Me.TxtTotalMOD.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.TxtTotalMOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtTotalMOD.Enabled = False
-        Me.TxtTotalMOD.Location = New System.Drawing.Point(281, 444)
+        Me.TxtTotalMOD.Font = New System.Drawing.Font("Montserrat Medium", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtTotalMOD.Location = New System.Drawing.Point(338, 635)
+        Me.TxtTotalMOD.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TxtTotalMOD.Name = "TxtTotalMOD"
-        Me.TxtTotalMOD.Size = New System.Drawing.Size(107, 22)
+        Me.TxtTotalMOD.Size = New System.Drawing.Size(120, 28)
         Me.TxtTotalMOD.TabIndex = 16
         '
         'LblTotalMOD
         '
         Me.LblTotalMOD.AutoSize = True
-        Me.LblTotalMOD.Location = New System.Drawing.Point(50, 450)
+        Me.LblTotalMOD.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblTotalMOD.Location = New System.Drawing.Point(43, 638)
         Me.LblTotalMOD.Name = "LblTotalMOD"
-        Me.LblTotalMOD.Size = New System.Drawing.Size(192, 16)
+        Me.LblTotalMOD.Size = New System.Drawing.Size(289, 27)
         Me.LblTotalMOD.TabIndex = 15
         Me.LblTotalMOD.Text = "Total de Mano de Obra Directa"
         '
         'TxtTotalCTP
         '
+        Me.TxtTotalCTP.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.TxtTotalCTP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtTotalCTP.Enabled = False
-        Me.TxtTotalCTP.Location = New System.Drawing.Point(725, 444)
+        Me.TxtTotalCTP.Font = New System.Drawing.Font("Montserrat Medium", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtTotalCTP.Location = New System.Drawing.Point(728, 638)
+        Me.TxtTotalCTP.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TxtTotalCTP.Name = "TxtTotalCTP"
-        Me.TxtTotalCTP.Size = New System.Drawing.Size(107, 22)
+        Me.TxtTotalCTP.Size = New System.Drawing.Size(120, 28)
         Me.TxtTotalCTP.TabIndex = 18
         '
         'LblCTP
         '
         Me.LblCTP.AutoSize = True
-        Me.LblCTP.Location = New System.Drawing.Point(521, 450)
+        Me.LblCTP.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblCTP.Location = New System.Drawing.Point(473, 636)
         Me.LblCTP.Name = "LblCTP"
-        Me.LblCTP.Size = New System.Drawing.Size(166, 16)
+        Me.LblCTP.Size = New System.Drawing.Size(249, 27)
         Me.LblCTP.TabIndex = 17
         Me.LblCTP.Text = "Costo Total de Produccion"
         '
         'TextBox1
         '
+        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(1006, 404)
+        Me.TextBox1.Font = New System.Drawing.Font("Montserrat Medium", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(1023, 634)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(107, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(120, 28)
         Me.TextBox1.TabIndex = 20
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(909, 410)
+        Me.Label1.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(876, 636)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(91, 16)
+        Me.Label1.Size = New System.Drawing.Size(141, 27)
         Me.Label1.TabIndex = 19
         Me.Label1.Text = "Costo Unitario"
         '
+        'BtnEliminar
+        '
+        Me.BtnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.BtnEliminar.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources._1486564399_close_81512
+        Me.BtnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnEliminar.FlatAppearance.BorderSize = 0
+        Me.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnEliminar.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnEliminar.Location = New System.Drawing.Point(1068, 133)
+        Me.BtnEliminar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.BtnEliminar.Name = "BtnEliminar"
+        Me.BtnEliminar.Size = New System.Drawing.Size(75, 75)
+        Me.BtnEliminar.TabIndex = 10
+        Me.BtnEliminar.UseVisualStyleBackColor = False
+        '
+        'BtnAgregarCtp
+        '
+        Me.BtnAgregarCtp.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.BtnAgregarCtp.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources._1486564407_plus_green_81521
+        Me.BtnAgregarCtp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnAgregarCtp.FlatAppearance.BorderSize = 0
+        Me.BtnAgregarCtp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnAgregarCtp.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnAgregarCtp.Location = New System.Drawing.Point(931, 131)
+        Me.BtnAgregarCtp.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.BtnAgregarCtp.Name = "BtnAgregarCtp"
+        Me.BtnAgregarCtp.Size = New System.Drawing.Size(75, 75)
+        Me.BtnAgregarCtp.TabIndex = 7
+        Me.BtnAgregarCtp.UseVisualStyleBackColor = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(926, 210)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(87, 27)
+        Me.Label2.TabIndex = 21
+        Me.Label2.Text = "Agregar"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(1063, 212)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(87, 27)
+        Me.Label3.TabIndex = 22
+        Me.Label3.Text = "Eliminar"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Rockwell", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(471, 42)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(426, 38)
+        Me.Label4.TabIndex = 23
+        Me.Label4.Text = "Costo Total de Produccion"
+        '
         'FrmCostoTotalDeProduccion
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(249, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1159, 497)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(1194, 699)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TxtTotalCTP)
@@ -334,8 +423,10 @@ Partial Class FrmCostoTotalDeProduccion
         Me.Controls.Add(Me.LblMOD)
         Me.Controls.Add(Me.LblMPD)
         Me.Controls.Add(Me.LblProducto)
+        Me.Font = New System.Drawing.Font("Montserrat", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(121, Byte), Integer))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "FrmCostoTotalDeProduccion"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Costo Total de Produccion"
@@ -372,4 +463,7 @@ Partial Class FrmCostoTotalDeProduccion
     Friend WithEvents ColCostoUnitario As DataGridViewTextBoxColumn
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
 End Class

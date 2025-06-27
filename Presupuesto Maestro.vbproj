@@ -228,5 +228,11 @@
   <ItemGroup>
     <None Include="Resources\sobresalir.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486564407-plus-green_81521.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486564399-close_81512.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

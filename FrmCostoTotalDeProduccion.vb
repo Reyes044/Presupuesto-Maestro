@@ -215,4 +215,19 @@ Public Class FrmCostoTotalDeProduccion
 
     End Sub
 
+    Private Sub TxtProducto_TextChanged(sender As Object, e As EventArgs) Handles TxtProducto.TextChanged
+
+    End Sub
+
+    Private Sub TxtMPD_TextChanged(sender As Object, e As EventArgs) Handles TxtMPD.TextChanged
+
+    End Sub
+
+    Private Sub TxtMOD_TextChanged(sender As Object, e As EventArgs) Handles TxtMOD.TextChanged
+
+    End Sub
+
+    Private Sub TxtGifAsignado_TextChanged(sender As Object, e As EventArgs) Handles TxtGifAsignado.TextChanged
+
+    End Sub
 End Class

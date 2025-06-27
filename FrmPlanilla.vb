@@ -184,7 +184,7 @@ Public Class FrmPlanilla
         filaTotal.Cells(20).Value = "C$" & totalINATEC.ToString("N2")
         filaTotal.Cells(21).Value = "C$" & totalVacacionesPatronal.ToString("N2")
         filaTotal.Cells(22).Value = "C$" & totalAguinaldo.ToString("N2")
-        filaTotal.DefaultCellStyle.BackColor = Color.Beige
+        filaTotal.DefaultCellStyle.BackColor = Color.FromArgb(178, 236, 232)
         filaTotal.ReadOnly = True
 
         DtgPlanilla.Rows.Add(filaTotal)
@@ -373,5 +373,39 @@ Public Class FrmPlanilla
         End If
     End Sub
 
+    Private Sub MskCedula_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs) Handles MskCedula.MaskInputRejected
 
+    End Sub
+
+    Private Sub TxtNombres_TextChanged(sender As Object, e As EventArgs) Handles TxtNombres.TextChanged
+
+    End Sub
+
+    Private Sub TxtCargo_TextChanged(sender As Object, e As EventArgs) Handles TxtCargo.TextChanged
+
+    End Sub
+
+    Private Sub TxtSalarioMensual_TextChanged(sender As Object, e As EventArgs) Handles TxtSalarioMensual.TextChanged
+
+    End Sub
+
+    Private Sub TxtDiasTrab_TextChanged(sender As Object, e As EventArgs) Handles TxtDiasTrab.TextChanged
+
+    End Sub
+
+    Private Sub TxtSubsidios_TextChanged(sender As Object, e As EventArgs) Handles TxtSubsidios.TextChanged
+
+    End Sub
+
+    Private Sub TxtFeriados_TextChanged(sender As Object, e As EventArgs) Handles TxtFeriados.TextChanged
+
+    End Sub
+
+    Private Sub TxtVacaciones1_TextChanged(sender As Object, e As EventArgs) Handles TxtVacaciones1.TextChanged
+
+    End Sub
+
+    Private Sub TxtFirmas_TextChanged(sender As Object, e As EventArgs) Handles TxtFirmas.TextChanged
+
+    End Sub
 End Class
