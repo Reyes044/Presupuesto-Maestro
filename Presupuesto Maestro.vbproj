@@ -92,6 +92,31 @@
     <Compile Include="FormPresupuestoventas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmCostoTotalDeProduccion.Designer.vb">
+      <DependentUpon>FrmCostoTotalDeProduccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCostoTotalDeProduccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGastos Indirectos.Designer.vb">
+      <DependentUpon>FrmGastos Indirectos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGastos Indirectos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPlanilla.Designer.vb">
+      <DependentUpon>FrmPlanilla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPlanilla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmResumen.Designer.vb">
+      <DependentUpon>FrmResumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmResumen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulo_Totales.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -118,6 +143,18 @@
     <EmbeddedResource Include="FormPresupuestoventas.resx">
       <DependentUpon>FormPresupuestoventas.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmCostoTotalDeProduccion.resx">
+      <DependentUpon>FrmCostoTotalDeProduccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGastos Indirectos.resx">
+      <DependentUpon>FrmGastos Indirectos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlanilla.resx">
+      <DependentUpon>FrmPlanilla.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmResumen.resx">
+      <DependentUpon>FrmResumen.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -139,6 +176,69 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\images.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinero-calculadora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinero-calculadora1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinero-calculadora2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinero-calculadora %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinero-calculadora %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinero-calculadora3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archivo-excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archivo-excel %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gastos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verificacion-resumida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinero-calculadora4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-google-sheets-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hoja-de-balance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\costo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\costo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resumen-de-compra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sobresalir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486564407-plus-green_81521.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486564399-close_81512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_print_machine_office_business_icon_192561.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_print_machine_office_business_icon_1925611.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

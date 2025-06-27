@@ -100,4 +100,6 @@
     Private Sub dtgPresupuestoProducción_RowsRemoved(sender As Object, e As DataGridViewRowsRemovedEventArgs) Handles dtgPresupuestoProducción.RowsRemoved
         CalcularTotal()
     End Sub
+
+
 End Class
