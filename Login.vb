@@ -66,5 +66,19 @@ Public Class Login
         End If
 
 
+
+    End Sub
+
+
+    Private Sub txtPassword_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtPassword.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            Btnlogin.PerformClick()
+        End If
+    End Sub
+
+    Private Sub txtUsuario_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtUsuario.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            txtPassword.Focus()
+        End If
     End Sub
 End Class

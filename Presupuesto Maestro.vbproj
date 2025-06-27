@@ -189,5 +189,8 @@
   <ItemGroup>
     <None Include="Resources\Blue and White Illustrated Notebook Grid Project Presentation.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Intro.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

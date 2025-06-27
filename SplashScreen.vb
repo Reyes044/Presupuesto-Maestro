@@ -1,5 +1,8 @@
-﻿Public Class SplashScreen
+﻿Imports System.Media
+
+Public Class SplashScreen
     Private Sub SplashScreen_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        My.Computer.Audio.Play(My.Resources.Intro, AudioPlayMode.Background)
         TimerCargando.Start()
         ProgressBarLoading.Value = 0
 

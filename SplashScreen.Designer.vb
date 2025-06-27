@@ -50,6 +50,7 @@ Partial Class SplashScreen
         Me.Guna2PictureBox9 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2PictureBox12 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2PictureBox11 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.Guna2PictureBox13 = New Guna.UI2.WinForms.Guna2PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -66,6 +67,7 @@ Partial Class SplashScreen
         CType(Me.Guna2PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Guna2PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -356,12 +358,26 @@ Partial Class SplashScreen
         Me.Guna2PictureBox11.TabIndex = 33
         Me.Guna2PictureBox11.TabStop = False
         '
+        'Guna2PictureBox13
+        '
+        Me.Guna2PictureBox13.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2PictureBox13.Image = CType(resources.GetObject("Guna2PictureBox13.Image"), System.Drawing.Image)
+        Me.Guna2PictureBox13.ImageRotate = 0!
+        Me.Guna2PictureBox13.Location = New System.Drawing.Point(12, 897)
+        Me.Guna2PictureBox13.Name = "Guna2PictureBox13"
+        Me.Guna2PictureBox13.Size = New System.Drawing.Size(232, 184)
+        Me.Guna2PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Guna2PictureBox13.TabIndex = 34
+        Me.Guna2PictureBox13.TabStop = False
+        Me.Guna2PictureBox13.UseTransparentBackground = True
+        '
         'SplashScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1920, 1106)
+        Me.Controls.Add(Me.Guna2PictureBox13)
         Me.Controls.Add(Me.Guna2PictureBox11)
         Me.Controls.Add(Me.Guna2PictureBox12)
         Me.Controls.Add(Me.Guna2PictureBox9)
@@ -407,6 +423,7 @@ Partial Class SplashScreen
         CType(Me.Guna2PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Guna2PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -438,4 +455,5 @@ Partial Class SplashScreen
     Friend WithEvents Guna2PictureBox9 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2PictureBox12 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2PictureBox11 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Guna2PictureBox13 As Guna.UI2.WinForms.Guna2PictureBox
 End Class

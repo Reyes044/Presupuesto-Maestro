@@ -1,4 +1,6 @@
-﻿Public Class FormPresupuestoCaja
+﻿Imports System.IO
+
+Public Class FormPresupuestoCaja
     Private Sub FormPresupuestoCaja_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         dtgPresupuestoCaja.AllowUserToAddRows = False
@@ -14,6 +16,7 @@
 
     End Sub
 
+
     Private Sub btnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
         Dim index = dtgPresupuestoCaja.Rows.Add()
         For i = 1 To 4
@@ -23,12 +26,12 @@
         Next
     End Sub
 
-    Private Sub btnEliminarProducto_Click(sender As Object, e As EventArgs) Handles btnEliminarProducto.Click
+
+    Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
         If dtgPresupuestoCaja.SelectedRows.Count > 0 Then
             dtgPresupuestoCaja.Rows.Remove(dtgPresupuestoCaja.CurrentRow)
         End If
     End Sub
-
     Private Sub dtgPresupuestoCaja_CellEndEdit(sender As Object, e As DataGridViewCellEventArgs) Handles dtgPresupuestoCaja.CellEndEdit
 
         LimpiarTxt()
@@ -103,7 +106,7 @@
     End Sub
 
     Private Sub dtgPresupuestoCaja_SelectionChanged(sender As Object, e As EventArgs) Handles dtgPresupuestoCaja.SelectionChanged
-        btnEliminarProducto.Enabled = (dtgPresupuestoCaja.SelectedRows.Count > 0)
+        btnEliminar.Visible = (dtgPresupuestoCaja.SelectedRows.Count > 0)
     End Sub
 
 
@@ -161,7 +164,7 @@
                 total += CDec(valor)
                 If total >= 0 Then
                     txtFNM.Text = total.ToString("C2")
-                    txtFNM.BackColor = SystemColors.Window
+                    txtFNM.BackColor = Color.FromArgb(178, 236, 232)
                 Else
                     txtFNM.Text = total.ToString("C2")
                     txtFNM.BackColor = Color.FromArgb(200, 100, 100)
@@ -172,7 +175,7 @@
 
 
         If txtFNM.Text = Nothing And txtFNM.BackColor = Color.FromArgb(200, 100, 100) Then
-            txtFNM.BackColor = SystemColors.Window
+            txtFNM.BackColor = Color.FromArgb(178, 236, 232)
         End If
 
     End Sub
@@ -215,6 +218,37 @@
                     End If
                 End If
             Next
+        End If
+    End Sub
+
+    Private Sub btnImprimir_Click(sender As Object, e As EventArgs) Handles btnImprimir.Click
+        Dim guardarDialogo As New SaveFileDialog()
+        guardarDialogo.Filter = "Archivos de texto (.txt)|.txt" 'Filtrar que formato esta permitido
+        guardarDialogo.Title = "Guardar datos del DataGridView" 'Texto que aparecerá en la barra de dialogo
+        guardarDialogo.FileName = "Presupuesto_Caja.txt" 'Nombre del archivo
+
+        If guardarDialogo.ShowDialog() = DialogResult.OK Then 'Abre la ventana y el ok verefica si el usuario hizo click en guardar y no en cacelar
+            Using writer As New StreamWriter(guardarDialogo.FileName)
+
+
+                For Each columna As DataGridViewColumn In dtgPresupuestoCaja.Columns
+                    Dim valorescolumna As New List(Of String)
+
+                    For Each fila As DataGridViewRow In dtgPresupuestoCaja.Rows 'Recorre filas del dtg
+                        If Not fila.IsNewRow Then   'Evitamos tomar fila vacia que tenemos al final (o no)
+                            Dim valor = fila.Cells(columna.Index).Value
+                            If valor IsNot Nothing Then
+                                valorescolumna.Add(valor.ToString())
+                            End If
+                        End If
+
+                    Next
+
+                    writer.WriteLine(columna.HeaderText & ": " & String.Join(" , ", valorescolumna))
+                Next
+
+            End Using
+            MessageBox.Show("Datos guardados correctamente.")
         End If
     End Sub
 

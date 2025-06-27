@@ -1,4 +1,5 @@
-﻿Imports System.Security.Cryptography
+﻿Imports System.IO
+Imports System.Security.Cryptography
 
 Public Class FormPresupuestoDeProduccion
     Dim TotalUnidadesVender As Decimal
@@ -114,7 +115,7 @@ Public Class FormPresupuestoDeProduccion
     End Sub
 
     Private Sub DTG_SelectionChanged(sender As Object, e As EventArgs) Handles dtgPresupuestoProducción.SelectionChanged
-        btnEliminar.Enabled = (dtgPresupuestoProducción.SelectedRows.Count > 0)
+        btnEliminar.Visible = (dtgPresupuestoProducción.SelectedRows.Count > 0)
     End Sub
 
     Private Sub btnAgregarColumn_Click(sender As Object, e As EventArgs) Handles btnAgregarColumn.Click
@@ -176,7 +177,7 @@ Public Class FormPresupuestoDeProduccion
                 total += CDec(valor)
                 If total >= 0 Then
                     txtUnidadesProducir.Text = total.ToString("C2")
-                    txtUnidadesProducir.BackColor = SystemColors.Window
+                    txtUnidadesProducir.BackColor = Color.FromArgb(178, 236, 232)
                 Else
                     txtUnidadesProducir.Text = total.ToString("C2")
                     txtUnidadesProducir.BackColor = Color.FromArgb(200, 100, 100)
@@ -193,7 +194,7 @@ Public Class FormPresupuestoDeProduccion
                 total += CDec(valor)
                 If total >= 0 Then
                     txtCostoTotalProduccion.Text = total.ToString("C2")
-                    txtCostoTotalProduccion.BackColor = SystemColors.Window
+                    txtCostoTotalProduccion.BackColor = Color.FromArgb(178, 236, 232)
                 Else
                     txtCostoTotalProduccion.Text = total.ToString("C2")
                     txtCostoTotalProduccion.BackColor = Color.FromArgb(200, 100, 100)
@@ -210,7 +211,7 @@ Public Class FormPresupuestoDeProduccion
                 total += CDec(valor)
                 If total >= 0 Then
                     txtCostoTotalMOD.Text = total.ToString("C2")
-                    txtCostoTotalMOD.BackColor = SystemColors.Window
+                    txtCostoTotalMOD.BackColor = Color.FromArgb(178, 236, 232)
                 Else
                     txtCostoTotalMOD.Text = total.ToString("C2")
                     txtCostoTotalMOD.BackColor = Color.FromArgb(200, 100, 100)
@@ -227,7 +228,7 @@ Public Class FormPresupuestoDeProduccion
                 total += CDec(valor)
                 If total >= 0 Then
                     txtCostoTotalCIF.Text = total.ToString("C2")
-                    txtCostoTotalCIF.BackColor = SystemColors.Window
+                    txtCostoTotalCIF.BackColor = Color.FromArgb(178, 236, 232)
                 Else
                     txtCostoTotalCIF.Text = total.ToString("C2")
                     txtCostoTotalCIF.BackColor = Color.FromArgb(200, 100, 100)
@@ -244,7 +245,7 @@ Public Class FormPresupuestoDeProduccion
                 total += CDec(valor)
                 If total >= 0 Then
                     txtCostoTotalPlaneado.Text = total.ToString("C2")
-                    txtCostoTotalPlaneado.BackColor = SystemColors.Window
+                    txtCostoTotalPlaneado.BackColor = Color.FromArgb(178, 236, 232)
                 Else
                     txtCostoTotalPlaneado.Text = total.ToString("C2")
                     txtCostoTotalPlaneado.BackColor = Color.FromArgb(200, 100, 100)
@@ -256,23 +257,23 @@ Public Class FormPresupuestoDeProduccion
         'Solucion Bug'
 
         If txtUnidadesProducir.Text = Nothing And txtUnidadesProducir.BackColor = Color.FromArgb(200, 100, 100) Then
-            txtUnidadesProducir.BackColor = SystemColors.Window
+            txtUnidadesProducir.BackColor = Color.FromArgb(178, 236, 232)
         End If
 
         If txtCostoTotalProduccion.Text = Nothing And txtCostoTotalProduccion.BackColor = Color.FromArgb(200, 100, 100) Then
-            txtCostoTotalProduccion.BackColor = SystemColors.Window
+            txtCostoTotalProduccion.BackColor = Color.FromArgb(178, 236, 232)
         End If
 
         If txtCostoTotalMOD.Text = Nothing And txtCostoTotalMOD.BackColor = Color.FromArgb(200, 100, 100) Then
-            txtCostoTotalMOD.BackColor = SystemColors.Window
+            txtCostoTotalMOD.BackColor = Color.FromArgb(178, 236, 232)
         End If
 
         If txtCostoTotalCIF.Text = Nothing And txtCostoTotalCIF.BackColor = Color.FromArgb(200, 100, 100) Then
-            txtCostoTotalCIF.BackColor = SystemColors.Window
+            txtCostoTotalCIF.BackColor = Color.FromArgb(178, 236, 232)
         End If
 
         If txtCostoTotalPlaneado.Text = Nothing And txtCostoTotalPlaneado.BackColor = Color.FromArgb(200, 100, 100) Then
-            txtCostoTotalPlaneado.BackColor = SystemColors.Window
+            txtCostoTotalPlaneado.BackColor = Color.FromArgb(178, 236, 232)
         End If
 
     End Sub
@@ -292,4 +293,39 @@ Public Class FormPresupuestoDeProduccion
         txtUnidadesProducir.Clear()
     End Sub
 
+    Private Sub btnImprimir_Click(sender As Object, e As EventArgs) Handles btnImprimir.Click
+        'Dialogo para que el usuario guarde donde quiera su archivo
+        Dim guardarDialogo As New SaveFileDialog()
+        guardarDialogo.Filter = "Archivos de texto (.txt)|.txt" 'Filtrar que formato esta permitido
+        guardarDialogo.Title = "Guardar datos del DataGridView" 'Texto que aparecerá en la barra de dialogo
+        guardarDialogo.FileName = "Presupuesto_Producción.txt" 'Nombre del archivo
+
+        If guardarDialogo.ShowDialog() = DialogResult.OK Then 'Abre la ventana y el ok verefica si el usuario hizo click en guardar y no en cacelar
+            Using writer As New StreamWriter(guardarDialogo.FileName)
+
+
+                For Each columna As DataGridViewColumn In dtgPresupuestoProducción.Columns
+                    Dim valorescolumna As New List(Of String)
+
+                    For Each fila As DataGridViewRow In dtgPresupuestoProducción.Rows 'Recorre filas del dtg
+                        If Not fila.IsNewRow Then   'Evitamos tomar fila vacia que tenemos al final (o no)
+                            Dim valor = fila.Cells(columna.Index).Value
+                            If valor IsNot Nothing Then
+                                valorescolumna.Add(valor.ToString())
+                            End If
+                        End If
+
+                    Next
+
+                    writer.WriteLine(columna.HeaderText & ": " & String.Join(" , ", valorescolumna))
+                Next
+
+            End Using
+            MessageBox.Show("Datos guardados correctamente.")
+        End If
+    End Sub
+
+    Private Sub Label13_Click(sender As Object, e As EventArgs) Handles Label13.Click
+
+    End Sub
 End Class

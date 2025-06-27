@@ -1,4 +1,6 @@
-﻿Public Class FormPresupuestoMOD
+﻿Imports System.IO
+
+Public Class FormPresupuestoMOD
     Private Sub FormPresupuestoMOD_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         dtgPresupuestoMOD.AllowUserToAddRows = False
@@ -16,7 +18,7 @@
 
     End Sub
 
-    Private Sub btnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
+    Private Sub btnAgregar_Click_(sender As Object, e As EventArgs) Handles btnAgregar.Click
         Dim index = dtgPresupuestoMOD.Rows.Add()
         For i = 1 To 2
             dtgPresupuestoMOD.Rows(index).Cells(i).ReadOnly = True
@@ -100,7 +102,7 @@
     End Sub
 
     Private Sub dtgPresupuestoMOD_SelectionChanged(sender As Object, e As EventArgs) Handles dtgPresupuestoMOD.SelectionChanged
-        btnEliminarProducto.Enabled = (dtgPresupuestoMOD.SelectedRows.Count > 0)
+        btnEliminarProducto.Visible = (dtgPresupuestoMOD.SelectedRows.Count > 0)
     End Sub
 
     Private Sub CalcularTotal()
@@ -151,4 +153,35 @@
         txtUnidadesProducir.Clear()
     End Sub
 
+    Private Sub btnImprimir_Click(sender As Object, e As EventArgs) Handles btnImprimir.Click
+        'Dialogo para que el usuario guarde donde quiera su archivo
+        Dim guardarDialogo As New SaveFileDialog()
+        guardarDialogo.Filter = "Archivos de texto (.txt)|.txt" 'Filtrar que formato esta permitido
+        guardarDialogo.Title = "Guardar datos del DataGridView" 'Texto que aparecerá en la barra de dialogo
+        guardarDialogo.FileName = "Presupuesto_MOD.txt" 'Nombre del archivo
+
+        If guardarDialogo.ShowDialog() = DialogResult.OK Then 'Abre la ventana y el ok verefica si el usuario hizo click en guardar y no en cacelar
+            Using writer As New StreamWriter(guardarDialogo.FileName)
+
+
+                For Each columna As DataGridViewColumn In dtgPresupuestoMOD.Columns
+                    Dim valorescolumna As New List(Of String)
+
+                    For Each fila As DataGridViewRow In dtgPresupuestoMOD.Rows 'Recorre filas del dtg
+                        If Not fila.IsNewRow Then   'Evitamos tomar fila vacia que tenemos al final (o no)
+                            Dim valor = fila.Cells(columna.Index).Value
+                            If valor IsNot Nothing Then
+                                valorescolumna.Add(valor.ToString())
+                            End If
+                        End If
+
+                    Next
+
+                    writer.WriteLine(columna.HeaderText & ": " & String.Join(", ", valorescolumna))
+                Next
+
+            End Using
+            MessageBox.Show("Datos guardados correctamente.")
+        End If
+    End Sub
 End Class
