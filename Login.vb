@@ -17,6 +17,9 @@ Public Class Login
         newUser = New Users("Reyes04", "nose")
         Usuario.Add(newUser)
 
+        newUser = New Users("111", "111")
+        Usuario.Add(newUser)
+
     End Sub
 
     Private Sub Btnlogin_Click(sender As Object, e As EventArgs) Handles Btnlogin.Click
@@ -80,5 +83,9 @@ Public Class Login
         If Asc(e.KeyChar) = 13 Then
             txtPassword.Focus()
         End If
+    End Sub
+
+    Private Sub txtUsuario_TextChanged(sender As Object, e As EventArgs) Handles txtUsuario.TextChanged
+
     End Sub
 End Class

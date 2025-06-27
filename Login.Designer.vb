@@ -157,7 +157,7 @@ Partial Class Login
         Me.Label1.ForeColor = System.Drawing.Color.DarkSlateBlue
         Me.Label1.Location = New System.Drawing.Point(276, 212)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(87, 23)
+        Me.Label1.Size = New System.Drawing.Size(77, 19)
         Me.Label1.TabIndex = 8
         Me.Label1.Text = "Usuario"
         '
@@ -168,7 +168,7 @@ Partial Class Login
         Me.Label2.ForeColor = System.Drawing.Color.DarkSlateBlue
         Me.Label2.Location = New System.Drawing.Point(276, 341)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(125, 23)
+        Me.Label2.Size = New System.Drawing.Size(109, 19)
         Me.Label2.TabIndex = 10
         Me.Label2.Text = "Contraseña"
         '
@@ -186,7 +186,7 @@ Partial Class Login
         '
         'Login
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 17.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(579, 539)

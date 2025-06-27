@@ -9,6 +9,8 @@ Public Class FormPresupuestoDeProduccion
 
         dtgPresupuestoProducción.MultiSelect = False
 
+
+
         For i = 1 To dtgPresupuestoProducción.ColumnCount - 1
             dtgPresupuestoProducción.Columns(i).ReadOnly = True
         Next
@@ -119,14 +121,39 @@ Public Class FormPresupuestoDeProduccion
     End Sub
 
     Private Sub btnAgregarColumn_Click(sender As Object, e As EventArgs) Handles btnAgregarColumn.Click
+
+        Modulo_Totales.TotalUnidadesAVender = txtTotalUndVender.Text
+        Modulo_Totales.TotalUnidadesAProducir = txtUnidadesProducir.Text
+        Modulo_Totales.TotalCostoTotalPlaneado = txtCostoTotalPlaneado.Text
+        Modulo_Totales.TotalCostoTotalCIF = txtCostoTotalCIF.Text
+        Modulo_Totales.TotalInventarioFinal = txtInventarioFinal.Text
+        Modulo_Totales.TotalCostoTotalProduccion = txtCostoTotalProduccion.Text
+        Modulo_Totales.TotalInventarioInicial = txtInventarioInicial.Text
+        Modulo_Totales.TotalCostoTotalMOD = txtCostoTotalMOD.Text
+
         Dim index = dtgPresupuestoProducción.Rows.Add()
         For i = 1 To 6
             dtgPresupuestoProducción.Rows(index).Cells(i).ReadOnly = True
             dtgPresupuestoProducción.Rows(index).Cells(i).Style.BackColor = Color.LightGray
         Next
+
+
+
+
     End Sub
 
     Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
+
+        Modulo_Totales.TotalUnidadesAVender = txtTotalUndVender.Text
+        Modulo_Totales.TotalUnidadesAProducir = txtUnidadesProducir.Text
+        Modulo_Totales.TotalCostoTotalPlaneado = txtCostoTotalPlaneado.Text
+        Modulo_Totales.TotalCostoTotalCIF = txtCostoTotalCIF.Text
+        Modulo_Totales.TotalInventarioFinal = txtInventarioFinal.Text
+        Modulo_Totales.TotalCostoTotalProduccion = txtCostoTotalProduccion.Text
+        Modulo_Totales.TotalInventarioInicial = txtInventarioInicial.Text
+        Modulo_Totales.TotalCostoTotalMOD = txtCostoTotalMOD.Text
+
+
         If dtgPresupuestoProducción.SelectedRows.Count > 0 Then
             dtgPresupuestoProducción.Rows.Remove(dtgPresupuestoProducción.CurrentRow)
         End If

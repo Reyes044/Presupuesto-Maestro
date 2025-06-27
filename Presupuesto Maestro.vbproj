@@ -306,5 +306,20 @@
   <ItemGroup>
     <None Include="Resources\Intro.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee_machine_industrial_manufacturing_factory_production_icon_210717_1_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resized_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulb_resized_260x160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pay_cash_bill_money_buy_icon_143287_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5fd76b3307770d20f4078f0342a2a552-removebg-preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -440,6 +440,17 @@ Public Class FormPresupuestodecompras
         DtgPresupuestoCompras.Rows.Add(Material, UnidadesRequeridas01, InventarioFinalD01, InventarioInicial01, UnidadesComprar, CostoUnidad01, CostoTotalCompra, CostosAdicionales, CostoUnitarioTotal, PagoTotal)
         ActualizaTotales()
 
+        Modulo_Totales.Total_UnidadesNecesarias = txtTotalunidadesNecesarias.Text
+        Modulo_Totales.Total_InventarioFinal = txtTotalInventariofinal.Text
+        Modulo_Totales.Total_InventarioInicial = txtTotalInventarioinic.Text
+        Modulo_Totales.Total_UnidadesComprar = txtTotalUnidadesComprar.Text
+        Modulo_Totales.Total_CostoTotalUnidad = txtTotalCostounidad.Text
+        Modulo_Totales.Total_CostoTotalCompras = txtTotalCostoTotalCompra.Text
+        Modulo_Totales.Total_CostoAdicionales = txtTotalCostoAdicionales.Text
+        Modulo_Totales.Total_CostoTotalUnitario = txtTotalCostounitarioTotal.Text
+        Modulo_Totales.Total_PagoTotal = txtTotaldepagoTotal.Text
+
+
         txtMaterial.Clear()
         txtUnidadesNecesarias.Clear()
         txtInventarioFinalDeseado.Clear()
@@ -455,6 +466,16 @@ Public Class FormPresupuestodecompras
         If DtgPresupuestoCompras.SelectedRows.Count > 0 Then
             DtgPresupuestoCompras.Rows.Remove(DtgPresupuestoCompras.CurrentRow)
             ActualizaTotales()
+            Modulo_Totales.Total_UnidadesNecesarias = txtTotalunidadesNecesarias.Text
+            Modulo_Totales.Total_InventarioFinal = txtTotalInventariofinal.Text
+            Modulo_Totales.Total_InventarioInicial = txtTotalInventarioinic.Text
+            Modulo_Totales.Total_UnidadesComprar = txtTotalUnidadesComprar.Text
+            Modulo_Totales.Total_CostoTotalUnidad = txtTotalCostounidad.Text
+            Modulo_Totales.Total_CostoTotalCompras = txtTotalCostoTotalCompra.Text
+            Modulo_Totales.Total_CostoAdicionales = txtTotalCostoAdicionales.Text
+            Modulo_Totales.Total_CostoTotalUnitario = txtTotalCostounitarioTotal.Text
+            Modulo_Totales.Total_PagoTotal = txtTotaldepagoTotal.Text
+
         End If
     End Sub
     Private Sub ActualizaTotales()

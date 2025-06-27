@@ -217,7 +217,19 @@ Public Class FrmPresupuestoVentas
         'Agregar las variables en orden al datagriedview.
 
         DtgPresupuestodeventas.Rows.Add(Producto, Unidades, Preciounitario, ingresosbrutos, Devoluciones, ingresosNetos, CostoVentas, gastoventas, publicidadUnidad, gastoPublicidad, utilidadbruta)
+        Modulo_Totales.unidadesproyex = Unidades
         ActualizaTotales()
+        Modulo_Totales.TotalUnidades = txtunidadesproyectadastotal.Text
+        Modulo_Totales.TotalPrecioUnitario = txttotalpreciounitario.Text
+        Modulo_Totales.TotalIngresosBrutos = txtTotalingresosbrutos.Text
+        Modulo_Totales.TotalDevoluciones = txtTotaldevoluciones.Text
+        Modulo_Totales.TotalIngresosNetos = txtTotalingresosNetos.Text
+        Modulo_Totales.TotalCostoVentas = txtTotalCostodeventas.Text
+        Modulo_Totales.TotalGastoDVentas = txtTotalgastoVentas.Text
+        Modulo_Totales.TotalPublicidadCostoUni = txtTotalPublicidad.Text
+        Modulo_Totales.TotalGasoDPublicidad = txtTotalgastoPublicidad.Text
+        Modulo_Totales.TotalUtilidadBruta = txtTotalUtilidadbruta.Text
+
         'Limpiar textbox
         TxtNombreProducto.Clear()
         txtunidaesproyectadas.Clear()
@@ -366,6 +378,16 @@ Public Class FrmPresupuestoVentas
         If DtgPresupuestodeventas.SelectedRows.Count > 0 Then
             DtgPresupuestodeventas.Rows.Remove(DtgPresupuestodeventas.CurrentRow)
             ActualizaTotales()
+            Modulo_Totales.TotalUnidades = txtunidadesproyectadastotal.Text
+            Modulo_Totales.TotalPrecioUnitario = txttotalpreciounitario.Text
+            Modulo_Totales.TotalIngresosBrutos = txtTotalingresosbrutos.Text
+            Modulo_Totales.TotalDevoluciones = txtTotaldevoluciones.Text
+            Modulo_Totales.TotalIngresosNetos = txtTotalingresosNetos.Text
+            Modulo_Totales.TotalCostoVentas = txtTotalCostodeventas.Text
+            Modulo_Totales.TotalGastoDVentas = txtTotalgastoVentas.Text
+            Modulo_Totales.TotalPublicidadCostoUni = txtTotalPublicidad.Text
+            Modulo_Totales.TotalGasoDPublicidad = txtTotalgastoPublicidad.Text
+            Modulo_Totales.TotalUtilidadBruta = txtTotalUtilidadbruta.Text
 
         End If
     End Sub
@@ -514,6 +536,5 @@ Public Class FrmPresupuestoVentas
         End If
 
     End Sub
-
 
 End Class

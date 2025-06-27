@@ -59,10 +59,9 @@ Public Class FrmCostoTotalDeProduccion
         Dim Materia_Prima_Directa As Integer = TxtMPD.Text
         Dim Mano_de_Obra_Directa As Integer = TxtMOD.Text
         Dim Gif As Integer = TxtGifAsignado.Text
-
         Dim Costo_Total_Produccion As Integer = Materia_Prima_Directa + Mano_de_Obra_Directa + Gif
-
-        DtgCostoTotalDeProduccion.Rows.Add(producto, Materia_Prima_Directa, Mano_de_Obra_Directa, Gif, Costo_Total_Produccion)
+        Dim CostoUnitario As Decimal = Costo_Total_Produccion / Modulo_Totales.unidadesproyex
+        DtgCostoTotalDeProduccion.Rows.Add(producto, Materia_Prima_Directa, Mano_de_Obra_Directa, Gif, Costo_Total_Produccion, CostoUnitario)
         CalcularTotal_GIF()
         CalcularTotal_MOD()
         CalcularTotal_MPD()
