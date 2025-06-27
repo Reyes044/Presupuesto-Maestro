@@ -47,28 +47,6 @@ Partial Class FrmPlanilla
         Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmPlanilla))
         Me.DtgPlanilla = New System.Windows.Forms.DataGridView()
-        Me.LblCedula = New System.Windows.Forms.Label()
-        Me.TxtNombres = New System.Windows.Forms.TextBox()
-        Me.LblNombre = New System.Windows.Forms.Label()
-        Me.TxtCargo = New System.Windows.Forms.TextBox()
-        Me.LblCargo = New System.Windows.Forms.Label()
-        Me.TxtSalarioMensual = New System.Windows.Forms.TextBox()
-        Me.LblSalMen = New System.Windows.Forms.Label()
-        Me.TxtPrestamos = New System.Windows.Forms.TextBox()
-        Me.LblPrestamos = New System.Windows.Forms.Label()
-        Me.TxtFeriados = New System.Windows.Forms.TextBox()
-        Me.LblFeriados = New System.Windows.Forms.Label()
-        Me.TxtSubsidios = New System.Windows.Forms.TextBox()
-        Me.LblSubsidios = New System.Windows.Forms.Label()
-        Me.TxtDiasTrab = New System.Windows.Forms.TextBox()
-        Me.LblDiaTrab = New System.Windows.Forms.Label()
-        Me.BtnAgregar = New System.Windows.Forms.Button()
-        Me.BtnEliminar = New System.Windows.Forms.Button()
-        Me.TxtVacaciones1 = New System.Windows.Forms.TextBox()
-        Me.LblVac1 = New System.Windows.Forms.Label()
-        Me.TxtFirmas = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.MskCedula = New System.Windows.Forms.MaskedTextBox()
         Me.ColCedula = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColNombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColCargo = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -92,9 +70,33 @@ Partial Class FrmPlanilla
         Me.ColInatec = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColVac2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColAguinaldo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LblCedula = New System.Windows.Forms.Label()
+        Me.TxtNombres = New System.Windows.Forms.TextBox()
+        Me.LblNombre = New System.Windows.Forms.Label()
+        Me.TxtCargo = New System.Windows.Forms.TextBox()
+        Me.LblCargo = New System.Windows.Forms.Label()
+        Me.TxtSalarioMensual = New System.Windows.Forms.TextBox()
+        Me.LblSalMen = New System.Windows.Forms.Label()
+        Me.TxtPrestamos = New System.Windows.Forms.TextBox()
+        Me.LblPrestamos = New System.Windows.Forms.Label()
+        Me.TxtFeriados = New System.Windows.Forms.TextBox()
+        Me.LblFeriados = New System.Windows.Forms.Label()
+        Me.TxtSubsidios = New System.Windows.Forms.TextBox()
+        Me.LblSubsidios = New System.Windows.Forms.Label()
+        Me.TxtDiasTrab = New System.Windows.Forms.TextBox()
+        Me.LblDiaTrab = New System.Windows.Forms.Label()
+        Me.TxtVacaciones1 = New System.Windows.Forms.TextBox()
+        Me.LblVac1 = New System.Windows.Forms.Label()
+        Me.TxtFirmas = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.MskCedula = New System.Windows.Forms.MaskedTextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.BtnImprimir = New System.Windows.Forms.Button()
+        Me.BtnEliminar = New System.Windows.Forms.Button()
+        Me.BtnAgregar = New System.Windows.Forms.Button()
         CType(Me.DtgPlanilla, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -112,269 +114,6 @@ Partial Class FrmPlanilla
         Me.DtgPlanilla.RowTemplate.Height = 24
         Me.DtgPlanilla.Size = New System.Drawing.Size(1304, 302)
         Me.DtgPlanilla.TabIndex = 0
-        '
-        'LblCedula
-        '
-        Me.LblCedula.AutoSize = True
-        Me.LblCedula.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblCedula.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.LblCedula.Location = New System.Drawing.Point(43, 127)
-        Me.LblCedula.Name = "LblCedula"
-        Me.LblCedula.Size = New System.Drawing.Size(75, 27)
-        Me.LblCedula.TabIndex = 1
-        Me.LblCedula.Text = "Cedula"
-        '
-        'TxtNombres
-        '
-        Me.TxtNombres.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.TxtNombres.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxtNombres.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtNombres.ForeColor = System.Drawing.Color.Black
-        Me.TxtNombres.Location = New System.Drawing.Point(254, 174)
-        Me.TxtNombres.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TxtNombres.Name = "TxtNombres"
-        Me.TxtNombres.Size = New System.Drawing.Size(139, 28)
-        Me.TxtNombres.TabIndex = 4
-        '
-        'LblNombre
-        '
-        Me.LblNombre.AutoSize = True
-        Me.LblNombre.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblNombre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.LblNombre.Location = New System.Drawing.Point(43, 174)
-        Me.LblNombre.Name = "LblNombre"
-        Me.LblNombre.Size = New System.Drawing.Size(202, 27)
-        Me.LblNombre.TabIndex = 3
-        Me.LblNombre.Text = "Nombres y apellidos "
-        '
-        'TxtCargo
-        '
-        Me.TxtCargo.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.TxtCargo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxtCargo.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCargo.ForeColor = System.Drawing.Color.Black
-        Me.TxtCargo.Location = New System.Drawing.Point(254, 219)
-        Me.TxtCargo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TxtCargo.Name = "TxtCargo"
-        Me.TxtCargo.Size = New System.Drawing.Size(139, 28)
-        Me.TxtCargo.TabIndex = 6
-        '
-        'LblCargo
-        '
-        Me.LblCargo.AutoSize = True
-        Me.LblCargo.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblCargo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.LblCargo.Location = New System.Drawing.Point(43, 219)
-        Me.LblCargo.Name = "LblCargo"
-        Me.LblCargo.Size = New System.Drawing.Size(66, 27)
-        Me.LblCargo.TabIndex = 5
-        Me.LblCargo.Text = "Cargo"
-        '
-        'TxtSalarioMensual
-        '
-        Me.TxtSalarioMensual.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.TxtSalarioMensual.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxtSalarioMensual.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtSalarioMensual.ForeColor = System.Drawing.Color.Black
-        Me.TxtSalarioMensual.Location = New System.Drawing.Point(254, 268)
-        Me.TxtSalarioMensual.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TxtSalarioMensual.Name = "TxtSalarioMensual"
-        Me.TxtSalarioMensual.Size = New System.Drawing.Size(139, 28)
-        Me.TxtSalarioMensual.TabIndex = 8
-        '
-        'LblSalMen
-        '
-        Me.LblSalMen.AutoSize = True
-        Me.LblSalMen.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblSalMen.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.LblSalMen.Location = New System.Drawing.Point(43, 268)
-        Me.LblSalMen.Name = "LblSalMen"
-        Me.LblSalMen.Size = New System.Drawing.Size(155, 27)
-        Me.LblSalMen.TabIndex = 7
-        Me.LblSalMen.Text = "Salario Mensual"
-        '
-        'TxtPrestamos
-        '
-        Me.TxtPrestamos.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.TxtPrestamos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxtPrestamos.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtPrestamos.ForeColor = System.Drawing.Color.Black
-        Me.TxtPrestamos.Location = New System.Drawing.Point(879, 126)
-        Me.TxtPrestamos.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TxtPrestamos.Name = "TxtPrestamos"
-        Me.TxtPrestamos.Size = New System.Drawing.Size(139, 28)
-        Me.TxtPrestamos.TabIndex = 16
-        '
-        'LblPrestamos
-        '
-        Me.LblPrestamos.AutoSize = True
-        Me.LblPrestamos.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblPrestamos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.LblPrestamos.Location = New System.Drawing.Point(759, 128)
-        Me.LblPrestamos.Name = "LblPrestamos"
-        Me.LblPrestamos.Size = New System.Drawing.Size(114, 27)
-        Me.LblPrestamos.TabIndex = 15
-        Me.LblPrestamos.Text = "Prestamos "
-        '
-        'TxtFeriados
-        '
-        Me.TxtFeriados.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.TxtFeriados.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxtFeriados.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtFeriados.ForeColor = System.Drawing.Color.Black
-        Me.TxtFeriados.Location = New System.Drawing.Point(601, 219)
-        Me.TxtFeriados.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TxtFeriados.Name = "TxtFeriados"
-        Me.TxtFeriados.Size = New System.Drawing.Size(139, 28)
-        Me.TxtFeriados.TabIndex = 14
-        '
-        'LblFeriados
-        '
-        Me.LblFeriados.AutoSize = True
-        Me.LblFeriados.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblFeriados.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.LblFeriados.Location = New System.Drawing.Point(432, 219)
-        Me.LblFeriados.Name = "LblFeriados"
-        Me.LblFeriados.Size = New System.Drawing.Size(90, 27)
-        Me.LblFeriados.TabIndex = 13
-        Me.LblFeriados.Text = "Feriados"
-        '
-        'TxtSubsidios
-        '
-        Me.TxtSubsidios.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.TxtSubsidios.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxtSubsidios.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtSubsidios.ForeColor = System.Drawing.Color.Black
-        Me.TxtSubsidios.Location = New System.Drawing.Point(601, 174)
-        Me.TxtSubsidios.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TxtSubsidios.Name = "TxtSubsidios"
-        Me.TxtSubsidios.Size = New System.Drawing.Size(139, 28)
-        Me.TxtSubsidios.TabIndex = 12
-        '
-        'LblSubsidios
-        '
-        Me.LblSubsidios.AutoSize = True
-        Me.LblSubsidios.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblSubsidios.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.LblSubsidios.Location = New System.Drawing.Point(432, 174)
-        Me.LblSubsidios.Name = "LblSubsidios"
-        Me.LblSubsidios.Size = New System.Drawing.Size(99, 27)
-        Me.LblSubsidios.TabIndex = 11
-        Me.LblSubsidios.Text = "Subcidios"
-        '
-        'TxtDiasTrab
-        '
-        Me.TxtDiasTrab.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.TxtDiasTrab.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxtDiasTrab.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtDiasTrab.ForeColor = System.Drawing.Color.Black
-        Me.TxtDiasTrab.Location = New System.Drawing.Point(601, 126)
-        Me.TxtDiasTrab.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TxtDiasTrab.Name = "TxtDiasTrab"
-        Me.TxtDiasTrab.Size = New System.Drawing.Size(139, 28)
-        Me.TxtDiasTrab.TabIndex = 10
-        '
-        'LblDiaTrab
-        '
-        Me.LblDiaTrab.AutoSize = True
-        Me.LblDiaTrab.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblDiaTrab.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.LblDiaTrab.Location = New System.Drawing.Point(432, 127)
-        Me.LblDiaTrab.Name = "LblDiaTrab"
-        Me.LblDiaTrab.Size = New System.Drawing.Size(156, 27)
-        Me.LblDiaTrab.TabIndex = 9
-        Me.LblDiaTrab.Text = "Dias Trabajados"
-        '
-        'BtnAgregar
-        '
-        Me.BtnAgregar.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
-        Me.BtnAgregar.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources._1486564407_plus_green_81521
-        Me.BtnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BtnAgregar.FlatAppearance.BorderSize = 0
-        Me.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnAgregar.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnAgregar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.BtnAgregar.Location = New System.Drawing.Point(1096, 104)
-        Me.BtnAgregar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.BtnAgregar.Name = "BtnAgregar"
-        Me.BtnAgregar.Size = New System.Drawing.Size(75, 75)
-        Me.BtnAgregar.TabIndex = 17
-        Me.BtnAgregar.UseVisualStyleBackColor = False
-        '
-        'BtnEliminar
-        '
-        Me.BtnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
-        Me.BtnEliminar.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources._1486564399_close_81512
-        Me.BtnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BtnEliminar.FlatAppearance.BorderSize = 0
-        Me.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnEliminar.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnEliminar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.BtnEliminar.Location = New System.Drawing.Point(1096, 221)
-        Me.BtnEliminar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(75, 75)
-        Me.BtnEliminar.TabIndex = 18
-        Me.BtnEliminar.UseVisualStyleBackColor = False
-        '
-        'TxtVacaciones1
-        '
-        Me.TxtVacaciones1.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.TxtVacaciones1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxtVacaciones1.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtVacaciones1.ForeColor = System.Drawing.Color.Black
-        Me.TxtVacaciones1.Location = New System.Drawing.Point(601, 268)
-        Me.TxtVacaciones1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TxtVacaciones1.Name = "TxtVacaciones1"
-        Me.TxtVacaciones1.Size = New System.Drawing.Size(139, 28)
-        Me.TxtVacaciones1.TabIndex = 20
-        '
-        'LblVac1
-        '
-        Me.LblVac1.AutoSize = True
-        Me.LblVac1.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblVac1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.LblVac1.Location = New System.Drawing.Point(432, 268)
-        Me.LblVac1.Name = "LblVac1"
-        Me.LblVac1.Size = New System.Drawing.Size(114, 27)
-        Me.LblVac1.TabIndex = 19
-        Me.LblVac1.Text = "Vacaciones"
-        '
-        'TxtFirmas
-        '
-        Me.TxtFirmas.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.TxtFirmas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxtFirmas.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtFirmas.ForeColor = System.Drawing.Color.Black
-        Me.TxtFirmas.Location = New System.Drawing.Point(879, 172)
-        Me.TxtFirmas.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TxtFirmas.Name = "TxtFirmas"
-        Me.TxtFirmas.Size = New System.Drawing.Size(139, 28)
-        Me.TxtFirmas.TabIndex = 22
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(759, 176)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(79, 27)
-        Me.Label1.TabIndex = 21
-        Me.Label1.Text = "Firmas "
-        '
-        'MskCedula
-        '
-        Me.MskCedula.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.MskCedula.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.MskCedula.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MskCedula.ForeColor = System.Drawing.Color.Black
-        Me.MskCedula.Location = New System.Drawing.Point(254, 125)
-        Me.MskCedula.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.MskCedula.Mask = "000-000000-0000?"
-        Me.MskCedula.Name = "MskCedula"
-        Me.MskCedula.Size = New System.Drawing.Size(139, 28)
-        Me.MskCedula.TabIndex = 23
         '
         'ColCedula
         '
@@ -650,12 +389,243 @@ Partial Class FrmPlanilla
         Me.ColAguinaldo.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.ColAguinaldo.Width = 113
         '
+        'LblCedula
+        '
+        Me.LblCedula.AutoSize = True
+        Me.LblCedula.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblCedula.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.LblCedula.Location = New System.Drawing.Point(43, 127)
+        Me.LblCedula.Name = "LblCedula"
+        Me.LblCedula.Size = New System.Drawing.Size(75, 27)
+        Me.LblCedula.TabIndex = 1
+        Me.LblCedula.Text = "Cedula"
+        '
+        'TxtNombres
+        '
+        Me.TxtNombres.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.TxtNombres.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtNombres.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtNombres.ForeColor = System.Drawing.Color.Black
+        Me.TxtNombres.Location = New System.Drawing.Point(254, 174)
+        Me.TxtNombres.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.TxtNombres.Name = "TxtNombres"
+        Me.TxtNombres.Size = New System.Drawing.Size(139, 28)
+        Me.TxtNombres.TabIndex = 4
+        '
+        'LblNombre
+        '
+        Me.LblNombre.AutoSize = True
+        Me.LblNombre.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblNombre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.LblNombre.Location = New System.Drawing.Point(43, 174)
+        Me.LblNombre.Name = "LblNombre"
+        Me.LblNombre.Size = New System.Drawing.Size(202, 27)
+        Me.LblNombre.TabIndex = 3
+        Me.LblNombre.Text = "Nombres y apellidos "
+        '
+        'TxtCargo
+        '
+        Me.TxtCargo.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.TxtCargo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtCargo.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtCargo.ForeColor = System.Drawing.Color.Black
+        Me.TxtCargo.Location = New System.Drawing.Point(254, 219)
+        Me.TxtCargo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.TxtCargo.Name = "TxtCargo"
+        Me.TxtCargo.Size = New System.Drawing.Size(139, 28)
+        Me.TxtCargo.TabIndex = 6
+        '
+        'LblCargo
+        '
+        Me.LblCargo.AutoSize = True
+        Me.LblCargo.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblCargo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.LblCargo.Location = New System.Drawing.Point(43, 219)
+        Me.LblCargo.Name = "LblCargo"
+        Me.LblCargo.Size = New System.Drawing.Size(66, 27)
+        Me.LblCargo.TabIndex = 5
+        Me.LblCargo.Text = "Cargo"
+        '
+        'TxtSalarioMensual
+        '
+        Me.TxtSalarioMensual.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.TxtSalarioMensual.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtSalarioMensual.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtSalarioMensual.ForeColor = System.Drawing.Color.Black
+        Me.TxtSalarioMensual.Location = New System.Drawing.Point(254, 268)
+        Me.TxtSalarioMensual.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.TxtSalarioMensual.Name = "TxtSalarioMensual"
+        Me.TxtSalarioMensual.Size = New System.Drawing.Size(139, 28)
+        Me.TxtSalarioMensual.TabIndex = 8
+        '
+        'LblSalMen
+        '
+        Me.LblSalMen.AutoSize = True
+        Me.LblSalMen.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblSalMen.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.LblSalMen.Location = New System.Drawing.Point(43, 268)
+        Me.LblSalMen.Name = "LblSalMen"
+        Me.LblSalMen.Size = New System.Drawing.Size(155, 27)
+        Me.LblSalMen.TabIndex = 7
+        Me.LblSalMen.Text = "Salario Mensual"
+        '
+        'TxtPrestamos
+        '
+        Me.TxtPrestamos.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.TxtPrestamos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtPrestamos.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtPrestamos.ForeColor = System.Drawing.Color.Black
+        Me.TxtPrestamos.Location = New System.Drawing.Point(879, 126)
+        Me.TxtPrestamos.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.TxtPrestamos.Name = "TxtPrestamos"
+        Me.TxtPrestamos.Size = New System.Drawing.Size(139, 28)
+        Me.TxtPrestamos.TabIndex = 16
+        '
+        'LblPrestamos
+        '
+        Me.LblPrestamos.AutoSize = True
+        Me.LblPrestamos.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblPrestamos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.LblPrestamos.Location = New System.Drawing.Point(759, 128)
+        Me.LblPrestamos.Name = "LblPrestamos"
+        Me.LblPrestamos.Size = New System.Drawing.Size(114, 27)
+        Me.LblPrestamos.TabIndex = 15
+        Me.LblPrestamos.Text = "Prestamos "
+        '
+        'TxtFeriados
+        '
+        Me.TxtFeriados.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.TxtFeriados.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtFeriados.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtFeriados.ForeColor = System.Drawing.Color.Black
+        Me.TxtFeriados.Location = New System.Drawing.Point(601, 219)
+        Me.TxtFeriados.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.TxtFeriados.Name = "TxtFeriados"
+        Me.TxtFeriados.Size = New System.Drawing.Size(139, 28)
+        Me.TxtFeriados.TabIndex = 14
+        '
+        'LblFeriados
+        '
+        Me.LblFeriados.AutoSize = True
+        Me.LblFeriados.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblFeriados.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.LblFeriados.Location = New System.Drawing.Point(432, 219)
+        Me.LblFeriados.Name = "LblFeriados"
+        Me.LblFeriados.Size = New System.Drawing.Size(90, 27)
+        Me.LblFeriados.TabIndex = 13
+        Me.LblFeriados.Text = "Feriados"
+        '
+        'TxtSubsidios
+        '
+        Me.TxtSubsidios.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.TxtSubsidios.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtSubsidios.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtSubsidios.ForeColor = System.Drawing.Color.Black
+        Me.TxtSubsidios.Location = New System.Drawing.Point(601, 174)
+        Me.TxtSubsidios.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.TxtSubsidios.Name = "TxtSubsidios"
+        Me.TxtSubsidios.Size = New System.Drawing.Size(139, 28)
+        Me.TxtSubsidios.TabIndex = 12
+        '
+        'LblSubsidios
+        '
+        Me.LblSubsidios.AutoSize = True
+        Me.LblSubsidios.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblSubsidios.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.LblSubsidios.Location = New System.Drawing.Point(432, 174)
+        Me.LblSubsidios.Name = "LblSubsidios"
+        Me.LblSubsidios.Size = New System.Drawing.Size(99, 27)
+        Me.LblSubsidios.TabIndex = 11
+        Me.LblSubsidios.Text = "Subcidios"
+        '
+        'TxtDiasTrab
+        '
+        Me.TxtDiasTrab.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.TxtDiasTrab.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtDiasTrab.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtDiasTrab.ForeColor = System.Drawing.Color.Black
+        Me.TxtDiasTrab.Location = New System.Drawing.Point(601, 126)
+        Me.TxtDiasTrab.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.TxtDiasTrab.Name = "TxtDiasTrab"
+        Me.TxtDiasTrab.Size = New System.Drawing.Size(139, 28)
+        Me.TxtDiasTrab.TabIndex = 10
+        '
+        'LblDiaTrab
+        '
+        Me.LblDiaTrab.AutoSize = True
+        Me.LblDiaTrab.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblDiaTrab.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.LblDiaTrab.Location = New System.Drawing.Point(432, 127)
+        Me.LblDiaTrab.Name = "LblDiaTrab"
+        Me.LblDiaTrab.Size = New System.Drawing.Size(156, 27)
+        Me.LblDiaTrab.TabIndex = 9
+        Me.LblDiaTrab.Text = "Dias Trabajados"
+        '
+        'TxtVacaciones1
+        '
+        Me.TxtVacaciones1.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.TxtVacaciones1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtVacaciones1.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtVacaciones1.ForeColor = System.Drawing.Color.Black
+        Me.TxtVacaciones1.Location = New System.Drawing.Point(601, 268)
+        Me.TxtVacaciones1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.TxtVacaciones1.Name = "TxtVacaciones1"
+        Me.TxtVacaciones1.Size = New System.Drawing.Size(139, 28)
+        Me.TxtVacaciones1.TabIndex = 20
+        '
+        'LblVac1
+        '
+        Me.LblVac1.AutoSize = True
+        Me.LblVac1.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblVac1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.LblVac1.Location = New System.Drawing.Point(432, 268)
+        Me.LblVac1.Name = "LblVac1"
+        Me.LblVac1.Size = New System.Drawing.Size(114, 27)
+        Me.LblVac1.TabIndex = 19
+        Me.LblVac1.Text = "Vacaciones"
+        '
+        'TxtFirmas
+        '
+        Me.TxtFirmas.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.TxtFirmas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtFirmas.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtFirmas.ForeColor = System.Drawing.Color.Black
+        Me.TxtFirmas.Location = New System.Drawing.Point(879, 172)
+        Me.TxtFirmas.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.TxtFirmas.Name = "TxtFirmas"
+        Me.TxtFirmas.Size = New System.Drawing.Size(139, 28)
+        Me.TxtFirmas.TabIndex = 22
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(759, 176)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(79, 27)
+        Me.Label1.TabIndex = 21
+        Me.Label1.Text = "Firmas "
+        '
+        'MskCedula
+        '
+        Me.MskCedula.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.MskCedula.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.MskCedula.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MskCedula.ForeColor = System.Drawing.Color.Black
+        Me.MskCedula.Location = New System.Drawing.Point(254, 125)
+        Me.MskCedula.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.MskCedula.Mask = "000-000000-0000?"
+        Me.MskCedula.Name = "MskCedula"
+        Me.MskCedula.Size = New System.Drawing.Size(139, 28)
+        Me.MskCedula.TabIndex = 23
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(1177, 245)
+        Me.Label2.Location = New System.Drawing.Point(1116, 188)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(87, 27)
         Me.Label2.TabIndex = 24
@@ -666,7 +636,7 @@ Partial Class FrmPlanilla
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(1177, 125)
+        Me.Label3.Location = New System.Drawing.Point(1116, 109)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(87, 27)
         Me.Label3.TabIndex = 25
@@ -679,9 +649,68 @@ Partial Class FrmPlanilla
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
         Me.Label4.Location = New System.Drawing.Point(609, 39)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(131, 38)
+        Me.Label4.Size = New System.Drawing.Size(131, 37)
         Me.Label4.TabIndex = 26
         Me.Label4.Text = "Planilla"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.Label5.Location = New System.Drawing.Point(1116, 269)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(92, 27)
+        Me.Label5.TabIndex = 28
+        Me.Label5.Text = "Imprimir"
+        '
+        'BtnImprimir
+        '
+        Me.BtnImprimir.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.BtnImprimir.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources.printer_print_machine_office_business_icon_192561
+        Me.BtnImprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnImprimir.FlatAppearance.BorderSize = 0
+        Me.BtnImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnImprimir.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnImprimir.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.BtnImprimir.Location = New System.Drawing.Point(1040, 251)
+        Me.BtnImprimir.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.BtnImprimir.Name = "BtnImprimir"
+        Me.BtnImprimir.Size = New System.Drawing.Size(60, 60)
+        Me.BtnImprimir.TabIndex = 27
+        Me.BtnImprimir.UseVisualStyleBackColor = False
+        '
+        'BtnEliminar
+        '
+        Me.BtnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.BtnEliminar.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources._1486564399_close_81512
+        Me.BtnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnEliminar.FlatAppearance.BorderSize = 0
+        Me.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnEliminar.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnEliminar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.BtnEliminar.Location = New System.Drawing.Point(1040, 171)
+        Me.BtnEliminar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.BtnEliminar.Name = "BtnEliminar"
+        Me.BtnEliminar.Size = New System.Drawing.Size(60, 60)
+        Me.BtnEliminar.TabIndex = 18
+        Me.BtnEliminar.UseVisualStyleBackColor = False
+        '
+        'BtnAgregar
+        '
+        Me.BtnAgregar.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.BtnAgregar.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources._1486564407_plus_green_81521
+        Me.BtnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnAgregar.FlatAppearance.BorderSize = 0
+        Me.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnAgregar.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnAgregar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.BtnAgregar.Location = New System.Drawing.Point(1040, 92)
+        Me.BtnAgregar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.BtnAgregar.Name = "BtnAgregar"
+        Me.BtnAgregar.Size = New System.Drawing.Size(60, 60)
+        Me.BtnAgregar.TabIndex = 17
+        Me.BtnAgregar.UseVisualStyleBackColor = False
         '
         'FrmPlanilla
         '
@@ -689,6 +718,8 @@ Partial Class FrmPlanilla
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1335, 641)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.BtnImprimir)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -720,6 +751,7 @@ Partial Class FrmPlanilla
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FrmPlanilla"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Planilla"
@@ -778,4 +810,6 @@ Partial Class FrmPlanilla
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents BtnImprimir As Button
+    Friend WithEvents Label5 As Label
 End Class

@@ -1,4 +1,5 @@
 ﻿Imports System.ComponentModel
+Imports System.IO
 
 Public Class FrmGastos_Indirectos
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BtnAgregar.Click
@@ -83,5 +84,34 @@ Public Class FrmGastos_Indirectos
         CalcularTotal()
     End Sub
 
+    Private Sub BtnImprimir_Click(sender As Object, e As EventArgs) Handles BtnImprimir.Click
+        'Dialogo para que el usuario guarde donde quiera su archivo
+        Dim guardarDialogo As New SaveFileDialog()
+        guardarDialogo.Filter = "Archivos de texto (.txt)|.txt" 'Filtrar que formato esta permitido
+        guardarDialogo.Title = "Guardar datos del DataGridView" 'Texto que aparecerá en la barra de dialogo
+        guardarDialogo.FileName = "Gastos_Indirectos.txt" 'Nombre del archivo
 
+        If guardarDialogo.ShowDialog() = DialogResult.OK Then 'Abre la ventana y el ok verefica si el usuario hizo click en guardar y no en cacelar
+            Using writer As New StreamWriter(guardarDialogo.FileName)
+
+                For Each columna As DataGridViewColumn In DtgGastosIndirectos.Columns
+                    Dim valorescolumnas As New List(Of String)
+                    For Each fila As DataGridViewRow In DtgGastosIndirectos.Rows 'Recorre filas del dtg
+                        If Not fila.IsNewRow Then   'Evitamos tomar fila vacia que tenemos al final (o no)
+                            Dim Valor = fila.Cells(columna.Index).Value 'La lista guarda todos los valores de la fila
+                            If Valor IsNot Nothing Then
+                                valorescolumnas.Add(Valor.ToString)
+                            End If
+
+                        End If
+                    Next
+
+                    writer.WriteLine(columna.HeaderText & ":" & String.Join(" , ", valorescolumnas))
+
+                Next
+
+            End Using
+            MessageBox.Show("Datos guardados correctamente.")
+        End If
+    End Sub
 End Class

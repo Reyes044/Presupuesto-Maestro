@@ -1,4 +1,5 @@
 ﻿Imports System.ComponentModel
+Imports System.IO
 Imports System.Net.Security
 
 Public Class FrmPlanilla
@@ -372,40 +373,36 @@ Public Class FrmPlanilla
             TxtFirmas.Focus()
         End If
     End Sub
+    Private Sub BtnImprimir_Click(sender As Object, e As EventArgs) Handles BtnImprimir.Click
 
-    Private Sub MskCedula_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs) Handles MskCedula.MaskInputRejected
+        'Dialogo para que el usuario guarde donde quiera su archivo
+        Dim guardarDialogo As New SaveFileDialog()
+        guardarDialogo.Filter = "Archivos de texto (.txt)|.txt" 'Filtrar que formato esta permitido
+        guardarDialogo.Title = "Guardar datos del DataGridView" 'Texto que aparecerá en la barra de dialogo
+        guardarDialogo.FileName = "Planilla.txt" 'Nombre del archivo
 
-    End Sub
+        If guardarDialogo.ShowDialog() = DialogResult.OK Then 'Abre la ventana y el ok verefica si el usuario hizo click en guardar y no en cacelar
+            Using writer As New StreamWriter(guardarDialogo.FileName)
 
-    Private Sub TxtNombres_TextChanged(sender As Object, e As EventArgs) Handles TxtNombres.TextChanged
+                For Each columna As DataGridViewColumn In DtgPlanilla.Columns
+                    Dim valorescolumnas As New List(Of String)
+                    For Each fila As DataGridViewRow In DtgPlanilla.Rows 'Recorre filas del dtg
+                        If Not fila.IsNewRow Then   'Evitamos tomar fila vacia que tenemos al final (o no)
+                            Dim Valor = fila.Cells(columna.Index).Value 'La lista guarda todos los valores de la fila
+                            If Valor IsNot Nothing Then
+                                valorescolumnas.Add(Valor.ToString)
+                            End If
 
-    End Sub
+                        End If
+                    Next
 
-    Private Sub TxtCargo_TextChanged(sender As Object, e As EventArgs) Handles TxtCargo.TextChanged
+                    writer.WriteLine(columna.HeaderText & ":" & String.Join(" , ", valorescolumnas))
 
-    End Sub
+                Next
 
-    Private Sub TxtSalarioMensual_TextChanged(sender As Object, e As EventArgs) Handles TxtSalarioMensual.TextChanged
-
-    End Sub
-
-    Private Sub TxtDiasTrab_TextChanged(sender As Object, e As EventArgs) Handles TxtDiasTrab.TextChanged
-
-    End Sub
-
-    Private Sub TxtSubsidios_TextChanged(sender As Object, e As EventArgs) Handles TxtSubsidios.TextChanged
-
-    End Sub
-
-    Private Sub TxtFeriados_TextChanged(sender As Object, e As EventArgs) Handles TxtFeriados.TextChanged
-
-    End Sub
-
-    Private Sub TxtVacaciones1_TextChanged(sender As Object, e As EventArgs) Handles TxtVacaciones1.TextChanged
-
-    End Sub
-
-    Private Sub TxtFirmas_TextChanged(sender As Object, e As EventArgs) Handles TxtFirmas.TextChanged
+            End Using
+            MessageBox.Show("Datos guardados correctamente.")
+        End If
 
     End Sub
 End Class

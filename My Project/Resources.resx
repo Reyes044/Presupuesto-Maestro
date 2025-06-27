@@ -145,17 +145,17 @@
   <data name="dinero-calculadora1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dinero-calculadora1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="verificacion-resumida" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\verificacion-resumida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1486564407-plus-green_81521" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1486564407-plus-green_81521.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="archivo-excel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\archivo-excel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dinero-calculadora (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dinero-calculadora (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1486564407-plus-green_81521" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1486564407-plus-green_81521.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="archivo-excel (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\archivo-excel (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,16 +166,22 @@
   <data name="costo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\costo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="dinero-calculadora (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dinero-calculadora (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dinero-calculadora3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dinero-calculadora3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-google-sheets-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-google-sheets-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="1486564399-close_81512" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1486564399-close_81512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="printer_print_machine_office_business_icon_192561" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\printer_print_machine_office_business_icon_192561.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="printer_print_machine_office_business_icon_1925611" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\printer_print_machine_office_business_icon_1925611.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

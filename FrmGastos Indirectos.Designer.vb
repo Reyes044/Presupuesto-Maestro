@@ -22,22 +22,23 @@ Partial Class FrmGastos_Indirectos
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmGastos_Indirectos))
         Me.TxtMonto = New System.Windows.Forms.TextBox()
         Me.LblMonto = New System.Windows.Forms.Label()
-        Me.BtnAgregar = New System.Windows.Forms.Button()
         Me.TxtConcepto = New System.Windows.Forms.TextBox()
         Me.LblConcepto = New System.Windows.Forms.Label()
         Me.DtgGastosIndirectos = New System.Windows.Forms.DataGridView()
         Me.ColConcepto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColMonto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.BtnEliminar = New System.Windows.Forms.Button()
         Me.TxtTotal = New System.Windows.Forms.TextBox()
         Me.LblTotal = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.BtnImprimir = New System.Windows.Forms.Button()
+        Me.BtnEliminar = New System.Windows.Forms.Button()
+        Me.BtnAgregar = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.DtgGastosIndirectos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -61,21 +62,6 @@ Partial Class FrmGastos_Indirectos
         Me.LblMonto.Size = New System.Drawing.Size(70, 27)
         Me.LblMonto.TabIndex = 14
         Me.LblMonto.Text = "Monto"
-        '
-        'BtnAgregar
-        '
-        Me.BtnAgregar.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
-        Me.BtnAgregar.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources._1486564407_plus_green_81521
-        Me.BtnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BtnAgregar.FlatAppearance.BorderSize = 0
-        Me.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnAgregar.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnAgregar.Location = New System.Drawing.Point(428, 126)
-        Me.BtnAgregar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.BtnAgregar.Name = "BtnAgregar"
-        Me.BtnAgregar.Size = New System.Drawing.Size(75, 75)
-        Me.BtnAgregar.TabIndex = 13
-        Me.BtnAgregar.UseVisualStyleBackColor = False
         '
         'TxtConcepto
         '
@@ -105,14 +91,6 @@ Partial Class FrmGastos_Indirectos
         Me.DtgGastosIndirectos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DtgGastosIndirectos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ColConcepto, Me.ColMonto})
         Me.DtgGastosIndirectos.Cursor = System.Windows.Forms.Cursors.Default
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Montserrat", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(121, Byte), Integer))
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DtgGastosIndirectos.DefaultCellStyle = DataGridViewCellStyle1
         Me.DtgGastosIndirectos.GridColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.DtgGastosIndirectos.Location = New System.Drawing.Point(551, 126)
         Me.DtgGastosIndirectos.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -135,21 +113,6 @@ Partial Class FrmGastos_Indirectos
         Me.ColMonto.MinimumWidth = 6
         Me.ColMonto.Name = "ColMonto"
         Me.ColMonto.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        '
-        'BtnEliminar
-        '
-        Me.BtnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
-        Me.BtnEliminar.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources._1486564399_close_81512
-        Me.BtnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BtnEliminar.FlatAppearance.BorderSize = 0
-        Me.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnEliminar.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnEliminar.Location = New System.Drawing.Point(428, 256)
-        Me.BtnEliminar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(75, 75)
-        Me.BtnEliminar.TabIndex = 17
-        Me.BtnEliminar.UseVisualStyleBackColor = False
         '
         'TxtTotal
         '
@@ -178,7 +141,7 @@ Partial Class FrmGastos_Indirectos
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(423, 205)
+        Me.Label1.Location = New System.Drawing.Point(401, 180)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(87, 27)
         Me.Label1.TabIndex = 20
@@ -188,7 +151,7 @@ Partial Class FrmGastos_Indirectos
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(423, 335)
+        Me.Label2.Location = New System.Drawing.Point(401, 299)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(87, 27)
         Me.Label2.TabIndex = 21
@@ -204,12 +167,69 @@ Partial Class FrmGastos_Indirectos
         Me.Label3.TabIndex = 22
         Me.Label3.Text = "Gastos Indirectos"
         '
+        'BtnImprimir
+        '
+        Me.BtnImprimir.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.BtnImprimir.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources.printer_print_machine_office_business_icon_1925611
+        Me.BtnImprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnImprimir.FlatAppearance.BorderSize = 0
+        Me.BtnImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnImprimir.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnImprimir.Location = New System.Drawing.Point(412, 342)
+        Me.BtnImprimir.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.BtnImprimir.Name = "BtnImprimir"
+        Me.BtnImprimir.Size = New System.Drawing.Size(60, 60)
+        Me.BtnImprimir.TabIndex = 23
+        Me.BtnImprimir.UseVisualStyleBackColor = False
+        '
+        'BtnEliminar
+        '
+        Me.BtnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.BtnEliminar.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources._1486564399_close_81512
+        Me.BtnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnEliminar.FlatAppearance.BorderSize = 0
+        Me.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnEliminar.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnEliminar.Location = New System.Drawing.Point(412, 235)
+        Me.BtnEliminar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.BtnEliminar.Name = "BtnEliminar"
+        Me.BtnEliminar.Size = New System.Drawing.Size(60, 60)
+        Me.BtnEliminar.TabIndex = 17
+        Me.BtnEliminar.UseVisualStyleBackColor = False
+        '
+        'BtnAgregar
+        '
+        Me.BtnAgregar.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.BtnAgregar.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources._1486564407_plus_green_81521
+        Me.BtnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnAgregar.FlatAppearance.BorderSize = 0
+        Me.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnAgregar.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnAgregar.Location = New System.Drawing.Point(406, 116)
+        Me.BtnAgregar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.BtnAgregar.Name = "BtnAgregar"
+        Me.BtnAgregar.Size = New System.Drawing.Size(60, 60)
+        Me.BtnAgregar.TabIndex = 13
+        Me.BtnAgregar.UseVisualStyleBackColor = False
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(401, 406)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(92, 27)
+        Me.Label4.TabIndex = 24
+        Me.Label4.Text = "Imprimir"
+        '
         'FrmGastos_Indirectos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(929, 453)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.BtnImprimir)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -227,6 +247,7 @@ Partial Class FrmGastos_Indirectos
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FrmGastos_Indirectos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Gastos Indirectos"
@@ -250,4 +271,6 @@ Partial Class FrmGastos_Indirectos
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents BtnImprimir As Button
+    Friend WithEvents Label4 As Label
 End Class

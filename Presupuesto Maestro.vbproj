@@ -234,5 +234,11 @@
   <ItemGroup>
     <None Include="Resources\1486564399-close_81512.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_print_machine_office_business_icon_192561.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_print_machine_office_business_icon_1925611.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

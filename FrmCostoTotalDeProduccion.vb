@@ -1,5 +1,6 @@
 ﻿Imports System.ComponentModel
 Imports System.Diagnostics.Eventing.Reader
+Imports System.IO
 Imports System.Text
 
 Public Class FrmCostoTotalDeProduccion
@@ -214,20 +215,34 @@ Public Class FrmCostoTotalDeProduccion
         CalcularTotal_CTP()
 
     End Sub
+    Private Sub BtnImprimir_Click(sender As Object, e As EventArgs) Handles BtnImprimir.Click
+        'Dialogo para que el usuario guarde donde quiera su archivo
+        Dim guardarDialogo As New SaveFileDialog()
+        guardarDialogo.Filter = "Archivos de texto (.txt)|.txt" 'Filtrar que formato esta permitido
+        guardarDialogo.Title = "Guardar datos del DataGridView" 'Texto que aparecerá en la barra de dialogo
+        guardarDialogo.FileName = "Costo_Total_de_Produccion.txt" 'Nombre del archivo
 
-    Private Sub TxtProducto_TextChanged(sender As Object, e As EventArgs) Handles TxtProducto.TextChanged
+        If guardarDialogo.ShowDialog() = DialogResult.OK Then 'Abre la ventana y el ok verefica si el usuario hizo click en guardar y no en cacelar
+            Using writer As New StreamWriter(guardarDialogo.FileName)
 
-    End Sub
+                For Each columna As DataGridViewColumn In DtgCostoTotalDeProduccion.Columns
+                    Dim valorescolumnas As New List(Of String)
+                    For Each fila As DataGridViewRow In DtgCostoTotalDeProduccion.Rows 'Recorre filas del dtg
+                        If Not fila.IsNewRow Then   'Evitamos tomar fila vacia que tenemos al final (o no)
+                            Dim Valor = fila.Cells(columna.Index).Value 'La lista guarda todos los valores de la fila
+                            If Valor IsNot Nothing Then
+                                valorescolumnas.Add(Valor.ToString)
+                            End If
 
-    Private Sub TxtMPD_TextChanged(sender As Object, e As EventArgs) Handles TxtMPD.TextChanged
+                        End If
+                    Next
 
-    End Sub
+                    writer.WriteLine(columna.HeaderText & ":" & String.Join(" , ", valorescolumnas))
 
-    Private Sub TxtMOD_TextChanged(sender As Object, e As EventArgs) Handles TxtMOD.TextChanged
+                Next
 
-    End Sub
-
-    Private Sub TxtGifAsignado_TextChanged(sender As Object, e As EventArgs) Handles TxtGifAsignado.TextChanged
-
+            End Using
+            MessageBox.Show("Datos guardados correctamente.")
+        End If
     End Sub
 End Class

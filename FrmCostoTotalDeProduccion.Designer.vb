@@ -53,11 +53,13 @@ Partial Class FrmCostoTotalDeProduccion
         Me.LblCTP = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.BtnEliminar = New System.Windows.Forms.Button()
-        Me.BtnAgregarCtp = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.BtnEliminar = New System.Windows.Forms.Button()
+        Me.BtnAgregarCtp = New System.Windows.Forms.Button()
+        Me.BtnImprimir = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
         CType(Me.DtgCostoTotalDeProduccion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -333,41 +335,11 @@ Partial Class FrmCostoTotalDeProduccion
         Me.Label1.TabIndex = 19
         Me.Label1.Text = "Costo Unitario"
         '
-        'BtnEliminar
-        '
-        Me.BtnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
-        Me.BtnEliminar.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources._1486564399_close_81512
-        Me.BtnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BtnEliminar.FlatAppearance.BorderSize = 0
-        Me.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnEliminar.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnEliminar.Location = New System.Drawing.Point(1068, 133)
-        Me.BtnEliminar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(75, 75)
-        Me.BtnEliminar.TabIndex = 10
-        Me.BtnEliminar.UseVisualStyleBackColor = False
-        '
-        'BtnAgregarCtp
-        '
-        Me.BtnAgregarCtp.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
-        Me.BtnAgregarCtp.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources._1486564407_plus_green_81521
-        Me.BtnAgregarCtp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BtnAgregarCtp.FlatAppearance.BorderSize = 0
-        Me.BtnAgregarCtp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnAgregarCtp.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnAgregarCtp.Location = New System.Drawing.Point(931, 131)
-        Me.BtnAgregarCtp.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.BtnAgregarCtp.Name = "BtnAgregarCtp"
-        Me.BtnAgregarCtp.Size = New System.Drawing.Size(75, 75)
-        Me.BtnAgregarCtp.TabIndex = 7
-        Me.BtnAgregarCtp.UseVisualStyleBackColor = False
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(926, 210)
+        Me.Label2.Location = New System.Drawing.Point(846, 200)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(87, 27)
         Me.Label2.TabIndex = 21
@@ -377,7 +349,7 @@ Partial Class FrmCostoTotalDeProduccion
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(1063, 212)
+        Me.Label3.Location = New System.Drawing.Point(952, 200)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(87, 27)
         Me.Label3.TabIndex = 22
@@ -389,9 +361,64 @@ Partial Class FrmCostoTotalDeProduccion
         Me.Label4.Font = New System.Drawing.Font("Rockwell", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(471, 42)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(426, 38)
+        Me.Label4.Size = New System.Drawing.Size(419, 37)
         Me.Label4.TabIndex = 23
         Me.Label4.Text = "Costo Total de Produccion"
+        '
+        'BtnEliminar
+        '
+        Me.BtnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.BtnEliminar.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources._1486564399_close_81512
+        Me.BtnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnEliminar.FlatAppearance.BorderSize = 0
+        Me.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnEliminar.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnEliminar.Location = New System.Drawing.Point(966, 133)
+        Me.BtnEliminar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.BtnEliminar.Name = "BtnEliminar"
+        Me.BtnEliminar.Size = New System.Drawing.Size(60, 60)
+        Me.BtnEliminar.TabIndex = 10
+        Me.BtnEliminar.UseVisualStyleBackColor = False
+        '
+        'BtnAgregarCtp
+        '
+        Me.BtnAgregarCtp.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.BtnAgregarCtp.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources._1486564407_plus_green_81521
+        Me.BtnAgregarCtp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnAgregarCtp.FlatAppearance.BorderSize = 0
+        Me.BtnAgregarCtp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnAgregarCtp.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnAgregarCtp.Location = New System.Drawing.Point(851, 136)
+        Me.BtnAgregarCtp.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.BtnAgregarCtp.Name = "BtnAgregarCtp"
+        Me.BtnAgregarCtp.Size = New System.Drawing.Size(60, 60)
+        Me.BtnAgregarCtp.TabIndex = 7
+        Me.BtnAgregarCtp.UseVisualStyleBackColor = False
+        '
+        'BtnImprimir
+        '
+        Me.BtnImprimir.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.BtnImprimir.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources.printer_print_machine_office_business_icon_192561
+        Me.BtnImprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnImprimir.FlatAppearance.BorderSize = 0
+        Me.BtnImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnImprimir.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnImprimir.Location = New System.Drawing.Point(1070, 135)
+        Me.BtnImprimir.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.BtnImprimir.Name = "BtnImprimir"
+        Me.BtnImprimir.Size = New System.Drawing.Size(60, 60)
+        Me.BtnImprimir.TabIndex = 24
+        Me.BtnImprimir.UseVisualStyleBackColor = False
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(1056, 200)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(92, 27)
+        Me.Label5.TabIndex = 25
+        Me.Label5.Text = "Imprimir"
         '
         'FrmCostoTotalDeProduccion
         '
@@ -399,6 +426,8 @@ Partial Class FrmCostoTotalDeProduccion
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1194, 699)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.BtnImprimir)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -427,6 +456,8 @@ Partial Class FrmCostoTotalDeProduccion
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(121, Byte), Integer))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FrmCostoTotalDeProduccion"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Costo Total de Produccion"
@@ -466,4 +497,6 @@ Partial Class FrmCostoTotalDeProduccion
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents BtnImprimir As Button
+    Friend WithEvents Label5 As Label
 End Class
