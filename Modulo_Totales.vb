@@ -44,4 +44,12 @@
     Public TotalUnidadesAProducirPresupuestoMOD As String
     Public TotalCostoTotalMODPresupuestoMOD As String
     Public TotalCostoPorHoraMODPresupuestoMOD As String
+    'presupuesto caja
+    Public IngresosPorVentasTotal_R As String
+    Public PagoAProveedoresTotal_R As String
+    Public PagoDeSueldosTotal_R As String
+    Public OtrosPagosTotal_R As String
+    Public FlujoNetoDelMesTotal_R As String
+
+
 End Module

@@ -24,6 +24,11 @@ Public Class FormPresupuestoCaja
             dtgPresupuestoCaja.Rows(index).Cells(i).Style.BackColor = Color.LightGray
             dtgPresupuestoCaja.Rows(index).Cells(5).Style.BackColor = Color.Gray
         Next
+        Modulo_Totales.IngresosPorVentasTotal_R = txtIngresosPorVentas.Text
+        Modulo_Totales.PagoAProveedoresTotal_R = txtPagoProv.Text
+        Modulo_Totales.PagoDeSueldosTotal_R = txtPagoSueldos.Text
+        Modulo_Totales.OtrosPagosTotal_R = txtOtrosPagos.Text
+        Modulo_Totales.FlujoNetoDelMesTotal_R = txtFNM.Text
     End Sub
 
 
@@ -31,6 +36,11 @@ Public Class FormPresupuestoCaja
         If dtgPresupuestoCaja.SelectedRows.Count > 0 Then
             dtgPresupuestoCaja.Rows.Remove(dtgPresupuestoCaja.CurrentRow)
         End If
+        Modulo_Totales.IngresosPorVentasTotal_R = txtIngresosPorVentas.Text
+        Modulo_Totales.PagoAProveedoresTotal_R = txtPagoProv.Text
+        Modulo_Totales.PagoDeSueldosTotal_R = txtPagoSueldos.Text
+        Modulo_Totales.OtrosPagosTotal_R = txtOtrosPagos.Text
+        Modulo_Totales.FlujoNetoDelMesTotal_R = txtFNM.Text
     End Sub
     Private Sub dtgPresupuestoCaja_CellEndEdit(sender As Object, e As DataGridViewCellEventArgs) Handles dtgPresupuestoCaja.CellEndEdit
 

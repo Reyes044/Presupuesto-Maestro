@@ -51,5 +51,13 @@
         txtUnidadesProducir_R.Text = Modulo_Totales.TotalUnidadesAProducirPresupuestoMOD
         txtTotalMOD_R.Text = Modulo_Totales.TotalCostoTotalMODPresupuestoMOD
         txtTotalHoras_R.Text = Modulo_Totales.TotalCostoPorHoraMODPresupuestoMOD
+
+
+        txtIngresosPorVentasTotal_R.Text = Modulo_Totales.IngresosPorVentasTotal_R
+        txtPagoProvTotal_R.Text = Modulo_Totales.PagoAProveedoresTotal_R
+        txtPagoSueldosTotal_R.Text = Modulo_Totales.PagoDeSueldosTotal_R
+        txtOtrosPagosTotal_R.Text = Modulo_Totales.OtrosPagosTotal_R
+        txtFNMTotal_R.Text = Modulo_Totales.FlujoNetoDelMesTotal_R
+
     End Sub
 End Class

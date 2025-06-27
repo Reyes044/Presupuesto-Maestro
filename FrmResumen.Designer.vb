@@ -77,6 +77,8 @@ Partial Class FrmResumen
         Me.txtCostoTotalMODR = New System.Windows.Forms.TextBox()
         Me.txtCostoTotalProduccionR = New System.Windows.Forms.TextBox()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.TxtTotalPagoTotalR = New System.Windows.Forms.TextBox()
         Me.txtTotalCostounitarioTotalR = New System.Windows.Forms.TextBox()
         Me.LblTotalCostoporunidad = New System.Windows.Forms.Label()
         Me.LblCostoTotalCOmpra = New System.Windows.Forms.Label()
@@ -94,21 +96,31 @@ Partial Class FrmResumen
         Me.Lblunidadesnec = New System.Windows.Forms.Label()
         Me.LblTotalInventarioFinal = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.TxtTotalPagoTotalR = New System.Windows.Forms.TextBox()
-        Me.Label16 = New System.Windows.Forms.Label()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
         Me.txtTotalMOD_R = New System.Windows.Forms.TextBox()
         Me.Label17 = New System.Windows.Forms.Label()
-        Me.txtTotalHoras_R = New System.Windows.Forms.TextBox()
-        Me.Label18 = New System.Windows.Forms.Label()
         Me.txtUnidadesProducir_R = New System.Windows.Forms.TextBox()
         Me.Label19 = New System.Windows.Forms.Label()
+        Me.txtTotalHoras_R = New System.Windows.Forms.TextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.txtFNMTotal_R = New System.Windows.Forms.TextBox()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.txtOtrosPagosTotal_R = New System.Windows.Forms.TextBox()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.txtPagoSueldosTotal_R = New System.Windows.Forms.TextBox()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.txtPagoProvTotal_R = New System.Windows.Forms.TextBox()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.txtIngresosPorVentasTotal_R = New System.Windows.Forms.TextBox()
+        Me.Label24 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
         Me.GroupBox6.SuspendLayout()
+        Me.GroupBox7.SuspendLayout()
         Me.SuspendLayout()
         '
         'TxtTotalMontoR
@@ -811,6 +823,29 @@ Partial Class FrmResumen
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Presupuesto De Compras"
         '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Montserrat", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.Label16.Location = New System.Drawing.Point(574, 157)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(100, 20)
+        Me.Label16.TabIndex = 42
+        Me.Label16.Text = "Total a Pagar"
+        '
+        'TxtTotalPagoTotalR
+        '
+        Me.TxtTotalPagoTotalR.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.TxtTotalPagoTotalR.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtTotalPagoTotalR.Enabled = False
+        Me.TxtTotalPagoTotalR.Location = New System.Drawing.Point(772, 154)
+        Me.TxtTotalPagoTotalR.Margin = New System.Windows.Forms.Padding(4)
+        Me.TxtTotalPagoTotalR.Name = "TxtTotalPagoTotalR"
+        Me.TxtTotalPagoTotalR.Size = New System.Drawing.Size(196, 23)
+        Me.TxtTotalPagoTotalR.TabIndex = 41
+        '
         'txtTotalCostounitarioTotalR
         '
         Me.txtTotalCostounitarioTotalR.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
@@ -1012,29 +1047,6 @@ Partial Class FrmResumen
         Me.Label13.Size = New System.Drawing.Size(0, 20)
         Me.Label13.TabIndex = 26
         '
-        'TxtTotalPagoTotalR
-        '
-        Me.TxtTotalPagoTotalR.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.TxtTotalPagoTotalR.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxtTotalPagoTotalR.Enabled = False
-        Me.TxtTotalPagoTotalR.Location = New System.Drawing.Point(772, 154)
-        Me.TxtTotalPagoTotalR.Margin = New System.Windows.Forms.Padding(4)
-        Me.TxtTotalPagoTotalR.Name = "TxtTotalPagoTotalR"
-        Me.TxtTotalPagoTotalR.Size = New System.Drawing.Size(196, 23)
-        Me.TxtTotalPagoTotalR.TabIndex = 41
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Montserrat", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.Label16.Location = New System.Drawing.Point(574, 157)
-        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(100, 20)
-        Me.Label16.TabIndex = 42
-        Me.Label16.Text = "Total a Pagar"
-        '
         'GroupBox6
         '
         Me.GroupBox6.Controls.Add(Me.txtTotalMOD_R)
@@ -1076,30 +1088,6 @@ Partial Class FrmResumen
         Me.Label17.TabIndex = 22
         Me.Label17.Text = "Costo Total MOD"
         '
-        'txtTotalHoras_R
-        '
-        Me.txtTotalHoras_R.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.txtTotalHoras_R.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtTotalHoras_R.Font = New System.Drawing.Font("Montserrat Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTotalHoras_R.Location = New System.Drawing.Point(336, 69)
-        Me.txtTotalHoras_R.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtTotalHoras_R.Name = "txtTotalHoras_R"
-        Me.txtTotalHoras_R.ReadOnly = True
-        Me.txtTotalHoras_R.Size = New System.Drawing.Size(215, 26)
-        Me.txtTotalHoras_R.TabIndex = 21
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Montserrat", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.Label18.Location = New System.Drawing.Point(133, 75)
-        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(111, 20)
-        Me.Label18.TabIndex = 20
-        Me.Label18.Text = "Total De Horas"
-        '
         'txtUnidadesProducir_R
         '
         Me.txtUnidadesProducir_R.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
@@ -1124,12 +1112,178 @@ Partial Class FrmResumen
         Me.Label19.TabIndex = 18
         Me.Label19.Text = "Unidades a Producir" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
+        'txtTotalHoras_R
+        '
+        Me.txtTotalHoras_R.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.txtTotalHoras_R.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtTotalHoras_R.Font = New System.Drawing.Font("Montserrat Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTotalHoras_R.Location = New System.Drawing.Point(336, 69)
+        Me.txtTotalHoras_R.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtTotalHoras_R.Name = "txtTotalHoras_R"
+        Me.txtTotalHoras_R.ReadOnly = True
+        Me.txtTotalHoras_R.Size = New System.Drawing.Size(215, 26)
+        Me.txtTotalHoras_R.TabIndex = 21
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Montserrat", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.Label18.Location = New System.Drawing.Point(133, 75)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(111, 20)
+        Me.Label18.TabIndex = 20
+        Me.Label18.Text = "Total De Horas"
+        '
+        'GroupBox7
+        '
+        Me.GroupBox7.Controls.Add(Me.txtFNMTotal_R)
+        Me.GroupBox7.Controls.Add(Me.Label24)
+        Me.GroupBox7.Controls.Add(Me.txtIngresosPorVentasTotal_R)
+        Me.GroupBox7.Controls.Add(Me.Label20)
+        Me.GroupBox7.Controls.Add(Me.Label23)
+        Me.GroupBox7.Controls.Add(Me.txtPagoProvTotal_R)
+        Me.GroupBox7.Controls.Add(Me.txtOtrosPagosTotal_R)
+        Me.GroupBox7.Controls.Add(Me.Label22)
+        Me.GroupBox7.Controls.Add(Me.txtPagoSueldosTotal_R)
+        Me.GroupBox7.Controls.Add(Me.Label21)
+        Me.GroupBox7.Location = New System.Drawing.Point(12, 615)
+        Me.GroupBox7.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GroupBox7.Name = "GroupBox7"
+        Me.GroupBox7.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GroupBox7.Size = New System.Drawing.Size(686, 148)
+        Me.GroupBox7.TabIndex = 24
+        Me.GroupBox7.TabStop = False
+        Me.GroupBox7.Text = "Presupuesto de Caja"
+        '
+        'txtFNMTotal_R
+        '
+        Me.txtFNMTotal_R.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.txtFNMTotal_R.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtFNMTotal_R.Font = New System.Drawing.Font("Montserrat Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtFNMTotal_R.Location = New System.Drawing.Point(540, 80)
+        Me.txtFNMTotal_R.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtFNMTotal_R.Name = "txtFNMTotal_R"
+        Me.txtFNMTotal_R.ReadOnly = True
+        Me.txtFNMTotal_R.Size = New System.Drawing.Size(139, 26)
+        Me.txtFNMTotal_R.TabIndex = 39
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Montserrat", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.Label20.Location = New System.Drawing.Point(383, 85)
+        Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(137, 20)
+        Me.Label20.TabIndex = 38
+        Me.Label20.Text = "Flujo Neto del Mes"
+        '
+        'txtOtrosPagosTotal_R
+        '
+        Me.txtOtrosPagosTotal_R.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.txtOtrosPagosTotal_R.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtOtrosPagosTotal_R.Font = New System.Drawing.Font("Montserrat Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtOtrosPagosTotal_R.Location = New System.Drawing.Point(540, 46)
+        Me.txtOtrosPagosTotal_R.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtOtrosPagosTotal_R.Name = "txtOtrosPagosTotal_R"
+        Me.txtOtrosPagosTotal_R.ReadOnly = True
+        Me.txtOtrosPagosTotal_R.Size = New System.Drawing.Size(139, 26)
+        Me.txtOtrosPagosTotal_R.TabIndex = 37
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Font = New System.Drawing.Font("Montserrat", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.Label21.Location = New System.Drawing.Point(383, 51)
+        Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(95, 20)
+        Me.Label21.TabIndex = 36
+        Me.Label21.Text = "Otros Pagos"
+        '
+        'txtPagoSueldosTotal_R
+        '
+        Me.txtPagoSueldosTotal_R.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.txtPagoSueldosTotal_R.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtPagoSueldosTotal_R.Font = New System.Drawing.Font("Montserrat Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPagoSueldosTotal_R.Location = New System.Drawing.Point(200, 97)
+        Me.txtPagoSueldosTotal_R.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtPagoSueldosTotal_R.Name = "txtPagoSueldosTotal_R"
+        Me.txtPagoSueldosTotal_R.ReadOnly = True
+        Me.txtPagoSueldosTotal_R.Size = New System.Drawing.Size(139, 26)
+        Me.txtPagoSueldosTotal_R.TabIndex = 35
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Font = New System.Drawing.Font("Montserrat", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.Label22.Location = New System.Drawing.Point(24, 102)
+        Me.Label22.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(124, 20)
+        Me.Label22.TabIndex = 34
+        Me.Label22.Text = "Pago de Sueldos"
+        '
+        'txtPagoProvTotal_R
+        '
+        Me.txtPagoProvTotal_R.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.txtPagoProvTotal_R.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtPagoProvTotal_R.Font = New System.Drawing.Font("Montserrat Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPagoProvTotal_R.Location = New System.Drawing.Point(200, 63)
+        Me.txtPagoProvTotal_R.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtPagoProvTotal_R.Name = "txtPagoProvTotal_R"
+        Me.txtPagoProvTotal_R.ReadOnly = True
+        Me.txtPagoProvTotal_R.Size = New System.Drawing.Size(139, 26)
+        Me.txtPagoProvTotal_R.TabIndex = 33
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Font = New System.Drawing.Font("Montserrat", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.Label23.Location = New System.Drawing.Point(26, 68)
+        Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(149, 20)
+        Me.Label23.TabIndex = 32
+        Me.Label23.Text = "Pago a Proveedores"
+        '
+        'txtIngresosPorVentasTotal_R
+        '
+        Me.txtIngresosPorVentasTotal_R.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.txtIngresosPorVentasTotal_R.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtIngresosPorVentasTotal_R.Font = New System.Drawing.Font("Montserrat Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtIngresosPorVentasTotal_R.Location = New System.Drawing.Point(200, 27)
+        Me.txtIngresosPorVentasTotal_R.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtIngresosPorVentasTotal_R.Name = "txtIngresosPorVentasTotal_R"
+        Me.txtIngresosPorVentasTotal_R.ReadOnly = True
+        Me.txtIngresosPorVentasTotal_R.Size = New System.Drawing.Size(139, 26)
+        Me.txtIngresosPorVentasTotal_R.TabIndex = 31
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Font = New System.Drawing.Font("Montserrat", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label24.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.Label24.Location = New System.Drawing.Point(24, 32)
+        Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(147, 20)
+        Me.Label24.TabIndex = 30
+        Me.Label24.Text = "Ingresos por Ventas"
+        '
         'FrmResumen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1924, 1055)
+        Me.Controls.Add(Me.GroupBox7)
         Me.Controls.Add(Me.GroupBox5)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox2)
@@ -1158,6 +1312,8 @@ Partial Class FrmResumen
         Me.GroupBox5.PerformLayout()
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox6.PerformLayout()
+        Me.GroupBox7.ResumeLayout(False)
+        Me.GroupBox7.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1243,4 +1399,15 @@ Partial Class FrmResumen
     Friend WithEvents Label18 As Label
     Friend WithEvents txtUnidadesProducir_R As TextBox
     Friend WithEvents Label19 As Label
+    Friend WithEvents GroupBox7 As GroupBox
+    Friend WithEvents txtFNMTotal_R As TextBox
+    Friend WithEvents Label24 As Label
+    Friend WithEvents txtIngresosPorVentasTotal_R As TextBox
+    Friend WithEvents Label20 As Label
+    Friend WithEvents Label23 As Label
+    Friend WithEvents txtPagoProvTotal_R As TextBox
+    Friend WithEvents txtOtrosPagosTotal_R As TextBox
+    Friend WithEvents Label22 As Label
+    Friend WithEvents txtPagoSueldosTotal_R As TextBox
+    Friend WithEvents Label21 As Label
 End Class
