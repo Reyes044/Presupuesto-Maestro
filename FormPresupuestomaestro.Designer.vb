@@ -71,6 +71,7 @@ Partial Class FormPresupuestomaestro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(249, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1012, 482)
         Me.Controls.Add(Me.BtnGastoAdmyVentas)
         Me.Controls.Add(Me.BtnPresupuestoCompras)
