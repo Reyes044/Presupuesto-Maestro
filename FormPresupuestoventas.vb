@@ -1,4 +1,5 @@
 ﻿Imports System.ComponentModel
+Imports System.IO
 
 Public Class FrmPresupuestoVentas
     Public Unidad1 As Integer = 0
@@ -10,7 +11,7 @@ Public Class FrmPresupuestoVentas
         If TxtNombreProducto.Text = ("Ingrese el nombre del producto") & ("") Then
             TxtNombreProducto.Text = ("")
             TxtNombreProducto.ForeColor = Color.Black
-            TxtNombreProducto.Font = New Font("Microsoft Sans Serif", 9, FontStyle.Regular)
+            TxtNombreProducto.Font = New Font("Montserrat", 10, FontStyle.Regular)
             txtPreciounitario.Enabled = True
 
         End If
@@ -23,7 +24,7 @@ Public Class FrmPresupuestoVentas
         If txtunidaesproyectadas.Text = ("Ingrese las unidades proyectadas") Then
             txtunidaesproyectadas.Text = ("")
             txtunidaesproyectadas.ForeColor = Color.Black
-            txtunidaesproyectadas.Font = New Font("Microsoft Sans Serif", 9, FontStyle.Regular)
+            txtunidaesproyectadas.Font = New Font("Montserrat", 10, FontStyle.Regular)
             If Not IsNumeric(txtunidaesproyectadas.Text) Then
                 txtunidaesproyectadas.Clear()
                 txtunidaesproyectadas.Focus()
@@ -34,7 +35,7 @@ Public Class FrmPresupuestoVentas
         If txtPreciounitario.Text = ("Ingrese el precio") Then
             txtPreciounitario.Text = ("")
             txtPreciounitario.ForeColor = Color.Black
-            txtPreciounitario.Font = New Font("Microsoft Sans Serif", 9, FontStyle.Regular)
+            txtPreciounitario.Font = New Font("Montserrat", 10, FontStyle.Regular)
             If Not IsNumeric(txtPreciounitario.Text) Then
                 txtPreciounitario.Clear()
                 txtPreciounitario.Focus()
@@ -44,7 +45,7 @@ Public Class FrmPresupuestoVentas
         If TxtGastoVentas.Text = ("Ingrese el gasto de ventas") Then
             TxtGastoVentas.Text = ("")
             TxtGastoVentas.ForeColor = Color.Black
-            TxtGastoVentas.Font = New Font("Microsoft Sans Serif", 9, FontStyle.Regular)
+            TxtGastoVentas.Font = New Font("Montserrat", 10, FontStyle.Regular)
             If Not IsNumeric(TxtGastoVentas.Text) Then
                 TxtGastoVentas.Clear()
                 TxtGastoVentas.Focus()
@@ -54,7 +55,7 @@ Public Class FrmPresupuestoVentas
         If txtPublicidadCsUnidad.Text = ("Ingrese publicidad/unidad") Then
             txtPublicidadCsUnidad.Text = ("")
             txtPublicidadCsUnidad.ForeColor = Color.Black
-            txtPublicidadCsUnidad.Font = New Font("Microsoft Sans Serif", 9, FontStyle.Regular)
+            txtPublicidadCsUnidad.Font = New Font("Montserrat", 10, FontStyle.Regular)
             If Not IsNumeric(txtPublicidadCsUnidad.Text) Then
                 txtPublicidadCsUnidad.Clear()
                 txtPublicidadCsUnidad.Focus()
@@ -225,11 +226,11 @@ Public Class FrmPresupuestoVentas
         txtPublicidadCsUnidad.Clear()
 
         'Cambiando fuentes pa resetear
-        TxtNombreProducto.Font = New Font("Microsoft Sans Serif", 8, FontStyle.Regular)
-        txtunidaesproyectadas.Font = New Font("Microsoft Sans Serif", 8, FontStyle.Regular)
-        txtPreciounitario.Font = New Font("Microsoft Sans Serif", 8, FontStyle.Regular)
-        TxtGastoVentas.Font = New Font("Microsoft Sans Serif", 8, FontStyle.Regular)
-        txtPublicidadCsUnidad.Font = New Font("Microsoft Sans Serif", 8, FontStyle.Regular)
+        TxtNombreProducto.Font = New Font("Montserrat", 10, FontStyle.Regular)
+        txtunidaesproyectadas.Font = New Font("Montserrat", 8, FontStyle.Regular)
+        txtPreciounitario.Font = New Font("Montserrat", 10, FontStyle.Regular)
+        TxtGastoVentas.Font = New Font("Montserrat", 10, FontStyle.Regular)
+        txtPublicidadCsUnidad.Font = New Font("Montserrat", 10, FontStyle.Regular)
 
 
 
@@ -242,7 +243,7 @@ Public Class FrmPresupuestoVentas
         If TxtNombreProducto.Text = ("Ingrese el nombre del producto") & ("") Then
             TxtNombreProducto.Text = ("")
             TxtNombreProducto.ForeColor = Color.Black
-            TxtNombreProducto.Font = New Font("Microsoft Sans Serif", 9, FontStyle.Regular)
+            TxtNombreProducto.Font = New Font("Montserrat", 10, FontStyle.Regular)
             txtPreciounitario.Enabled = True
 
         End If
@@ -258,7 +259,7 @@ Public Class FrmPresupuestoVentas
         If txtPreciounitario.Text = ("Ingrese el precio") Then
             txtPreciounitario.Text = ("")
             txtPreciounitario.ForeColor = Color.Black
-            txtPreciounitario.Font = New Font("Microsoft Sans Serif", 9, FontStyle.Regular)
+            txtPreciounitario.Font = New Font("Montserrat", 10, FontStyle.Regular)
             If Not IsNumeric(txtPreciounitario.Text) Then
                 txtPreciounitario.Clear()
                 txtPreciounitario.Focus()
@@ -329,7 +330,7 @@ Public Class FrmPresupuestoVentas
         If TxtGastoVentas.Text = ("Ingrese el gasto de ventas") Then
             TxtGastoVentas.Text = ("")
             TxtGastoVentas.ForeColor = Color.Black
-            TxtGastoVentas.Font = New Font("Microsoft Sans Serif", 9, FontStyle.Regular)
+            TxtGastoVentas.Font = New Font("Montserrat", 10, FontStyle.Regular)
             If Not IsNumeric(TxtGastoVentas.Text) Then
                 TxtGastoVentas.Clear()
                 TxtGastoVentas.Focus()
@@ -439,7 +440,7 @@ Public Class FrmPresupuestoVentas
         If txtPublicidadCsUnidad.Text = ("Ingrese publicidad/unidad") Then
             txtPublicidadCsUnidad.Text = ("")
             txtPublicidadCsUnidad.ForeColor = Color.Black
-            txtPublicidadCsUnidad.Font = New Font("Microsoft Sans Serif", 9, FontStyle.Regular)
+            txtPublicidadCsUnidad.Font = New Font("Montserrat", 10, FontStyle.Regular)
             If Not IsNumeric(txtPublicidadCsUnidad.Text) Then
                 txtPublicidadCsUnidad.Clear()
                 txtPublicidadCsUnidad.Focus()
@@ -452,7 +453,7 @@ Public Class FrmPresupuestoVentas
         If txtunidaesproyectadas.Text = ("Ingrese las unidades proyectadas") Then
             txtunidaesproyectadas.Text = ("")
             txtunidaesproyectadas.ForeColor = Color.Black
-            txtunidaesproyectadas.Font = New Font("Microsoft Sans Serif", 9, FontStyle.Regular)
+            txtunidaesproyectadas.Font = New Font("Montserrat", 10, FontStyle.Regular)
             If Not IsNumeric(txtunidaesproyectadas.Text) Then
                 txtunidaesproyectadas.Clear()
                 txtunidaesproyectadas.Focus()
@@ -481,4 +482,38 @@ Public Class FrmPresupuestoVentas
 
         ValidarCampos()
     End Sub
+
+    Private Sub BtnImprimir_Click(sender As Object, e As EventArgs) Handles BtnImprimir.Click
+        'Dialogo para que el usuario guarde donde quiera su archivo
+        Dim guardarDialogo As New SaveFileDialog()
+        guardarDialogo.Filter = "Archivos de texto (*.txt)|*.txt" 'Filtrar que formato esta permitido
+        guardarDialogo.Title = "Guardar datos del DataGridView" 'Texto que aparecerá en la barra de dialogo
+        guardarDialogo.FileName = "Presupuesto_Ventas.txt" 'Nombre del archivo   
+
+        If guardarDialogo.ShowDialog() = DialogResult.OK Then 'Abre la ventana y el ok verefica si el usuario hizo click en guardar y no en cacelar
+            Using writer As New StreamWriter(guardarDialogo.FileName)
+
+                For Each columna As DataGridViewColumn In DtgPresupuestodeventas.Columns
+                    Dim valorescolumnas As New List(Of String)
+                    For Each fila As DataGridViewRow In DtgPresupuestodeventas.Rows 'Recorre filas del dtg
+                        If Not fila.IsNewRow Then   'Evitamos tomar fila vacia que tenemos al final (o no)
+                            Dim Valor = fila.Cells(columna.Index).Value 'La lista guarda todos los valores de la fila
+                            If Valor IsNot Nothing Then
+                                valorescolumnas.Add(Valor.ToString)
+                            End If
+
+                        End If
+                    Next
+
+                    writer.WriteLine(columna.HeaderText & ":" & String.Join(" , ", valorescolumnas))
+
+                Next
+
+            End Using
+            MessageBox.Show("Datos guardados correctamente.")
+        End If
+
+    End Sub
+
+
 End Class
