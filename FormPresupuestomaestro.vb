@@ -3,10 +3,6 @@
 
     End Sub
 
-    Private Sub BtnPresupuestoVentas_Click(sender As Object, e As EventArgs) Handles BtnPresupuestoVentas.Click, Button1.Click
-        FrmPresupuestoVentas.ShowDialog()
-    End Sub
-
     Private Sub Tiempo_Tick(sender As Object, e As EventArgs) Handles Tiempo.Tick
         LblHora.Text = DateTime.Now.ToLongTimeString()
         LblFecha.Text = DateTime.Now.ToShortDateString()

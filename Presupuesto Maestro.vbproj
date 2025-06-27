@@ -86,12 +86,6 @@
       <DependentUpon>FormPresupuestomaestro.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPresupuestoventas.Designer.vb">
-      <DependentUpon>FormPresupuestoventas.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FormPresupuestoventas.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FrmCostoTotalDeProduccion.Designer.vb">
       <DependentUpon>FrmCostoTotalDeProduccion.vb</DependentUpon>
     </Compile>
@@ -139,9 +133,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPresupuestomaestro.resx">
       <DependentUpon>FormPresupuestomaestro.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormPresupuestoventas.resx">
-      <DependentUpon>FormPresupuestoventas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCostoTotalDeProduccion.resx">
       <DependentUpon>FrmCostoTotalDeProduccion.vb</DependentUpon>
