@@ -154,6 +154,9 @@
   <data name="dinero-calculadora3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dinero-calculadora3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="5fd76b3307770d20f4078f0342a2a552-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5fd76b3307770d20f4078f0342a2a552-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="resumen-de-compra" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\resumen-de-compra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -199,7 +202,7 @@
   <data name="verificacion-resumida" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\verificacion-resumida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="5fd76b3307770d20f4078f0342a2a552-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5fd76b3307770d20f4078f0342a2a552-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="online_store_sale_cart_business_ecommerce_basket_bag_buy_shop_shopping_icon_259583 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\online_store_sale_cart_business_ecommerce_basket_bag_buy_shop_shopping_icon_259583 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

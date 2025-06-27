@@ -321,5 +321,8 @@
   <ItemGroup>
     <None Include="Resources\5fd76b3307770d20f4078f0342a2a552-removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online_store_sale_cart_business_ecommerce_basket_bag_buy_shop_shopping_icon_259583 %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

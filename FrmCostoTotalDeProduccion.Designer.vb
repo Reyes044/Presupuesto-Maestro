@@ -60,6 +60,8 @@ Partial Class FrmCostoTotalDeProduccion
         Me.BtnAgregarCtp = New System.Windows.Forms.Button()
         Me.BtnImprimir = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.CmbUnidadesProyectadas = New System.Windows.Forms.ComboBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         CType(Me.DtgCostoTotalDeProduccion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -69,7 +71,7 @@ Partial Class FrmCostoTotalDeProduccion
         Me.LblProducto.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblProducto.Location = New System.Drawing.Point(43, 133)
         Me.LblProducto.Name = "LblProducto"
-        Me.LblProducto.Size = New System.Drawing.Size(96, 27)
+        Me.LblProducto.Size = New System.Drawing.Size(78, 22)
         Me.LblProducto.TabIndex = 0
         Me.LblProducto.Text = "Producto"
         '
@@ -79,7 +81,7 @@ Partial Class FrmCostoTotalDeProduccion
         Me.LblMPD.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblMPD.Location = New System.Drawing.Point(43, 192)
         Me.LblMPD.Name = "LblMPD"
-        Me.LblMPD.Size = New System.Drawing.Size(218, 27)
+        Me.LblMPD.Size = New System.Drawing.Size(176, 22)
         Me.LblMPD.TabIndex = 1
         Me.LblMPD.Text = "Materia Prima Directa "
         '
@@ -89,7 +91,7 @@ Partial Class FrmCostoTotalDeProduccion
         Me.LblMOD.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblMOD.Location = New System.Drawing.Point(438, 136)
         Me.LblMOD.Name = "LblMOD"
-        Me.LblMOD.Size = New System.Drawing.Size(211, 27)
+        Me.LblMOD.Size = New System.Drawing.Size(173, 22)
         Me.LblMOD.TabIndex = 2
         Me.LblMOD.Text = "Mano de Obra Directa"
         '
@@ -101,7 +103,7 @@ Partial Class FrmCostoTotalDeProduccion
         Me.TxtProducto.Location = New System.Drawing.Point(295, 133)
         Me.TxtProducto.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TxtProducto.Name = "TxtProducto"
-        Me.TxtProducto.Size = New System.Drawing.Size(120, 28)
+        Me.TxtProducto.Size = New System.Drawing.Size(120, 24)
         Me.TxtProducto.TabIndex = 3
         '
         'TxtMPD
@@ -112,7 +114,7 @@ Partial Class FrmCostoTotalDeProduccion
         Me.TxtMPD.Location = New System.Drawing.Point(295, 192)
         Me.TxtMPD.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TxtMPD.Name = "TxtMPD"
-        Me.TxtMPD.Size = New System.Drawing.Size(120, 28)
+        Me.TxtMPD.Size = New System.Drawing.Size(120, 24)
         Me.TxtMPD.TabIndex = 4
         '
         'TxtMOD
@@ -123,7 +125,7 @@ Partial Class FrmCostoTotalDeProduccion
         Me.TxtMOD.Location = New System.Drawing.Point(700, 135)
         Me.TxtMOD.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TxtMOD.Name = "TxtMOD"
-        Me.TxtMOD.Size = New System.Drawing.Size(120, 28)
+        Me.TxtMOD.Size = New System.Drawing.Size(120, 24)
         Me.TxtMOD.TabIndex = 5
         '
         'DtgCostoTotalDeProduccion
@@ -213,7 +215,7 @@ Partial Class FrmCostoTotalDeProduccion
         Me.TxtGifAsignado.Location = New System.Drawing.Point(700, 190)
         Me.TxtGifAsignado.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TxtGifAsignado.Name = "TxtGifAsignado"
-        Me.TxtGifAsignado.Size = New System.Drawing.Size(120, 28)
+        Me.TxtGifAsignado.Size = New System.Drawing.Size(120, 24)
         Me.TxtGifAsignado.TabIndex = 9
         '
         'LblGIFAsignados
@@ -222,7 +224,7 @@ Partial Class FrmCostoTotalDeProduccion
         Me.LblGIFAsignados.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblGIFAsignados.Location = New System.Drawing.Point(438, 192)
         Me.LblGIFAsignados.Name = "LblGIFAsignados"
-        Me.LblGIFAsignados.Size = New System.Drawing.Size(137, 27)
+        Me.LblGIFAsignados.Size = New System.Drawing.Size(114, 22)
         Me.LblGIFAsignados.TabIndex = 8
         Me.LblGIFAsignados.Text = "GIF Asignado " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -232,10 +234,10 @@ Partial Class FrmCostoTotalDeProduccion
         Me.TxtTotalGIF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtTotalGIF.Enabled = False
         Me.TxtTotalGIF.Font = New System.Drawing.Font("Montserrat Medium", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtTotalGIF.Location = New System.Drawing.Point(866, 561)
+        Me.TxtTotalGIF.Location = New System.Drawing.Point(797, 561)
         Me.TxtTotalGIF.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TxtTotalGIF.Name = "TxtTotalGIF"
-        Me.TxtTotalGIF.Size = New System.Drawing.Size(120, 28)
+        Me.TxtTotalGIF.Size = New System.Drawing.Size(120, 24)
         Me.TxtTotalGIF.TabIndex = 12
         '
         'LblTotalGIF
@@ -244,7 +246,7 @@ Partial Class FrmCostoTotalDeProduccion
         Me.LblTotalGIF.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblTotalGIF.Location = New System.Drawing.Point(473, 564)
         Me.LblTotalGIF.Name = "LblTotalGIF"
-        Me.LblTotalGIF.Size = New System.Drawing.Size(387, 27)
+        Me.LblTotalGIF.Size = New System.Drawing.Size(316, 22)
         Me.LblTotalGIF.TabIndex = 11
         Me.LblTotalGIF.Text = "Total de Gastos Indirectos de Fabricacion"
         '
@@ -254,10 +256,10 @@ Partial Class FrmCostoTotalDeProduccion
         Me.TxtTotalMPD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtTotalMPD.Enabled = False
         Me.TxtTotalMPD.Font = New System.Drawing.Font("Montserrat Medium", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtTotalMPD.Location = New System.Drawing.Point(337, 563)
+        Me.TxtTotalMPD.Location = New System.Drawing.Point(281, 564)
         Me.TxtTotalMPD.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TxtTotalMPD.Name = "TxtTotalMPD"
-        Me.TxtTotalMPD.Size = New System.Drawing.Size(120, 28)
+        Me.TxtTotalMPD.Size = New System.Drawing.Size(120, 24)
         Me.TxtTotalMPD.TabIndex = 14
         '
         'LbltotalMPD
@@ -266,7 +268,7 @@ Partial Class FrmCostoTotalDeProduccion
         Me.LbltotalMPD.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LbltotalMPD.Location = New System.Drawing.Point(40, 563)
         Me.LbltotalMPD.Name = "LbltotalMPD"
-        Me.LbltotalMPD.Size = New System.Drawing.Size(291, 27)
+        Me.LbltotalMPD.Size = New System.Drawing.Size(235, 22)
         Me.LbltotalMPD.TabIndex = 13
         Me.LbltotalMPD.Text = "Total de Materia Prima Directa"
         '
@@ -276,10 +278,10 @@ Partial Class FrmCostoTotalDeProduccion
         Me.TxtTotalMOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtTotalMOD.Enabled = False
         Me.TxtTotalMOD.Font = New System.Drawing.Font("Montserrat Medium", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtTotalMOD.Location = New System.Drawing.Point(338, 635)
+        Me.TxtTotalMOD.Location = New System.Drawing.Point(281, 634)
         Me.TxtTotalMOD.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TxtTotalMOD.Name = "TxtTotalMOD"
-        Me.TxtTotalMOD.Size = New System.Drawing.Size(120, 28)
+        Me.TxtTotalMOD.Size = New System.Drawing.Size(120, 24)
         Me.TxtTotalMOD.TabIndex = 16
         '
         'LblTotalMOD
@@ -288,7 +290,7 @@ Partial Class FrmCostoTotalDeProduccion
         Me.LblTotalMOD.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblTotalMOD.Location = New System.Drawing.Point(43, 638)
         Me.LblTotalMOD.Name = "LblTotalMOD"
-        Me.LblTotalMOD.Size = New System.Drawing.Size(289, 27)
+        Me.LblTotalMOD.Size = New System.Drawing.Size(236, 22)
         Me.LblTotalMOD.TabIndex = 15
         Me.LblTotalMOD.Text = "Total de Mano de Obra Directa"
         '
@@ -298,10 +300,10 @@ Partial Class FrmCostoTotalDeProduccion
         Me.TxtTotalCTP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtTotalCTP.Enabled = False
         Me.TxtTotalCTP.Font = New System.Drawing.Font("Montserrat Medium", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtTotalCTP.Location = New System.Drawing.Point(728, 638)
+        Me.TxtTotalCTP.Location = New System.Drawing.Point(688, 638)
         Me.TxtTotalCTP.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TxtTotalCTP.Name = "TxtTotalCTP"
-        Me.TxtTotalCTP.Size = New System.Drawing.Size(120, 28)
+        Me.TxtTotalCTP.Size = New System.Drawing.Size(120, 24)
         Me.TxtTotalCTP.TabIndex = 18
         '
         'LblCTP
@@ -310,7 +312,7 @@ Partial Class FrmCostoTotalDeProduccion
         Me.LblCTP.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblCTP.Location = New System.Drawing.Point(473, 636)
         Me.LblCTP.Name = "LblCTP"
-        Me.LblCTP.Size = New System.Drawing.Size(249, 27)
+        Me.LblCTP.Size = New System.Drawing.Size(203, 22)
         Me.LblCTP.TabIndex = 17
         Me.LblCTP.Text = "Costo Total de Produccion"
         '
@@ -323,16 +325,16 @@ Partial Class FrmCostoTotalDeProduccion
         Me.TxtCU.Location = New System.Drawing.Point(1023, 634)
         Me.TxtCU.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TxtCU.Name = "TxtCU"
-        Me.TxtCU.Size = New System.Drawing.Size(120, 28)
+        Me.TxtCU.Size = New System.Drawing.Size(120, 24)
         Me.TxtCU.TabIndex = 20
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(876, 636)
+        Me.Label1.Location = New System.Drawing.Point(1028, 594)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(141, 27)
+        Me.Label1.Size = New System.Drawing.Size(115, 22)
         Me.Label1.TabIndex = 19
         Me.Label1.Text = "Costo Unitario"
         '
@@ -340,9 +342,9 @@ Partial Class FrmCostoTotalDeProduccion
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(846, 200)
+        Me.Label2.Location = New System.Drawing.Point(861, 106)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(87, 27)
+        Me.Label2.Size = New System.Drawing.Size(71, 22)
         Me.Label2.TabIndex = 21
         Me.Label2.Text = "Agregar"
         '
@@ -350,9 +352,9 @@ Partial Class FrmCostoTotalDeProduccion
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(952, 200)
+        Me.Label3.Location = New System.Drawing.Point(967, 106)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(87, 27)
+        Me.Label3.Size = New System.Drawing.Size(71, 22)
         Me.Label3.TabIndex = 22
         Me.Label3.Text = "Eliminar"
         '
@@ -362,7 +364,7 @@ Partial Class FrmCostoTotalDeProduccion
         Me.Label4.Font = New System.Drawing.Font("Rockwell", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(471, 42)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(419, 37)
+        Me.Label4.Size = New System.Drawing.Size(337, 31)
         Me.Label4.TabIndex = 23
         Me.Label4.Text = "Costo Total de Produccion"
         '
@@ -375,7 +377,7 @@ Partial Class FrmCostoTotalDeProduccion
         Me.BtnEliminar.FlatAppearance.BorderSize = 0
         Me.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnEliminar.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnEliminar.Location = New System.Drawing.Point(966, 133)
+        Me.BtnEliminar.Location = New System.Drawing.Point(981, 39)
         Me.BtnEliminar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.BtnEliminar.Name = "BtnEliminar"
         Me.BtnEliminar.Size = New System.Drawing.Size(60, 60)
@@ -391,7 +393,7 @@ Partial Class FrmCostoTotalDeProduccion
         Me.BtnAgregarCtp.FlatAppearance.BorderSize = 0
         Me.BtnAgregarCtp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnAgregarCtp.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnAgregarCtp.Location = New System.Drawing.Point(851, 136)
+        Me.BtnAgregarCtp.Location = New System.Drawing.Point(866, 42)
         Me.BtnAgregarCtp.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.BtnAgregarCtp.Name = "BtnAgregarCtp"
         Me.BtnAgregarCtp.Size = New System.Drawing.Size(60, 60)
@@ -407,7 +409,7 @@ Partial Class FrmCostoTotalDeProduccion
         Me.BtnImprimir.FlatAppearance.BorderSize = 0
         Me.BtnImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnImprimir.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnImprimir.Location = New System.Drawing.Point(1070, 135)
+        Me.BtnImprimir.Location = New System.Drawing.Point(1085, 41)
         Me.BtnImprimir.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.BtnImprimir.Name = "BtnImprimir"
         Me.BtnImprimir.Size = New System.Drawing.Size(60, 60)
@@ -418,18 +420,38 @@ Partial Class FrmCostoTotalDeProduccion
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(1056, 200)
+        Me.Label5.Location = New System.Drawing.Point(1071, 106)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(92, 27)
+        Me.Label5.Size = New System.Drawing.Size(75, 22)
         Me.Label5.TabIndex = 25
         Me.Label5.Text = "Imprimir"
         '
+        'CmbUnidadesProyectadas
+        '
+        Me.CmbUnidadesProyectadas.FormattingEnabled = True
+        Me.CmbUnidadesProyectadas.Location = New System.Drawing.Point(880, 192)
+        Me.CmbUnidadesProyectadas.Name = "CmbUnidadesProyectadas"
+        Me.CmbUnidadesProyectadas.Size = New System.Drawing.Size(253, 24)
+        Me.CmbUnidadesProyectadas.TabIndex = 26
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Montserrat ExtraBold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(865, 167)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(268, 22)
+        Me.Label6.TabIndex = 27
+        Me.Label6.Text = "Seleccione una unidad proyectada"
+        '
         'FrmCostoTotalDeProduccion
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1194, 699)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.CmbUnidadesProyectadas)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.BtnImprimir)
         Me.Controls.Add(Me.Label4)
@@ -503,4 +525,6 @@ Partial Class FrmCostoTotalDeProduccion
     Friend WithEvents Label4 As Label
     Friend WithEvents BtnImprimir As Button
     Friend WithEvents Label5 As Label
+    Friend WithEvents CmbUnidadesProyectadas As ComboBox
+    Friend WithEvents Label6 As Label
 End Class
