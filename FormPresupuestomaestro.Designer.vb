@@ -42,6 +42,7 @@ Partial Class FormPresupuestomaestro
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
@@ -52,7 +53,7 @@ Partial Class FormPresupuestomaestro
         Me.BtnGastosindirectos = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.BtnCostoTotalProducción = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -243,6 +244,17 @@ Partial Class FormPresupuestomaestro
         Me.Button2.Text = "Button2"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'Button6
+        '
+        Me.Button6.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources.costo__1_
+        Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button6.Location = New System.Drawing.Point(911, 54)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(232, 160)
+        Me.Button6.TabIndex = 33
+        Me.Button6.UseVisualStyleBackColor = True
+        '
         'Button5
         '
         Me.Button5.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources.costo__1_
@@ -353,16 +365,16 @@ Partial Class FormPresupuestomaestro
         Me.BtnCostoTotalProducción.TabIndex = 4
         Me.BtnCostoTotalProducción.UseVisualStyleBackColor = True
         '
-        'Button6
+        'Button7
         '
-        Me.Button6.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources.costo__1_
-        Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button6.Location = New System.Drawing.Point(911, 54)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(232, 160)
-        Me.Button6.TabIndex = 33
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.Button7.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources.costo__1_
+        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button7.Location = New System.Drawing.Point(606, 290)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(232, 160)
+        Me.Button7.TabIndex = 34
+        Me.Button7.UseVisualStyleBackColor = True
         '
         'FormPresupuestomaestro
         '
@@ -370,6 +382,7 @@ Partial Class FormPresupuestomaestro
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(249, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1444, 741)
+        Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
@@ -440,4 +453,5 @@ Partial Class FormPresupuestomaestro
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
+    Friend WithEvents Button7 As Button
 End Class
