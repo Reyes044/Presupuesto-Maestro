@@ -17,7 +17,7 @@
         FrmCostoTotalDeProduccion.ShowDialog()
     End Sub
 
-    Private Sub BtnGastosindirectos_Click(sender As Object, e As EventArgs) Handles BtnGastosindirectos.Click, Button6.Click
+    Private Sub BtnGastosindirectos_Click(sender As Object, e As EventArgs) Handles BtnGastosindirectos.Click
         FrmGastos_Indirectos.ShowDialog()
     End Sub
     Private Sub BtnResumen_Click(sender As Object, e As EventArgs) Handles BtnResumen.Click, Button9.Click
@@ -36,5 +36,9 @@
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         FormPresupuestoCaja.ShowDialog()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        FormPresupuestoMOD.ShowDialog()
     End Sub
 End Class

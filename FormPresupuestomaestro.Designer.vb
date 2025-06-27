@@ -41,16 +41,16 @@ Partial Class FormPresupuestomaestro
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.BtnPlanilla = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.BtnResumen = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.BtnGastosindirectos = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.BtnCostoTotalProducción = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -232,6 +232,15 @@ Partial Class FormPresupuestomaestro
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(896, 315)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(219, 102)
+        Me.Button2.TabIndex = 30
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Button10
         '
         Me.Button10.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources.sobresalir
@@ -287,17 +296,6 @@ Partial Class FormPresupuestomaestro
         Me.BtnResumen.TabIndex = 10
         Me.BtnResumen.UseVisualStyleBackColor = True
         '
-        'Button6
-        '
-        Me.Button6.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources.costo__1_
-        Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button6.Location = New System.Drawing.Point(311, 286)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(232, 160)
-        Me.Button6.TabIndex = 7
-        Me.Button6.UseVisualStyleBackColor = True
-        '
         'BtnGastosindirectos
         '
         Me.BtnGastosindirectos.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources.costo__1_
@@ -331,14 +329,16 @@ Partial Class FormPresupuestomaestro
         Me.BtnCostoTotalProducción.TabIndex = 4
         Me.BtnCostoTotalProducción.UseVisualStyleBackColor = True
         '
-        'Button2
+        'Button4
         '
-        Me.Button2.Location = New System.Drawing.Point(896, 315)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(219, 102)
-        Me.Button2.TabIndex = 30
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button4.BackgroundImage = Global.Presupuesto_Maestro.My.Resources.Resources.costo__1_
+        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button4.Location = New System.Drawing.Point(29, 292)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(232, 160)
+        Me.Button4.TabIndex = 31
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'FormPresupuestomaestro
         '
@@ -346,6 +346,7 @@ Partial Class FormPresupuestomaestro
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(249, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1444, 741)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label15)
@@ -367,7 +368,6 @@ Partial Class FormPresupuestomaestro
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.BtnResumen)
-        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.BtnGastosindirectos)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.BtnCostoTotalProducción)
@@ -406,10 +406,10 @@ Partial Class FormPresupuestomaestro
     Friend WithEvents BtnPlanilla As Button
     Friend WithEvents Label15 As Label
     Friend WithEvents Button3 As Button
-    Friend WithEvents Button6 As Button
     Friend WithEvents Button9 As Button
     Friend WithEvents Button10 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents Button4 As Button
 End Class
